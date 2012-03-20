@@ -1,0 +1,48 @@
+Dear Chris,
+
+I definitely think your ideas should be written up!  Maybe the connections you're making seem obvious to you, but they weren't anything like obvious to me before you made them.
+
+Since your talk I've been in discussion with Mattia where trying to extract the simple starting point from your talk.  The idea is to be avoid anything philosophically or empirically controversial in setting things up.  Here's what we have so far, including a few questions of detail for you:
+
+1. There is a three-fold distinction between representations which capture my perspective (call them *egocentric representations*), representations which capture another person's perspective (*altercentric representations*) and representations which capture a perspective that is neither mine nor yours nor anyone else's (Natalie Sebanz used the term *allocentric representations*).
+
+2. The way (1) is phrased leaves it open whether 'capturing a perspective' involves features of a representation's content or not, and whether this might involve aspects of its functional role or format.  I think it's ok to leave all this open at the outset.  
+
+3. Strictly speaking egocentric representation (and the others) should probably be defined in terms of the perspective a representation *aims* to capture or the perspective it *should* capture.  I'll ignore this complexity.
+
+4. There is evidence for (and maybe some people have intuitions about)  the existence of representations which capture a group-centric perspective, I'll call these *group representations* but you and Mattia probably prefer a different term.  (I'm holding back from using 'we-mode' because think it should be an open question at the outset whether a 'mode' is involved and I think 'we' hints at a connection with language that is not essential to the very notion of group representation).  
+
+5. As I'm thinking of it, a group representation is a perfectly ordinary representation; it is not a representation whose bearer is a group rather than an individual, but simply a representation of mine (or yours) which captures how things are for a group.  
+
+6. I'm using 'perspective' in a broad sense so that a group representation might capture an action outcome, a plan, some facts, or some expected utilities, among other things.  Chris uses a map metaphor here.
+
+7. I'm also using 'representation' in a broad sense to include visual and motor representations as well as intentions and knowledge states, among others.  Just as there may be various kinds of egocentric representation---kinds with differ with respect to format, attitude and functional role, perhaps---so equally there could well be various kinds of group representation.  In particular, there's no assumption that the representations have propositional contents.
+
+8. Given the definition I've stipulated, a representation which concerns some aspect of a perspective of any group is a group representation; there is no requirement that the bearer of the representation has to be a member of the group whose perspective the representation captures.  For this reason it might be useful to distinguish *own-group representation* from *other-group representation*.  I think the standard interpretation of the Tsai et al GROOP effect experiments[*] involves 
+
+9. A natural thought is that we should eliminate group representations in favour of combinations of ego-, alter- and allo-centric representations.  For example, we should examine the conjecture that group representations are simply combinations of ego- and altercentric representations.
+
+10. And even if we are simply not interested in elimination, we should be able to distinguish between a case where an individual has a ego- and alter-centric representations and a case where an individual has a group representation.  (Natalie Sebanz & her colleagues have thought about just this distinction in the case of action outcomes.)
+
+11. We also need to distinguish group representation from an egocentric (or altercentric) representation where the bearer's perspective has expanded to encompass another individual's perspective.  Chris illustrated the latter case by comparing extensions of a body schema (as measured by the strength of cross-modal interference in tactile discrimination)  which are a consequence of tool use[**]  to (conjectured) extensions of the body schema which are a consequence of being in the presence of a 'social tool' (i.e. another agent).  When I asked Chris about his term 'we-mode', he seemed to suggest that the we-mode involved (in my terms) socially extended egocentric representation and not group representation.  I'm not convinced that *all* the experiments Chris discusses can be explained with only socially extended egocentric representation and no group representation, though.
+
+12. Some of the evidence shows that it is hard or impossible to eliminate group representations in cognitive psychology and maybe in development too (although I think almost all of it concerns own- rather than other-group representation).  This is the primary reason for believing in group representations.  
+
+13. Where representations have propositional contents, it seems  uncontroversial that group representations exist.  After all, the thought that Mattia and Steve are jointly lifting the table is clearly different from the two individual thoughts, the thought that Mattia is lifting the table and the thought that Steve is lifting the table.
+
+14. Where representations do not have propositional contents, it seems more surprising (to many people) that there are group representations, and even that there are altercentric representations.   I think part of what is exciting is simply that scientists have discovered that there are non-propositional group representations.  
+
+15. Two issues about group representations are (i) how they arise and (ii) how they lead to action.  On (ii) there seems to be convergence on the idea that group representations lead to action via processes that are, or closely resemble, the processes by which ordinary, egocentric representations lead to action: this is true of theories of team reasoning and seems true of joint action planning too.  On (i) there seem to be more open questions.  If our individually having group representations does not always involve our knowing anything about each other's egocentric representations, and if the value of group representations sometimes depends on convergence (there is a single group perspective which each member's group representation captures), one challenge might be to explain how group representations could converge.
+
+16. We've left open question whether group representation sometimes (or always) involves something like a mode.  Theories of team reasoning often require that it does (there is no way to integrate group and egocentric representations), whereas theories of action planning seem to require integration.  One potential attraction of an appeal to modes is that it may avoid issues about how group and non-group representations are integrated; but this is also be a reason for suspicion about the conjecture that there are distinct modes.
+
+Sorry for a long email, I just feel that your talk (which came after a discussion on this topic over the weekend) points us in a good direction.
+
+best wishes,
+Steve
+
+
+[*]Tsai et al, 'the GROOP effect: groups mimic other groups' Cognition 2010(?)
+
+[**]Maravita, A. and Iriki, A. (2004). Tools for the body (schema). Trends in Cognitive Sciences, 8(2):79–86.
+

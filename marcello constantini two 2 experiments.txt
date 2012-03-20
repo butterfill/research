@@ -1,0 +1,8 @@
+marcello constantini : two experiments:
+
+1. joint affordance version of the 'avatar' perceiving affordances task ---
+  there is a two handled cup which can only be lifted by both handles (too big and heavy for one-handed lifting)
+  if no avatar is present, there should be no spatial modulation (because both hands are needed)
+  if avatar is not present, there should be spatial modulation depending on the side on which the avatar sits (because I would contribute only one hand to lifting the cup, the hand on the side opposite the avatar)
+  
+2. amputee results --- Marcello finds amputees who have lost an arm make wild judgements about whether an object is in reach.  What happens if you take control subjects and tie one arm behind their backs?

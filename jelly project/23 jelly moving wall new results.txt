@@ -1,0 +1,10 @@
+
+----- Original Message -----
+Hello Steve, Erika: I've done a quick analysis of the new jelly results. Looks absolutely straightforward. To remind you, we had the seek condition exactly as before - child can look over the screen, and E has either looked or not looked into the target box. The new ask condition was the same except that instead of looking over the screen, the child used the mobile phone to ask E to lift the screen. So if external manifestation is sufficient for making things easy, there should be no difference between ask and seek conditions, and in both there should be more help-seeking when E has looked in the box. If there's something about the collaborative/ communicative nature of asking that distracts child from relevance of E's knowledge, then peformance should be worse in the ask conditon.
+Results support the first possibility. No hint of an effect of condition (ask vs seek), but  a highly significant effect of E's knowledge. So in both conditions child is much more likely to seek help when E has looked in the box than when she hasn't.
+I haven't thought through the implications yet, but good that there's no marginal significance or doubt about the result.
+So Erika: this will be ready to be included in Utrecht talk and will take hardly any time to present given the similarity to the previous expt.
+Steve: How are little I and L getting on?
+Liz
+
+

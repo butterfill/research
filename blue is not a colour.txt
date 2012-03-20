@@ -1,0 +1,24 @@
+Blue is not a colour
+
+Basic fact: categorical perception can be switched off leaving colour vision in tact.
+Claim: when categorical perception is switched off, you are as much in a position to see the colours of things as you were before.
+
+Blue stands to coloured stimuli as [0,1] stands to rational numbers.
+
+There are the particular colours that individuals (and lights) have.  And there are ways of grouping these into categories.  The categories are not colours, they are sets of colours.  They are not maximally specific colours because they are not the sort of thing that can be more or less specific.  
+
+There are philosophical problems about variation.  The problems which concern variation in actual colours --- the particular shades of things --- are deep and difficult.  The problems which concern variation in categories are not deep or difficult.
+
+(Complication: Byrne and Hilbert think that similarities are explained by multi-level categorisation).
+
+The demonstrative phrase 'that colour' as in 'Get me one which is that colour' is not vague (although it is unlikely that a request such as this will be fulfilled).
+
+
+Byrne and Hilbert Introduction and their chapter in Readings
+Byrne Colour and Similiarity
+
+For views I oppose:
+Evans-Thompson Colour Vision book
+
+***TO READ*** Dave Barner UCSD - development of colour terms
+novel: riddley walker

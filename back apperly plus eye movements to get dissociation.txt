@@ -1,0 +1,16 @@
+How to extend Back & Apperly (2009?) to test whether eye movements reflect spontaneous explicit false belief ascriptions or whether they reveal a dissociable belief tracking process.
+
+Qn: About belief or about reality
+Situation: Involves true belief or false belief
+
+study 2: Pp don't know whether they will be asked about belief or reality; there is a main effect of Situation, i.e. Pp are slower to reply to questions about *reality* in false belief situations than in true belief situations.  I.e. Pp compute false belief pre-emptively.
+
+study 3: Pp are always asked about reality (no reason to expect they will be asked about belief).  The main effect of situation goes away.
+
+The study 2/3 difference shows that an effect of situation on response time to reality questions is an indirect measure of whether false belief ascriptions are being computed.  I.e. we can see whether Pp are computing false beliefs without actually asking them to do so.
+
+New studies:
+
+study 4: like study 3 but with eye tracking.  Do we get the patterns of first looks that are indicative of tracking false beliefs?  If so we can infer that Pp's eye movements are tracking beliefs even though they are not explicitly doing so.
+
+study 5: like study 4 but Pp now expect to be asked a question about false belief.  Need to show that we bring back the main effect of situation from Study 2.

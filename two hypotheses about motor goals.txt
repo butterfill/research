@@ -1,0 +1,79 @@
+
+\section{Action from the point of view of practical reasoning}
+
+Intentions are basic elements in practical reasoning which individuate actions.
+Sam intends to get a sandwich.
+His knowledge that the only nearby sandwich shop will shortly close together with his intention gives him a reason to extract himself from a conversation and walk to the shop.
+At the shop he orders, pays for and collects a sandwich.
+The whole episode, starting with Sam's extracting himself from conversation and ending with Sam holding the sandwich, constitutes a single intentional action.
+The episode constitutes a single intentional action because a single intention is responsible for the whole episode.  
+The same pattern of movements might have occurred due to the execution of two distinct intentions (if, for example, Sam had first intended just to leave the building and only later decided to get a sandwich).
+The intentional action can naturally be broken into five component episodes, the extraction, the walk, the order, the payment and the collection.  
+These component episodes may overlap with each other (the walk might start before the extraction has ended).  
+Each component episode is likely to be an intentional action in its own right; this is at least part of what makes it natural to break the whole into these five component episodes, and what explains why it would not be natural to break the action into sequences of bodily movement each lasting for exactly three seconds (say).
+Some or all of these episodes might have further components which are themselves intentional actions.
+Of course, the hierarchy of intentions can only have finite depth.  So given any intentional action, there will be a set of intentional actions where none of them has proper components which are themselves intentional actions and which jointly constitute the whole intentional action.
+This set of intentional actions represents the most specific description of action that is directly involved in practical reasoning.
+
+Let a \emph{minimally intentional action} be an intention action with no proper components which are themselves intentional actions.
+
+
+\section{Action from the point of view of the motor system}
+
+One of the motor system's roles is to control the activation of muscles which produce the bodily movements that are the ultimate physical realisation of many intentional actions.
+Achieving this involves representing actions at different levels of specificity.
+In the course of paying for his sandwich, Sam has to grasp one of several coins resting in his left hand and pass it to the vendor.
+The grasping episode is represented at several levels of specificity.
+A relatively specific representation specifies that the right hand will grasp the coin with a precision grip.
+A less specific representation specifies that the coin will be grasped with a precision grip but not which effector will be used.  
+If Sam were using the other hand, or any another effector with which he can execute precision grips or a pair of pliers, the vehicle of this representation would represent the action in the same way.
+The least specific representation involved in motor cognition specifies only that the coin will be grasped.
+Simplifying, we can think of these least specific representations as individuated by three parameters: a type of action such as tearing, grasping and pressing; zero or more targets; and features of each target (if any) relevant to executing the action such as its size, rigidity and mass.  
+
+A \emph{motor goal} is an action description of a kind that could correspond to the way an action is represented by the motor system.
+So to describe actions in terms of motor goals is to describe actions as the motor system represents them.
+A \emph{motor intention} is a representation of a motor goal by the motor system.
+A \emph{motor act} be an action resulting from the execution of motor intention.
+
+[This picture is complicated by representations of grasping-to-eat and grasping-to-place, which are less specific that representations of precision-grip-grasping with respect to the motor act type but more specific with respect to the motor action type.]
+
+Two points are vital for what follows.
+First, the motor system represents actions as graspings, tearings and pullings.  These representations are effector agnostic even to the extent of failing to specify whether the action will be performed with a hand, mouth or tool.  
+They are highly abstract relative to both patterns of bodily movement which realise these actions and to the patterns of muscle activation responsible for producing them.
+Second, the motor system does not represent actions in terms of many of the properties that are significant to agents.  An agent's intention may be to get to her office, or to his home; the motor system cares about places but it doesn't care whose office a place is.
+Apparently, then, it is possible for there to be a gap between what is specified by the most specific intentions involved in practical reasoning and what is specified by the least specific motor intentions.
+
+
+\section{From intentions to motor intentions}
+For many intentions, their execution will involve motor actions (possible exceptions include intending to abstain from eating).  
+This means that the intentions formed through processes of practical reasoning will have to cause the execution of appropriate motor intentions.
+It is easy to understand how this could happen where intentions are very closely related to possible motor intentions.  
+For example, an intention to grasp a coin at a particular perceived location already contains most of the information that would be needed to specify the content a motor intention: it contains the action type (grasp) and an identifier for the target (its location).
+By contrast, much more is required if we compare an intention that is less closely related to any possible motor intention.
+For example, there is no simple way to transform an intention to order a sandwich into motor intentions whose execution could realise the intention.
+
+Two possibilities (jointly exhaustive):
+\begin{enumerate}
+\item Practical reasoning continues to generate means until it reaches intentions whose contents can be directly mapped to motor intentions.  So minimal intentional actions involve intentions whose contents are, or can be simply mapped onto, motor goals.
+\item There is a process distinct from both practical reasoning and from motor cognition which  normally transforms intentions into motor intentions.
+\end{enumerate}
+
+
+
+HYPOTHESES
+
+1) There is a normative requirement on intention: an intention to do something commits one to intending a course of motor-like actions which realise the intention.
+
+
+
+HYPOTHESES
+
+1) Motor goals are the interface between deliberation and motor cognition
+
+2) Motor goals are the atoms in terms of which we perceive others' actions
+
+Analogy between motor goals and words; the contents of intentions and sentences
+
+Key point is that there is not just intentional action and continuously bodily movement.
+Rather there is an (several) intermediate description.
+

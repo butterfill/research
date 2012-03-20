@@ -1,0 +1,18 @@
+Dear Steve,
+
+actually I am concerned with episodic memory in companions and the two-level mirror-neuronsystem in humans, whereas level 1-system should exist in chimps and some birds too. I have some hypotheses about such a system according to Minimal Theories of Mind.
+
+Especially, I am interested in what you think about "reasons" in animals. I would agree Susan Hurley in "Overintellectualizing the mind", where she talks about some practical normativity in animals. I would give several proofs, e.g. the segmentation in vocal production/perception parrots (attachment). I am working on this and think there may be two kinds of Minimal ToM (with respect to brain design), what do you think about the topic?
+
+With respect to episodic memory, maybe this paper in the attachment is interesting. I try a different approach with OWL 2, where one can have domain-limited reasoning. I think, the most basic inferential operation will be "merging perceptual fields", e.g. integrating visual and auditive fields and noticing a difference between both fields. E.g., in the Stulp et al. 2009 experiment: one scrub-jay merges his visual and auditive fields, represents/rotates to the other scrub-jay's encountering, and notices the differences between relations regarding visible and audible properties of caches. This can be done purely in a hippocampus-like structure with fields and representations, and without propositions. It is just tracking by merging/integrating representations.
+Viele Grüße
+Gerhard
+
+Gerhard Chr. Bukow
+-- 
+Philosophy Department, University of Magdeburg
+39016 Magdeburg, Germany. bukow@ovgu.de
+Tel: 0391-67-16985 Fax: 0391-67-16798
+http://www.iphi.ovgu.de/bukow
+-- 
+

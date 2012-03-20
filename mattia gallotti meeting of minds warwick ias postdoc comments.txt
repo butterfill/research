@@ -1,0 +1,32 @@
+
+
+I think this is a great project and the way you present it is both sharp and compelling; in particular, the move from naturalistic to testable is very neat.  And I'm excited that you integrate a wide range of empirical research including a developmental angle while clearly stressing the philosophical part of the project ('a step forward ... in providing a naturalistic ontology').  Here are some suggestions:
+
+1. Have a section on Outputs, giving titles of journal submissions and projected submission dates.  I would suggest committing to at least three journal submissions over the two years, and not committing to too much in writing.
+
+2. The subtitle doesn't reveal much about the project unless someone has already read the proposal.  Something along the lines of 'Ontological and Psychological Foundations of Collective Intentionality' might help?  Ideally it would provide a single-sentence summary of the whole project.
+
+3. I think it would be good to have one or two of sentences summarising what you will do towards the end (e.g. 'In sum, I would first investigate and then ...').  This will help readers to separate the motivation and theoretical background from the original research ideas.
+
+4. 'shared, in the sense that all agents have the same understanding of the goal of the joint activity'.  I think you may need to re-formulate.  As I read it, this condition could be satisfied without any kind of mutual knowledge.  Suppose that there is a bridge and three each agents individually intend to paint it.  Providing they each represent the goal in the same way (e.g. have selected compatible paint colours), they understand the goal in the same way.
+
+5. "thinking as a 'collective' ('we')."  Why is 'collective' in quotes?  What does '('we')' mean?
+
+6. "thus challenging the suspicion that group-thinking is not directly observable".  I find it natural to take 'directly observable' as referring to perception.  How about 'scientifically observable'?
+
+7. Fn. 2: "Far from postulating the ontological primacy of collective over individual intentionality, the question is precisely how to give an account of their causal powers (if any) in individualist and naturalistic terms."  I don't understand what 'their' refers to.  Also you might consider whether this footnote can be integrated into the main text (or omitted).
+
+8. 'collective intentionality might play a role in causing agents to entertain the same goal-directed representations at the individual level': Brilliant!
+
+9. "More in detail": typo, should be 'In more detail'
+
+10. 'no causal-mechanistic account has so far been formulated to discriminate':  rephrase to 'no causal- mechanistic account far been formulated is capable of discriminating'?
+
+11. 'to disentangle distinct cognitive processes.'  Here you seem to jump from representations in the previous sentence to processes here.
+
+12. 'A further line of research  .... Yet, ...  Moreover,'  Does this paragraph really hang together?  E.g. you might move the first sentence to the end of the previous paragraph and start a new paragraph with 'A second problem is that it is unclear ...'
+
+13. 'I would *then* extend my investigation ...'.  This is odd; could you add something earlier along the lines of 'I would first investigate ...'
+
+14. I like 'to be coupled with increased attention to the conceptual foundations of empirically-informed research' but I don't entirely understand the formulation.  What is the increased attention being coupled to?
+

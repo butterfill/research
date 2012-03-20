@@ -1,0 +1,27 @@
+False Belief in the Theory of Mind: Some Examples
+
+1. There are only two ways of describing and explaining things: as mindless or as having propositional attitudes (Davidson); i.e. as using behavioural strategies or as representing propositional attitudes as such
+
+2. False belief tasks are an acid test for representation of propositional attitudes (tasks involving identity, quantification, senses and normativity are not acid tests)
+
+3. Adult humans' everyday thinking about mental states (or a philosopher's systematization of it) provides a model for understanding infant, chimpanzee or scrub-jab mindreading.  [*Holism, knowledge<>sources]
+
+4. The conceptual structure of adult theory of mind cognition is well understood by researchers (or has been discovered by philosophical introspection).
+
+5. Representing knowledge is less cognitively or conceptually demanding than representing belief (because it doesn't involve having to coordinate representations of inconsistent propositions) [*think about multiple-object tracking as coordinating representations of incompatible locations!]
+
+6. Goals are intentions (and so are desires)
+
+7. Either all adult theory of mind cognition is automatic or none of it is automatic.
+
+8. Which feature (or features) of the propositional attitudes makes representing them cognitively and conceptually demanding is known by researchers.  
+
+9.  We already have (or don't need) a good theory of behaviour reading, and of how theory of mind cognition extends behaviour reading
+
+10. Full-blown theory of mind cognition could be modular (or could be core cognition) [*no: interface problem]
+
+11. Understanding false belief matters only (or primarily) insofar as it enables one to better predict what others will do [*objectivity]
+
+12. The false belief tasks which one- and two-year-old infants pass differ from those  which they fail in this way: the former are non-verbal, the latter verbal.
+
+13. When mindreading, being a mere observer is just as good as being a potential interaction partner. [*specify]

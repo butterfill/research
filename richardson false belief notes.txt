@@ -1,0 +1,25 @@
+
+
+Aim: compare anticipation of actions based on false beliefs involving objects and their locations with anticipation of false beliefs concerning what people know.
+
+Background: Humans can dynamically update representations of non-actual scenes involving objects, agents and actions, integrating visual and linguistic information {Altmann, 2009 #1792}.  
+
+
+Method: several commonly used false belief tasks involve two locations, an object and an agent.  The object is actually at one of the locations and the agent believes the object to be at one of the locations.  Success requires subjects to distinguish the location where the agent believes the object to be in making predictions about what the agent will do.
+
+
+
+
+Motivation: Eye movements reveal 
+
+
+
+
+"Stacey has a boyfriend already"
+
+False beliefs 
+
+Stacey wants to get a letter to Kevin.  She can't contact Kevin herself because she is too shy.  So she is going to ask one of her friends, Ayesha and Sue, to give the letter to Kevin for her.  Ayesha knows that Stacey has a boyfriend already.  Who should Stacey ask to give the letter to Kevin?
+
+
+

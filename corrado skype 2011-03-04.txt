@@ -1,0 +1,110 @@
+[04/03/2011 10:59:28] Corrado Sinigaglia: Hi steve
+[04/03/2011 10:59:35] stephen butterfill: Hi Corrado
+[04/03/2011 10:59:35] Corrado Sinigaglia: could you aske me, please?
+[04/03/2011 10:59:46] stephen butterfill: I'm
+[04/03/2011 10:59:50] stephen butterfill: I'm calling now
+[04/03/2011 10:59:59] stephen butterfill: ... it's ringing ...
+[04/03/2011 11:00:16] stephen butterfill: ... "unknown error"
+[04/03/2011 11:00:24] stephen butterfill: ... I'm calling again
+[04/03/2011 11:00:09] Corrado Sinigaglia: I've some trouble
+[04/03/2011 11:00:44] stephen butterfill: Oh
+[04/03/2011 11:00:54] stephen butterfill: Should we try again later or continue now?
+[04/03/2011 11:00:58] Corrado Sinigaglia: this is the same for me
+[04/03/2011 11:01:07] Corrado Sinigaglia: try now again
+[04/03/2011 11:01:56] stephen butterfill: I just heard your voice but only briefly, then connection lost
+[04/03/2011 11:02:03] Corrado Sinigaglia: steve let try again this afternoon from the university
+[04/03/2011 11:02:08] Corrado Sinigaglia: is it fine with you
+[04/03/2011 11:02:10] Corrado Sinigaglia: ?
+[04/03/2011 11:02:23] stephen butterfill: Yes, that would be fine for me
+[04/03/2011 11:02:26] Corrado Sinigaglia: the same
+[04/03/2011 11:02:45] Corrado Sinigaglia: maybe could be at 6. italian time 5 british time
+[04/03/2011 11:02:54] Corrado Sinigaglia: is it fine with you?
+[04/03/2011 11:02:57] stephen butterfill: 5 British time is fine
+[04/03/2011 11:03:02] Corrado Sinigaglia: great!
+[04/03/2011 11:03:07] stephen butterfill: I have to go at 6.30 british time so that give us over an hour
+[04/03/2011 11:03:08] stephen butterfill: I'm looking forward to hearing about the Naples results, and to discussing our paper
+[04/03/2011 11:03:17] Corrado Sinigaglia: Just a few words
+[04/03/2011 11:03:19] Corrado Sinigaglia: first
+[04/03/2011 11:03:27] Corrado Sinigaglia: I've your notes
+[04/03/2011 11:03:32] stephen butterfill: good
+[04/03/2011 11:03:49] Corrado Sinigaglia: and I've some questions that may be useful to discuss preliminary
+[04/03/2011 11:03:56] stephen butterfill: good idea
+[04/03/2011 11:03:56] Corrado Sinigaglia: Second
+[04/03/2011 11:04:25] Corrado Sinigaglia: Naples data clearly suggest
+[04/03/2011 11:05:20] Corrado Sinigaglia: that one thing is the way single neurons/populations of neurons are sensitive to a motor goal and encode it
+[04/03/2011 11:06:00] Corrado Sinigaglia: another thing is what we call the motor representation of a goal, like a motor goal such as grasping
+[04/03/2011 11:06:21] Corrado Sinigaglia: we should avoid any confusion about the different levels of description
+[04/03/2011 11:06:36] Corrado Sinigaglia: in the sense of personal/subpersonal bla bla
+[04/03/2011 11:06:42] stephen butterfill: That sounds important
+[04/03/2011 11:06:52] Corrado Sinigaglia: what I think really interesting is the fact that
+[04/03/2011 11:07:22] Corrado Sinigaglia: the notion that the motor system may encode motor goals and not just simple muscle contractions
+[04/03/2011 11:08:17] Corrado Sinigaglia: suggest that the classical distinction between action/movements could represent an oversimplification that miss to grasp
+[04/03/2011 11:08:44] Corrado Sinigaglia: the inner relationship between motor and intentional components
+[04/03/2011 11:09:42] stephen butterfill: Good.  I've been thinking about this claim by Davidson
+[04/03/2011 11:09:42] stephen butterfill: ok, speak to you later
+[04/03/2011 11:09:48] stephen butterfill: `our primitive actions, the ones we do not by doing something else, mere movements of the  body---these are all the actions there are.
+We never do more than move our bodies.'
+[04/03/2011 11:10:38] stephen butterfill: I'm wondering whether the event which is the grasping of an object is identical to an event which is a bodily movement
+[04/03/2011 11:10:59] Corrado Sinigaglia: In other words, our challenge is to present a theory of action that does not reduce the role of movements just the final inputs. Instead, we have things like motor goal representation that cannot be reduced to mere movements and play a critical role not only action execution but also action recognition
+[04/03/2011 11:11:19] Corrado Sinigaglia: Great
+[04/03/2011 11:11:20] stephen butterfill: That's it!
+[04/03/2011 11:11:30] stephen butterfill: That's the challenge!
+[04/03/2011 11:12:36] Corrado Sinigaglia: No, I think that there is a crucial difference, but in order to account this kind of difference you don't need necessarily to appeal to any propositional attitude, but it is enough to introduce something like a motor goal representation.
+[04/03/2011 11:13:34] stephen butterfill: Um, I'm not quite following you.  Difference?  What is the difference between?
+[04/03/2011 11:13:43] Corrado Sinigaglia: What is really crucial is what you write as a question in your notes, that is, the relationship between action description in motor terms and action description in more general terms
+[04/03/2011 11:13:56] stephen butterfill: ok
+[04/03/2011 11:14:13] Corrado Sinigaglia: The difference is between mere bodily movements and grasping like movements
+[04/03/2011 11:14:29] stephen butterfill: Ah, I get it now.
+[04/03/2011 11:15:33] Corrado Sinigaglia: Of course are both bodily movements, and motor goals cannot be represented withouth being represented as motor goals of a given body, but there is a difference between bodily movements as such and bodily grasping like movements
+[04/03/2011 11:16:54] Corrado Sinigaglia: All the problems lie in the fact that a motor representation is at the same time a representation of movements and a representation of a goal.... that is, a representation of a goal in terms of the sequence type of movement that are suitable to achieve it... In the case of motor representation
+[04/03/2011 11:17:12] Corrado Sinigaglia: you cannot disentagle the two compoenents, motor and intentional ones
+[04/03/2011 11:17:35] stephen butterfill: [thinking]
+[04/03/2011 11:18:25] Corrado Sinigaglia: What you can say is that motor goals are represented in motor terms but this does not imply that they are represented in term of single movements (in terms of all the single kinematic parameters that are to specify during the execution of action)..
+[04/03/2011 11:18:34] Corrado Sinigaglia: we don't need to represent all the motor details
+[04/03/2011 11:18:52] stephen butterfill: Yes, that's my understanding from our discussion in Milan
+[04/03/2011 11:18:59] Corrado Sinigaglia: this is not necessarily requested for representing motor goal
+[04/03/2011 11:19:11] Corrado Sinigaglia: nevertheless are always MOTOR goal
+[04/03/2011 11:19:44] Corrado Sinigaglia: this mean that they have intrinsically to do with movements
+[04/03/2011 11:19:58] Corrado Sinigaglia: anyway we may discuss later on these points.
+[04/03/2011 11:20:17] Corrado Sinigaglia: The quotation from Davidson sounds great
+[04/03/2011 11:20:21] stephen butterfill: Yes, I'll reflect on what you've written
+[04/03/2011 11:20:53] stephen butterfill: There seem to be two sorts of issue.  One is about how actions are reprenseted --- in perception, in practical reasoning and in the motor system.  Another is about what actions are.  I guess that our focus is on the former (representation).  But we might need to  think about the later as well.
+[04/03/2011 11:21:42] Corrado Sinigaglia: ok, I think so too
+[04/03/2011 11:21:59] Corrado Sinigaglia: see you later
+[04/03/2011 11:22:10] stephen butterfill: I'm looking forward to it!
+[04/03/2011 11:22:15] stephen butterfill: Bye
+[04/03/2011 17:18:03] Corrado Sinigaglia: I steve
+[04/03/2011 17:33:19] stephen butterfill: 'a person does, as an agent, whatever he does intentionally under some description'
+[04/03/2011 18:02:26] stephen butterfill: R(e,I)
+[04/03/2011 18:02:43] stephen butterfill: R?
+[04/03/2011 18:03:02] Corrado Sinigaglia: WE NECESSARILY NEED THIS KIND OF R
+[04/03/2011 18:03:19] Corrado Sinigaglia: R(bm, I)
+[04/03/2011 18:03:30] Corrado Sinigaglia: bm
+[04/03/2011 18:03:36] Corrado Sinigaglia: not enough
+[04/03/2011 18:03:42] Corrado Sinigaglia: I for itself
+[04/03/2011 18:03:46] Corrado Sinigaglia: not enouh
+[04/03/2011 18:03:59] Corrado Sinigaglia: R?
+[04/03/2011 18:04:08] Corrado Sinigaglia: R in unspecified
+[04/03/2011 18:04:13] Corrado Sinigaglia: is also based on the fact
+[04/03/2011 18:04:18] Corrado Sinigaglia: that this kind of relation
+[04/03/2011 18:04:22] Corrado Sinigaglia: holds
+[04/03/2011 18:04:33] Corrado Sinigaglia: for every kind of bm
+[04/03/2011 18:04:40] Corrado Sinigaglia: and that the presence of I
+[04/03/2011 18:04:48] Corrado Sinigaglia: do not change the bm as such
+[04/03/2011 18:05:02] Corrado Sinigaglia: but transform these bm into an action
+[04/03/2011 18:05:51] Corrado Sinigaglia: bm are blinking
+[04/03/2011 18:06:05] Corrado Sinigaglia: blinking with the Intention to say ok
+[04/03/2011 18:06:13] Corrado Sinigaglia: is not really blinking
+[04/03/2011 18:06:26] Corrado Sinigaglia: in the sense that also bm are changing
+[04/03/2011 18:08:33] stephen butterfill: R(e,I)
+[04/03/2011 18:08:35] stephen butterfill: R/
+[04/03/2011 18:08:36] stephen butterfill: R?
+[04/03/2011 18:08:43] stephen butterfill: which e can be be R(x,I)
+[04/03/2011 18:08:45] stephen butterfill: ?
+[04/03/2011 18:21:22] stephen butterfill: What are basic actions?
+[04/03/2011 18:21:31] stephen butterfill: Are there arctions which are not intentional?
+[04/03/2011 18:22:20] stephen butterfill: Are there actions which can be goal-directed without being intentional/
+[04/03/2011 18:22:30] Corrado Sinigaglia: Are there actions wich can be goalrelated without being intentional (in classical sense)?
+[04/03/2011 18:22:31] Corrado Sinigaglia: yes
+[04/03/2011 18:22:37] Corrado Sinigaglia: saccadic movements
+[04/03/2011 18:23:31] Corrado Sinigaglia: are there actions which can be caracterized as such, that is as goal-related, regardless the intention with wich they can be achieved?

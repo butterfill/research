@@ -1,0 +1,10 @@
+implicit explicit
+
+- degrees of confidence
+- simpler vs. more complex concepts
+- distinct types of process (e.g. modular cognition) or mechanism (e.g. associative learning rather than reasoning)
+- behaviour as an upshot of the way perceptual mechanisms track objects can be constrated with behaviour as an upshot of understanding objects (e.g. Scholl & Leslie, most impressive example is perhaps the case of number tested by violation-of-expectations experiments)
+
+- can treat this distinction as 'two systems' or a 'one morphs into the other' type view.	
+
+What's interesting about the present work is that none of the above accounts seem to fit!

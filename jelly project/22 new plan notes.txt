@@ -1,0 +1,4 @@
+1. Knowledge as relational vs. as representational state
+2. IF you think of knowledge as a relation, then it's hard to see how it can be transferred via a representational medium.  If you think of knowledge as a representation then it is intrinsically transferrable.  (Understanding knowledge by analogy to language.)
+3. Leads in to idea that asking questions could be a model by which children come to an understanding of knowledge as a representation.
+

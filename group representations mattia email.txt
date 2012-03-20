@@ -1,0 +1,87 @@
+Ciao Mattia,
+
+I agree with you: there is something to be grasped and it really matters to achieve this.  But I wonder whether characterising the we-mode (your term, not mine) should add anything to what we already know.  Maybe the point is rather to be able to make some connections among things we already know and, much more, to illuminate what we don't know.
+
+I also wonder whether, in characterising the we-mode, we couldn't start from some basic distinctions.  The inspiration for this was Chris' bare assertion that what you mean by the we mode is the same thing as team reasoning---of course I don't agree exactly, but it's interesting that you both want to make connections.
+
+So what about something like this as a simple starting point:
+
+1. A three-fold distinction between representations which capture my perspective (call them *egocentric representations*), representations which capture another person's perspective (*altercentric representations*) and representations which capture a perspective that is neither mine nor yours nor anyone else's (*allocentric representations*).
+
+2. The way (1) is phrased leaves it open whether 'capturing a perspective' involves features of a representation's content or not, and whether this might involve aspects of its functional role or format.  I think it's ok to leave all this open at the outset.
+
+3. Strictly speaking egocentric representation (and the others) should probably be defined in terms of the perspective a representation *aims* to capture or the perspective it *should* capture.  I'll ignore this complexity.
+
+4. There is evidence for (and maybe some people have intuitions about)  the existence of representations which capture a group-centric perspective, I'll call these *group representations* but you probably prefer a different term (and I'm happy to think you might be right, as always).  
+
+5. As I'm thinking of it, a group representation is a perfectly ordinary representation; it is not a representation whose bearer is a group rather than an individual, but simply a representation of mine (or yours) which captures how things are for a group.  
+
+6. I'm using 'perspective' in a broad sense so that a group representation might capture an action outcome, a plan, some facts, or some expected utilities, among other things.
+
+7. I'm also using 'representation' in a broad sense to include visual and motor representations as well as intentions and knowledge states, among others.  Just as there may be various kinds of egocentric representation---kinds with differ with respect to format, attitude and functional role, perhaps---so equally there could well be various kinds of group representation.
+
+8. Given the definition I've stipulated, a representation which concerns some aspect of a perspective of any group is a group representation; there is no requirement that the bearer of the representation has to be a member of the group whose perspective the representation captures.  For this reason it might be useful to distinguish *own-group representation* from *other-group representation*.  I think the standard interpretation of the Tsai et al GROOP effect experiments[*] involves 
+
+9. A natural thought is that we should eliminate group representations in favour of combinations of ego-, alter- and allo-centric representations.  For example, we should examine the conjecture that group representations are simply combinations of ego- and altercentric representations.
+
+10. And even if we are simply not interested in elimination, we should be able to distinguish between a case where an individual has a ego- and alter-centric representations and a case where an individual has a group representation.  (Natalie Sebanz & her colleagues have thought about just this distinction in the case of action outcomes.)
+
+11. We also need to distinguish group representation from an egocentric (or altercentric) representation where the bearer's perspective has expanded to encompass another individual's perspective.  Chris illustrated the latter case by comparing extensions of a body schema (as measured by the strength of cross-modal interference in tactile discrimination)  which are a consequence of tool use[**]  to (conjectured) extensions of the body schema which are a consequence of being in the presence of a 'social tool' (i.e. another agent).  When I asked Chris about this, he seemed to suggest that a group representation is just a socially extended egocentric representation, but I don't think this is right.  So I think we need a clear distinction between the two cases, one that is clear enough to enable empirically determining whether a particular case involves socially-extended egocentric representation or group representation.
+
+12. Some of the evidence shows that it is hard or impossible to eliminate group representations in cognitive psychology and maybe in development too (although I think almost all of it concerns own- rather than other-group representation).  This is the primary reason for believing in group representations.  
+
+13. Where representations have propositional contents, it seems  uncontroversial that group representations exist.  After all, the thought that Mattia and Steve are jointly lifting the table is clearly different from the two individual thoughts, the thought that Mattia is lifting the table and the thought that Steve is lifting the table.
+
+14. Where representations do not have propositional contents, it seems more surprising (to many people) that there are group representations, and even that there are altercentric representations.  And now I think this is 
+
+
+[*]Tsai et al, 'the GROOP effect: groups mimic other groups' Cognition 2010(?)
+
+[**]Maravita, A. and Iriki, A. (2004). Tools for the body (schema). Trends in Cog- nitive Sciences, 8(2):79–86.
+
+On Thursday, 15 March 2012, Mattia Gallotti wrote:
+Ciao Steve,
+
+this is very nice of you (and flattering), thank you my friend! In honesty, if I look back at my last year of research - say after the PhD defence - there are a few people who I think have really made a difference in my way of looking at things, namely you and Chris. I learned so much from you two!
+
+Yes, I do think that Chris shares this hard-to-define intuition of the we-mode. This makes me even more persuaded that there is indeed 'something' to be grasped and conceptualized about the we-mode (the shared intuition of shared intention?). Back to one point we made last week in our private conversation - well, one of the many: it seems to me there is a thin line between trying to construe the intuition behind the we-mode in a way that can gain some consensus inside and outside of philosophy - something that captures the narrow content of different people's intuition (Chris', yours, Searle's, Bratman's, etc.); and ending up providing a trivial argument for the we-mode that does not add anything to what we already know. Where to draw this line, i.e. how to build a convincing argument for the we-mode, I still don't know.
+
+I handed in my report of the we-mode meeting to Elisabeth on Monday; I think she's a bit busy these days, but I'll get back to you too soon because I had some doubts of interpretation regarding the notes. I wanted to be as unbiased as possible in rendering the narrative of the meeting. Interestingly, we covered all major issues of debate in the field!
+
+cheers, 
+Mattia
+
+
+
+
+On 14 March 2012 22:58, Stephen Butterfill <s.butterfill@warwick.ac.uk> wrote:
+Dear Mattia,
+
+I just wanted to let you know that I saw Chris Frith at a conference
+in Cambridge this week.  From our conversation it is clear that he is
+a fan of yours, and he also credited you (including with a photo) at
+the end of his talk!
+
+Chris' talk was very inspiring (as you might guess).  He didn't
+exactly say this this, but I think you could see his approach as a
+search for experiments which suggest that there are representations
+which, either in virtue of functional role or content, capture
+something about a group rather than about one or more individuals
+whether that's the group's expected utilities, affordances, tasks or
+plans.  This is my kind of we-mode!  Anyway, there was something
+attractively simple about the way he approached the we-mode.  My sense
+was he's still working out a lot of the details which made it
+particularly interesting.
+
+cheers,
+Steve
+
+
+
+-- 
+Mattia L. Gallotti, PhD
+ 
+CNRS, Jean Nicod Institute
+École Normale Supérieure, Paris
+http://www.institutnicod.org
+ 

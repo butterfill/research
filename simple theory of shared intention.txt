@@ -1,0 +1,11 @@
+Simple theory of shared intention:
+
+1. Assumption:
+x and y jointly F only if there is a joint action, F-ing, and x and y are the only agents of this action.
+
+2. Definition:
+x and y share an intention that they F iff:
+
+(a) x intends that x and y jointly F
+and
+(b) y intends that x and y jointly F
