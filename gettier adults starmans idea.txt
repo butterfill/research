@@ -1,0 +1,13 @@
+Gettier
+Starmans
+
+1. Knowing that p vs. knowing that probably p
+
+2.
+inspiration (very loose): United States v. Lurry
+(from http://arstechnica.com/tech-policy/2012/08/your-car-tracked-the-rapid-rise-of-license-plate-readers/3/)
+
+Martha lives in a small house in Memphis.  She has an outstanding arrest warrant for shoplifting.  Today she is driving her car into town when two officers stop her.  They stopped her because an automatic license plate reader flagged the address of the car's owner as one occupied by someone with an outstanding arrest warrant.  In fact her license plate being flagged has nothing to do with Martha's arrest warrant at all.  Instead, the license plate was flagged because her car is linked to her house and the previous occupant of her house, who Martha does not know at all, Manfred, has an outstanding arrest warrant for driving on a suspended license.  
+
+The officers inferred from the information available to them that the driver of the car had an outstanding arrest warrant.
+Did the officers know that the driver of the car had an outstanding arrest warrant?
