@@ -1,0 +1,85 @@
+---
+layout: 'deck_unit'
+title: "The Question"
+tags: []
+description: "Introduces the question around which this module is organised"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+
+// * ***todo*** mixin blur not working!
+
+
+section.slide
+  .notes There is a family of questions about the origins of mind that philosophers have been asking since Plato or before.
+  .words: .container_12: .grid_12
+    .kludge
+      .step1
+        p.handout.show
+          span.blur1 ‘... ’tis past doubt, that Men have in their Minds 
+          span.noblur several Ideas
+          span.blur1 , such as are those expressed by the words, Whiteness, Hardness, ... and others: It is in the first place to be enquired, 
+          span.noblur How he comes by them
+          span.blur1 ?’
+          span.handout \citep[p.\ 104]{Locke:1975qo} 
+        p.blur1.right (Locke 1689)
+    .slide
+      +blur('.blur1')
+    .kludge
+      .step2.hide
+        p.handout.show
+          span.blur2 ‘How does it come about that the development of organic behavior into 
+          span.noblur controlled inquiry 
+          span.blur2 brings about the differentiation and cooperation of 
+          span.noblur observational and conceptual operations
+          span.blur2 ?’
+          span.handout \citep[p.\ 12]{Dewey:1938yp}
+        p.blur2.right (Dewey 1938, p. 12)
+    .slide
+      +show('.step2')
+    .slide
+      +blur('.blur2')
+    .kludge
+      .step3.hide  
+        p.handout.show
+          span.blur3 ‘the fundamental explicandum, is the organism and its propositional attitudes ... 
+          span.blur3.unblur3 Cognitive psychologists 
+          span.blur3 accept ... the  ... necessity of explaining 
+          span.noblur how organisms come to have the attitudes to propositions that they do
+          span.blur3 .’
+          span.handout \citep[p.\ 198]{Fodor:1975pb}
+        p.blur3.right (Fodor 1975, p.\ 198)
+    .slide
+      +show('.step3')
+    .slide
+      +blur('.blur3')
+    .slide
+      +unblur('.unblur3')
+      +invert('.unblur3')
+    .notes Fodor mentions cognitive psychologists rather than philosophers.  We will need to face up to the question of why philosophers are asking this question about the origins of knowledge, why is isn't just a scientific question.  But that's something for later.
+    .slide
+      +uninvert('.unblur3')
+      +blur('.unblur3')
+
+
+
+section.slide
+  .words
+    p.middle.center the question
+    .notes This module is based on a simple question.
+    .notes The question is, 
+    .handout \textbf{Question}
+      .notes How do humans come to know  about---and to knowingly manipulate---objects, causes, words, numbers, colours, actions and minds?
+
+section.slide
+  img.bkg(src='/img/DSC_AB_8736_bw.JPG')
+  .notes At the outset we know nothing, or not very much.  (Like Lucas here.)
+  .notes Sometime later we do know some things.
+  .notes How does the transition occur?
+

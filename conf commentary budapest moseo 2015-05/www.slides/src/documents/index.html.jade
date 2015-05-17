@@ -1,0 +1,170 @@
+---
+layout: 'default2'
+title: 'Commentary on Wolfgang'
+subtitle: ' Prinz and Michael Graziano'
+email: 's.butterfill@warwick.ac.uk'
+weburl: ''
+units: []
+lecture_date: '2015/05/19'
+---
+
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
+
++slide_middle
+  p.notes.show S + A + X
+  .notes: :t()
+    Experience involves a subject, S, being aware, A, of a thing, X.
+    Prinz offers us a theory about the subject of experience,
+    and Graziano about the awareness, the thing in the middle.
+    (Graziano says his theory is about the thing that ‘lies between the “I” and 
+    the “X,”’ (p. 30)).
+    I want to start with two questions about the X, the first for Graziano
+    and the second for Prinz.
+    
++slide_middle  
+  .notes: :t()
+    Let me start with some background on the question for Graziano.
+    His view is that there is a model of attention which allows me 
+    to make decisions about whether I, or anyone else, is aware of something:
+  .notes.show
+    p: :t()
+      (1) ‘my brain [...] constructs a set of information, A, that allows me to 
+      conclude that I am aware of the content [X].’
+    p.right Graziano (2013, p. 70)
+  .notes: :t()
+    Of course, he also goes further and says that 
+  .slide
+    .notes.show.step2
+      p: :t()
+        (2) ‘awareness is an attention schema.’
+      p.right Graziano (2013, p. 69)
+      .notes: :t()
+        My first question is just about step 1.  Forget about whether this is
+        awareness---I'll come to that in a moment.
+      .slide
+        +blur('.step2')
+        .notes: :t()
+          Step 1 is controversial to this extent: does the set of information
+          Graziano specifies allow us to make all of the judgements 
+          about awareness, our own and others’, that we can
+          actually make?
+        .notes: :t()
+          Why doubt this? ....
+
++slide_middle
+  .notes: :t()
+    Graziano’s model is additive in a strong sense.
+    There are these three components, and you can have the 
+    outer two, S or X, independently of awareness.
+    (Awareness is something which involves a model of 
+    the relation between S and X.)
+    This is very clear from the book:
+  p.em-above.notes.show
+    span: :t()
+      ‘Suppose that you are looking at a green object and have a conscious 
+      experience of greenness. ...
+    p the brain  contains 
+      span   
+      span.chunk a chunk of information
+      span  that describes the state of experiencing,  and it contains 
+      span.chunk a chunk of information
+      span  that describes spectral green.  
+    p: :t()
+      Those two chunks are bound together. 
+    p: :t()
+      In that way, the brain 
+      computes a larger, composite description of experiencing green.’ 
+  p.right Graziano (2013, p. 20)
+  .slide
+    +invert('.chunk')
+    .notes: :t()
+      So awareness is a chunk of information that can be added (or not)
+      to a state, and when you add that information you get awareness.
+    .notes: :t()
+      Graziano’s model is additive in a strong sense.
+    .notes: :t()
+      One tiny question I had was, How can this view accomodate situations where
+      you are aware of only some of the features of an object although
+      you are receiving perceptual information about many of its features?
+      Here is an example ...
+
++slide_middle
+  .container_12
+    .grid_4
+      .colour1.hide
+        +img('colour1.png')
+    .grid_4
+      .colour2.hide
+        +img('colour2.png')
+    .grid_4
+      .colour3
+        +img('colour3.png')
+    .notes: :t()
+      I couldn't find an apple so I'll have to make do with a green square
+      Suppose you attend to the shape and let’s say you’ve seen lots of these
+      so you’re really focussed on the shape.
+      You might say, sincerely, ‘I was aware of the shape but not the colour.’
+      Even so, you are computing its categorical colour properties, as is 
+      shown by the fact that you can get odd-ball effects for changes in 
+      categorical colour properties.
+      So X includes inforamation about shape plus information about categorical 
+      colour.
+      But on the additive model, A gets added to X or not.
+      Given the additive nature of the model,
+      how can we distinguish this case, in which there is awareness shape 
+      from a case in which you are aware of categorical colour and shape?
+      Is the idea, for example, that the awareness feature gets bound to 
+      something other than an object, perhaps a partial object?
+    .notes: :t()
+      So this was my question about whether we have a full explanation of how
+      people make decisions about awareness.
+    .notes: :t()
+      I also want to note a question about how the model of attention 
+      changes across development.
+      
++slide_middle  
+  .notes: :t()
+    Recall the two steps ...
+  .notes.show
+    p: :t()
+      (1) ‘my brain [...] constructs a set of information, A, that allows me to 
+      conclude that I am aware of the content [X].’
+    p.right Graziano (2013, p. 70)
+  .notes.show.step2
+    p: :t()
+      (2) ‘awareness is an attention schema.’
+    p.right Graziano (2013, p. 69)
+    .notes: :t()
+  .notes: :t()
+    It is striking that children’s understanding of awareness appears to 
+    develop quite gradually over the first years of life.
+    For example, some findings indicate that two-year-olds treat
+    people as unanware of things if they have been bindfolded at some point
+    during a hiding episode, even if their eyes were open at the crucial 
+    moment (Dunham et al (2000)).
+  .notes: :t()
+    Reluctant to infer from judgements direct to the model, but plausible 
+    that there are changes.
+  .notes: :t()
+    Consequence of Graziano's theory is that these changes should be reflected
+    in the nature of children’s awareness.
+
++slide_middle
+  p: :t()
+    ‘there is no subjective feeling ... [i]nstead, there is a description of 
+    having a feeling’
+  p.right Graziano (2013, pp. 21-2)
+
+  
+// the question
+//- +insert_unit({unit:'001', title_slide:false, images:images, handout:true})

@@ -1,0 +1,38 @@
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+
+
+//- -------------
+//- communication, non-linguistic
+//- -------------
+
+
+//- pointing
+mixin to_comprehend()
+  p To comprehend:
+  ol
+    li
+      span know that this person is pointing to location L;
+    li
+      span.know.blur-except know
+      span  that by so pointing she is attempting to 
+      span.communicate.blur-except communicate
+      span ; and 
+    li
+      span know that what she is attempting to communicate is that object X it at L.
+  block
+  
+mixin to_produce()
+  p To produce:
+  ol
+    li
+      span know how to point to location L;
+    li
+      span.know.blur-except know
+      span  that by pointing to location L you can 
+      span.communicate.blur-except communicate
+      span  with this audience;
+    li
+      span know that what you can communicate is that object X is at L.
+  block

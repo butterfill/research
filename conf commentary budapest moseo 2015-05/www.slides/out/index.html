@@ -1,0 +1,370 @@
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Commentary on Wolfgang | A Talk</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.69.2" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<div class="notes notes-header-tex">\title {A Talk \\ Commentary on Wolfgang}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 class="title1 fade-in">Commentary on Wolfgang</h1>
+        <h1 class="title2 fade-in"> Prinz and Michael Graziano</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Commentary on Wolfgang}</div>
+  <div class="handout">\def \isubtitle { Prinz and Michael Graziano}</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}: \isubtitle</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+</div>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes show">S + A + X</p>
+          <div class="notes">Experience involves a subject, S, being aware, A, of a thing, X.
+Prinz offers us a theory about the subject of experience,
+and Graziano about the awareness, the thing in the middle.
+(Graziano says his theory is about the thing that ‘lies between the “I” and 
+the “X,”’ (p. 30)).
+I want to start with two questions about the X, the first for Graziano
+and the second for Prinz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle"> 
+          <div class="notes">Let me start with some background on the question for Graziano.
+His view is that there is a model of attention which allows me 
+to make decisions about whether I, or anyone else, is aware of something:
+          </div>
+          <div class="notes show">
+            <p>(1) ‘my brain [...] constructs a set of information, A, that allows me to 
+conclude that I am aware of the content [X].’
+            </p>
+            <p class="right">Graziano (2013, p. 70)</p>
+          </div>
+          <div class="notes">Of course, he also goes further and says that
+          </div>
+          <div class="slide">
+            <div class="notes show step2">
+              <p>(2) ‘awareness is an attention schema.’
+              </p>
+              <p class="right">Graziano (2013, p. 69)</p>
+              <div class="notes">My first question is just about step 1.  Forget about whether this is
+awareness---I'll come to that in a moment.
+              </div>
+              <div class="slide">
+                <div data-what=".step2" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+                <div class="notes">Step 1 is controversial to this extent: does the set of information
+Graziano specifies allow us to make all of the judgements 
+about awareness, our own and others’, that we can
+actually make?
+                </div>
+                <div class="notes">Why doubt this? ....
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Graziano’s model is additive in a strong sense.
+There are these three components, and you can have the 
+outer two, S or X, independently of awareness.
+(Awareness is something which involves a model of 
+the relation between S and X.)
+This is very clear from the book:
+          </div>
+          <p class="em-above notes show"><span>‘Suppose that you are looking at a green object and have a conscious 
+experience of greenness. ...</span>
+            <p>the brain  contains <span>  </span><span class="chunk">a chunk of information</span><span> that describes the state of experiencing,  and it contains </span><span class="chunk">a chunk of information</span><span> that describes spectral green.  </span></p>
+            <p>Those two chunks are bound together.
+            </p>
+            <p>In that way, the brain 
+computes a larger, composite description of experiencing green.’
+            </p>
+          </p>
+          <p class="right">Graziano (2013, p. 20)</p>
+          <div class="slide">
+            <div data-what=".chunk" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".chunk" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">So awareness is a chunk of information that can be added (or not)
+to a state, and when you add that information you get awareness.
+            </div>
+            <div class="notes">Graziano’s model is additive in a strong sense.
+            </div>
+            <div class="notes">One tiny question I had was, How can this view accomodate situations where
+you are aware of only some of the features of an object although
+you are receiving perceptual information about many of its features?
+Here is an example ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="container_12">
+            <div class="grid_4">
+              <div class="colour1 hide"><img src="/img/colour1.png" style=""/>
+              </div>
+            </div>
+            <div class="grid_4">
+              <div class="colour2 hide"><img src="/img/colour2.png" style=""/>
+              </div>
+            </div>
+            <div class="grid_4">
+              <div class="colour3"><img src="/img/colour3.png" style=""/>
+              </div>
+            </div>
+            <div class="notes">I couldn't find an apple so I'll have to make do with a green square
+Suppose you attend to the shape and let’s say you’ve seen lots of these
+so you’re really focussed on the shape.
+You might say, sincerely, ‘I was aware of the shape but not the colour.’
+Even so, you are computing its categorical colour properties, as is 
+shown by the fact that you can get odd-ball effects for changes in 
+categorical colour properties.
+So X includes inforamation about shape plus information about categorical 
+colour.
+But on the additive model, A gets added to X or not.
+Given the additive nature of the model,
+how can we distinguish this case, in which there is awareness shape 
+from a case in which you are aware of categorical colour and shape?
+Is the idea, for example, that the awareness feature gets bound to 
+something other than an object, perhaps a partial object?
+            </div>
+            <div class="notes">So this was my question about whether we have a full explanation of how
+people make decisions about awareness.
+            </div>
+            <div class="notes">I also want to note a question about how the model of attention 
+changes across development.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle"> 
+          <div class="notes">Recall the two steps ...
+          </div>
+          <div class="notes show">
+            <p>(1) ‘my brain [...] constructs a set of information, A, that allows me to 
+conclude that I am aware of the content [X].’
+            </p>
+            <p class="right">Graziano (2013, p. 70)</p>
+          </div>
+          <div class="notes show step2">
+            <p>(2) ‘awareness is an attention schema.’
+            </p>
+            <p class="right">Graziano (2013, p. 69)</p>
+            <div class="notes"><t:0404295853106305></t:0404295853106305>
+            </div>
+          </div>
+          <div class="notes">It is striking that children’s understanding of awareness appears to 
+develop quite gradually over the first years of life.
+For example, some findings indicate that two-year-olds treat
+people as unanware of things if they have been bindfolded at some point
+during a hiding episode, even if their eyes were open at the crucial 
+moment (Dunham et al (2000)).
+          </div>
+          <div class="notes">Reluctant to infer from judgements direct to the model, but plausible 
+that there are changes.
+          </div>
+          <div class="notes">Consequence of Graziano's theory is that these changes should be reflected
+in the nature of children’s awareness.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>‘there is no subjective feeling ... [i]nstead, there is a description of 
+having a feeling’
+          </p>
+          <p class="right">Graziano (2013, pp. 21-2)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- the question-->
+    </div>
+  </body>
+</html>
