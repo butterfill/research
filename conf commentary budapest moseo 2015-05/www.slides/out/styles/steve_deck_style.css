@@ -1745,6 +1745,34 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-50 {
+  font-size: 60pt;
+  color: #000;
+  text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-60 {
+  font-size: 60pt;
+  color: #000;
+  text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-70 {
+  font-size: 70pt;
+  color: #000;
+  text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-80 {
+  font-size: 80pt;
+  color: #000;
+  text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
 .deck-container .huge-glow-90 {
   font-size: 90pt;
   color: #000;

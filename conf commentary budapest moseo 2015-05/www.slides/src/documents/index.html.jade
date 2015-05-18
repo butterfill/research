@@ -18,20 +18,136 @@ include ../../fragments/unit_mixins
 - var images = get_images('bees')
 
 +title_slide({document:document, images:images})
-
+  .notes: :t()
+    I have a series of questions which I want to put to Wolfgang Prinz and
+    Michael Graziano.  
+  .notes: :t()
+    The broad thrust of my questions might be put like
+    this.  
+    Both theories involve taking as primary a third-person perspective of 
+    subjectivity or awareness, a perspective of it as seen by an onlooker with a
+    side on view.  
+    More than this, they aim to show that other perspectives, and in particualar
+    a first person perspective, are dispensable in the sense that we can
+    construct these from a third-person perspective.
+    Thus Wolfgang talks about importing from a third-person perspective on
+    another’s experiences and actions, and Michael explains awareness in terms
+    of a model of attention which describes attention as a relation
+    between a subject and a thing.
+    My aim in what follows is to explore reasons for thinking that 
+    other perspectives,
+    the first-person perspective and the perspective we adopt
+    when we do things together,
+    are indispensable.
+    It is not that I think another perspective has primacy.
+    My guess is that none are primary and that all are indispensable in the 
+    sense that you cannot construct any one from the others.
+  .notes: :t()
+    OK, now for some questions.
 
 +slide_middle
-  p.center.notes.show S + A + X
+  p.huge-glow-60 Q1
+  p.center.huge-glow-60(style='margin-top:-1em;') What about us?
   .notes: :t()
-    Experience involves a subject, S, being aware, A, of a thing, X.
-    Roughly speaking, 
-    Prinz focusses on the subject of experience, S,
-    and Graziano about the awareness, A, the thing in the middle.
-    (Graziano says his theory is about the thing that ‘lies between the “I” and 
-    the “X,”’ (p. 30)).
-    I want to start with two questions about the X, the first for Graziano
-    and the second for Prinz.
+    My first question is, What about us?
+    Let me explain
     
+
++slide_middle
+  .notes.show
+    p ‘minds [are] open systems whose basic makeup is determined through social interaction and communication’
+    p.right.grey-text Prinz (2012, p. 33)
+    
++slide_middle
+  p.center
+    table.data
+      thead
+        tr
+          td from
+          td to
+          td label
+      tbody
+        tr.odd
+          td me
+          td you
+          td export
+        tr.even
+          td you
+          td me
+          td import / open minds
+        tr.odd.us-row.hide
+          td
+            span.us us
+          td 
+            span.me me
+            br
+            span.you you
+          td ?
+  .notes: :t()
+    Wolfgang Prinz offers a contrast between two directions.
+    It seems to me that there is an additional possibility.
+  .slide
+    +connect({'from':'.me','to':'.us'})
+    +connect({'from':'.you','to':'.us'})
+    +show('.us-row')
+    .notes: :t()
+      Couldn't it be that before either of us can think about 
+      the actions and mental states of individuals, we are acting
+      together?
+
++slide
+  .notes: :t()
+    I'm not sure but I think
+    I think Wolfgang suggests that we need to have individual agents
+    in place before we can act together.
+    I think this because he describes 
+  .notes.show
+    p ‘the will as an individual device to serve ...’ ‘the requirements of collective control’
+    p.right.grey-text Prinz (2012, p. 137)
+  .notes: :t()
+    But the notion of common coding seems to invite us to think in another way ...
+    
+  
+  .slide
+    p.em-above common coding
+    .notes To say that there is common coding is to say that there is 
+    p.notes.show: :t()
+      ‘a shared space of representation that uses the same set of 
+      representational dimensions for coding one’s own action and 
+      foreign perception’
+    p.right.grey-text Prinz (2012, p. 67)
+    .notes: :t()
+      Common coding doesn't just mean that I can represent your actions 
+      and my actions in the same way.
+      It also means that I can represent things we do together in the ordinary
+      way that I can represent actions.
+      Suppose we move a table together.
+      Given common coding, I can represent our actions in the same
+      way as I would represent your actions or my actions if either of us
+      were doing this alone.  Actions are represented in terms of events.
+    .notes: :t()
+      So, as I understand it,
+      common coding suggests it is coherent to suppose that 
+      Animals could act together before they can recognise any individual 
+      agents at all.
+    .notes: :t()
+      Indeed, complementary mirroring seems to be a case of animals acting
+      together without necessarily recognising any individual agents.
+    .notes: :t()
+      In that case, why is it right to think of the roots of subjectivity
+      as involving a transition from you to me rather than from us to you and me?
+      
+
+
+//- --------------------
+
++slide_middle
+  p.huge-glow-60 Q2
+  p.center.huge-glow-60(style='margin-top:-.7em;line-height:50px') What about  kids?
+  .notes: :t()
+    My second question is about awareness, Michael Graziano’s attention
+    schema and development.
+
 +slide_middle  
   .notes: :t()
     Let me start with some background on the question for Graziano.
@@ -41,27 +157,320 @@ include ../../fragments/unit_mixins
     p: :t()
       (1) ‘my brain [...] constructs a set of information, A, that allows me to 
       conclude that I am aware of the content [X].’
-    p.right Graziano (2013, p. 70)
+    p.right.grey-text Graziano (2013, p. 70)
   .notes: :t()
-    Of course, he also goes further and says that 
+    It's important for what follows that this model is used both in
+    making decisions about oneself and about what others are aware of.
+  .notes: :t()
+    Of course, he also goes further and says that ... 
   .slide
     .notes.show.step2
       p: :t()
         (2) ‘awareness is an attention schema.’
-      p.right Graziano (2013, p. 69)
-      .notes: :t()
-        My first question is just about step 1.  Forget about whether this is
-        awareness---I'll come to that in a moment.
-      .slide
-        +blur('.step2')
-        .notes: :t()
-          Step 1 is controversial to this extent: does the set of information
-          Graziano specifies allow us to make all of the judgements 
-          about awareness, our own and others’, that we can
-          actually make?
-        .notes: :t()
-          Why doubt this? ....
+      p.right.grey-text Graziano (2013, p. 69)
+    .notes: :t()
+      The idea is that being aware of something is a matter of the
+      model of attention attaching a feature to it.
+      That is ...
+  .slide
+    .notes.show.step2
+      p: :t()
+        I.e. ‘the property of awareness is ... a chunk of information, that can 
+        be bound to the larger 
+        object file.’
+      p.right.grey-text Graziano (2013, p. 21)
+    .notes: :t()
+      My first question is just about step 1.  Forget about whether this is
+      awareness---I'll come to that in a moment.
+  .slide
+    +blur('.step2')
+    .notes: :t()
+      A range of findings suggest that two-year-olds make judgements about
+      awareness which, to adults, seem wrong.
 
++slide_middle
+  .notes: :t()
+    In fact children's judgement about awareness seem to change over a year or
+    longer, gradually becoming more adult like
+  table.data
+    thead
+      tr
+    tbody
+      tr.odd 
+        td 14 months
+        td awarness depends on social relations
+        td Moll & Tomasello (2007)
+      tr.even
+        td 2 years
+        td blindfolds prevent awareness even if not worn during the critical event
+        td Dunham et al  (2000); cf Poulin-Dubois et al (2007)
+      tr.odd
+        td 2.5 years
+        td moving a barrier does not prevent awareness
+        td McGuigan & Doherty (2002)
+  .notes: :t()
+    Taken at face value, this is evidence that young children have a model of
+    attention that is quite different from typical adults’.
+  .notes: :t()
+    Of course, you might suppose that children’s performance on these tasks 
+    does not truly reflect their underlying model of attention but is a
+    consequence of some extraneous factor.
+    But given the variety of methods used, it would be hard to take this line.
+  .notes: :t()
+    So I think we have strong reasons to hold that, at some age, children’s
+    judgements about what others are aware of are based on a model of attention
+    which is strikingly different from most adults’ model.
+  
+  
++slide_middle  
+  .notes: :t()
+    This has an interesting consequence for Michael Graziano’s theory. ...
+  .notes.show
+    p: :t()
+      (1) ‘my brain [...] constructs a set of information, A, that allows me to 
+      conclude that I am aware of the content [X].’
+    p.right.grey-text Graziano (2013, p. 70)
+  .notes.show.step2
+    p: :t()
+      (2) ‘awareness is an attention schema.’
+    p.right.grey-text Graziano (2013, p. 69)
+  .notes: :t()
+    The idea is that being aware of something is a matter of the
+    model of attention attaching a feature to it.
+    That is ...
+  .notes.show.step2
+    p: :t()
+      I.e. ‘the property of awareness is ... a chunk of information, that can 
+      be bound to the larger 
+      object file.’
+    p.right.grey-text Graziano (2013, p. 21)  
+  .notes: :t()
+    2 year olds have a different attention schema from that of most adults’.
+    So they attach the property of awareness to different object files
+    than adults do.
+    In particular, if you blindfold a 2-year-old at the start of a hiding game,
+    then take the blindfold off before actually hiding the object,
+    the 2-year-old will not attach the property of awareness to the object 
+    that is hidden and so will not be aware of this object.
+  .notes: :t()
+    Let me summarise this reasoning ...
+    
++slide_middle({bkg:'DSC_AB_9882.JPG'})
+  +hide('img.bkg')
+  .container_12
+    .grid_7
+      ol.notes.show
+        li one- and two-year-olds’ representations of awareness differ systematically from most adults’
+        li.em-above one- and two-year-olds’ attention schema differs systematically from most adults’
+        li.em-above Conditions under which 1- and 2-year-olds’ are aware of a thing differ systematically from conditions under which most adults are aware of a thing.
+  .notes: :t()
+    There isn't an objection in view yet.
+    After all, lots of scientific theories have surprising consequences.
+  .notes: :t()
+    But I do think there is an objection.
+    This is because awareness typically affects behaviour, as deficits like
+    neglect show.
+    If (3) were true, one- and two-year-olds should fail to search for, or talk
+    about objects in cases where they are unaware of them.  In fact, they should
+    show signs of being quite significantly impaired.  But as far as I know
+    they don’t.
+  .slide
+    +show('img.bkg')
+    .notes: :t()
+      You can prevent a two-year-old from finding the chocolate by hiding it while
+      she isn't looking but not by blindfolding her before you hide it.
+   
+
+
+
+
+
+
+
+//- --------------------
+
++slide_middle
+  p.huge-glow-60 Q3
+  p.center.huge-glow-60(style='margin-top:-.7em;line-height:50px') What about  phenomenology?
+  .notes: :t()
+    My third question is about phenomenology.
+
++slide_middle
+  p.quote1 ‘the self-from-others framework is silent on issues pertaining to qualitative aspects of mental experience’
+  p.right.grey-text Prinz (2012, p. 239 fn. 14)
+  .notes: :t()
+    NB So there is an assumption that we can explain subjectivity  without
+    thinking about the qualitative aspects of expeirence. 
+  .notes: :t()
+    I want to suggest that there are reasons to doubt that we can separate
+    subjectivity from the qualitative aspects of experience.
+    I think this will make trouble for a central claim that both Prinz and 
+    Graziano make in form or another.
+  .slide
+    +blur('.quote1')
+    p.em-above ‘subjectivity is an artefact made by humans ... People have a self in the same sense as they have ... money, courts of law, or governments.’
+    p.right.grey-text Prinz (2013, p. 1111)
+
+    p.em-above: :t()
+      ‘there is no subjective feeling ... [i]nstead, there is a description of 
+      having a feeling’
+    p.right.grey-text Graziano (2013, pp. 21-2)
+    .notes: :t()
+      In both cases, Prinz and Graziano, the theories are constructive in the
+      sense that they do not regard the theories as answerable to anything
+      that is awareness or subjective.
+
++slide_middle
+  .notes: :t()
+    I want to remind you about this observation from Brentano ...
+  p: :t()
+    ‘the hearer who hears must also be entailed in the act ...
+    the hearing of that tone is 
+    hardly conceivable without a mental self, or subject, who hears.’
+  p.right.grey-text Prinz (2012, p. 13)
+  .notes: :t()
+    At the same time, hearing a tone does not involve hearing a subject.
+    Likewise, seeing a tree does not involve seeing a perceiver.
+    So how is the subject ‘entailed in the act’?
+  .notes: :t()
+    The answer surely involves fact that hearing and seeing typically
+    result in experiences which are perspectival.
+  .notes: :t()
+    When you see a tree or hear a tone, you do so from a point of view.
+    The point of view is not represented, it is not part of what you perceive.
+    But the expeirence is organised around this point of view.
+
++slide
+  +img_clip('two_rotations.png')
+  .notes: :t()
+    We can bring this out by contrasting two types of change:
+    you rotate or an object rotates.
+    Although the two rotations may result in your seeing the same aspect of the
+    object, they involve a different alteration in your expeirence.
+    
+
++slide_middle({bkg:'bad_fairy.jpg'})
+  +hide('img.bkg')
+  .notes: :t()
+    So it seems that some experiences implicitly specify their subjects
+    in virtue of being organised around a point of view.
+    I think this leads to a dilemma.
+  ol
+    li EITHER The implicitly specified perceiver is merely ‘an artefact made by humans’, a consequence of Like You or the attention schema.
+    li.em-above OR Appeal to Like You and an Attention Schema can explain how things become explicit; but they cannot explain the ways in which a subject of awareness is implicitly specified.
+  .slide
+    +show('img.bkg')
+    .notes: :t()
+      Phenomenology is like the bad fairy in cinderella.
+      No one wants to invite her to the party, 
+      but not inviting will only make things worse for you or your daughters.
+
+
+//- --------------------
+
+
+
++slide_middle
+  p.huge-glow-60 Q4
+  p.center.huge-glow-60(style='margin-top:-.7em;line-height:50px') What about  objectivity?
+  .notes: :t()
+    My fourth question is about the idea that expeirence matters for objectivity,
+    the fact that our thoughts and theories can be false.
+
++slide_middle
+  p How am I able to think demonstrative thoughts about this green apple?
+  ol
+    li.em-above Someone described it to me
+    li.em-above 
+      span I have visually expeirenced it
+    li.em-above ...
+  .slide
+    +invert('li:eq(1) span')
+    .notes: :t()
+      How could visual expeirence (say) of an apple enable you to think
+      demonstrative thoughts about it?
+  .slide
+    p.em-above ‘strictly speaking you are not deciding and reporting on the rock itself. You are deciding and reporting on the information constructed in your visual system.’
+    p.right.grey-text Graziano (2013, p. 47)
+    .notes: :t()
+      On Graziano’s view, the answer is that, strictly speaking,
+      visual expeirence does not 
+      enable you think demonstrative thoughts about objects.
+    .notes: :t()
+      And Graziano has to say this because on his theory there is no way that 
+      awareness could enable you to think demonstrative thoughts about an
+      object.  After all, on his view awareness is just another layer of 
+      information processing.
+      I'm less sure how things go on Prinz’ theory, but as far as I can tell
+      this view also can't explain how visual expeirence 
+      enables you think demonstrative thoughts about objects.
+  .slide
+    p.em-above ‘intuition of mental access’ 
+    p.right.grey-text Prinz (2012, p. 201)
+    //- p.em-above ‘to perceive things is to know them’ 
+    //- p.right.grey-text Prinz (2012, p. 199)
+    .notes: :t()
+      I want to focus on the intution, not the fact.
+      It is not a theoretical claim but a feature of commonsense thinking
+      about visual experience that visual experience enables us to 
+      think demonstrative thoughts about objects.
+      Graziano and Prinz can deny that this is a fact, but their theories 
+      need to explain the intuition.
+      So let me ask another question,
+      How can either theory explain the intuition?
+
++slide_middle
+  p.center S + A + X
+  .notes: :t()
+    I think both explain it in roughly the same way.
+    On Michael's view, awareness is modelled as a relation between a subject, S,
+    and a thing, X.
+    So it's clear that I would think of awareness as putting me in touch
+    with X, and so being able to think about it.
+    Likewise, on Prinz’ view, I come to think of myself as having mental states
+    by first ascribing them to others, and in ascribing them to others I am
+    relating others to objects.
+    So again the ‘intuition of mental access’ can be explained even if 
+    the intuition is, strictly speaking, wrong.
+  .notes: :t()
+    But I think these theories explain too much ...
+
++slide_rh_white
+  +run_across
+    p.center Not every experience enables demonstrative thoughts about the thing experienced.
+  +left_half
+    p visual experience of a green apple
+    p auditory experience of a tone
+  +right_half
+    p the sensation of being stung by a nettle
+    p the feeling of someone’s eyes boring into your back
+    p the feeling of familiarity
+    
+  
+
+//- --------------------
+     
++slide_middle
+  p what about ...
+  p.indent us?
+  p.indent kids?
+  p.indent phenomenlogy?
+  p.indent objectivity?
+  .notes: :t()
+    The gist of these questions is this.
+    Let’s stop taking one perspective or aspect of subjective experience 
+    to be primary and trying to construct others. 
+    I suspect that the first-person perspective, phenomenal aspects of 
+    expeirence and the social are all indispensable.
+    What I have learned is not that something is primary, but rather
+    that things typically thought about as narrowly first-person phenomena are
+    actually intrinscially bound up with the social.
+    It's not about deciding what is primary and what is constructed;
+    it's about tracing the ways in which different perspectives are interdependent.
+
+//- --------------------
+     
+    
 +slide_middle
   .notes: :t()
     Graziano’s model is additive in a strong sense.
@@ -85,7 +494,7 @@ include ../../fragments/unit_mixins
     p: :t()
       In that way, the brain 
       computes a larger, composite description of experiencing green.’ 
-  p.right Graziano (2013, p. 20)
+  p.right.grey-text Graziano (2013, p. 20)
   .slide
     +invert('.chunk')
     .notes: :t()
@@ -143,11 +552,11 @@ include ../../fragments/unit_mixins
     p: :t()
       (1) ‘my brain [...] constructs a set of information, A, that allows me to 
       conclude that I am aware of the content [X].’
-    p.right Graziano (2013, p. 70)
+    p.right.grey-text Graziano (2013, p. 70)
   .notes.show.step2
     p: :t()
       (2) ‘awareness is an attention schema.’
-    p.right Graziano (2013, p. 69)
+    p.right.grey-text Graziano (2013, p. 69)
     .notes: :t()
   .notes: :t()
     It is striking that children’s understanding of awareness appears to 
@@ -163,12 +572,25 @@ include ../../fragments/unit_mixins
     Consequence of Graziano's theory is that these changes should be reflected
     in the nature of children’s awareness.
 
-+slide_middle
-  p: :t()
-    ‘there is no subjective feeling ... [i]nstead, there is a description of 
-    having a feeling’
-  p.right Graziano (2013, pp. 21-2)
 
+
+
+
+  
+
+
++slide_middle
+  p.center.notes.show S + A + X
+  .notes: :t()
+    Experience involves a subject, S, being aware, A, of a thing, X.
+    Roughly speaking, 
+    Prinz focusses on the subject of experience, S,
+    and Graziano about the awareness, A, the thing in the middle.
+    (Graziano says his theory is about the thing that ‘lies between the “I” and 
+    the “X,”’ (p. 30)).
+    I want to start with two questions about the X, the first for Graziano
+    and the second for Prinz.
+    
   
 // the question
 //- +insert_unit({unit:'001', title_slide:false, images:images, handout:true})
