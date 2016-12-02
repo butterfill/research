@@ -1,0 +1,209 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Kourtis et al (2014) | A Talk</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="della_gatta_drawing_together" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Kourtis et al (2014)</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section style="" class="slide"><img src="/img/della_gatta_design.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">della Gatta et al (submitted)</p>
+        <div class="notes">To test this conjecture, Corrado Sinigaglia and I teamed up with
+Francesco della Gatta, Francesca Garbarini and Marco Rabuffetti. 
+We adapted a bimanual paradigm, the circle-line drawing paradigm, which has been 
+extensively employed for investigating bimanual interference (Franz et al, 1991).
+        </div>
+        <div class="notes">When people have to simultaneously perform noncongruent movements, 
+such as drawing lines with one hand while drawing circles with the 
+other hand, each movement interferes with the other and line trajectories 
+tend to become ovalized. This “ovalization” has been described as a \textbf{bimanual coupling effect}, 
+suggesting that motor representations for drawing circles can affect motor representations 
+for drawing lines (Garbarini et al. 2012; 2013a; 2015a; 2015b; Garbarini and Pia 2013; 
+Piedimonte et al. 2014).
+        </div>
+        <div class="notes">In the key conditions of our adapted version of the circle-line drawing paradigm, 
+participants were asked to unimanually draw circles with their right hands 
+while observing either lines being unimanually drawn by a confederate (Garbarini et al, 2013b; 
+Garbarini et al, 2016).
+        </div>
+        <div class="notes">We contrasted a Parallel Action task with a Joint Action task. 
+These tasks differed only in the instructions given.
+        </div>
+        <div class="notes">In the Joint Action task participants were instructed to perform the task 
+together with the confederate, as if their two drawing hands gave shape to a single design.
+        </div>
+        <div class="notes">In the Parallel Action task, participants were given no such instruction so that 
+they could draw in parallel, observing each other but not acting together.
+        </div>
+        <div class="notes">If participants were to follow our instructions, their actions would have 
+the collective goal of drawing a circle and a line in the Joint Action task but not in 
+the Parallel Task.
+        </div>
+        <div class="notes">Our conjecture entails that this collective goal could be represented motorically. 
+Accordingly, we predicted that there should be an interpersonal motor coupling effect. 
+This would result in greater ovalization of the lines drawn in the Joint Action task 
+than in the Parallel Action task ...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">And that was actually what we found.
+        </div>
+        <div class="notes">Our hypothesis is that interpersonal motor coupling may occur when an individual is acting unimanually, providing she is acting jointly with another and not merely acting in parallel. This is because in joint action, but not in parallel action, an individual could represent motorically the collective goal of drawing both a circle and a line even if she is actually only drawing a line. Somewhat as in the case of individual bimanual action, so also in joint action: the motor representations of one hand’s drawing can influence the motor representations of the other hand’s drawing.  One difference in joint action, of course, is that the hands belong to different individuals.
+        </div><img src="/img/della_gatta_fig.png" style=""/>
+        <p class="source">della Gatta et al (submitted)</p>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

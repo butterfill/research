@@ -1,0 +1,475 @@
+//-
+//- unit_mixins version 0.2
+//- upgrading from slide_mixins:
+//-  - remove recall and unrecall (use the new slide-clone plugin instead)
+//-  - replace showhide and showremove with show_ hide_ etc
+//-  - replace row-bkg with highlight-row etc
+//-  - replace words-bkg with highlight
+//-  [get around all of these using compatibility_mixins]
+//- depreciated features:
+//-  - don't use arrays as parameters to animations, only strings
+
+//- make a range of numbers, from http://stackoverflow.com/questions/3746725/create-a-javascript-array-containing-1-n/3748833#3748833
+- function range(start, end) {
+-     var foo = [];
+-     for (var i = start; i <= end; i++) {
+-         foo.push(i);
+-     }
+-     return foo;
+- }
+
+
+
+//- -------------
+//- mixins to create slides
+//- -------------
+
+mixin _photo(p)
+  if ('photo' in p)
+    .photobox-bottom-right
+      img.photo-right(src="/img/#{p.photo}")
+        
+mixin _slide_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode:"+p.blend
+  if ('bkg' in p)
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
+  +_photo(p)
+  .words(style="#{p.style}")
+    .container_12: .grid_12
+      block
+
+mixin slide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('id' in p)
+    section.slide(id="#{p.id}", style="#{p.style}")
+      +_slide_inner(p)
+        block
+  else
+    section.slide(style="#{p.style}")
+      +_slide_inner(p)
+        block
+    
+    
+mixin middle(p)
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode: "+p.blend+";"
+  .container_12(style="#{p.style}")
+    - var width = 12;
+    if typeof(p) === 'undefined'
+      - p = {}
+    if ('width' in p)
+      width = p.width
+    div(class="grid_#{width} #{width<12 ? 'push_'+((12-width)/2) : ''}")
+      .words: .middle
+        block
+
+mixin _slide_middle_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('style' in p)
+    - p.style = ''
+  - bkgStyle = ''
+  if ('bkg' in p)
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
+  +_photo(p)
+  +middle(p)
+    block
+
+mixin slide_middle(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('id' in p)
+    section.slide(id="#{p.id}", style="#{p.style}")
+      +_slide_middle_inner(p)
+        block
+  else
+    section.slide(style="#{p.style}")
+      +_slide_middle_inner(p)
+        block
+
+
+//- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
+mixin slide_img(filename)
+  section.slide
+    img.bkg(src='/img/#{filename}')
+    block
+
+//- reset a slide
+mixin slide_reset()
+  .slide(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+    block
+mixin reset()
+  div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
+    block
+mixin reset-escape-inner()
+  div(style='position: absolute; top:-40px; left:-50px; width:800px; height:600px')
+    block
+mixin clear-slide()
+  div(style='position: absolute; top:0; left:0; width:100%; height:100%;').background-color
+    block
+mixin clear-slide-escape-inner()
+  div(style='position: absolute; top:-40px; left:-50px; width:800px; height:600px').background-color
+    block
+mixin clear-slide-escape-inner-rh-white()
+  div(style='position: absolute; top:0px; left:0px; width:800px; height:600px').background-color
+    block
+
+//- This sequence creates rh_white slides
+mixin left_half()
+  .grid_6.words.left-half
+    div(style='padding-right:1em;')
+      block
+
+mixin left_half_lh_white()
+  .grid_6.words.invert.left-half
+    div(style='padding-right:1em;')
+      block
+
+mixin right_half(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
+    div(style='padding-left:1em;')
+      if p.step
+        .slide
+          +show('.right-half-white, .right-half')
+          block
+      else
+        block
+
+mixin right_half_lh_white(p)
+  - p = p || {step:false}
+  .grid_6.words.right-half(class="#{ p.step ? 'hide' : '' }")
+    div(style='padding-left:1em;')
+      if p.step
+        +show('.right-half-white, .right-half')
+      block
+
+mixin run_across()
+  .clear
+  //- .container_12: .grid_12: .words
+  .words.run-across
+    block
+  .container_12
+mixin slide_rh_white(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  section.slide
+    .right-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .container_12
+      block
+
+mixin slide_lh_white(p)
+  - p = p || {step:false}
+  section.slide
+    .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .container_12
+      block
+            
+      
+//- create a sequence of slides from a list of images
+mixin slides_from_img(filenames)
+  each filename in filenames
+    .slide.nodim
+      img.bkg.nodim(src="/img/#{filename}")
+
+//- create a sequence of slides from images in a folder
+//- nb: this will work *only* if img files for unit are in files/ rather than raw/ directory!
+mixin slides_from_img_folder(folder_name)
+  each f in getFilesAtPath('img/'+folder_name+'/',[{basename:1}]).toJSON()
+    section.slide
+      img(src=f.url)
+
+//- render images associated with a unit as slides
+mixin display_images_as_slides(unit)
+  +slides_from_img_folder(unit.basename)
+
+
+
+
+
+//- -------------
+//- mixins to create elements
+//- -------------
+
+mixin img(filename,style)
+  if typeof(style) === 'undefined'
+    - style = ''
+  img(src='/img/#{filename}',style=style)
+
+//- see also +clip to modify the clip as an animation
+mixin img_clip(filename, theClip)
+  if typeof(theClip) === 'undefined'
+    - theClip = 'auto' //- i.e. no clip
+  div(style='position:relative;')
+    img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
+
+
+mixin question_mark(p)
+  - p = p || {}
+  - p.marginTop = p.marginTop || '-150px'
+  div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:#{p.marginTop};")
+    p.center.question-mark.huge-glow(style="font-size:300px")  ?
+
+
+mixin colour-box(colour, size)
+  .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;")
+    block
+
+mixin colour-ball(colour, size)
+  .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;border-radius:50%;")
+    block
+
+
+
+//- -------------
+//- animations: show, hide, blur, steps, ... 
+//- -------------
+
+//- anim core
+//- -------------
+
+
+mixin add-class(what, cls)
+  .dv.dv-addclass(data-what='#{what}', data-cls='#{cls}')
+
+mixin remove-class(what, cls)
+  .dv.dv-removeclass(data-what='#{what}', data-cls='#{cls}')
+  
+//- modify a html attribute (e.g. src on an img element)
+mixin attr(what, theAttr, theValue)
+  .dv.dv-attr(data-what='#{what}', data-attr='#{theAttr}',  data-value='#{theValue}')
+
+// param @cls and param @options should be objects
+mixin anim(what, theCSS, options)
+  - theCSS_str = JSON.stringify(theCSS)
+  - options_str = ''
+  if options
+    - options_str = JSON.stringify(options)
+  .dv.dv-velocity(data-what='#{what}', data-css='#{theCSS_str}', data-options='#{options_str}')
+
+//- edit inline style
+mixin style(what, theCSS)
+  - theCSS_str = JSON.stringify(theCSS)
+  .dv.dv-style(data-what='#{what}', data-css='#{theCSS_str}')
+
+
+
+//- draw a connector between elements
+mixin connect(p)
+  if !('fromAnchor' in p)
+    - p. fromAnchor = 'LeftMiddle'
+  if !('toAnchor' in p)
+    - p.toAnchor = "RightMiddle"    
+  if !('color' in p)
+    - p.color = 'hotpink'
+  .dv.dv-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor}",data-to-anchor='#{p.toAnchor}',data-color="#{p.color}")
+
+
+
+//- anim convenience
+//- -------------
+
+
+
+//- clip an image
+mixin clip(what, theClip)
+  if typeof(theClip) === 'undefined'
+    - theClip = 'auto'
+  +style(what, {"clip":theClip})
+
+
+mixin blur(what, amount, duration)
+  if typeof(amount) === 'undefined'
+    - amount = '2px'
+  if typeof(duration) === 'undefined'
+    - duration = 500
+  +anim(what, {"blur":amount}, {duration:duration})
+
+mixin unblur(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {"blur":0}, {duration:duration})
+
+
+
+mixin line-through(what)
+  +style(what, {"text-decoration":"line-through"})
+
+
+//- show something(s)
+//- param what is a string or an array of jquery identifiers
+//- param scope (optional) is a seclector that specifies where to look for the what
+mixin show(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1}, {visibility:'visible', duration:duration})
+  
+mixin hide(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0}, {visibility:'hidden', duration:duration})
+
+mixin collapse(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0,"font-size":0}, {display:'none',duration:duration})
+
+mixin uncollapse(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1,"font-size":'100%'}, {display:'auto',duration:duration})
+
+
+
+mixin remove(what)
+  +add-class(what, "remove-me")
+
+mixin unremove(what)
+  +remove-class(what, "remove-me")
+
+
+
+mixin fade(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0.5},{duration:duration})
+
+mixin unfade(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1},{duration:duration})
+
+
+
+mixin blurfade(what, amount, duration)
+  if typeof(amount) === 'undefined'
+    - amount = '1.5px'
+  if typeof(duration) === 'undefined'
+    - duration = 500
+  +anim(what, {"blur":amount,opacity:0.6}, {duration:duration})
+
+//- ******************
+//- invert and highlight
+
+
+mixin invert(what, duration)
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what,"bkg-invert")
+
+mixin uninvert(what)
+  +remove-class(what,"bkg-invert")
+
+//- duration can only be 0 or 0.4s
+mixin highlight(what, color, duration)
+  if typeof(color) === 'undefined'
+    - color = 'pink'
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what, "bkg-"+color)
+
+//- should've named these better
+mixin unhighlight(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'pink'
+  +remove-class(what, "bkg-"+color)
+
+mixin unhighlight-all(what)
+  +remove-class(what, "bkg-*")
+
+
+mixin flash(what, color, duration)
+  if typeof(color) === 'undefined'
+    - color = 'rgba(255, 111, 207,0.66)'
+  if typeof(duration) === 'undefined'
+    - duration = 1000
+  +style(what, {"box-shadow": "0 0 8px 8px "+color, "background-color":color,'border-radius':'5px'})
+  +anim(what, {boxShadowBlur:400, backgroundColorAlpha:0},{duration:duration})
+  +anim(what, {"boxShadowSpread":"0",'border-radius':'0'},{duration:0})
+
+mixin glow(what, duration)
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what, 'glow-border')
+
+mixin unglow(what)
+  +remove-class(what, "glow-border")
+
+
+
+//- ********************
+//- row highlighting
+
+
+mixin highlight-row(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
+  - cls = "bkg-"+color+"-row "+ (color=='white' ? invert : '')
+  +add-class(what, cls)
+
+mixin unhighlight-row(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
+  - cls = "bkg-"+color+"-row "+ (color=='white' ? invert : '')
+  +remove-class(what, cls)
+
+
+
+
+
+
+
+//- ----------
+//- a simple timer; use as part of a slide
+//- param duration can be 30s, 60s, 120s etc see steve_deck_style.css.styl
+//- use like this
+//-   +slide_middle
+//-     +timer-element('timer1','60s')
+//-     p.center some text in the timer
+//-   +start-timer('timer1')
+//- ----------
+
+mixin timer-element(id, duration, p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('hide' in p)
+    - p.hide = false
+  .timer-outer(id='#{id}')
+    .timer.center(class="timer-#{duration} #{p.hide ? 'hide' : ''}")
+      .mask
+    div(class='timer-#{duration}-block-wrapper')
+      div(class='timer-#{duration}-block')
+        block
+
+mixin show-timer(id)
+  .slide
+    +show("#"+id+" .timer")
+
+mixin start-timer(id)
+  .slide
+    +show("#"+id+" .timer.hide",0)
+    +add-class("#"+id+" .timer", "running")
+

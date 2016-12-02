@@ -1,0 +1,48 @@
+.deck-menu .slide {
+  position: relative;
+  left: 0;
+  top: 0;
+  visibility: visible;
+  cursor: pointer;
+  min-height: 0;
+}
+.no-csstransforms .deck-menu > .slide {
+  float: left;
+  width: 22%;
+  height: 22%;
+  min-height: 0;
+  margin: 1%;
+  font-size: 0.22em;
+  overflow: hidden;
+  padding: 0 0.5%;
+}
+.csstransforms .deck-menu > .slide {
+  -webkit-transform: scale(0.35) !important;
+  -moz-transform: scale(0.30) !important;
+  -o-transform: scale(0.30) !important;
+  -ms-transform: scale(0.30) !important;
+  transform: scale(0.30) !important;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.deck-menu iframe, .deck-menu img, .deck-menu video {
+  max-width: 100%;
+}
+.deck-menu .deck-current, .no-touch .deck-menu .slide:hover {
+  background: #ddf;
+}
+.deck-menu.deck-container:hover .deck-prev-link, .deck-menu.deck-container:hover .deck-next-link {
+  display: none;
+}
+
+.deck-menu.deck-container {
+  overflow: auto;
+  background: grey;
+}
