@@ -1,0 +1,21 @@
+Note to self (and mention to David if he comes back): This is not quite correct.  See:
+ 
+Bruno, Nicola, and Volker H. Franz. “When Is Grasping Affected by the Müller-Lyer Illusion?: A Quantitative Review.” Neuropsychologia, Perception and Action, 47, no. 6 (2009): 1421–33. doi:10.1016/j.neuropsychologia.2008.10.031.
+
+They argue that Glover & Dixon's model is incorrect, at least for grasping (pointing is a different story), because it predicts that the presence or absence of visual information during grasping shouldn't matter. But it does.
+
+
+S.
+
+On 10 November 2014 at 12:06, Stephen Butterfill <s.butterfill@warwick.ac.uk> wrote:
+
+Hi David,
+
+It was terrific to meet you in Magdeburg, many thanks for spending so much time in discussion!  I promised to send you a couple of papers about the effects of visual illusion on action --- the idea is that some visual illusions affect planning prior to initiating action but not the ongoing control of action; this explains apparently conflicting earlier findings.  These are the  Glover / Glover & Dickinson papers.
+
+The view appears to be supported by the Bruno & Franz metastudy of action and visual measures in the Mueller-Lyre illusion.
+
+I'm not sure exactly why we were talking about this on Saturday night but I think it might have been in connection with the question, How does information about others' mental states influence action in your helping paradigms?  I thought maybe the distinction here might provide inspiration, although it surely won't fit exactly.
+
+best wishes,
+Steve

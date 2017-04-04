@@ -1,0 +1,261 @@
+page 19
+awareness is information
+--- ∞discussion
+
+page 20
+awareness is described by the brain rather than produced by the brain
+
+page 20
+awareness is described by the brain rather than produced by the brain
+--- ∞discussion
+
+page 20
+Suppose that you are looking at a green object and have a conscious experience of greenness. In the view that I am suggesting, the brain contains a chunk of information that describes the state of experiencing, and it contains a chunk of information that describes spectral green. Those two chunks are bound together. In that way, the brain computes a larger, composite description of experiencing green.
+
+page 20
+there is no subjective feeling inside
+--- ∞discussion
+
+page 21
+Instead, there is a description of having a feeling and a computed certainty that the description is accurate and not merely a description.
+ ∞discussion
+
+page 21
+the property of awareness is another such computed feature, a description, a chunk of information, that can be bound to the larger object file.
+
+page 22
+awareness is information; it is a description; it is a description of the experiencing of something; and it is a perception-like feature, in the sense that it can be bound to other features to help form an overarching description of an object.
+
+page 22
+awareness is information
+
+page 22
+there is no other way for an information-processing device, such as a brain, to conclude that it has a conscious experience attached to an apple.
+
+page 22
+there is no other way for an information-processing device, such as a brain, to conclude that it has a conscious experience attached to an apple.
+--- ∞discussion but is this about knowledge of awareness or the awareness itself?
+
+page 23
+What real or useful property might be represented by this strange chunk of information that describes the state of being aware?
+
+page 23
+Awareness is a description of attention.
+
+page 23
+attention as a data-handling method in the brain. From now on, when I use the term attention, I will mean it in this technical, neuroscience sense.
+
+page 25
+Attention is not data encoded in the brain; it is a data-handling method. It is an act. It is something the brain does, a procedure, an emergent process.
+
+page 25
+in addition to doing attention, the brain also constructs a description of attention, a quick sketch of it so to speak, and awareness is that description.
+
+page 25
+awareness is an attention schema. It is not attention but rather a simplified, useful description of attention. Awareness allows the brain to understand attention, its dynamics, and its consequences.
+
+page 25
+awareness is handled by the brain like color. Awareness and color are computed features. They are representations. They represent something physically real—wavelength in the case of color, attention in the case of awareness.
+
+page 27
+At any moment in time, the information that is attended usually matches the information that reaches awareness. In some situations they can be separated.10,11,14–16 It is possible to attend to a visual image by all behavioral measures, processing the picture in depth and even responding to it, while being unaware of it. Because attention and awareness can be dissociated, we know that they are not the same thing. But mismatches between them are rare. Awareness is evidently a close but imperfect indicator of attention.
+
+page 28
+the brain constructs a model of the attentional process. That model involves some physically nonsensical properties: an ethereal thing like plasma vaguely localizable to the space inside us, an experience that is intangible, a feeling that has no physicality. Here I am proposing that those nonphysical properties and other common properties ascribed to awareness are schematic, approximate descriptions of a real physical process. The physical process being modeled is something mechanistic and complicated and neuronal, a process of signal enhancement, the process of attention.
+
+page 30
+awareness itself does not arise from the information about which you are aware, and it is not your knowledge that you, in particular, are aware of it. It is instead your rich descriptive model of the relationship between an agent and the information being attended by the agent.
+
+page 30
+awareness itself does not arise from the information about which you are aware, and it is not your knowledge that you, in particular, are aware of it. It is instead your rich descriptive model of the relationship between an agent and the information being attended by the agent.
+--- ∞discussion
+
+page 30
+I do not mean to deny the importance of the other components. They are a part of consciousness. But awareness itself, the essence of awareness, I propose to be specifically the piece in the middle: the attention schema.
+
+page 33
+the three key properties predicted by the attention schema theory. First, these areas are recruited during social perception. Second, they track one’s own state of attention. Third, damage to them leads to a devastating clinical disruption of awareness. Each of these three properties was discovered and studied separately, and the collision of the three properties in one region of the brain has caused some controversy. How can such diverse, seemingly unrelated properties be reconciled? The attention schema theory may help to solve the riddle by fitting the many results into a single framework.
+
+page 34
+awareness is a constructed feature.
+
+page 35
+the brain constructs a description of inner experience, not the item itself.
+
+page 37
+the attention schema is a case of a description that helps make it so
+
+page 37
+the attention schema is a case of a description that helps make it so. Not only does the attention schema provide the brain with a descriptive model of attention, but the description itself must help to direct attention and thereby to direct behavior.
+
+page 39
+you have a conscious experience of greenness. You are, of course, aware of other features of the apple, such as its shape and smell, but for the moment let us focus on the particular conscious sensation of greenness.
+
+page 40
+much more can be learned about awareness by considering Arrow B than by considering Arrow A
+
+page 44
+But we can also decide that we have, within us, conscious experience of those things. Whatever the specific property of awareness may be, it is something that a brain can detect. We can decide that we have it.
+
+page 44
+But we can also decide that we have, within us, conscious experience of those things. Whatever the specific property of awareness may be, it is something that a brain can detect. We can decide that we have it.
+--- ∞discussion
+
+page 45
+you can decide whether you have, inside of you, an awareness of something.
+
+page 47
+Yet strictly speaking you are not deciding and reporting on the rock itself. You are deciding and reporting on the information constructed in your visual system.
+
+page 49
+The thing to which the brain has cognitive access, and therefore the thing we describe when we report on awareness, is not Item I but rather the brain’s informational depiction of it, Item II. The properties that we attribute to awareness are properties depicted in Item II.
+
+page 50
+Following the same logic, we should look for a physical, objectively measurable item that is almost always present when people report the presence of awareness. There is such an item, a physiological process in the brain, the process of attention. Almost uniformly, when you attend to an item, you report being aware of it.
+
+page 50
+Awareness and attention are therefore not the same, given that they can be separated. But they are typically associated.
+
+page 50
+For this reason, I argue that attention is Item I, the real physical item, a physical process, and awareness is Item II, the informational representation of it.
+
+page 50
+For this reason, I argue that attention is Item I, the real physical item, a physical process, and awareness is Item II, the informational representation of it.
+--- so the argument is based on an association
+
+page 51
+Awareness, in contrast, is accessible as explicit knowledge. The brain does attention but knows awareness.
+
+page 51
+Awareness, in contrast, is accessible as explicit knowledge. The brain does attention but knows awareness.
+--- Does this show we're missing phenomenal awareness?
+
+page 52
+The key to understanding the attention schema theory is to understand the distinction between the Item I being represented and the Item II that represents it.
+
+page 53
+I mistaking awareness itself for the abstract knowledge that we have it? This chapter considers the distinction between being aware of something and knowing that you are aware of it.
+
+page 57
+The attention schema theory does not even seek to answer the question of its existential reality but instead tries to describe what is constructed by the brain. One could think of awareness as information. One could also think of it as the lovely ghost described by that information.
+
+page 59
+It can be bound to a representation of an object as though it were another sensory attribute like color or motion.
+
+page 60
+awareness is a model of attention
+
+page 61
+attention is a process by which a brain seizes on a signal, focuses its intelligent computation on that signal, processes the signal in a deep manner, has its cognitive machinery driven by that signal, and tends to control behavior on the basis of that signal.
+
+page 62
+to predict and therefore effectively interact with an intelligent brain-controlled agent, it is useful to construct and constantly update a model of the shifting state of that agent’s attention.
+
+page 67
+we seem to use our model of a body, of the normal physical structure and movement of the human body, to evaluate the state of other people’s bodies. In this sense, the body schema can act like a general perceptual engine. It can be used to model oneself or to model the bodies of others.
+
+page 68
+The attention schema theory goes beyond robotics, beyond control theory, beyond the specific goal of regulating this or that internal parameter. I am suggesting that the attention schema has a more general role in understanding, predicting, and guiding behavior. It is a sophisticated model of one of the most fundamental aspects of brain function. It can be used to understand one’s own and other people’s mind states, to understand the dynamics of shifting attention and shifting thought, to understand and predict decisions, to understand and predict actions.
+
+page 69
+The theory proposed in this book can be summarized in five words: awareness is an attention schema.
+
+page 69
+A schema is an informational model, constantly recomputed, that represents something worth tracking and predicting.
+
+page 70
+What is the information that defines awareness itself? What is in the information set A?
+
+page 71
+The out-of-body illusion therefore reveals something quite specific about the information set, A, that defines awareness. That information set must include spatial information. Awareness is computed to be a thing Illusions and Myths | 7 1 72 | CONSCIOUSNESS AND THE SOCIAL BRAIN that exists roughly here, at this or that location. The location is not so precisely defined as a point in space. Instead it is vaguely inside the body, usually inside the head.
+
+page 71
+the out-of-body experience can be induced reliably in a laboratory by putting people in a highly controlled, virtual-reality environment and by manipulating visual feedback and somatosensory feedback.2,3 People can be made to feel as though they are floating in empty space or even as though they were magically transported to a location inside of another body. The self feels as though it is somewhere other than inside one’s proper body.
+
+page 71
+The out-of-body illusion highlights a specific property of awareness: awareness comes with a computed spatial arrangement.
+
+page 72
+that exists roughly here, at this or that location. The location is not so precisely defined as a point in space. Instead it is vaguely inside the body, usually inside the head.
+
+page 73
+when computing someone else’s attentional state, we do not merely construct the abstract proposition “Person X is attending to thing Y.” It is not solely higher-order cognition or higher-order thought. We construct a rich perception-like model that includes a spatial embodiment.
+
+page 73
+Indeed, we may know cognitively, with our higher-order thought, that nobody else is present and yet still have that creepy impression.
+
+page 76
+We are primed to perceive human awareness in this manner, as an energy-like plasma that can flow from person to person, because our perceptual machinery naturally constructs that type of model.
+
+page 80
+this myth so ubiquitous in human culture is not a mistaken belief, a naïve theory, or the result of superstitious ignorance, as many scientists would claim. It is instead a verbalization of a naturally occurring informational model in the human brain.
+
+page 80
+this myth so ubiquitous in human culture is not a mistaken belief, a naïve theory, or the result of superstitious ignorance, as many scientists would claim. It is instead a verbalization of a naturally occurring informational model in the human brain.
+--- the myth is the myth of consciousness as something that flows out from the subject and can move objects.
+
+page 81
+the model is nonetheless useful because it keeps track of the essential dynamics and the behavioral consequences of attention
+
+page 84
+Can the same dissociation be demonstrated in the social realm? Is it possible to perceive awareness to be present in a source that, cognitively, you know is incapable of it?
+
+page 85
+Puppetry therefore nicely illustrates three points. First, we construct models of other minds. Second, along with many other aspects of mind, we attribute the property of awareness to other people. Third, that model of awareness that we construct and attribute to somebody else is more perceptual in nature than cognitive.
+
+page 94
+In the attention schema theory, the human brain constructs a model of what it means to pay attention to something.
+
+page 97
+Your knowledge about attention is implicit. You understand the dynamics of attention intuitively. You can even guess Bill’s likely reactions. Whatever his actions will be, they will be driven by the tiger, not the spilled coffee. He is unlikely to kneel down and help John mop up the spill. He is more likely to run.
+
+page 97
+Your implicit understanding of attention includes a rather sophisticated grasp of its competitive dynamics and an understanding of how attention affects behavior.
+
+page 99
+Yet why does your own awareness come with such internal vividness, whereas the awareness you attribute to someone else is so much dimmer?
+
+page 99
+you do not reconstruct his vivid consciousness of green in the same way that you construct your own. You do not feel privy to John’s experience.
+
+page 110
+The information “I am aware of X” is an integration of all three components: S + A + X.
+
+page 110
+The information “I am aware of X” is an integration of all three components: S + A + X.
+--- ∞discussion.  Key point here is that the mode of awareness is missing!
+
+page 116
+The theory is easily summarized. The brain uses a data-handling method, a common way in which signals interact, a process that neuroscientists call attention. The brain also constructs a constantly updated sketch, a schema, a rough model to describe that process of attention. That model is awareness. Because it is information, it is reportable. We can say that we have it. We can introspect and decide that we have it.
+
+page 120
+the social approach and the integrated information approach, have little resemblance to each other. In some ways they are rivals. Each one has its advantages and its weaknesses. Yet in many ways they are both precursors to the present theory. The attention schema theory could be viewed as a way of drawing on the strengths of these two previous hypotheses while avoiding their weaknesses
+
+page 123
+The idea of the social construction of consciousness, that consciousness depends on high-level social cognition, or on people building up an understanding of how minds work, or on people thinking about thinking, has been elaborated and extended by many researchers.
+
+page 124
+The attention schema theory could be seen as a type of social theory of consciousness. The brain constructs a description or model of awareness and attributes it to other people. The same machinery also attributes awareness to oneself.
+
+page 130
+Social theories of consciousness suffer from precisely this failing. In these theories, the brain constructs information about the self. Your brain invents a narrative in which you are feeling this emotion, your reasons are that, your beliefs are the other. But how do you become aware of that information? Granted that you develop narratives to explain your own behavior, how do you become aware of the information contained in those narratives?
+
+page 131
+the only thing we know about awareness for certain is that we can at least sometimes decide that we have it and report that we have it. Only information can provide grist to the machinery of decision-making and reporting. Therefore, logically, awareness is information.
+
+page 131
+the only thing we know about awareness for certain is that we can at least sometimes decide that we have it and report that we have it. Only information can provide grist to the machinery of decision-making and reporting. Therefore, logically, awareness is information.
+--- ∞discussion; nice summary of the argument.  (Note that the claim that awareness is information gets nuanced on p. 57)
+
+page 132
+In the social theories of consciousness, humans developed an ability to understand other people’s minds. Once having gained that special machinery, we then evolved or learned the ability to turn it on ourselves, and in that way gained self-understanding.
+
+page 132
+Which came first, the ability to understand other people’s minds, or the ability to understand one’s own mind? The attention schema theory is agnostic on the question of which came first.
+
+page 135
+this type of theory does a poor job of explaining consciousness. It explains a type of knowledge while saying nothing about awareness itself. It is limited to self-knowledge and says nothing about knowledge of external information such as color or sound.
+
+page 135
+The theory is not merely about self-knowledge but about awareness itself. It is about the knower, not just the known.
+

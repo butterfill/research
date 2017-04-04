@@ -1,0 +1,20 @@
+Dear Pavel,
+
+Sorry for the slow reply ... last week was a busy week for me one way and another.
+
+The simple reply to your suggestions is this: I want to allow for the possibility of more minimal forms of joint action than you allow (in line with the Vesper et al 'minimalist architecture' paper from 2010).
+
+To get down to detail, there are three things we're discussing.  (1) When one or more agents act, what is the relation between their action and the outcome or outcomes to which it is directed?  (2) How do observers identify the goals to which joint actions are directed?   And, (3) When an agent is involved in a joint action, what (if anything) must she know and intend?
+
+On (1), the generalised Principle of Rationality is one answer.  (As you might suspect, I think there is more than one correct answer to this question; but that doesn't matter here.)  The first version of the Principle states that "One or more actions, <a1, a2, ... an>, can be explained by a goal state if, and only if, they are seen as the most justifiable action towards that goal state that are available to agents S1, S2 ... Sn within the constraints of reality."  I think don't this entails that each agent intends to achieve her goal by means of a joint action, or even that the agent has any intention at all.  I also want to be cautious on the step from: (i) our actions a1, a2, ... an are together directed to a particular outcome to: (ii) each of our actions a1, a2 ... an is individually directed to that outcome.  (If we took the Principle of Rationality to be the whole truth about the relation between actions and the outcomes to which they are directed, there would be lots of cases where (i) is true but (ii) is false.  This is because our actions <a1, a2, ... an> can be the most justifiable action towards outcome G without it being the case that my action, a1, is the most justifiable action towards outcome G.  In fact we need the generalised Principle of Rationality because there are some joint actions where the original Principle yields no goal or an incorrect goal because there is no most justifiable action towards the outcome to which the joint action is in fact directed.)
+
+On (2), the Principle of Rationality can be converted into an inference that might be used to identify the goals of others' joint actions.   You write that "This model ... incorporates the principles (i) your goal is my goal; and (ii) ‘you intend to achieve your goal by means of our joint action’."  I don't think this is right.  You can see why from the above comments.  But this also makes sense given the background.  Just as the original Principle of Rationality is neutral on what the agent intends, so likewise is the generalised version.
+
+On (3), it seems to me that the Principle of Rationality  doesn't directly help.  After all, it involves taking the perspective of an outsider.  So I was thinking of our earlier discussion as quite separate from the new thing about the Principle.
+
+Relatedly I'm still thinking about your one-sided vs. reciprocal distinction with the two soldiers.  Let's talk about this.
+
+best wishes,
+Steve
+
+

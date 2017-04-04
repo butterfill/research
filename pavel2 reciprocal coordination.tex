@@ -1,0 +1,63 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\def \papersize {letterpaper}  %a4paper
+
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {}
+\def \isubtitle {}
+\def \iauthor {}
+\def \iemail{}
+%for anonymous submisison
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+\input{$HOME/Documents/submissions/preamble_steve_paper3}
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{newapa} %apalike
+
+%these two lines are for anonymous submission --- they remove author and date
+%but don't forget to remove defs above as well --- otherwise it will be in the metadata
+\author{}
+\date{}
+
+
+%\maketitle
+%\tableofcontents
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%\begin{abstract}
+%\noindent
+%\end{abstract}
+
+
+
+\section{One-sided vs. reciprocal coordination}
+In one-sided coordination, an agent attempts to coordinate her actions with those of another.
+In reciprocal coordination, for herself and some particular other agents, an agent attempts to make it the case that their actions are coordinated.
+
+%When an agent is engaged in reciprocal coordination, she might attempt to make her own actions more predictable so that the other agent can better coordinate with her.
+
+Is the key difference we are after that in reciprocal coordination the agent takes the target with which she is trying coordinate to be an agent?
+No.
+
+I've lost track of exactly what we want.  
+I think it's related to the difference between: (i) there being a goal which we each individually attempt to bring about, taking into account predictions about the other's actions; and (ii) there being a goal which we attempt to achieve by each considering what we need to do in order to bring it about.
+
+
+
+
+
+\small
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{document}

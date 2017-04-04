@@ -1,0 +1,91 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\def \papersize {letterpaper}  %a4paper
+
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {}
+\def \isubtitle {}
+\def \iauthor {}
+\def \iemail{}
+%for anonymous submisison
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+\input{$HOME/Documents/submissions/preamble_steve_paper3}
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{newapa} %apalike
+
+%these two lines are for anonymous submission --- they remove author and date
+%but don't forget to remove defs above as well --- otherwise it will be in the metadata
+\author{}
+\date{}
+
+
+%\maketitle
+%\tableofcontents
+
+% disables chapter, section and subsection numbering
+%\setcounter{secnumdepth}{-1} 
+
+%\begin{abstract}
+%\noindent
+%\end{abstract}
+
+\subsection{`Something  can be either intentional or not, and not intentional in this case means emergent.'}
+
+If we define emergent as `not intentional' then your claim that between intentional and emergent coordination `there's nothing there' becomes merely terminological.  So I don't think you meant that.
+
+Some definitions, which I'm not entirely happy with but I was relying on on Wednesday:
+\begin{quote}
+In intentional coordination, agents not only intend to achieve a certain outcome but also intend to coordinate their plans and activities with each other.  Typically they realise these latter intentions at least in part by reasoning or communicating about how best to act together.  (Later you distinguish a case where each of two agents intends her actions to be coordinated with those of the other agent from a case where each agent intends that both of their actions be coordinated.  This is surely an important distinction but I don't think it matters for present purposes.)
+
+In emergent coordination, coordinated behaviour occurs due to perception-action couplings that make multiple individuals act in similar ways.  Two separate agents may start to act as a single coordinated entity because their bodies are physically coupled or because common processes in the individual agents are driven by the same cues and motor routines. 
+\end{quote}
+
+\subsection{Related distinction}
+There's a similar but different distinction.  What could agents represent that would enable them to coordinate their actions?  One possibility: their own and others' intentions.  Another possibility: nothing (emergent coordination).  Our question about whether there's anything in between is then whether there is anything else that agents could represent that would enable them to coordinate their actions.
+
+
+\subsection{`imagine we're two soldiers in the army and are given a common task to dig a hole ... we do not want to talk to each other ... I observe your working temp and try to work in a counter-phase. So the same you do. As a result we have an emergent coordination resulting from a two-way accommodation process.'}
+
+Nice example!  I take it that this is a case of intentional coordination in that we each try to work in counter-phase and we are able to implement this intention (more or less successfully).  But why do you say it emergent coordination?  Is it because achieving or maintaining counter-phase depends on entrainment?  If so, the example shows that emergent coordination can be intentional.  If we know something about under what conditions our actions will become coordinated (e.g. we may need to move closer together, or we may need to focus on the rhythms of each others' actions), we can intend these conditions to obtain in order that our actions will become coordinated.
+
+
+\subsection{`actions of coordinated agents can not be only reactive. They must be predictive.'}
+
+Assume that agents: (i) know that the goal of another agent's actions is their goal of their own actions (e.g. in the case of the soliders, to perform actions which ground the digging the hole), and (ii) can rely on the other agent performing actions that are most appropriate to realising this goal given her situation and capacities.
+
+I like the suggestion that these two assumptions often enable agents to predict each other's actions.  One tricky issue is how much is built into `most appropriate'.  Suppose your goal is to move a table.  You could do this alone or with me.  If you are acting alone, the most appropriate action for you to perform is to grasp the table in the middle of its long edges and tilt it (say).  But if we are acting together, the most appropriate action is for  us to grasp the table from opposite sides, each grasping the middle of one of its short edges and lifting it.  So in some cases (probably not the Soliders Hole Digging example) I think there is a need for a further assumption.  In addition to (i) and (ii), predicting another's action depends on (iii) knowing whether we are acting together or individually.  (That our actions are directed to the same goal doesn't entail that we will act together: we might compete over who should lift the table.)
+
+In the case like Lifting the Table, at each moment what is most appropriate for one agent depends on what is most appropriate for the other agent.  So in these cases it seems that it might not be enough for each agent to model her own actions and, separately, the others' actions.  Each agent will also have to model their joint action.
+
+One nice feature of this proposal is that it doesn't require representing another agent's plans.  It merely requires planning their actions (and planning their actions alongside one's own as parts of a larger, joint action).
+
+Where coordination involves each agent using models to predict actions, it seems to me that this is not emergent coordination.  (This is probably quite tricky to argue for, I know.)  But nor is it obvious that such model-drive coordination always has to be intentional coordination.  That is, it may be that it can sometimes occur independently of any intention to coordinate.  
+
+This is why I think the possibility of predicting others' actions using teleology (`most appropriate') indicates that there is something between intentional and emergent coordination.
+
+Another interesting feature of this kind of coordination is that it need not involve representing intentions.
+
+
+\subsection{`Arbitrary role distribution'}
+
+The above proposal about predicting others' actions doesn't work in cases where roles need to be arbitrarily distributed (i.e. where the agents' situations and capacities don't determine who should do what).  For example, we are standing on opposite sides of a rectangular table; we each need to grasp one of the short ends to lift it; but neither of us is closer than the other to either of the short ends.  In this case, one strategy would be to try to break the symmetry, perhaps by moving randomly, so that we can use the above predictive strategy, [3].  (This is something like a coordination smoother.)  But in general one limit of the proposed predictive strategy may be that it breaks down where roles need to be assigned explicitly.
+
+
+
+
+
+
+\small
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{document}

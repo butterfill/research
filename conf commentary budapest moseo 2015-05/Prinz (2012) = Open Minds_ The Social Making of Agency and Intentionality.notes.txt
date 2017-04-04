@@ -1,0 +1,271 @@
+page xiii
+How do agency and subjectivity arise in human minds? How does a mental self emerge and what may it be good for? And how is conscious experience related to the sense of self?
+
+page xiv
+How is it that people acquire beliefs about their minds? How is public communication related to private experience?
+
+page xv
+How real are people’s beliefs about the workings of their minds? Are such beliefs fact or fiction? Do they provide true stories of their workings, or must we consider them fictitious, perhaps even illusory cover stories that mask the true ones?
+
+page xv
+Our beliefs about minds, I will argue, are in fact not just beliefs about how our minds work, but also powerful tools for making them work as we believe. It is through our belief that our minds work in a particular way that we actually make them work that way.
+
+page xvi
+Minds are thus open in two senses: One is that they are made and molded in and through the mirror of others, thus designing themselves after others. The other is that they are open and highly susceptible to any knowledge they may attain concerning others’ acting, thinking, and knowing.
+
+page 5
+How does subjectivity enter the world, and what is it good for in an otherwise subjectless universe?
+
+page 8
+Why do animals have minds at all?
+
+page 8
+animals live in never-ending sequences of perception–action cycles in which minds play the role of controllers. These controllers match information about the current situation against information about animals’ current needs and then transform the outcome of these matches into decisions about whether and how to act.
+
+page 12
+Mental experience poses two hard problems. First: What is it like—and how can we characterize it in analytic terms? Second: What is it good for—and what would be missing if it did not exist?
+
+page 12
+mental experience offers a medium that opens up individual performance to social impact and, hence, mediates between private and public.
+--- This is what mental experience is for
+
+page 12
+What is the hallmark of mental experience? How can we characterize it? For instance, how could we possibly explain to an alien from a distant galaxy what it is like to see a flower, to remember a poem, or to drive a car?
+
+pages 12--3
+What exactly is responsible for the // conscious nature of this event? According to Brentano, we must distinguish between two mental contents that are interwoven in the act: the tone that we hear and the fact that we hear it. These two mental contents are not represented in the same way. The tone is the primary object of the act of hearing; we can observe it directly in that act. The hearing is the secondary object of the act. Brentano believed that the secondary object cannot be directly observed. Instead it attains awareness in a more indirect form: “We can observe the tones that we hear but we cannot observe the hearing of the tones. This is because it is only in the hearing of the tones that the hearing itself is also assessed.”
+
+page 13
+If it is true that the hearing of the tone entails not only the tone itself but also, implicitly, its hearing, then the hearer who hears must also be entailed in the act in still another encapsulation. This is because, just as a tone is hardly conceivable without an act of hearing directed toward it, the hearing of that tone is hardly conceivable without a mental self, or subject, who hears.
+--- Argument.  Could be a target for ∞discussion.
+
+page 13
+If conscious mental experience depends on the implicit presence of the self in mental acts, then, to understand the conscious nature of mental experience, we need to understand the functional role of the mental self and/or its implicit representation in those acts.
+
+page 13
+If conscious mental experience depends on the implicit presence of the self in mental acts, then, to understand the conscious nature of mental experience, we need to understand the functional role of the mental self and/or its implicit representation in those acts.
+--- I think Prinz is claiming, following Brentano's clue, that conscious experience involves 'the implicit presence of the self'
+
+page 14
+If it is true that conscious mental experience arises from, and in fact consists in, some kind of implicit corepresentation of the self in mental acts, the explanatory burden shifts from conscious experience to the mental self. The question is no longer what mental experience is good for but rather what the mental self is good for (and what would be missing if it did not exist).
+--- ∞discussion
+
+page 18
+The proposal I wish to outline starts from the notion of representation and expands it into the notion of self-representation. I certainly do not mean to claim that this notion provides a full account of what conscious experience amounts to. I do claim, however, that it captures essential aspects of the foundations of subjectivity that emergentist accounts have no way to deal with.
+
+page 18
+the notion of control offers a convenient framework for issues of representation
+
+page 18
+Animals can be viewed as systems that control certain features of their environment
+
+page 18
+Biologically speaking, sensors and effectors are implemented in their sensory and motor systems, whereas controllers reside in their brains. What control systems do is—speaking loosely—regulate their environment so that it meets various of their desires and requirements.
+
+page 18
+Controllers are computational devices for linking perception to action. Roughly speaking, their operation proceeds in three major steps on each cycle. First, they receive, on the input side, information about the current state of some environmental variables. Second, they match this information against stored normative information (reflecting good or bad environmental states, given the current state of their needs). Third, depending on the outcome of the match, they generate, on the output side, information for modulating current states of environmental variables through appropriate action.
+
+page 20
+Figure 1.1 Two basic control scenarios. In Scenario 1 the domain of events to which controller C has access is restricted to happenings in its environment E. In Scenario 2 the control domain to which the secondary controller C* has access comprises both environment E and the primary controller C.
+--- ∞discussion
+
+page 21
+the system as a whole may be said to represent and modulate both events in its environment and the ways in which it represents and controls these events. We may therefore claim that the notion of self-representation mirrors in functional terms what the notion of intentionality implies in phenomenal terms.
+--- But doesn't the system itself escape the picture (because the higher-level controller doesn't see itself).
+
+page 21
+If it is true that the hallmark of conscious experience lies in the intentional relationship between content, act, and subject (e.g., the tone, its hearing and he or she who hears), then architectures for self-representation offer themselves as building blocks for foundational accounts of mental experience. The structure of mental experience may thus be grounded in, and hence reflect, the structure of such architectures.
+
+page 21
+how and why a secondary control system should evolve and what it could be good for. Does it evolve for the sake of improving the performance of the primary system? Or should we believe that having a secondary system that represents and modulates the primary system’s interactions with its environment may under certain conditions become advantageous in and of itself? This is indeed what I am suggesting here.
+
+page 21
+the secondary system has its roots in the social domain, that is, in the domain of interaction and communication among individuals.
+
+page 33
+In the closed-minds paradigm, understanding other minds is therefore regarded as derivative from knowing one’s own mind: First, we know and understand our own minds, and only then and thereby do we come to understand other minds as well.
+
+page 33
+Open Minds. This paradigm views minds as open systems whose basic makeup is determined through social interaction and communication. The open-minds view holds that the social making of minds goes far beyond the shaping of specific mental contents and applies to universal mental form as well. Accordingly, the proper way to study the mind is to investigate how it is shaped—and in fact constituted—through collective practice and discourse.
+
+page 34
+The difference between mental individualism and collectivism is not in the explananda, but rather in the explanantia: Collectivist approaches hold that the mind’s universal form emerges from interaction and communication with other minds. This is the basic claim of radical mental collectivism.
+
+page 34
+the mind’s universal form emerges from interaction and communication with other minds
+--- nb form contrasts with specific contents (see above)
+
+page 34
+Constructivism—Mental collectivism goes hand in hand with mental constructivism. Roughly speaking, constructivism posits that what we know about the world is much more a matter of social construction than a reflection of natural facts (presumed to exist independently of our constructions). Mental constructivism applies this idea to the workings of the mind and the foundations of subjectivity, claiming that the mind’s universal form is much more a cultural than a natural fact, arising from social construction rather than from an unfolding of natural dispositions.
+
+page 35
+we may ask how such construction can work at all. How can it be possible that the makeup of a thing depends on the way we talk about it or interact with it?
+
+page 35
+The open-minds paradigm relies on collectivism and constructivism. It requires that the foundations of subjectivity and the workings of the mind cannot be appropriately studied and understood unless we consider individuals as they interact and communicate with their social and cultural environment. According to this paradigm, the mental self on which the sense of subjectivity relies is not built from natural resources—and would not even exist in closed and isolated minds. Instead, it relies on social and cultural resources on which and from which it is built.
+
+page 36
+Understanding one’s self as a mental agent is thus regarded as derivative from understanding others as mental agents: First we understand other minds, and only then and thereby do we come to design our own minds accordingly
+
+page 36
+What do we need in order to build an open-mind approach to human subjectivity and defend it against closed-mind approaches as they dominate the current theoretical landscape?
+
+page 40
+Natural kinds are kinds of things that exist and function independently of human activity and intervention.
+
+page 40
+By contrast, artificial kinds are kinds of things that would not exist and function in the proper way without human activity and intervention.
+
+page 43
+How is it possible that the beliefs about the workings of the mind that people acquire through learning can affect its actual workings? How can beliefs about subjectivity become real in the sense that individuals actually become the kind of mental things that they believe themselves to be?
+
+page 43
+the mind’s proper function is to help people to understand and act on the world
+
+page 44
+rephrase it in terms of the control framework for representation and self-representation as outlined in chapter 1. Talking about firstand second-order beliefs is in this framework tantamount to talking about primary and secondary controllers. First-order beliefs build on representations involved in controlling states of affairs in the world. Second-order beliefs build on representations involved in controlling the workings of that controller.
+
+page 50
+I will examine what mirror devices can possibly contribute to the formation of self-related cognition. What does it mean for individuals that mirrors help them to perceive themselves in ways they can’t otherwise perceive themselves, and what can they make of it? I will argue that mirrors can indeed play an important role for the formation of selves—provided that external mirrors are met by internal mirrors. By external mirrors I mean mirrors, both social and physical, that individuals encounter in their environments: mirrors outside (ch. 4). By internal mirrors I mean mirror-like representational devices that operate inside individuals’ minds: mirrors inside (ch. 5). These two kinds of mirrors, I submit, interact with each other in ways that give rise to the building up of self-related cognition and the formation of mental selves (ch. 6).
+
+page 51
+Human minds cannot be and become what they are without being reflected through mirrors in their environment.
+
+page 56
+Our machinery for action perception has solved this problem by using the physical kinematics of past and present actions as a basis for computing the underlying mental dynamics. As a result, we perceive not only the (visible) physical action itself but also the (invisible) mental states and forces driving it. These mental states fulfill two basic functions.
+--- perception of mental states!
+
+page 56
+One is to explain past and present behavior. The other is to predict future behavior.
+
+page 57
+one of the latent messages conveyed in the abundant use of mirrors as symbols for portraying and understanding the self is that people don’t really know and understand themselves from the inside. To understand our feelings and doings we need to perceive ourselves from the outside.
+--- ∞discussion
+
+page 58
+the most fundamental form of social mirroring arises from settings in which T sees her own action imitated or replicated by M (reciprocal mirroring).
+
+page 58
+A slightly different form of social mirroring arises from settings in which T sees her own action continued and carried on rather than replicated by M (complementary mirroring).
+
+page 60
+embodied mirroring
+
+page 61
+procedures for action mirroring through symbolic communication: T acts in a particular way, and M, upon perceiving T’s acting, starts talking about T’s acting, and that verbal account is finally perceived and “understood” by T (symbolic mirroring)
+
+page 62
+this framework not only subserves description and explanation but construction and formation as well: Folk psychology acts as a mind designer.
+
+page 62
+The term of mind designer is due to Bogdan (2009, 2010)
+
+page 63
+We need mirrors for the sake of better knowing, understanding, and appraising what we are doing.
+
+page 63
+This is in a nutshell what mirrors afford: that self can emerge from others.
+--- ∞discussion.  I don't understand.  How does this work?
+
+page 65
+humans have mirrors inside. By mirrors inside I mean mirror-like representational devices that help them to understand and utilize what outside mirrors afford.
+
+page 66
+Mind machines compute what animals do under given circumstances (control: map action to perception) as well as what circumstances will follow from given action (prediction: map perception to action)
+
+page 66
+Basically, the workings of this machinery build on associations or association-like couplings between states and processes on either side.
+
+page 66
+mirror modules are special because they allow for the operation of similarity in the interplay between perception and action. They are engineered to overcome the incommensurability of disparate coding inherent in associative coupling.
+
+page 67
+How can T tell mirroring from nonmirroring in the sequence of M’s actions that she observes?
+
+page 67
+Common Coding
+
+page 67
+Common coding requires a shared representational domain for perception and action—a shared space of representation that uses the same set of representational dimensions for coding one’s own action and foreign perception.
+
+page 67
+we may call action-related entries action codes and perception-related entries event codes.
+
+page 71
+Similarity allows for mutual priming between perception and production: Perceived other-produced action primes the production of corresponding self-produced action, and self-produced action primes the perception of corresponding other-produced action. Therefore, a device like this can be used as a mirror.
+
+page 72
+Language thus acts as a booster for the efficiency of social mirroring.
+
+page 72
+These devices should therefore play a crucial and indispensable role in laying the initial foundations for the construction of selfhood and subjectivity.
+
+page 73
+the classical Cartesian notion that knowledge of self is the natural foundation from which other kinds of knowledge derive—particularly knowledge concerning other people. This is what we may call the like-me perspective: I know and understand you because you are like me.
+
+page 73
+the classical Cartesian notion that knowledge of self is the natural foundation from which other kinds of knowledge derive—particularly knowledge concerning other people. This is what we may call the like-me perspective: I know and understand you because you are like me. What the claim suggests instead is either a parallel emergence of understanding of self and others or even the reverse order: that knowledge of others is the natural foundation from which knowledge of self is derived. This is what we may call the like-you perspective: I know and understand myself because I am like you.9
+--- ∞discussion; this is perhaps the best way of drawing the contrast.
+
+page 73
+What the claim suggests instead is either a parallel emergence of understanding of self and others or even the reverse order: that knowledge of others is the natural foundation from which knowledge of self is derived. This is what we may call the like-you perspective: I know and understand myself because I am like you.9
+--- ∞discussion.  How does ‘like me’ work?  If I don't have any conception of self, how do I get from others to self?  How do I think of others?
+
+
+page 78
+The ideomotor principle claims that action representations are furnished with the power to evoke the actions that they represent.18
+
+page 82
+the velocity of drawing movements is lawfully related to the radius of the curvature of the trajectory. More recent studies have shown that the same lawful relationship is effective in perception as well.
+
+page 82
+For an overview, see Viviani (2002).
+--- (this refers to the velocity of drawing movements is lawfully related to the radius of the curvature of the trajectory. More recent studies have shown that the same lawful relationship is effective in perception as well.)
+
+page 85
+The brain seems to have mirrors for both means and ends: Brain structures for generating one’s own intentions are also involved in reading the intentions of others.
+
+page 85
+the notion of mental simulation implies what we have called a like-me perspective: People understand others because others are like themselves. According to this view, self-understanding requires no further explanation.
+--- ∞discussion
+
+page 87
+the language faculty, by virtue of combining private concepts with public words, paves the way for the social control of private concepts. As soon as language is in place, individuals are no longer left to their own private resources for the formation of their concepts. The language craft makes their private concepts publicly negotiable.
+
+page 89
+Action talk creates equivalence in two equally important respects. One is between one’s own and others’ actions, that is, between actions viewed from a first- versus a third-person perspective. The other is between planning/production and representation/perception, that is, between the perspective of generating future actions and the perspective of interpreting past and present actions.
+
+page 90
+This, I claim, is precisely the proper function of action talk and its underlying conceptual resources: to lay the ground for public control of private action.
+
+page 91
+Mirror games are, in other words, social practices through which individuals capitalize on the potential for the formation of mental structure inherent in the interplay between mirrors inside and mirrors outside.
+
+page 92
+Procedural games
+
+page 92
+In interacting with their babies, mothers and fathers tend to follow very closely what the baby is doing, and the practice of reciprocating or continuing these actions is common and widespread—perhaps even a human universal.
+
+page 93
+Declarative games.
+
+page 96
+This is what mirror games afford in a general sense: They create access to self-related information through the other. However, the kind of information provided is specific and deeply different for the two kinds of games.
+--- ∞discussion.  My question was how do mirrors support the emergence of a notion of self?  If I don't yet have a conception of a self, I won't necessarily see how different bits of self-related information are connected; if I do have a notion of a self, then what mirroring does is provide additional information about myself.  Seems like mirroring presupposes that I have a notion of self, and merely allows me to discover new features of the self.  Maybe this is Pz's proposal: that I start with a limited conception of self, perhaps as a physical object, and move to the conception of self as agent and bearer of mental states.
+
+page 96
+In the one case, the information is T-related in the sense that M’s acting reflects T’s acting.
+
+page 101
+How can private action be guided by public norms? This is where the will comes in.
+
+page 101
+The will enables them to set goals, keep them active, ignore or suppress competing distractions and seductions, look for opportunities to realize goals, perform appropriate actions, evaluate their outcomes, and so on.1
+
+page 101
+“will” denotes a set of mental functions that play a crucial role in our understanding of how the mind works in social contexts.
+
+page 102
+In the following chapters I outline a theory of the will. Basically, the theory considers the emergence of volition to be a matter of social construction rather than an unfolding of natural endowment.
+

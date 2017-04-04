@@ -1,0 +1,48 @@
+Preferences : Evidence for a two-systems/multi-systems account?
+
+Questions
+  1. When an action based on a preference is predictable, is there anticipatory looking to the action location?
+  2. Is such anticipatory looking a consequence of automatic mindreading processes?
+  3. Is the information that influences such processes different from the information that would be taken into account by an explicit verbal action prediction (or by an anticipatory eye movement at a slightly later point in time)?
+
+Subjects: adults
+
+Key idea: change information that might be used by automatic preference tracking independently of information that might be used by nonautomatic preference tracking. (I.e. P’s choices indicate preference for pink; wider context indicates preference for purple; can change which preference each indicates independently.)
+
+What to do:
+    (x) instructions: please take note of (i) P’s preferences; (ii) the colours of the pens; (iii) no instructions
+    (a) There is a pink pen and a purple pen before Protagonist (P), who selects either a pink pen or a purple pen.  (This would normally provide information about preferences: P prefers pink pens to purple pens (we guess).)  This could be repeated several times, as in Woodward’s studies, for ‘preference induction’.
+    (b) Short delay, in which Protagonist P does something extraneous.
+    (c) P reveals that (i) she is collecting pens of different colours (n of each colour); now she has n each of several different colours including the pink ones she just took, but not yet a purple one [variety condition]; or (ii) she is collecting many pink pens [repeat condition]
+    (d) Cues signal that P is about to make a further choice between two new pens, one pink and one purple.
+  
+Measures: anticipatory looking immediately following the action signal; anticipatory looking a short while later; verbal responses to Q: ‘which pen do you think P will take?’
+
+Could we also do a helping measure (P can’t reach the pen in the final stage, asks for help)
+
+Could we have an online helping measure?  You are performing a task which requires you to move horizontally (right, say) across the space (for some other reason), but then comes a request of overriding importance for you help by getting a pen for P.  There is a purple pen straight ahead (keep going, no change), and a pink pen above you.  How quickly do you change direction?  Is there any hesitation, delay or a slowing down in the responses (as measured, e.g., by frequency of key presses)? Consider the effects of different information about preferences: simple choice information vs whole context. At which stages of the movement do either of these kinds of information predict the direction in which the subject is moving? (Prediction --Early moves: predicted by simple choice information; later moves predicted by larger context information.)
+
+Manipulations:
+  Relative to the timing of the request for help:
+  --- information about preferences all made available before, or some before & some after
+  --- relevance of preferences possible to anticipate or almost impossible to anticipate. 
+  At what point does the subject have reason to be interested in P’s preferences?
+  --- Early reason to be interested in P’s preferences: you see a sequence of choices ...; it is somehow clear that P’s preferences will be relevant to you shortly; perhaps P asks you for help early on, and you can guess that she will do so again.
+  --- Reason to be interested in P’s preferences comes late, just as P is asking for, or needs, help: the other ‘player’ (P, protagonist) is doing her task and making choices and stacking up pens, when, unexpectedly, a pen (or several) falls off.  So now suddenly the information about preferences becomes relevant for the first time.
+
+Key idea: do for preferences what others have done for beliefs.
+
+
+
+
+====
+
+Communication
+
+1. Consider automatic eye movements that anticipate actions based on false beliefs, in adults.  Will having the protagonist be verbally informed about the truth (‘the ball is in the cup’) make a difference to which action those eye movements anticipate? (Cf. Song &c 2008).
+
+2. If so, are there limits.  Contrast two conditions. (a) Informant provides information to Protagonist.  Then (b.1) It is revealed that informant is always unreliable, a complete joker; (b.2) It is revealed that informant is always reliable.  On a two-systems view, any effects of (a) are top-down influences on an automatic mindreading process.  It should not be possible to selectively undo those influences after the fact.  So performance should not differ between (b.1) and (b.2).  
+
+On Mesh, it should be possible for (b.1) and (b.2) to prompt different predictions in anticipatory eye movements.  However, people may be sluggish to incorporate information about the badness of the informant.  So to have a chance of ruling out Mesh in favour of a two-systems view, we need a way to factor out the effects of any sluggishness.
+
+

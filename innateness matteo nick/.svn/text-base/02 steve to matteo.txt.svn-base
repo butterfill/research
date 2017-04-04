@@ -1,0 +1,65 @@
+Dear Matteo, dear Nick,
+
+Thanks for your email Matteo, this is very interesting.  I was surprised and delighted to read that you link my question to the issue of how different kinds of cognitive structures facilitate development, and that you're interested in working on this yourself.  Since this is the issue I am focussing on at the moment, I thought I'd share a couple of thoughts about how I'm approaching this.  I'm hoping  to provoke you and Nick into saying more about your thinkings or offering criticisms of mine.
+
+How to formulate the questions?  In the abstract I'm working with this picture: at time t1, infants reliably manifest some capacity to deal with Fs.  At a later time, t2, children first manifest some further capacity to deal with Fs.  (It may be wrong to assume that t1 and t2 are cronological times, but we ignore this complication initially.)  Furthermore, if we are naive about what constitutes 'understanding Fs', it is reasonable to describe the capacities manifested at both times as the capacity to understand Fs (or, in some cases, as the capacity to perceive Fs).  First issue: since there is an apparent contradiction concerning when children first understand Fs (or perceive Fs), we may need to refine naive notions of what of what it is to understand Fs (or to perceive Fs).  Second and central issue: How might possession of the earlier capacity facilitate development of the later capacity?
+
+On this second issue, one distinction I'm interested in is between representational vs. bodily developmental links.  In some cases I suppose the early developing capacity facilitates later developments by providing representations of Fs; in other cases it seems to me that the early developing capacity may facilitate later development by producing F-directed behaviour.  Johnson and Morton's theory about the two face detection mechanisms, conspec and conlearn, that I mentioned in question, is perhaps the simplest example of this: the role of conspec is not to provide representations of faces but to get the infant to orient to faces; this behaviour then provides the experience of faces necessary for conlearn's development.  Of course, most interesting cases are more complex than this; and of course the distinction between developmental links depending on representation vs. depending on bodily control needs refining.  (In fact, it seems that conspec modulates the activity of conlearn in adults (Johnson 2005:766), so the notion that conspec facilitates development by producing orienting behaviour is clearly not the whole story.)  Even so, I think the representational vs. bodily control distinction is important if only because it seems to be widely taken for granted that development invariably involves representational links between earlier and later developing capacities.  I think non-representational links between mechanisms may be important in some case (compare the much stronger idea from Nick's ESPP talk that developmental processes are to be explained in nonconceptual terms).
+
+I've also been thinking about understanding gaze as a second simple and relatively uncontroversial case where the issue of how ealier developing capacities faciliate later developments.  Understanding gaze appears to involve at least four key developments:
+
+Dev.1, pre-18-months: When an experimenter is looking at an object visible to the infant, the infant can use gaze as a cue to orient to the object.  At this age, "gaze following may be a conditioned response (Moore 1999)"
+
+Dev.2, 18- to 24-months: infants can follow another person’s gaze through apertures, around barriers and into the space behind them; "infants represent a spatial relationship between object and viewer ... (Butterworth & Jarrett 1991)."  
+
+Dev.3, 24-months: Level 1 perspective taking--infants' communicative exchanges involve sensitivity to the fact that barriers prevent another person from seeing something they see (Moll & Tomasello 2006).  This is a converse of stage 2, where infants' search behaviour indicates an appreciation that barriers can prevent them from seeing something someone else can see.  
+
+Dev.4, 3 years: children can first make explicit judgements about gaze, eye direction and whether someone is looking at them (Doherty 2006).  The accuracy of their explicit judgements improves gradually from 3-6 years (Doherty 2004 ms). 
+
+This looks like an interesting case because we go from an automatic response behaviour at Dev.1 to a flexible form of action where infants appear motivated to find objects of gaze not visible to them at Dev.2.  Although invovling sensitivity to gaze as a relation to a possibly unseen object, this flexible action does not enable infants to make strategic use of occluders in hiding objects or in determining which object someone is requesting (Dev.3).  Suprisingly (to me at least), there is a lag of around 12-months between strategic use of occluders and explicit judgement about gaze direction (Dev.4).
+
+Two clues seem relevant to making sense of some of changes in infants' and children's understanding of gaze. First, the accuracy of children's explicit gaze judgements improves gradually from 3- to 6-years whereas there is no evidence of a similar development in the accuracy of their gaze following behaviour as studied at Dev.2.  This indicates that gaze following and explicit gaze judgements may involve different cognitive mechanisms (Martin Doherty has very tentatively suggested this).  Second, McGuigan and Doherty (2002) identify a striking limitation in 2-year-old children's strategic use of occluders (Dev.3): when required to hide an object by moving a barrier in front of it rather than moving the object behind the barrier, children fail until after 3-years and their performance on this task is robustly (controlling for age) correlated with their ability to give explicit judgements of where someone is looking.  This suggests that it may be too rich to suppose that 2-year-olds fully understand the practical significance of gaze, and so that the difficulties in making explict judgements at Dev.4 are unlikely to be superficial problems with linguistic articulation.
+
+It seems to me that it's worth asking both how the understanding of gaze at each stage should be characterised, and also how (if at all) the understanding achieved at earlier stages facilitates the development of later stages.  I suppose one role for philosophers is to identify coherent ways of characterising the transition and some useful distinctions.  My starting point is that it's a significant challenge even to describe, in a way clear enough to support testing, possible theories of how gaze understanding develops.  
+
+Some people might say that younger children have an implicit understanding of gaze whereas older children have an explicit understanding.  This seems to me on the right track insofar as we want to deny that younger children have a partial understanding of gaze (where 'partial' is understood in the sense we might have a partial understanding of Kant's first critique).  Otherwise the implicit-explicit distinction seems to label rather than solve the problem.
+
+I think Matteo's points about learning are relevant here.  As Matteo says, connectionists and Fodorites disagree over what learning is.  To make a really wild stab, maybe this is because they are talking about different kinds of learning.  At one point defenders of associationism held that all learning is ultimately to be explain by appeal to associationist mechanisms.  Now it's widely recognised that there are associationist learning mechanisms which have effects on various types of behaviours including explicit judgements, but that not all human learning is associationist.  So we've already given up on the idea that there is a single learning mechanism and a single kind of learning.  But Fodorite objections to connectionist models of inference indicate, I think, that it's wrong to treat connectionist models of learning as models of inferential learning or theory building and, equally, that it's wrong to equate the notion of concept Fodor invokes with notions of concept suitable for connectionist explanation.  I think this view is also supported by the claim in Nick's ESPP talk that Obj.1 != Obj.2, i.e. that "the individuals which count as vehicles of content for the purpose of giving a representational explanation of the behaviour of the system" are not "the individuals which feature in an explanation of the development of new representations",--since this non-identity is false for some types of learning, not all learning is the type modelled by connectionist systems.  The natural move is surely to recognise that there are different kinds of learning and that we need correspondingly different notions of concept.  The substantive issues then concern which developments involve which kinds of learning and how the kinds of learning interact (just as in the case of associationist and inferential learning).
+
+This view could be useful for thinking about how understanding gaze develops.  Maybe Nick's connectionist views about concepts are just what's needed for Dev.2 and Dev.3; but maybe some of Fodor's objectjections to such views about concepts are correct where we want the notion of concept to do explanatory work at Dev.4; the transition from Dev.2/3 to Dev.4 then involves a transition from possessing one type of concept to possessing another type of concept.  This story might give us some more concrete idea of one distinction people are aiming to draw by talk of implicit and explicit.  More interestingly, the story suggests a line of response to Fodor's claim that postulating things such as innate attentional biases presupposes rather than avoids the postulation of innate concepts--the response is that it all depends on what 'concept' means and there are different things 'concept' can usefully mean.  
+
+Well, these are some wild ideas about concepts and learning, I'm not sure that this is even on the right lines.  But I suppose it at least illustrates one way of thinking about levels or stages in development.  
+
+I don't think there's much point aiming for a grand theory of development in general, but it does seem to me that working out the sorts of view that are possible in relatively simple cases (like the face or gaze cases) might produce some distinctions that could be applied to more exciting, controversial and less well understood cases.  Two cases where I think this research could produce real pay offs are (a) psychological understanding, especially false belief understanding, and (b) understanding physical causation.  I'm also keen to work on categorical perception of colours and colour concepts, where there's less developmental and much more philosophical literature to go on.
+
+I'm sorry this email has turned out to be so long.  I'd love to know more about how you are both approaching these issues.
+
+best,
+Steve
+
+
+***
+
+
+
+As a first step, it seems to me valuable to survey some relatively well-understood cases starting with the simplest.
+- increased confidence (reasonable interpretation of Goldin-Meadow on gesture revealing nascent arithmetic understanding)
+- partial understanding (?Carey on essences and natural kinds)
+- representational redescription (I'm not sure what this is but it's much talked about)
+- conspec/conlearn (one mechanism points the head so that the other benefits from experience)
+- categorical perception of phonemes / phoneme concepts
+- theory building (Gopnik & Meltzoff, more plausibly Carey on natural kind understanding)
+
+
+One immediate consequence of the survey is that a simple distinction between 'continuity' and 'discontinuity' is too simple.
+
+Reasonably uncontroversial cases that illustrate interesting patterns of development
+
+1. Faces:
+- stage 1: conspec very simple heuristics, minimal control over behaviour (orienting movements only)
+- stage 2: conlearn, rich control over behaviour, some phenomenological consequences (e.g. popout)
+- stage 3: concept of what a face is comes later
+
+
+
+Two extreme views: concepts of gaze are innate and the pattern of development is to be explained by performance factors (approx. Baron-Cohen 1991's view); vs. children first acquire concepts of gaze at 4 years, everything before then is merely based on some primitive form of associative learning.  I suppose the case of gaze is only interesting if it seems unlikely either of these views is correct.  A more interesting opposition is between holding that 18-month-olds have a partial grasp of the concept GAZE which gradually becomes richer (just as someone can have a partial understanding of, e.g., a programming language); vs. holding that 18-month-olds have an implicit understanding of gaze whereas 3-year-olds have an explicit understanding.  Of course this form of opposition is hard to understand unless we have clear ideas of what concepts are and of what the implicit-explicit distinction comes to here.  Since I don't have clear ideas of either, 

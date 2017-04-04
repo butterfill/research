@@ -1,0 +1,11 @@
+Two kinds of coordination.
+Where does task co-representation fit in?
+
+Is it a third kind of coordination, something different from both intentional and emergent coordination?  How does it differ?  How can we show that it differs?
+
+In emergent coordination, coordination does not involve representation at all. Task co-representation differs: it involves a representation of each agent’s task.
+
+But co-representational coordination also contrasts with intentional coordination to the extent that task representations drive coordination independently of any intentions or reasoning about coordination.  Task representations may drive coordination by modulating motor cognition or perceptual processes, for instance; in such cases agents need not be aware that they are coordinating their actions.  Put roughly, the contrast between intentional and co-representational coordination is the contrast between reflecting on how to coordinate two parts in an action and mentally performing both parts oneself.
+
+ 
+

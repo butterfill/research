@@ -1,0 +1,193 @@
+Received: from ash.ads.warwick.ac.uk ([137.205.97.162]) by ELDER.ads.warwick.ac.uk with Microsoft SMTPSVC(6.0.3790.1830);
+	 Thu, 19 Jul 2007 16:03:41 +0100
+Received: from mail-relay-1.csv.warwick.ac.uk ([137.205.128.7]) by ash.ads.warwick.ac.uk with Microsoft SMTPSVC(6.0.3790.1830);
+	 Thu, 19 Jul 2007 16:03:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by mail-relay-1.csv.warwick.ac.uk (8.13.8/8.13.6) with ESMTP id l6JF3dT2092957
+	for <s.butterfill@warwick.ac.uk>; Thu, 19 Jul 2007 16:03:39 +0100 (BST)
+X-Virus-Scanned: amavisd-new at warwick.ac.uk
+Received: from mail-relay-1.csv.warwick.ac.uk ([127.0.0.1])
+	by localhost (localhost [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id BtRM2-3HW8PP for <s.butterfill@warwick.ac.uk>;
+	Thu, 19 Jul 2007 16:03:38 +0100 (BST)
+Received: from ppsw-9.csi.cam.ac.uk (ppsw-9.csi.cam.ac.uk [131.111.8.139])
+	by mail-relay-1.csv.warwick.ac.uk (8.13.8/8.13.6) with ESMTP id l6JF3Zwr092878
+	for <s.butterfill@warwick.ac.uk>; Thu, 19 Jul 2007 16:03:35 +0100 (BST)
+X-Envelope-From: gmm32@hermes.cam.ac.uk
+X-Cam-SpamDetails: Not scanned
+X-Cam-AntiVirus: No virus found
+X-Cam-ScannerInfo: http://www.cam.ac.uk/cs/email/scanner/
+Received: from hermes-1.csi.cam.ac.uk ([131.111.8.51]:37171)
+	by ppsw-9.csi.cam.ac.uk (smtp.hermes.cam.ac.uk [131.111.8.159]:25)
+	with esmtpa (EXTERNAL:gmm32) id 1IBXXN-00083V-Uz (Exim 4.63)
+	(return-path <gmm32@hermes.cam.ac.uk>); Thu, 19 Jul 2007 16:03:29 +0100
+Received: from prayer by hermes-1.csi.cam.ac.uk (hermes.cam.ac.uk)
+	with local (PRAYER:gmm32) id 1IBXXN-0001Bf-IQ (Exim 4.54)
+	(return-path <gmm32@hermes.cam.ac.uk>); Thu, 19 Jul 2007 16:03:29 +0100
+From: Dr Matteo Mameli <gmm32@cam.ac.uk>
+To: Stephen Butterfill <s.butterfill@warwick.ac.uk>
+Cc: Nicholas Shea <nicholas.shea@philosophy.oxford.ac.uk>
+Subject: Re: hi
+Date: 19 Jul 2007 16:03:29 +0100
+X-Mailer: Prayer v1.0.18
+X-Originating-IP: [128.232.249.55]
+In-Reply-To: <469BB5A7.5040807@warwick.ac.uk>
+Message-ID: <Prayer.1.0.18.0707191603290.21003@hermes-1.csi.cam.ac.uk>
+References: <20070506114752.E698F1631D8@spunkymail-a10.g.dreamhost.com> <Prayer.1.0.18.0705211754170.19835@hermes-1.csi.cam.ac.uk> <4651D6E0.9010109@warwick.ac.uk> <Prayer.1.0.18.0707161847550.17356@hermes-1.csi.cam.ac.uk> <469BB5A7.5040807@warwick.ac.uk>
+Mime-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+Sender: Matteo Mameli <gmm32@hermes.cam.ac.uk>
+X-DCC-Warwick-Metrics: bluebell 1332; Body=1 Fuz1=1 Fuz2=1 rep=19%
+Return-Path: gmm32@hermes.cam.ac.uk
+X-OriginalArrivalTime: 19 Jul 2007 15:03:41.0016 (UTC) FILETIME=[FE22B580:01C7CA15]
+
+Dear Steve
+
+Thanks for your question. I think it's an important question. Let me try to=
+ say briefly a few things. (I am sending this to Nick too, because one of o=
+ur discussions during the conference was on what I take to be the same issu=
+e. Hi Nick.)
+
+As I said in my talk, the notion of innateness seems to be used to track va=
+rious theoretically interesting properties and one interesting (empirical) =
+issue is the extent to which these properties cluster. If the properties do=
+ cluster, then one can plausibly argue that the notion of innateness refers=
+ to the cluster. If the properties don't cluster, then one can try to show =
+that one of these properties (or the conjunction of two or more of these pr=
+operties) is explanatorily more fundamental than the other properties (than=
+ the other possible conjunctions). And if this fails, then one should proba=
+bly eliminate innateness-talk from science.
+
+But whether or not one ends up eliminating innateness-talk, many of the pro=
+perties that people infer to and from attributions of innateness are certai=
+nly properties that one needs to refer to in order to formulate good develo=
+pmental theories, explanations, etc. Lack of learning is one such property.=
+=20
+
+For cognitive structures like those that you mention in your message, it is=
+ always interesting/important to understand what role (if any) learning in =
+general or learning of this or that particular kind plays or does not play =
+in their development. For example, the most interesting aspect of Chomsky's=
+ arguments for the innateness of UG are, in my opinion, those aimed at show=
+ing that Skinnerian learning and unconstrained hypothesis testing are not p=
+owerful and reliable enough to be able to result in the acquisition of the =
+ability to speak and understand a standard (non-pidgin) human language. The=
+ same applies to Fodor's arguments for the innateness of lexical concepts.=
+=20
+
+Of course, Chomsky and Fodor want to argue for the much stronger conclusion=
+ that no learning of any kind is involved, respectively, in the development=
+ of the language faculty and in the development of lexical concepts. But th=
+eir being able to reach this conclusion depends in part on whether their ve=
+ry restrictive views on what counts as learning are correct or not. If you =
+look for example at some of the debates between Fodor and some connectionis=
+ts (e.g. Elman et al.), it looks as if one of the crucial disagreements is =
+about where to draw the line between learning and mere "maturation". Both t=
+he connectionists and Fodor take this to be a substantive issue rather than=
+ a mere terminological one, and they may be right in doing so, even though =
+I suspect that the divide between learning and mere maturational processes =
+is much less sharp than both Fodor and his connectionist opponents tend to =
+assume. See also the anti-Chomskyian arguments that Tomasello puts forward =
+in his recent book on language acquisition.
+
+What does this have to do with your question about levels of innateness? It=
+ seems to me that the connection is relatively clear. It looks as if there =
+are cognitive structures whose development depends on very simple interacti=
+ons with the environment. When these structures develop, more complex inter=
+actions with the environment become possible, and sometimes these more comp=
+lex ways of interacting with the environment result in the development of e=
+ven more complex structures, and so on. So, there clearly are levels in cog=
+nitive development. It is not clear whether these levels should be classifi=
+ed as levels of innateness. And it is not even clear whether these levels s=
+hould be classified as levels of learning complexity (from simple learning =
+processes to learning processes that involve explicit conscious reflection,=
+ etc.). But the levels are there, as your example shows.=20
+
+It seems to me that the question concerning the right way to think about th=
+ese levels is one of the most important questions in the foundations of the=
+ cognitive sciences. The debate between Fodor and the connectionists that N=
+ick discussed in his talk in Geneva is just one aspect of (and one, relativ=
+ely parochial, way of looking at) this important issue.=20
+
+I have had for a long time wanted to write a paper on this. So, I'd be very=
+ happy to exchange ideas on this.
+
+Best,
+Matteo
+
+On Jul 16 2007, Stephen Butterfill wrote:
+
+>Dear Matteo,
+>
+>Thanks for emailing, I thought your talk was brilliant, both the general=
+=20
+>approach and the substance and I'm very interested to know more.  I was=20
+>especially struck by your emphasis on the point that need to have a=20
+>deep, potentially explanatory characterisation of innateness rather than=
+=20
+>a merely stipulative definition.=20
+>
+>My question is whether you think there is a way to recognise degrees or=20
+>perhaps even levels of innateness (you mentioned Samuels 2004 paper in=20
+>TICS which I think hints at this idea).=20
+>
+>I'm motivated to ask this question by the following sort of situation. =20
+>Johnson and Morton claim that there are two systems connected with the=20
+>recognition of face vs. non-face stimuli.  The first, conspec, is=20
+>present at birth and supports orienting to face-like stimuli.  The=20
+>second, conlearn, develops in the first 2 months or so and supports the=20
+>smooth tracking of faces and is more sophisticated in how it recognises=20
+>faces.  Since the development of conlearn depends on experience there's=20
+>a fairly clear sense in which it is not innate.  However, I suppose it=20
+>might be plausible think of 'innate' as contrasting with 'learnt'.  And=20
+>although I suppose there is some sense in which the development of=20
+>conlearn involves learning from experience, equally it seems to me that=20
+>when theorising about capacities that involve more reflective learning=20
+>such as, say, abilities to categorise familiar people by kinship=20
+>relation, it is natural to take face recognition to be an innate=20
+>capacity--or, rather, as a more innate capacity--partly because face=20
+>recognition involves unreflective learning and partly because it seems=20
+>to provide a foundation for the subsequent learning about things like=20
+>kinship.=20
+>
+>best,
+>Steve
+>
+>Dr Matteo Mameli wrote:
+>> Dear Steve
+>>
+>> It was very good seeing you in Geneva. I'm sorry we didn't find the=20
+>> time to talk more. You said you had a question re my talk. You might=20
+>> have forgotten it. But if you haven't, I would like to hear it.
+>>
+>> All very best,
+>> Matteo
+>>
+>
+
+--=20
+- Dr Matteo Mameli
+- Research Fellow in Philosophy
+- King's College=20
+- CB2 1ST Cambridge UK
+- gmm32@cam.ac.uk
+- http://www.phil.cam.ac.uk/~gmm32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

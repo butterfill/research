@@ -1,0 +1,73 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a4paper}
+\def \papersize {letterpaper}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Cloning Two Systems}
+\def \isubtitle {}
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk}
+\def \iauthor {}
+\def \iemail{}
+\date{}
+
+
+\input{$HOME/Documents/submissions/preamble_steve_paper5}
+%\author{}
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{newapa} %apalike
+
+
+\tolerance=5000
+
+\maketitle
+%\tableofcontents
+
+\noindent
+According to the two systems hypothesis, mindreading in humans involves at least two mindreading systems which make complementary trade-offs between flexibility and efficiency.  
+The more flexible system is thought to be responsible, among other things, for verbal replies to communicative prompts, while the more efficient system underlies spontaneous anticipatory looking, which can be automatic \citep{Low:2012_identity,low:2014_quack,wang:2015_limits,schneider:2014_task}.  
+How could a mindreading system achieve a degree of cognitive efficiency sufficient for automaticity?
+\citet{Apperly:2009ju} argue that cognitive efficiency in mindreading is incompatible with relying on a canonical model of minds in which mental states are characterised as propositional attitudes, with arbitrarily nestable contents and functional roles that mirror evidential and reason-giving relations.
+They suggest that, special cases aside, relying on such a model requires reasoning as complex as any humans are capable of 
+\citep[see also][]{Harris:1994az,Heal:1998uf}.
+But there is arguably a further, more general requirement on cognitively efficient systems: information encapsulation.
+To say that a system is \emph{informationally encapsulated} is to say that the flow of information into the system is interestingly limited: there can be information in the larger unit of which it is part which, although relevant to the operation of this system, is nevertheless persistently unavailable to the system \citep[pp.~64ff]{Fodor:1983dg}.
+In general, cognitive efficiency in tasks such as mindreading where there is no in principle limit to what information could be relevant plausibly requires information encapsulation.
+This architectural claim generates predictions which enable the two systems hypothesis to be distinguished from the view that there is just one mindreading system.
+Here is a recipe for generating such predictions.
+%
+\begin{quote}
+Take a fact, $P$, which would not typically have any bearing on what anyone believes, and is unlikely to do so.
+Then identify a further fact, $Q$ which is highly improbable and which is also such that, given $Q$'s truth, the truth of $P$ does bear on what a protagonist believes.
+The way $P$ bears on the protagonist's beliefs given $Q$ should be clear to any potential experimental subjects.
+Then contrive a situation in which $P$ and $Q$ are manifestly true.
+Will subjects track those of the protagonist’s beliefs which are consequences of (and counterfactually depend upon) $P$ and $Q$ being true?
+\end{quote}
+%
+The view that there is just one mindreading system predicts that the answer is yes.
+The two systems hypothesis predicts also that the answer is yes when responses are a consequence of a flexible mindreading system.
+However this hypothesis predicts that the answer is no when responses are a consequence of an efficient mindreading system.
+This is because an efficient mindreading system achieves efficiency in part by being informationally encapsulated: as the recipe involves making an arbitrary and improbable connection between $P$ and the protagonist's beliefs, it is unlikely that information about $P$ would be available to an efficient mindreading system.
+
+As an example, consider a situation in which the protagonist has just emerged from the blue room ($P$), and aliens have installed a machine in the blue room which makes anyone in it temporarily omniscient ($Q$) or temporarily capable only of false beliefs ($Q'$).  Or consider a situation in which the protagonist has just emerged from a cubicle ($P$), and is therefore a psychological clone of another individual ($Q$).
+
+
+
+
+
+%achieves flexibility by relying on a canonical model of mind, one which involves propositional attitudes such as beliefs, desires and intentions.  The less flexible system achieves efficiency 
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{document}

@@ -1,0 +1,96 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\def \papersize {letterpaper}  %a4paper
+
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {}
+\def \isubtitle {}
+\def \iauthor {}
+\def \iemail{}
+%for anonymous submisison
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+\input{$HOME/Documents/submissions/preamble_steve_paper3}
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{newapa} %apalike
+
+%these two lines are for anonymous submission --- they remove author and date
+%but don't forget to remove defs above as well --- otherwise it will be in the metadata
+\author{}
+\date{}
+
+
+%\maketitle
+%\tableofcontents
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+%\begin{abstract}
+%\noindent
+%\end{abstract}
+
+
+
+\section{Teleology for Joint Action}
+According to 
+what Csibra and Gergely call `the principle of rational action',
+%
+\begin{quote}
+`an action can be explained by a goal state if, and only if, it is seen as the most justifiable action towards that goal state that is available [to the agent] within the constraints of reality.'%
+%
+\footnote{
+\citet[p.\ 255]{Csibra:1998cx}; cf.\ \citet{Csibra:2003jv}.
+I think this principle needs refining \citep[pp.\ 6--7]{butterfill:2012_interacting}, but the refinements don't matter here.
+A related but different `principle of efficiency' has been formulated by \citet[p.\ 1061]{Southgate:2008el}:
+`goal attribution requires that agents expend the least possible amount of energy within their motor constraints to achieve a certain end.'
+I'm not sure whether differences between this principle and the principle of rationality matter here.
+}
+%
+\end{quote}
+%
+This principle can be used to predict an action given knowledge of a goal and the constraints.  
+(It can also be used to infer goals from actions plus constraints, and constraints from actions plus goals \citep{Csibra:2003kp}.)
+But it doesn't generally generate predictions where two or more agents are acting together.
+
+To see why not, suppose that Ayesha and Bert are performing actions directed to the goal of moving the table from here to there. 
+How could we use the principle of rational action to predict Ayesha's action?
+We might try to treat Bert and his action as falling under `the constraints of reality'.
+But this won't work if we suppose, further, that Ayesha's and Bert's actions are reciprocally coordinated. 
+In that case, which is the `most justifiable' action for Ayesha depends on which is the `most justifiable' action for Bert; and conversely.
+So we can't determine which action is the `most justifiable' for Ayesha and separately determine the same for Bert.
+This is why the principle of rationality as formulated generates no prediction for joint actions which essentially involve reciprocal coordination.
+
+But there is a natural way to generalise the principle of rationality for one or more agents:
+%
+\begin{quote}
+One or more actions, <$a_1$, $a_2$, ...\ $a_n$>, can be explained by a goal state if, and only if, they are seen as the most justifiable action towards that goal state that are available to agents $S_1$, $S_2$ ...\ $S_n$
+within the constraints of reality.
+\end{quote}
+%
+This principle can be used to predict actions given knowledge of a distributive goal, the constraints and the fact that the agents are cooperative with respect to the distributive goal.
+(Knowledge that the agents are cooperative with respect to the goal is necessary to use the principle for predicting their actions: if the agents were competing, the principle would generate incorrect predictions.)
+	%But what does `cooperative' mean here?
+
+
+What's the difference between the original principle of rationality and the generalised version?
+Where the original concerns the fit between a single action to an outcome, the generalisation concerns the fit between a set of one or more actions and a goal.
+
+Infants use the original principle in predicting individual actions. 
+Will they also use the generalised principle in predicting joint actions?
+
+
+
+\small
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{document}
