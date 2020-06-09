@@ -1,0 +1,38 @@
+---cson
+layout: 'deck_unit'
+title: "Introduction"
+tags: []
+description: """
+  Reflection on redness suggests that we should be cautious about linking (a) psychological capacities, (b) phenomenology of folk colour, and (c) facts about colour.
+  """
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide({bkg:'steward_figure.jpg'})
+  .notes: :t
+    Steward’s model.
+    Discoveries about psychological capacities to track agents and their actions 
+    provide some, perhaps limited, support for a conclusion about which things are 
+    agents.
+    And what Steward calls ‘the evidence from everyday thinking’ likewise feeds into
+    this conclusion.
+  .slide
+    .notes.handout.show(style='margin: 150px 0px 0px 380px')
+      p ‘it may be that [our intuitions] make distinctions in the places they do   
+      p
+        span.oxf for reasons not altogether unconnected with the fact that
+        span.hide.because  because 
+      p there are indeed distinctions in those places which need to be discerned’
+    .notes.handout.ctd \citep[p.~229]{steward:2009_animal}.
+    p.right.grey-text Steward, 2009 p. 229
+  .slide
+    +line-through('.oxf')
+    +show('.because')

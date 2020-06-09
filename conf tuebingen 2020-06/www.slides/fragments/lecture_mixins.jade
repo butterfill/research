@@ -1,0 +1,164 @@
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+
+
+//- wrap a list so that it has a next() method that cycles through the elements
+- wrap_list = function(lst) {
+-   var res = { list:lst, counter:-1 };
+-   res.next = function() {
+-     res.counter += 1;
+-     if( res.counter >= res.list.length ) {
+-       res.counter = 0;
+-     }
+-     return res.list[res.counter];
+-   }
+-   res.first = function() { return res.list[0]; }
+-   return res;
+- };
+
+- get_images = function(folder) {
+-   var images = getFilesAtPath('img/bkg/'+folder+'/',[{basename:1}]).toJSON();
+-   var sorter = function(a,b) { return a.basename.localeCompare(b.basename) };
+-   images.sort(sorter);
+-   return wrap_list(images)
+- };
+
+
+//- ----------------
+//- for lecture files
+//- ----------------
+
+//- duplicated from unit_mixins but required for render_unit!
+//- render images associated with a unit as slides
+mixin display_images_as_slides(unit)
+  each f in getFilesAtPath('img/'+unit.basename+'/',[{basename:1}]).toJSON()
+    section.slide
+      img(src=f.url)
+
+//- render a unit as part of a larger slideshow document
+mixin render_unit(unit)
+  //- first if the unit is coded as images, do a slide for each image
+  if unit.layout && unit.layout.replace('.html.jade','') == 'deck_slides_img'
+    +display_images_as_slides(unit)
+  else
+    != unit.contentRenderedWithoutLayouts
+  //- exercises
+  if unit.exercises && unit.exercises.length && unit.exercises.length > 0 
+    each ex in unit.exercises
+      .exercises #{ex}
+  if unit.exercises_fast && unit.exercises_fast.length && unit.exercises_fast.length > 0 
+    each ex in unit.exercises_fast
+      .exercises_fast #{ex}
+
+
+//- create title slide for a lecture
+//- param p contains document and images (an array of images to use)
+mixin title_slide(p)
+  .notes.notes-header-tex \title {#{site.title} \\ #{p.document.title}}
+  .notes.notes-header-tex &nbsp;
+  .notes.notes-header-tex \maketitle
+  #title-slide.slide
+    - var img = p.images.first()
+    - var _ = p.images.next(); //avoid re-using first image 
+    img.bkg(src='#{img.url}')
+    .spacer &nbsp;
+    - var low = false
+      if img.filename.indexOf('.low.') != -1
+        - low = true
+    .fade-in
+      .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
+        h1.title1.fade-in #{p.document.title}
+          if p.document.subtitle
+            span :
+        if p.document.subtitle
+          h1.title2.fade-in #{p.document.subtitle}
+        if p.document.email
+          h3.email.fade-in #{p.document.email}
+        else
+          h3.email.fade-in s.butterfill@warwick.ac.uk
+    if p.document.weburl
+      .words
+        span(style="position:relative;top:250px;left:450px;").white-box.big.center #{p.document.weburl}
+    .handout \def \ititle {#{p.document.title}}
+    if p.document.subtitle
+      .handout \def \isubtitle {#{p.document.subtitle}}
+    .handout \begin{center}
+    .handout {\Large
+    if p.document.subtitle
+      .handout \textbf{\ititle}: \isubtitle
+    else
+      .handout \textbf{\ititle}
+    .handout }
+    .handout &nbsp;
+    if p.document.email
+      .handout \iemail %<#{p.document.email}>
+    else
+      .handout \iemail %<s.butterfill@warwick.ac.uk>
+    .handout \end{center}
+    if p.document.title === 'Logic I'
+      .handout Readings refer to sections of the course textbook, \emph{Language, Proof and Logic}.
+    block
+
+//- title slides for subsections
+//- param p contains p.unit and p.images (an array of images)
+mixin section(p)
+  section(id="#{p.unit ? p.unit.basename : ''}").slide
+    - var low = false
+    if p.images
+      - var img = p.images.next()
+      img.bkg(src='#{img.url}')
+      if img.filename.indexOf('.low.') != -1
+        - low = true
+    .spacer &nbsp;
+    .title-block(style="#{low ? 'position:relative; top:425px' : ''}")
+      .title-container
+        h2.title1 #{p.unit ? p.unit.title : p.title}
+    block
+
+mixin handout(p)
+  .handout &nbsp;
+  .handout \section{#{p.unit ? p.unit.title : p.title}}
+  //- reading 
+  if p.unit.book && p.unit.book.length && p.unit.book.length > 0
+    .handout \emph{Reading:}  §#{p.unit.book.join(', §')}
+
+
+mixin insert_unit(p)
+  - d = get_unit(p.unit)
+  if !d
+    section.slide
+      p *** missing unit '#{p.unit}'
+  else
+    if p.title_slide
+      +section({unit:d, images:p.images})
+    if p.handout !== false && p.handout !== 'false' && d.handout !== false && d.handout !== 'false'
+      +handout({unit:d})
+    .notes.notes-header-tex &nbsp;
+    .notes.notes-header-tex \section{#{d.title}}
+    +render_unit(d)
+
+
+
+
+mixin conclusion(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  section.slide
+    img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)")
+    +_slide_inner({blend:'overlay'})
+      p.conclusion-title.center.huge-glow-110(style='margin-top:350px;') conclusion
+      .notes: :t
+        In conclusion, ...
+    if p.list || p.objectives
+      .slide
+        +_slide_inner
+          //- +style('img.bkg, .conclusion-title', {filter:'contrast(1.5) blur(10px)'})
+          div(style='margin-top:-550px')
+            if p.objectives
+              p.handout.show Objectives for this lecture:
+            ul.handout.show.hem-around-children
+              block
+    else
+      block
+

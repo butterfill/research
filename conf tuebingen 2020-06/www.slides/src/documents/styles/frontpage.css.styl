@@ -1,0 +1,85 @@
+@import nib
+
+
+
+body
+  font-family Lato, sans-serif
+  font-size
+  font-kerning normal
+  font-variant-ligatures common-ligatures
+  
+h1, h2, h3, h4, h5, h6, h7
+  font-family Lato, sans-serif
+
+h1
+  text-shadow: 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+
+.hero-unit
+  background-color black
+  padding-left 40em
+  margin-left -40em
+  padding-right 40em
+  margin-right -40em  
+  h1, h2, p
+    color white
+  a
+    color #9FCDE7
+
+.fade-in h1
+  animation FadeIn2 20s
+
+@keyframes FadeIn1
+  0% 
+    opacity 0
+  50%
+    opacity 0.2
+  100%
+    opacity 1
+    
+@keyframes FadeIn2
+  0% 
+    opacity 0.3
+    text-shadow: 0 0 350px black, 0 0 150px black, 0 0 50px black, 0 0 5px black
+    color white
+  50%
+    color white
+    opacity 0.8
+    text-shadow: 0 0 150px black, 0 0 50px black, 0 0 5px black, 0 0 2px white
+  80%
+    color black
+    opacity: 1;
+    //text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+    text-shadow: 0 0 350px white, 0 0 150px white, 0 0 50px white, 0 0 5px white, 0 0 5px white
+  100%
+    color black
+    opacity: 1;
+    //text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+    text-shadow: 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+
+blur(degree)
+    color: rgba(0,0,0,0.2/(degree*2))
+    text-shadow: 0 0 7px*(degree*2) rgba(0,0,0,1);
+    font-size 
+/**
+  h1
+    .l1
+      blur(2)
+      
+    .l2
+      blur(1)
+    
+    .l3
+      blur(0.5)
+    
+    .l4
+      blur(0.25)
+    
+    .l5
+      blur(0.125)
+    
+    .l6
+      blur(0.075)
+    
+    .l7
+      blur(0.03)
+*/

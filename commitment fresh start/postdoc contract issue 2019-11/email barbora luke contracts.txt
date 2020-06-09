@@ -1,0 +1,46 @@
+---
+bibliography: /Users/stephenbutterfill/endnote/phd_biblio.bib
+mainfont: Linux Libertine O
+papersize: "a4paper"
+header-includes:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{libertine}
+fontsize: 12pt
+compile_pdf: pandoc reply_to_referees.md -o reply_to_referees.pdf --filter pandoc-citeproc  --latex-engine=xelatex
+---
+
+Dear Fabienne, Dear Robin, (cc Barbora),
+
+Please do include me in the meeting if you think it is appropriate.
+
+There is one issue with immediate practical, institutional and reputational consequences which is too urgent to wait. I hope it’s ok to write to you about this. I would have preferred to talk informally again with you Fabienne and anew with you Robin, but the matter is now of too great urgency, and it may anyway be helpful to put this in writing. 
+
+Fabienne and Barbora, you have each shared your  expectation that the outcome of a disciplinary process (in which you have no part whatsoever) could mean that Barbora and other postdocs would be given the minimum legally required notice before their employment contracts are terminated. You have also told me that you have spoken to Robin about this expectation.
+
+I hope there is a misunderstanding (perhaps on my part), either about whether any disciplinary action could likely result in funding ceasing or else about contracts being terminated if funding did cease.  After all, the expectation that any disciplinary outcome could affect employment in this situation is incompatible with the new Dignity at Warwick policy. It also appears to be incompatible with university’s contractual obligation to the ERC, which requires it not only to take measures to ‘ensure that the performance of researchers is not undermined by instability of employment contracts’ but also to make researchers aware of these measures. Independently of this, we collectively as the university have a clear duty of care towards postdocs (and towards other researchers and research assistants on nonpermanent contracts).
+
+As we all know, ending postdocs’ contracts after a contractual minimum notice period could have long-lasting impact on their careers, especially for those involved in developmental research where there are significant costs in getting started, and where data collection is ongoing. Indeed, I know that even uncertainty about this is currently making planning experiments, dissemination events and other research activities difficult.
+
+There is also an institutional aspect. If I were again consulted over whether to report alleged misconduct or discrimination or whether to report a whistleblowing issue, I’d expect (of course) not have any grounds whatsoever to hesitate over the likelihood of severe but avoidable negative consequences for innocent bystanders. I want my workplace to be one in which everyone can encourage those allegedly affected by misconduct to report it confident in the knowledge that all steps to avoid or mitigate negative effects on innocent third parties will be taken promptly. Of course this is uncontroversial given the university’s policy on us being collectively ‘committed to ensuring ... bullying and harassment are not tolerated’, with no caveats about affordability or financial priorities.
+
+I have three concerns. The first is that we all know that uncertainty over the future (perhaps due to misunderstanding) is already making it difficult for all those affected, especially Barbora and Luke, to plan and execute work in the normal way one does as a postdoc. This is clearly unacceptable with respect to policy, contractual obligations and our duty of care.
+
+My second concern is most serious. Were uncertainty over employment to be well founded (rather than resulting from misunderstanding), or were the postdocs affected actually to be given notice as a consequence of a disciplinary action not involving them, this would likely reduce the chance of bullying or harassment being reported in future and act as a dampener on whistleblowing. Putting any legal and contractual issues aside, this is not only in conflict with university policy but something I know from informal conversations that we would all regard as unacceptable in any case. 
+
+My third, related concern is that well-founded uncertainty around termination of contracts and the attitude to allegations of harassment or discrimination, or to whistleblowing, implied by even the possibility such termination would entail reputational damage to our departments and to our university, affecting our ability to recruit in future and impairing our relationships with funding agencies.
+
+I am puzzled that, despite the recent emphasis on dignity at Warwick, no one in the university has yet identified, implemented and communicated a way to avoid possible future negative effects on third parties. This seems like an obvious and timely requirement given the policy. One likely explanation for this is simply that no such action is needed because I and others are entirely mistaken about the possibility of negative side-effects. 
+
+I hesitate to write because I’m sure the institutional,  reputational and relationship issues are far clearer to you than to me, of course. I also appreciate that your first priority has to be to give the postdocs and other staff realistic expectations so that they can make plans (although it is hard to see what they could do in this particular case), putting their welfare before reputational issues or relationships between the university and funding agencies. But I wanted to raise my concerns nevertheless because the uncertainty about employment affects me directly both as a member of staff and as one of the people involved in the project. 
+
+As I write, I am conscious of the possibility that I am misinformed. I certainly have limited information (and in some respects have not sought to be better informed, for obvious reasons). It would be great if my concerns are entirely unfounded and those not subject to disciplinary action are not in fact at any risk of losing their positions.
+
+I’m sorry that I can’t easily be on campus before Tuesday this week. If you’d like to speak before then, my mobile is 07507 74 47 47.
+
+best wishes,
+
+Steve
+
+\hfill s.butterfill@warwick.ac.uk
+
+\hfill 2019-11-23

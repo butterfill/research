@@ -1,0 +1,93 @@
+
+NB: The thinks proposition should be presented as a question put to Ss in the scenario in question
+
+1. 
+Thinks Proposition: Fred believes that Betty is competent
+Desires proposition: Fred wants to keep Betty on his team. [Fred likes Betty?]
+Intends proposition: Fred intends to keep Betty on his team.
+
+Belief evidence: (a) statements made to family; (b) statements made in work meeting
+
+Scenarios: (a) planning a party and wondering whether to invite boss; (b) deliberating about whether to apply for promotion, not wanting to lose face
+
+
+2. 
+Thinks Proposition: Fred believes that the rich are entitled to their wealth and owe nothing to society
+Desires proposition: Fred wants to help people who are less fortunate. / Fred wants to enjoy his wealth alone.
+Intends proposition: Fred intends to help people who are less fortunate. / Fred intends to enjoy his wealth alone.
+
+Belief evidence: (a) activities in local community; (b) voting behaviour
+
+Scenarios: (a) deliberating about which party to vote for; (b) deliberating about whether to join organising a food bank
+
+
+Idea
+----
+
+Subjects are presented with a body of information relevant to Protagonist’s mental states. The information supports conflicting attributions. That is, one part of the information supports attributing to the Protagonist a belief that p and another part of the information supports attributing a belief that ~p; similarly for what Protagonist wants to be the case, and intends to bring about. 
+
+We manipulate how the information is divided up. In some cases, information related to the Protagonist’s behaviour in social situations supports one attribution whereas information related to the Protagonists’s behaviour in professional situations supports a conflicting attribution.  In other cases, information related to the Protagonist’s voting behaviour supports one attribution whereas information related to the Protagonist’s everyday interactions with others supports a conflicting attribution.  
+
+    Table: Information Bodies
+
+    Social-Professional-P1 [we may want to drop P1]: 
+    Fred is Betty’s co-worker. When with Betty’s friends he commends her intelligence. When with Betty’s bosses he disparages her competence.
+
+    Professional-Social-P1:
+    Fred is Betty’s co-worker. When with Betty’s bosses he commends her intelligence. When with Betty’s friends he disparages her competence.
+
+    Social-Professional-P2: 
+    Fred is Betty’s co-worker. When with Betty’s friends he eats only vegan food. When with Betty’s bosses he eats animals.
+
+    Professional-Social-P2:
+    Fred is Betty’s co-worker. When with Betty’s bosses he eats only vegan food. When with Betty’s friends he eats animals.
+
+    Voting-Doing-P3:
+    Ayesha has always voted for the Anti-Welfare Laissez Faire Pro-Capitalist Party. She has almost always regularly donated to charities for the poor.
+    
+    Doing-Voting-P3:
+    Ayesha has almost never regularly donated to charities for the poor.
+    She has always voted for the Pro-Welfare Egalitarian Anti-Capitalist Party.  
+
+After being presented with information relevant to belief attribution, subjects are placed in one of two scenarios. The scenarios are distinguished in the same way that the bodies of information are distinguished, as the table below shows. 
+
+    Table: Scenarios
+    
+    Social-P1: 
+    Betty is inviting some friends to a dinner party. She is considering whether to include Fred. Betty wonders whether Fred thinks she is intelligent. Does he? [yes/no] [How confident are you in your answer? 1-10; 1 – Not at all confident to 10 – Completely confident]
+    [desire] Betty wonders whether Fred wants her to remain on his team. Does he?
+    [intention] Betty wonders whether Fred intends that she remain on his team. Does he?
+
+    Professional-P1: 
+    Betty receives an email informing her that applications for promotion are due next week. She is considering whether to apply. Betty wonders whether Fred thinks she is intelligent. Does he? 
+
+    Social-P2: 
+    Betty is inviting some friends to a dinner party. She is considering whether to include Fred. Betty wonders whether Fred thinks it is ok to eat animals. Does he? 
+
+    Professional-P2: 
+    Betty receives an email informing her that there will be a work dinner next week. She is considering whether to tell Fred. Betty wonders whether Fred thinks it is ok to eat animals. Does he? 
+
+    Voting-P3:
+    Ayesha is being interviewed by a pollster about her voting intentions. The pollster asks Ayesha whether she thinks wealth should be redistributed. Does she?
+
+    Doing-P3:
+    Ayesha is being interviewed by her granddaughter about her life. The granddaughter asks Ayesha whether she thinks wealth should be redistributed. Does she?
+
+
+We hypothesise that subjects’ answers to the questions will depend not only on the body of information they are presented with but also in which scenario the question is asked. (Note that the questions are the same in all scenarios.) The table below gives simplified predictions to illustrate the idea.
+
+    Table: Predicted answers (simplified); each cell represents one condition.
+
+    Information Body    Social-Professional-P1    Professional-Social-P1
+    Scenario          
+      Social-P1          yes                       no
+      Professional-P1    no                        yes
+
+These predictions are simplified in that they ignore the possibility that a body of evidence may strongly bias all subjects to attribute a particular belief. We therefore follow \citet{starmans:2012_folk} in combining the two measures used to assess attributions (i.e., the dichotomous choice between yes/no, and the 1-to-10 confidence scale), multiplying the confidence rating by +1 in cases where participants answered yes, and by -1 in cases where participants answered no. Thus each participant’s score will fall a 20-point scale ranging from -10 (minimum attribution) to +10 (maximum attribution). Our prediction is that there will be an interaction between Information Body and Scenario concerning the attribution scores.
+
+Why are these predictions justified?  The subjects’ responses to our questions about mental state are attributions. As in the present experiment, mental state attributions are often made on the basis of bodies of evidence which do not best support any one set of attributions over all others. How should mental state attribution proceed in such circumstances? One possibility would be to withhold mental state attribution. Such caution may not always be optimal, however. We hypothesise that one purpose of mental state attributions is to keep track of how the target of the attribution (in this case, the Protagonist) is disposed to behave.[^1] If so, it may be coherent, even desirable, to taylor which mental states are attributed to the scenario (or scenarios) of interest. For example, when concerned with dispositions to behave in social scenarios (say), mental state attribution may give greater weight to information from past behaviour social situations; but when concerned with how someone is disposed to behave in professional situations, mental state attribution may give greater weight to information from past behaviour professional situations. This may result in apparently inconsistent patterns of mental state attribution. (These patterns are apparently inconsistent in the sense that they involve both affirming (in one scenario) and denying (in another scenario) that Protagonist believes [wants/intends] that P)
+
+[^1]: Issue: prediction doesn’t follow unless we say the main purpose.
+
+
+

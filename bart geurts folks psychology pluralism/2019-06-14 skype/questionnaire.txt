@@ -1,0 +1,16 @@
+Questionnaire for study of mental state attibution across languages
+
+IDEA 1: identify how contrasts between states are expressed
+
+She X it is the case but she doesn’t Y it is the case
+
+thinks / know
+accepts / know
+believes / say
+knows / admits
+guesses / think
+suspects / accept
+fears / accept
+doubts / deny
+
+

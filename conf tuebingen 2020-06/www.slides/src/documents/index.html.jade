@@ -1,0 +1,100 @@
+---
+layout: 'default2'
+title: 'Is there a fundamental question of action theory?'
+email: 's.butterfill@warwick.ac.uk'
+weburl: ''
+units: []
+lecture_date: '2017/08/31'
+---
+
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
+
+//- +title_slide({document:document, images:images})
+
+
+
+section.slide
+  div
+    img#titleImg.bkg(src='/img/20170719_091420.jpg')
+  +_slide_middle_inner({blend:'overlay'})
+    .huge-glow-invert-60.center(style="line-height:.7em;")
+      p.firsttitle
+        span Is There a
+      p
+        span Fundamental Question  
+      p
+        span of 
+      p
+        span.motor-representation Action Theory?
+  +reset
+    +_slide_inner
+      p.right(style="margin-top:500px;").invert.signature s.butterfill@warwick.ac.uk
+
+  +rain({img:'#titleImg'})
+
++slide({bkg:'partners_in_crime.jpg'})
+
+
+
++insert_unit({unit:'intro', title_slide:false, images:images})
+
+
++insert_unit({unit:'red', title_slide:false, images:images})
+
++slide_middle
+  .notes: :t
+    Need to relate this back to the larger question.
+  p.center: :t
+    Is there a fundamental question of action theory?
+  .slide
+    p.em-above: :t
+      Why suppose it makes sense to ask outright which things are actions but not which things are red?
+    .notes: :t
+      My sense is that the action terms (‘action‘, ’agent’, ’intention’ and the rest) as used by 
+      philosophers to pose a ‘fundamental question’
+      are not treated as technical terms but parts of ordinary language.
+      But if Clark is right about terms being used contrastively (to put it roughly),
+      the question as standardly posed cannot be asked at all.
+    .notes: :t
+      You might think, in the case of red, that we should focus on the psychological capacity.
+      The question about which things are red is trivial only because the psychological
+      capacity is so shallow (mere categorization).
+      But it is hard to interpret philosophers of action as doing the same,
+      because psychological capacities to track agents and their actions are so
+      much less well understood.
+
++insert_unit({unit:'models', title_slide:false, images:images})
+
++slide_middle
+  .notes: :t
+    Need to relate this back to the larger question.
+  p.center: :t
+    Is there a fundamental question of action theory?
+  .slide
+    p.em-above: :t
+      Suppose we reject the view that humans have a capacity to track agents and their actions
+      which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
+    p: :t
+      Can we still as the ‘fundamental question’ of action theory?
+    .notes: :t
+      My sense is that the action term as used by philosophers to pose a ‘fundamental question’
+      rests on the view that humans have a capacity to track agents and their actions
+      which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
+    .notes: :t
+      If you abandon this view, can you still ask the fundamental questions?
+
++slide_middle({bkg:'shiva.jpg'})
+  p: :t
+    Justm objections so far.
+  p: :t
+    Nothing positive to contribute?
+
++insert_unit({unit:'mechanistically_neutral', title_slide:false, images:images})

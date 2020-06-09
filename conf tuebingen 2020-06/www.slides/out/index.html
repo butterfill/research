@@ -1,0 +1,786 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013-7 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Is there a fundamental question of action theory? | Cooperation and Motor Representation</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
+    <meta name="author" content=""/>
+    <meta name="url" content="https://www.butterfill.com/talk-slides/mindreading_ww/"/><meta name="generator" content="DocPad v6.78.6" />
+    <meta name="viewport" content="width=device-width"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/for.slides.all.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/for.slides.all.min.js"></script><script defer="defer"  src="/vendor/deepstream.js"></script><script defer="defer"  src="/scripts/remote.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+
+
+<section class="slide">
+  <div><img id="titleImg" src="/img/20170719_091420.jpg" class="bkg"/></div>
+  <div style="; mix-blend-mode: overlay;" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div style="line-height:.7em;" class="huge-glow-invert-60 center">
+            <p class="firsttitle"><span>Is There a</span></p>
+            <p><span>Fundamental Question  </span></p>
+            <p><span>of </span></p>
+            <p><span class="motor-representation">Action Theory?</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p style="margin-top:500px;" class="right invert signature">s.butterfill@warwick.ac.uk</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>(function() {
+  var imgName;
+
+  imgName = '#titleImg';
+
+  addAction({
+    doit: function() {
+      if (this.engine == null) {
+        this.engine = new RainyDay({
+          image: $(imgName)[0],
+          parentElement: $(imgName).parent()[0],
+          blur: 0,
+          opacity: 1
+        });
+      }
+      return this.engine.rain([[0, 2, 100], [3, 3, 1]], 100);
+    },
+    doAfter: function() {
+      var ref;
+      return (ref = this.engine) != null ? ref.pause() : void 0;
+    },
+    undoit: function() {
+      var ref;
+      return (ref = this.engine) != null ? ref.pause() : void 0;
+    }
+  });
+
+}).call(this);
+
+  </script>
+</section>
+<section style="" class="slide"><img src="/img/partners_in_crime.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Introduction}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Introduction}</div>
+
+<script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+<section style="" class="slide"><img src="/img/steward_figure.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Steward’s model.
+Discoveries about psychological capacities to track agents and their actions 
+provide some, perhaps limited, support for a conclusion about which things are 
+agents.
+And what Steward calls ‘the evidence from everyday thinking’ likewise feeds into
+this conclusion.
+        </div>
+        <div class="slide">
+          <div style="margin: 150px 0px 0px 380px" class="notes handout show">
+            <p>‘it may be that [our intuitions] make distinctions in the places they do   </p>
+            <p><span class="oxf">for reasons not altogether unconnected with the fact that</span><span class="hide because"> because </span></p>
+            <p>there are indeed distinctions in those places which need to be discerned’</p>
+          </div>
+          <div class="notes handout ctd">\citep[p.~229]{steward:2009_animal}.</div>
+          <p class="right grey-text">Steward, 2009 p. 229</p>
+        </div>
+        <div class="slide">
+          <div data-what=".oxf" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
+          <div data-what=".because" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Red}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Red}</div>
+
+<script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center huge-glow">objection 1 : red</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Let me start with something quite basic.
+Here are three patches of colour.
+The patches are all different colours, but the two leftmost are both the same colour---they are both blue.
+This sounds contradictory but isn't.
+In one case we're talking about the particular colours of things; in the other case we're talking about colour category.
+  </div>
+  <div class="notes">The question I want to ask about knowledge of colour concerns these cateories. 
+You know that these two are both blue whereas this is not (it's green).
+How do you come to know this?
+(Ask them to discuss.)
+Does anyone thing the answer is that you can just see it?  As we'll see, that idea looks promising initiall but it's not quite that simple.
+  </div>
+  <div class="notes">*TODO*: \citep{webster:2012_color} has good summary and lots of complications about CP.
+Also introduces methods not considered here.
+  </div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="hide">What is categorical perception of colour?</p>
+      </div>
+    </div>
+  </div>
+  <div class="middle">
+    <div class="container_12">
+      <div class="grid_4">
+        <div style="background-color:rgb(51,153,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+        </div>
+        <p class="center">2.5B</p>
+      </div>
+      <div class="grid_4">
+        <div style="background-color:rgb(85,100,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+        </div>
+        <p class="center">7.5BG</p>
+      </div>
+      <div class="grid_4">
+        <div style="background-color:rgb(42,162,42);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
+        </div>
+        <p class="center">2.5BG</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/witzel_gegenfurtner_2013_fig6.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Witzel & Gegenfurtner, 2013 figure 6</p>
+        <div class="notes">caption:
+‘Figure 6. Color naming. The colors in the graphic refer to the color names used for a particular test color in a particular session by a particular observer. The x-axis refers to the variation in hue as in Figure 3. Each column refers to a particular stimulus color at isoluminance. The horizontal black lines separate layers that correspond to the data for each participant. Within each layer, the rows represent repeated measurements of color naming in different experimental sessions. Vertical black lines correspond to the category boundaries calculated through the modes of the single measurements. Supplementary Figure S6 provides the graphic for dark and light. Variation across was higher than within observers.’
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/visual_pathway.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Can measure disciminability by different mechanisms.
+        </div>
+        <div class="notes">[a] ‘cone–opponent dimensions of the second-stage mechanisms can be
+used as a perceptual reference’
+        </div>
+        <div class="notes">[b] use discrimnation thresholds (JNDs) ‘the basic ability to
+detect small differences between colors. Sensitivity can be
+measured through discrimination thresholds’
+        </div>
+        <div class="notes">[c] use ‘a speeded, suprathreshold discrimination task
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/witzel_2018_fig5.png" style="clip: rect(0,380px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Witzel & Gegenfurtner 2018, figure 5</p>
+        <div class="notes">[caption:] ‘Category effects on color perception. (a) Categorical sensitivity. The diagram shows how the sensitivity to color differences changes across hue. The x-axis corresponds to hue in DKL color space, and the y-axis to discrimination thresholds. Adapted from Witzel & Gegenfurtner (2013). Note that the green-blue boundary is unlike the others in that it coincides with a local minimum of discrimination thresholds. (b) Categorical facilitation. The bars along the x-axis of the main graphic correspond to color pairs that are composed of the colors illustrated by the inset. The y-axis of the main graphic represents response times in speeded discrimination. Note that discriminating the color pair BC, in which B and C belong to different categories (i.e., red and brown), is fastest even though the distances between colors control for sensitivity to color differences. Adapted from Witzel & Gegenfurtner (2016). Abbreviation: DKL, Derrington-Krausfopf- Lennie. ∗∗p < 0.01; ∗∗∗p < 0.001.’
+        </div>
+        <div class="notes">\citep[p.~488]{witzel:2018_colora}: ‘First, the known
+cone–opponent dimensions of the second-stage mechanisms can be
+used as a perceptual reference, and the sensitivity to color
+differences can serve as the category-probing measure. We refer
+to the sensitivity to color differences as the basic ability to
+detect small differences between colors. Sensitivity can be
+measured through discrimination thresholds under optimal
+conditions. In case categorical perception acts even at this
+basic level, sensitivity should be higher—and thresholds
+lower—at the category boundaries than within the categories.
+However, this is not the case (cf. Figure 5a): There is no
+category effect at this low sensory level of color processing
+(Bachy et al. 2012; Cropper et al. 2013; Danilova & Mollon 2014;
+Roberson et al. 2009; Witzel & Gegenfurtner 2013, 2018).’
+        </div>
+        <div class="slide">
+          <div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes">\citep[p.~488]{witzel:2018_colora}: ‘Second, we can use those
+empirical discrimination thresholds as the perceptual
+reference and test for category effects on other performance
+measures (response times and error rates) in a speeded,
+suprathreshold discrimination task. In this case, category
+effects on response times and error rates have been observed
+around an isoluminant hue circle (Witzel & Gegenfurtner 2015)
+and at the red–brown boundary (Witzel & Gegenfurtner 2016)
+(see Figure 5b). We call these effects categorical
+facilitation in the sense that they facilitate speeded
+discrimination of suprathreshold stimuli beyond what is
+predicted by sensitivity. Interestingly, the categorical
+facilitation effects occurred only in na ̈ıve, unexperienced
+observers with high response times, but they disappeared for
+trained observers who became experts in the task and responded
+fast and automatically (Witzel & Gegenfurtner 2015).’
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/slide_cp_40.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes handout">‘In the local market, we find: red, brown, white, and russet potatoes; red and green cabbages; red,
+yellow, and green bell peppers; red, yellow, and white onions; red and white grapes; white and pink
+grapefruit; red, white, black, green, and yellow beans; and, of course, red, white, rose, and green
+wine (green as in green Hungarian). Among hair colors, we find black, brown, red, blond (in­ stead of
+yellow), gray, and white. None of these nomenclatures makes sense if we go strictly by the standard
+Munsell color chips. The reds in red hair, red potatoes, red cabbage, red bell peppers, red onions,
+red grapes, red beans, red wine, and red skin are very different from the blood red of the focal red
+Munsell chip. They are also very different from each other. They only make sense with the similarity,
+preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the
+principle of possibilities’ 
+\citep[p.~372]{clark:1992_arenas}.
+        </div>
+        <div class="colour">
+          <p class="step2 hide">‘The reds in
+          </p>
+          <p>red hair, red potatoes, red cabbage, red bell peppers, red onions,
+red grapes, red beans, red wine, and red skin
+          </p>
+          <p class="step2 hide"><span>[...] only make sense with the similarity, </span><span>preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the </span><span class="pop">principle of possibilities</span><span>’  </span></p>
+          <p class="right grey-text">Clark, 1992 p. 372</p>
+          <div class="slide">
+            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".pop" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".pop" data-cls="bkg-pink" class="dv dv-addclass"></div>
+            <p>‘the principle of possibilities: We understand what an entity is with reference to 
+[... the set of possibilities we infer it came from’
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".pop" data-cls="bkg-pink" class="dv dv-removeclass"></div>
+          <div data-what=".colour" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <p class="em-above">As with colour, psychological terms like ‘acts’ and ‘thinks’ can be used to make many different contrasts ...</p>
+        </div>
+        <div class="slide">
+          <p class="indent hem-above">‘I know that my orchids are trying to stave off the cold so they can get growing again’</p>
+          <p class="indent hem-above">‘This dormancy happens because the grass is trying to preserve itself with limited resources’</p>
+          <p class="indent hem-above">‘spotify is trying to play’</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/steward_figure.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p style="margin-top:400px">‘some part of us finds it almost impossible not to categorise them as’ agents</p>
+        <p class="right grey-text">Steward, 2009 p. 229</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p style="margin-top:150px">(my|your|his|her|their) phone</p>
+        <p class="indent">is trying to (excluding ‘kill me’) [283,000]</p>
+        <div class="notes">eg ‘my phone is trying to navigate me to Alex even though he has been deleted’
+        </div>
+        <p class="indent">wants to [278,000]</p>
+        <p class="indent">hates [147,000]</p>
+        <p class="indent">likes [86,800]</p>
+        <p class="indent">thinks (e.g. ‘My phone thinks I’m in another city’) [53,400]</p>
+        <p class="indent">is pretending [16,000]</p>
+      </div>
+    </div>
+  </div><img src="/img/steward_figure.jpg" width="1024px" style="mix-blend-mode:difference; opacity:1" class="bkg"/>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Need to relate this back to the larger question.
+          </div>
+          <p class="center">Is there a fundamental question of action theory?
+          </p>
+          <div class="slide">
+            <p class="em-above">Why suppose it makes sense to ask outright which things are actions but not which things are red?
+            </p>
+            <div class="notes">My sense is that the action terms (‘action‘, ’agent’, ’intention’ and the rest) as used by 
+philosophers to pose a ‘fundamental question’
+are not treated as technical terms but parts of ordinary language.
+But if Clark is right about terms being used contrastively (to put it roughly),
+the question as standardly posed cannot be asked at all.
+            </div>
+            <div class="notes">You might think, in the case of red, that we should focus on the psychological capacity.
+The question about which things are red is trivial only because the psychological
+capacity is so shallow (mere categorization).
+But it is hard to interpret philosophers of action as doing the same,
+because psychological capacities to track agents and their actions are so
+much less well understood.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Models vs Construals}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Models vs Construals}</div>
+
+<script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="line-height:.5em" class="center huge-glow">objection 2 : model vs construal</p>
+          <div class="notes">Source: Godfrey-Smith</div>
+          <div class="slide">
+            <p class="em-above center">e.g. model of a house</p>
+            <div class="notes">Model of a house.
+Initially it’s aspirational [construal 1]. 
+They you win the lottery.
+Same model can be construed as a plan [construal 2].
+Later, when the house is built, you use it as a map of the house [construal 3].
+Then you realise that people are quite similar
+and that what you thought was a unique design is something
+that lots of other people would also want,
+so you use the model to predict what others will want [construal 4].
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes handout show">Models, in my sense, do not themselves say anything about the
+world.
+          </p>
+          <div class="slide">
+            <p class="notes handout show">Models are structures that can be used by scientists to say various
+different things about the world,
+            </p>
+          </div>
+          <div class="slide">
+            <p class="notes handout show">by means of commentaries that accompany
+models but are distinct from them’
+            </p>
+          </div>
+          <div class="notes handout ctd">\citep[p.~4]{godfrey-smith:2005_folk}.</div>
+          <p class="right grey-text">Godfrey-Smith, 2005 p. 4
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="one notes handout show"><span>‘Two scientists can use the same model to help with the same target system while </span><span>having quite different views of how the model might be representing the target </span><span>system. I will describe this situation by saying that the two scientists have </span><span>different </span><span class="construals">construals</span><span> of the model’ </span></p>
+          <div class="notes handout ctd">\citep[p.~4]{godfrey-smith:2005_folk}</div>
+          <div class="slide">
+            <div data-what=".one span:not(.construals)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <p class="em-above notes handout show">‘one scientist might [construe] some model simply as an input-output device, as a
+predictive tool.
+            </p>
+            <p class="em-above notes handout show">Another might [construe] the same model as a faithful map of the
+inner workings of the target system’
+            </p>
+            <div class="notes handout ctd">\citep[p.~4]{godfrey-smith:2005_folk}</div>
+          </div>
+          <p class="right grey-text">Godfrey-Smith, 2005 p. 4
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes handout show"><span>‘Basic facility with </span><span class="the">the folk-psychological model</span><span> does not require using a particular construal of it.  </span></p>
+          <div class="slide">
+            <div data-what=".the" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".the" data-cls="bkg-red" class="dv dv-addclass"></div>
+            <div class="notes">In other work, I have argued that there are multiple processes involving multiple models,
+both in the case of capacities to track mental states and in the case of capacities 
+to track agents and their actions.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".the" data-cls="bkg-red" class="dv dv-removeclass"></div>
+          </div>
+          <div class="slide">
+            <p class="notes handout show"><span>‘it is [...] </span><span>possible to have facility with the model, and have a sense of which target </span><span>systems are appropriate for it, </span><span class="key">while not having much of a construal at all</span><span>’ </span></p>
+          </div>
+          <div class="notes handout ctd">\citep[p.~5]{godfrey-smith:2005_folk}.</div>
+          <p class="right grey-text">Godfrey-Smith, 2005 p. 5
+          </p>
+          <div class="slide">
+            <div data-what=".key" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".key" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">This is your position!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/steward_figure.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p style="margin-top:400px">‘some part of us finds it almost impossible not to categorise them as’ agents</p>
+        <p class="right grey-text">Steward, 2009 p. 229</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p style="margin-top:150px">The psychological capacities involve models but not construals.</p>
+        <p>Everyday thinking might be a useful source of models, but it would be bold to rely on its construals.</p>
+        <p>(Things may be different if we consider ethical abilities.)</p>
+      </div>
+    </div>
+  </div><img src="/img/steward_figure.jpg" width="1024px" style="mix-blend-mode:difference; opacity:1" class="bkg"/>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Need to relate this back to the larger question.
+          </div>
+          <p class="center">Is there a fundamental question of action theory?
+          </p>
+          <div class="slide">
+            <p class="em-above">Suppose we reject the view that humans have a capacity to track agents and their actions
+which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
+            </p>
+            <p>Can we still as the ‘fundamental question’ of action theory?
+            </p>
+            <div class="notes">My sense is that the action term as used by philosophers to pose a ‘fundamental question’
+rests on the view that humans have a capacity to track agents and their actions
+which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
+            </div>
+            <div class="notes">If you abandon this view, can you still ask the fundamental questions?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/shiva.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>Justm objections so far.
+          </p>
+          <p>Nothing positive to contribute?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Mechanistically Neutral}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Mechanistically Neutral}</div>
+
+<script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="words run-across">
+      <p class="center">Which things are actions?</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="center">mechanistically committed</p>
+        <p class="em-above">Those things which are appropriately related to an intention, or to a belief-desire pair, 
+or to some other state of an agent, 
+are actions.
+        </p>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p class="center">mechanistically neutral</p>
+        <p class="em-above">Those things directed to an outcome are purposive actions.</p>
+        <p>Those purposive actions which happen because of a reason favouring the outcome’s occurrence are intentional actions.</p>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="hem-around">1. Which things are actions?</p>
+          <p class="hem-around">2. Which states or processes enable agents to act?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

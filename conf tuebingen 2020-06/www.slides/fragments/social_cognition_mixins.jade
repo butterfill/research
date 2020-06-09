@@ -1,0 +1,342 @@
+mixin socialCognitionDfv1()
+  //- NB: succeeded by later definitions!
+  p Social cognition:
+  p.indent The 
+    span.processes processes
+    span  involved in 
+    br
+    span.orchestrating-representations orchestrating representations
+    span  of 
+    br
+    span actions and mental states 
+    br
+    span to support 
+    span.skilled skilled
+    span  social functioning.
+
+
+mixin socialCognitionDfv2()
+  p Social cognition:
+  p.indent 
+    span.cognition cognition
+    span  of 
+    br
+    span actions and mental states 
+    br
+    span which supports social functioning.
+
+//- 2017-8 : refined in lecture, thank you students!
+mixin socialCognitionDfv3()
+  p Social cognition:
+  p.indent 
+    span.cognition cognition
+    span  of 
+    br
+    span others’ actions and mental states 
+    br
+    span in relation to social functioning.
+
+
+
+
+mixin radicalInterpretation()
+  p.huge-glow-70(style='line-height:.6em') radical interpretation
+    span.star *
+  p.under-huge-glow.slogan
+    span.infer Infer
+    span  The 
+    span.mind Mind
+    span  from The  
+    epan.evidence Evidence
+  p.em-above.theMind The 
+    span.mind Mind
+    span : facts about actions, desires, beliefs, emotions, perspectives ...
+  p.em-above.theEvidence
+    span The 
+    span.evidence Evidence
+    span : facts about events and states of affairs that could be 
+    span known without knowing what any particular individual believes, desires, intends, ...
+
+mixin intentionalStance()
+  p ‘the intentional stance ...
+  p.is1 ‘first you decide to treat the object whose behavior is to be predicted as a rational agent; 
+  p.is2 ‘then you figure out what 
+    span.beliefs-ought beliefs that agent 
+      span.ought1 ought
+      span  to have
+    span  , given its place in the world and 
+    span.purpose its purpose
+    span . 
+  p.is3 ‘Then you figure out what 
+    span.desires-ought desires it 
+      span.ought2 ought
+      span  to have
+    span , on the same considerations, 
+  p.is4 ‘and finally you predict that this 
+    span.rational-agent rational agent
+    span  will act to further its 
+    span.goal goals
+    span  in the light of its beliefs’
+  p.right.grey-text Dennett (1987, 17)
+
+
+mixin intentionalStanceObjection1()
+  .objection1
+    p.huge-glow Objection 1
+    p(style='margin-top:-3em;') The Intentional Stance provides 
+      br
+      span no way to identify 
+      br
+      span false beliefs, ‘incorrect’ desires or failures of rationality.
+      
+mixin intentionalStanceObjection2()
+  .objection2
+    p.huge-glow Objection 2
+    p(style='margin-top:-3em;') The Intentional Stance provides 
+      br
+      span no adequate way to 
+      br
+      span distinguish me from you.        
+
+
+mixin premack-ToM-df(p)
+  - p = p || {handout:false}
+  .premack-quote
+    .notes.show(class="#{p.handout ? 'handout' : ''}")
+      span ‘In saying that an individual has a 
+      span.theory-of-mind theory of mind,
+      span  we mean that the individual [can 
+      span.ascribe ascribe
+      span ] mental states’ 
+    .notes.ctd(class="#{p.handout ? 'handout' : ''}") \citep[p.\ 515]{premack_does_1978}
+    p.right.grey-text Premack & Woodruff, 1978 p. 515
+
+
+mixin mindreadingIsPervasiveEvidence(p)
+  - p = p || {handout:false}
+  
+  +slide_rh_white
+    if p.handout
+      .notes: :t
+        There is a lot of evidence for theory of mind in nonhuman animals ...
+      .notes.handout: :t
+        \begin{itemize}
+        \item Apes : anticipatory gaze depends on protagonists’ false belief 
+        \citep{krupenye:2016_great}
+    
+        \item Apes, goals : food avoidance differs depending on competitors’ (mis)information 
+        \citep{Hare:2001ph,kaminski:2006_goats}
+  
+        \item Apes : avoid being seen or making sounds when taking food 
+        \citep{melis:2006_chimpanzees}
+      
+        \item Apes : will exploit facts about what others can see in mirrors or through screens 
+        \citep{karg:2015_chimpanzees,lurz:2018_chimpanzees}
+  
+        \item Corvids : caching differs depending what others can, or have, seen 
+        \citep{Clayton:2007fh,bugnyar:2016_ravens}
+  
+        \item Dogs : responses to requests depend on what requester can see 
+        \citep{kaminski:2009_domestic}
+  
+        \item Ringtail lemurs, common marmosets : food avoidance depending on competitors’ line of sight 
+        \citep{burkart:2007_understanding,sandel:2011_evidence}
+        \end{itemize}
+    
+    +left_half 
+      p Apes : anticipatory gaze depends on protagonists’ false belief 
+        span.right.grey-text (Krupnye et al, 2017)
+    
+      p Apes, goals : food avoidance differs depending on competitors’ (mis)information 
+        span.right.grey-text (Hare et al, 2001; Kaminski et al, 2006)
+  
+      p Apes : avoid being seen or making sounds when taking food 
+        span.right.grey-text (Melis et al, 2006)
+      
+      p Apes : will exploit facts about what others can see in mirrors or through screens 
+        span.right.grey-text (Karg et al, 2015; Lurz et al, 2018)
+  
+    +right_half 
+      p Corvids : caching differs depending what others can, or have, seen 
+        span.right.grey-text (Clayton et al, 2007; Bugnyar et al, 2016)
+  
+      p.dogs Dogs : responses to requests depend on what requester can see 
+        span.right.grey-text (Kaminski et al, 2009)
+  
+      p Ringtail lemurs, common marmosets : food avoidance depending on competitors’ line of sight 
+        span.right.grey-text (Sandel et al, 2011; Burkart & Heschl, 2007)
+        
+    block
+
+
+mixin logicalProblemThreeResponses(p)
+  - p = p || {handout:false}
+  
+  if p.handout
+    .handout: :t
+      \begin{enumerate}
+        \item It is not a logical problem at all, but one that should be resolved by better experimental methods.
+      Therefore, we lack evidence for nonhuman mindreading (except maybe from ‘goggles’ and ‘mirror’ experiments)
+
+      \item It is a merely logical problem (so a form of sceptical hypothesis).
+      Therefore, we already have evidence for nonhuman mindreading
+
+      \item It is an illusory problem, caused by a theoretical mistake.
+      Therefore, we’re thinking about the issue in the wrong way
+      \end{enumerate}
+    
+  p.one.hem-around 1. It is not a logical problem at all, but one that should be resolved by better experimental methods.
+  p.indent - we lack currently evidence for nonhuman mindreading
+    br
+    span (except maybe from ‘goggles’ and ‘mirror’ experiments)
+  .step2.em-above
+    p.two.hem-around 2. It is a merely logical problem (so a form of sceptical hypothesis).
+    p.indent - we already have evidence for nonhuman mindreading
+  .step3.em-above
+    p.three.hem-around 3. It is an illusory problem, caused by a theoretical mistake.
+    p.indent - we’re thinking about the issue in the wrong way
+
+
+mixin mindreadingRequirement1()
+  p Requirement: 
+  p.em-above We can distinguish, 
+  p.indent both within an individual
+  p.indent and between individuals, 
+  p mindreading which involves representing mental states 
+  p from 
+  p mindreading which does not.
+
+mixin nonhumanMindreadingNewQuestion()
+  p What 
+    span.model model
+    span s of minds and actions, 
+    span.and-behaviours and of behaviours
+    span ,
+  p and what kinds of processes,
+  p underpin mental state  
+    span.track tracking
+    span   in different animals?
+
+
+mixin mindreadingThreeQuestions()
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What models of minds and actions
+      and what kinds of processes,
+      underpin mental state tracking in infants, chimps and scrub-jays and other animals?
+  .q2
+    p.huge-glow: span Q2
+    p(style='margin-top:-4em;')
+      span Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span  in some cases but not all?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;')
+      span.a Why is belief-tracking in adults sometimes but not always automatic?
+      span.b How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+
+
+
+mixin slide_signatureLimitsGeneratePredictions(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  +slide_rh_white({step:p.step})
+    +run_across
+      p.center signature limits generate predictions
+    +left_half
+      p.center Adults
+      p.em-above Hypothesis:
+      p Some automatic belief-tracking systems rely on minimal models of the mental.
+    +right_half
+      p.center Infants
+      p.em-above Hypothesis:
+      p Infants’ belief-tracking abilities rely on minimal models of the mental.
+    .clear
+    +left_half
+      p.em-above Prediction:
+      p Automatic belief-tracking is subject to the signature limits of minimal models.
+    +right_half
+      p.em-above Prediction:
+      p Infants’ belief-tracking is subject to the signature limits of minimal models.
+    if p.step
+      +hide('.right-half', 0)
+      .slide
+        +show('.right-half-white, .right-half')
+
+
+mixin slide_signatureLimitsGeneratePredictionsAboutNonhumans(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  +slide_rh_white({step:p.step})
+    +run_across
+      p.center signature limits generate predictions
+    +left_half
+      p Hypothesis:
+      p Some belief-tracking in chimpanzees (say) relies on minimal models of the mental.
+    +right_half
+      p Hypothesis:
+      p Human infants’ belief-tracking abilities rely on minimal models of the mental.
+    .clear
+    +left_half
+      p.em-above Prediction:
+      p Some chimpanzee belief-tracking is subject to the signature limits of minimal models.
+    +right_half
+      p.em-above Prediction:
+      p Infants’ belief-tracking is subject to the signature limits of minimal models.
+    if p.step
+      +hide('.right-half', 0)
+      .slide
+        +show('.right-half-white, .right-half')
+
+
+mixin threeQ
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic? 
+  .q2
+    p.huge-glow Q2
+    p(style='margin-top:-4em;')
+      span How could belief-tracking ever be 
+      span automatic given 
+      span.evidence evidence
+      span  that it depends on working memory and consumes attention?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;')
+      span Why are there 
+      span.dissociations dissociations
+      span  in nonhuman apes’ performance on belief-tracking tasks?
+
+mixin dualProcessTheory()
+  p.center.notes.show.title Dual Process Theory of Mindreading (core part)
+  p.notes.show.theory
+    span Two (or more) mindreading processes are distinct: 
+    br
+    span the conditions which influence whether they occur, 
+    br
+    span and which outputs they generate, 
+    br
+    span do not completely overlap.
+
+mixin theoriesOfRadicalInterpretation()
+  .hem-around-children
+    p Theories of radical interpretation*:
+    p.indent.is The Intentional Stance (Dennett)
+    p.indent.davidson Davidson’s Theory
+    p.indent.ts The Teleological Stance 
+      span.hide.ygimg & Your-Goal-Is-My-Goal
+    p.indent.mtm Minimal Theory of Mind
+    p.indent.perception also an implicit theory associated with perception of emotion

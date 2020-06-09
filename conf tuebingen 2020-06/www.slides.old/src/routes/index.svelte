@@ -1,0 +1,1165 @@
+<style lang='stylus'>
+@import 'nib'
+
+filter(what)
+  -webkit-filter what
+  -moz-filter what
+  -o-filter what
+  -ms-filter what
+  filter what
+
+
+@font-face {
+    font-family: "Linux Libertine";
+    src: url("/fonts/LinLibertine_R.woff") format('woff');
+}
+
+font_size = 19pt
+background_color = black
+text_color = white
+
+default_text_shadow()
+  text-shadow: 0 0 2px background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color, 0 0 5px background_color, 0 0 5px background_color
+default_text_shadow_invert()
+  text-shadow: 0 0 2px text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color, 0 0 5px text_color, 0 0 5px text_color
+
+.background-color
+  background-color background_color
+.text-color
+  color text_color
+
+noinvert_text()
+  color text_color
+  default_text_shadow()
+
+invert_text()
+  color background_color
+  default_text_shadow_invert()
+
+  
+
+html
+  overflow: hidden
+  body
+    font-kerning normal
+    font-variant-ligatures common-ligatures
+    font-feature-settings "kern" 1, "liga" 1
+
+.deck-container 
+  font-family "Lato", sans-serif
+  .lato
+    font-family Lato
+  .libertine
+    font-family Linux Libertine
+  font-size font_size
+  noinvert_text()
+  color text_color
+  background background_color
+  padding: 0
+  
+.deck-container 
+  .slide
+    background: transparent
+
+.deck-container.deck-menu 
+  .slide
+    background background_color
+
+.boxshadow .deck-container.deck-menu .deck-current 
+  box-shadow 0 0 20px #f0a, 0 0 5px text_color
+
+.no-touch .deck-container.deck-menu .slide:hover 
+  background #444
+
+.no-touch.boxshadow .deck-container.deck-menu .slide:hover 
+  box-shadow: 0 0 20px #f0a, 0 0 5px text_color
+
+
+
+.deck-container 
+  .slide
+    a,
+    a:active, 
+    a:visited 
+      text-decoration: none
+    a:hover, 
+    a:focus 
+      text-decoration  underline
+
+.deck-container 
+  p
+    margin-bottom: 0.3em
+  .invert
+    invert_text()
+  .invert .invert
+    noinvert_text()
+  .invert .invert .invert
+    invert_text()
+  .invert .invert .invert .invert
+    noinvert_text()
+  .invert .invert .invert .invert .invert
+    invert_text()
+  .indent
+    padding-left 1em
+  
+  .transition-04
+    // transition background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease
+    transition all 0.4s ease
+
+.deck-container .noinvert
+  noinvert_text()
+
+
+
+
+blur()
+  animation-name anim_blur
+  animation-duration 1s
+  animation-fill-mode: forwards
+  .invert
+    color: alpha(background_color,0.2)
+    text-shadow: 0 0 5px alpha(background_color,1);
+  .white-box
+    background-color rgba(125, 125, 125,1)
+    border none
+    box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
+    color: alpha(background_color,0.2)
+    text-shadow: 0 0 5px alpha(background_color,1);
+  span[class*='bkg-']
+    opacity 0.4
+  .blur-except, span.blur-except
+    opacity 1
+    animation-name anim_unblur
+    color: alpha(text_color,1)
+    default_text_shadow()
+
+.deck-container
+  .blur-text 
+    blur()
+
+@keyframes anim_blur
+  0%
+    color: alpha(text_color,1)
+    text-shadow: 0 0 0px alpha(text_color,1);
+  100%
+    color: alpha(text_color,0.2)
+    text-shadow: 0 0 5px alpha(text_color,1);
+
+@keyframes anim_unblur
+  0%
+    color: alpha(text_color,0.2)
+    text-shadow: 0 0 5px alpha(text_color,1);
+  100%
+    color: alpha(text_color,1)
+    text-shadow: 0 0 0px alpha(text_color,1);
+
+
+.deck-container
+  .deck-current 
+    .fade-in
+      animation FadeIn2 20s
+
+    .delay-0
+      animation-delay 0
+    .delay-5s
+      animation-delay 5s
+    .delay-10s
+      animation-delay 10s
+    .delay-15s
+      animation-delay 15s
+    .delay-20s
+      animation-delay 20s
+
+@keyframes FadeIn 
+  0% 
+    opacity: 0.1;
+  100% 
+    opacity: 1;
+
+@keyframes FadeIn2
+  0% 
+    opacity: 0.1;
+    text-shadow: 0 0 150px text_color, 0 0 50px text_color, 0 0 5px background_color
+    color black
+  50%
+    color black
+    opacity 0.8
+    text-shadow: 0 0 50px text_color, 0 0 5px text_color, 0 0 2px background_color
+  100%
+    color white
+    opacity: 1;
+    text-shadow: 0 0 50px text_color, 0 0 5px background_color, 0 0 5px background_color
+
+/**
+ * classes that map directly to css styles
+ */
+.deck-container 
+  .italic
+    font-style italic
+  .bold
+    font-weight bold
+  .grey-text
+    color grey
+  .red-text
+    color red
+  .lightgrey-text
+    color lightgrey
+  .line-through
+    text-decoration line-through
+
+.brightness-150
+  filter unquote('brightness(150%)')
+.bw
+  filter unquote('saturate(0)')
+.contrast-120
+  filter unquote('contrast(1.2)')
+.contrast-150
+  filter unquote('contrast(1.5)')
+.blur
+  filter unquote('blur(2px)')
+.blur-5px
+  filter unquote('blur(5px)')
+
+.display-none
+  display none
+
+.center
+  text-align: center
+.right
+  text-align: right
+.left
+  text-align: left
+.float-right
+  float right
+
+
+.width-720
+  width 720px
+.width-500
+  width 500px
+.width-450
+  width 450px
+.width-350
+  width 350px
+
+
+.deck-container
+  .above, .hem-above-children > *
+    padding-top: 0.5em
+  .hem-below, .hem-below-children > *
+    padding-bottom: 0.5em
+  .hem-around, .hem-around-children > *
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+  .em-above, em-above-children > *
+    padding-top: 1em
+  .em-around, .em-around-children > *
+    padding-top: 1em
+    padding-bottom: 1em
+  .hem-after, .hem-after-children > *
+    padding-bottom: .5em
+  .after, .em-after-children > *
+    padding-bottom: 1em
+  .em-around, .em-around-children > *
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+  .em-above-each-td td
+    padding-top: 1em
+
+
+  .up-10
+    margin-top -10px
+  .up-12
+    margin-top -12px
+  .up-16
+    margin-top -16px
+  .up-20
+    margin-top -20px
+  .up-30
+    margin-top -30px
+  .up-40
+    margin-top -40px
+  .up-50
+    margin-top -50px
+  .up-75
+    margin-top -75px
+  .up-100
+    margin-top -100px
+  .up-125
+    margin-top -125px
+  
+
+/**
+ * avoid deck.core.css overwriting our 960 grid css
+ */
+div 
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+
+// measurements are for 800px design width
+div.container_12 
+  margin-left: 40px
+  margin-right: 40px
+  width: 720px
+
+
+
+/**
+ * layout
+ */
+/* use div.words to wrap the text of every slide (but don't wrap background images) */
+.deck-container
+  div.words
+    padding-top: 40px
+
+  .middle
+    position: absolute
+    left: 0
+    right: 0
+    top: 300px
+    transform: translate3d(0, -50%, 0)
+
+  .bottom
+    position absolute
+    bottom 0px
+
+  .small-text
+    font-size 66%
+    
+  .source
+    text-align right
+    font-size 66%
+    position absolute
+    float right
+    top 480px
+    width 720px
+  .source:before
+    content 'source: '
+    font-style italic
+
+  .half-above
+    padding-top: 0.5em
+ 
+  img.float-right 
+    float: right
+    margin-left: 1em
+
+
+
+/**
+ * fonts 
+ */
+
+f_scale(x,y)
+  transform:scale(x,y) // W3C 
+  -webkit-transform:scale(x,y) // Safari and Chrome 
+  -moz-transform:scale(x,y) // Firefox 
+  -ms-transform:scale(x,y) /* IE 9 */
+  -o-transform:scale(x,y) /* Opera */  
+
+
+.stretch-2
+  display: inline-block
+  f_scale(2,2)
+
+.stretch-3
+  display: inline-block
+  f_scale(2,3)
+
+.stretch-5
+  display: inline-block
+  f_scale(2,5)
+
+.stretch-6
+  display: inline-block
+  f_scale(2,6)
+
+/*
+ * tables
+ */
+.deck-container 
+  table
+    noinvert_text()
+  td, .deck-container td 
+    vertical-align: middle
+  .invert table
+    invert_text()
+  .center table
+     margin 0 auto
+
+table.truth-table
+  border-collapse: collapse
+  tr td
+    padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
+    text-align: center
+  tr td.left
+    padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
+    text-align: left
+  tr td.right
+    padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
+    text-align: right
+    
+  tr:first-child td
+    border-bottom: 2px solid text_color  //left border for proof
+  td.result-col
+    border-left 2px solid text_color //horizontal line after premises
+
+.invert table.truth-table
+  tr:first-child td
+    border-bottom: 2px solid background_color  //left border for proof
+  td.result-col
+    border-left 2px solid background_color //horizontal line after premises
+
+.compress table.truth-table
+  tr td
+    padding 0em 0.3em //less vertical and horizontal spacing for all lines
+
+
+table.fitch-proof
+  border-collapse: collapse
+  tr td
+    padding 0.3em 0 //increase vertical spacing for all lines
+  tr td:first-child
+    border-left: 4px solid text_color  //left border for proof
+    width: 20px
+  tr td:nth-child(2)    //increase width of line numbers
+    padding-right: 1em
+  tr td:nth-child(4)
+    padding-left: 2em   //space before rule of proof
+  td.last-premise
+    border-bottom 4px solid text_color //horizontal line after premises
+
+.invert table.fitch-proof
+  tr td:first-child
+    border-left: 4px solid background_color //left border for proof
+  td.last-premise
+    border-bottom 4px solid background_color //horizontal line after premises
+
+.compress table.fitch-proof
+  tr td
+    padding 0 //no vertical spacing for all lines
+
+
+table.data
+  td
+    padding 5px 20px 5px 20px
+  thead
+    td
+      border-top 3px solid text_color
+      border-bottom 1px solid text_color
+      text-align center
+      vertical-align middle
+    td.left
+      text-align left
+    td.right
+      text-align right
+      
+  tbody
+    td
+      vertical-align top
+    tr:last-child td
+      border-bottom 3px solid text_color
+    tr.even td
+      background-color: alpha(text_color,0.1)
+  
+
+
+/**
+ * lists
+ */
+.deck-container 
+  ul
+    margin-left: 2em
+    li
+      display: list-item
+      list-style: circle
+      padding-bottom: 0.1em
+
+
+/**
+ * dim, invisible
+ */
+
+
+.deck-container 
+  .hide
+    visibility hidden
+  .remove-me
+    display none
+
+/**
+ * boxes for putting photos in
+ */
+// right-aliged with text, 50px from bottom of screen
+.deck-container
+  .photobox-bottom-right
+    float: right
+    position: absolute
+    top: 300px
+    left: 500px 
+    height:150px
+    width: 150px
+  .photobox-bottom-left
+    float: left
+    position: absolute
+    top: 400px
+    left: 0px 
+    height:150px
+    width: 150px
+
+
+/**
+ * used by btm-white, btm-black
+ */
+btm-X(height,top)
+  float: left
+  position: absolute
+  top: top
+  height: height
+  width: 800px
+  left: 0px
+
+top-X(height)
+  btm-X height, 0
+
+/**
+ * make part of the screen white (with black text)
+ */
+btm-white(height,top) 
+  background-color: text_color
+  btm-X(height,top)
+  invert_text()
+  box-shadow: 0px -8px 8px 0 alpha(text_color,0.5)
+  z-index -99
+
+.deck-container 
+  .bottom-white
+    btm-white 225px, 375px
+
+  .bottom-half-white
+    btm-white 300px, 300px
+
+  .bottom-third-white
+    btm-white 200px, 400px
+
+
+btm-black(height,top)
+  btm-X height, top
+  //no idea why this isn't working (nib issue?)
+  //background linear-gradient(top, rgba(0,0,0,0), 20% rgba(0,0,0,1), rgba(0,0,0,1))
+  background-color: background_color
+  box-shadow: 0px -8px 8px 0 alpha(background_color,0.5)
+  z-index -99
+
+top-black(height)
+  top-X height
+  background linear-gradient(top, alpha(background_color,1), 80% alpha(background_color,1), alpha(background_color,0))
+
+.deck-container .slide
+  .bottom-black
+    btm-black 225px, 375px
+
+  .bottom-half-black
+    btm-black 300px, 300px
+
+  .bottom-third-black
+    btm-black 200px, 400px
+
+  .top-half-black
+    top-black 300px
+
+
+.deck-container .right-half-white
+  background-color: text_color
+  float: right
+  position: absolute
+  top:0px
+  height:600px
+  width: 400px
+  left: 400px
+  invert_text()
+  z-index -99
+
+.deck-container .left-half-white
+  background-color: text_color
+  float: left
+  position: absolute
+  top:0px
+  height:600px
+  width: 400px
+  left: 0px
+  invert_text()
+  z-index -99
+
+
+/**
+ * highlight blocks
+ */
+make-row-bkg(name,color)
+  .deck-container
+    .bkg-{name}-row
+      background-color color
+      margin-left: -80em
+      border-left: solid 80em color
+      margin-right: -80em
+      border-right: solid 80em color
+      text-outline: 1px 2px red
+      box-shadow: 0px 4px 2px -2px alpha(color,0.5), 0px -4px 2px -2px alpha(color,0.5)
+      position relative
+      z-index -20
+    .invert
+      .bkg-{name}-row
+        box-shadow: 0 0 1px text_color, 0 0 0.5em background_color
+
+make-row-bkg('grey', rgba(125,125,125,1))
+make-row-bkg('faint-grey', rgba(125,125,125,0.3))
+make-row-bkg('white', alpha(text_color,1))
+make-row-bkg('black', rgba(background_color,1))
+make-row-bkg('faint-white', alpha(text_color, 0.3))
+make-row-bkg('blue', rgba(0, 128, 255,1))
+make-row-bkg('faint-blue', rgba(0, 128, 255, 0.3))
+make-row-bkg('pink', rgba(255, 111, 207,1))
+make-row-bkg('faint-pink', rgba(255, 111, 207,0.3))
+make-row-bkg('yellow', rgba(255, 255, 0, 1))
+make-row-bkg('faint-yellow', rgba(255, 255, 0, 0.3))
+make-row-bkg('red', rgba(255, 0, 0, 1))
+make-row-bkg('darkred', rgba(139, 0, 0, 1))
+make-row-bkg('faint-red', rgba(255, 0, 0, 0.3))
+make-row-bkg('forestgreen', rgba(34,139,34,1))
+make-row-bkg('faint-forestgreen', rgba(34,139,34,0.3))
+make-row-bkg('olive', rgba(128,128,0,1))
+make-row-bkg('faint-olive', rgba(128,128,0,0.3))
+make-row-bkg('teal', rgba(0,128,128,1))
+make-row-bkg('faint-teal', rgba(0,128,128,0.3))
+make-row-bkg('lime', rgba(0,255,0,1))
+make-row-bkg('faint-lime', rgba(0,255,0,0.3))
+make-row-bkg('limegreen', rgba(50,205,50,1))
+make-row-bkg('faint-limegreen', rgba(50,205,50,0.3))
+make-row-bkg('orange', rgba(255,165,0,1))
+make-row-bkg('faint-orange', rgba(255,165,0,0.3))
+make-row-bkg('blueviolet', rgba(138,43,226,1))
+make-row-bkg('faint-blueviolet', rgba(138,43,226,0.3))
+
+
+.deck-container
+  .bkg-highlight-yellow
+    background-color: rgba(255,248,61,0.5)
+    box-shadow: 0 0 20px 15px rgba(255,248,61,0.5)
+
+
+
+
+
+/**
+ * highlight words 
+ */
+
+.deck-container
+  span.bkg-invert
+    position relative
+    z-index -1
+  .bkg-invert
+    invert_text()
+    background-color text_color
+    box-shadow 0 0 8px 8px text_color
+    border-radius 5px
+    span.bkg-invert
+      position relative
+      z-index -2
+    p.bkg-invert
+      position relative
+      top 0
+      left 0
+      z-index -3
+  .invert
+    .bkg-invert
+      noinvert_text()
+      background-color background_color
+      box-shadow 0 0 8px 8px background_color
+
+make-bkg-words(name,color)
+  .deck-container
+    span.bkg-{name}
+      position relative
+      z-index -1
+    .bkg-{name}
+      background-color color
+      box-shadow 0 0 8px 8px color
+      border-radius 5px
+      //marging-right doesn't work in firefox  (margin-left does!)
+      //margin-left: -10px
+      //border-left: solid 10px  rgba(255,0,0,0.8)
+      //margin-right: -10px
+      //border-right: solid 10px  rgba(255,0,0,0.8)
+      //outline: 5px solid rgba(255,0,0,0.8)
+    span.bkg-{name}
+      position relative
+      z-index -2
+    p.bkg-{name}
+      position relative
+      top 0
+      left 0
+      z-index -3
+
+make-bkg-words('white', rgba(255, 255, 255, 1))
+make-bkg-words('faint-white', rgba(255, 255, 255, 0.3))
+make-bkg-words('blue', rgba(0, 128, 255,1))
+make-bkg-words('faint-blue', rgba(0, 128, 255, 0.3))
+make-bkg-words('pink', rgba(255, 111, 207,1))
+make-bkg-words('faint-pink', rgba(255, 111, 207,0.3))
+make-bkg-words('yellow', rgba(255, 255, 0, 1))
+make-bkg-words('faint-yellow', rgba(255, 255, 0, 0.3))
+make-bkg-words('red', rgba(255, 0, 0, 1))
+make-bkg-words('darkred', rgba(139, 0, 0, 1))
+make-bkg-words('faint-red', rgba(255, 0, 0, 0.3))
+make-bkg-words('forestgreen', rgba(34,139,34,1))
+make-bkg-words('faint-forestgreen', rgba(34,139,34,0.3))
+make-bkg-words('olive', rgba(128,128,0,1))
+make-bkg-words('faint-olive', rgba(128,128,0,0.3))
+make-bkg-words('teal', rgba(0,128,128,1))
+make-bkg-words('faint-teal', rgba(0,128,128,0.3))
+make-bkg-words('lime', rgba(0,255,0,1))
+make-bkg-words('faint-lime', rgba(0,255,0,0.3))
+make-bkg-words('limegreen', rgba(50,205,50,1))
+make-bkg-words('faint-limegreen', rgba(50,205,50,0.3))
+make-bkg-words('orange', rgba(255,165,0,1))
+make-bkg-words('faint-orange', rgba(255,165,0,0.3))
+make-bkg-words('blueviolet', rgba(138,43,226,1))
+make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
+make-bkg-words('grey', rgba(125,125,125,1))
+make-bkg-words('faint-grey', rgba(125,125,125,0.3))
+
+
+
+
+/**
+ * boxes
+ */
+.white-box
+  background-color: text_color
+  invert_text()
+  padding: .25em !important
+  border-radius: 5px
+  box-shadow 0 0 4px 4px background_color
+
+.glow-border-red
+  box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
+  
+.glow-border
+  box-shadow 0 0 40px #FFF, 0 0 4px #FFF
+
+/**
+ * borders & rotation
+ */
+.deck-container 
+  .border-right
+    border-right: 1px dotted text_color
+
+  .rotate-1
+    -moz-transform: rotate(1deg)
+    -webkit-transform: rotate(1deg)
+
+  .rotate--2
+    -moz-transform: rotate(-2deg)
+    -webkit-transform: rotate(-2deg)
+
+  .circle_word
+    border-radius: 1200px
+    height: 120px
+    max-width: 120px
+    min-width: 120px
+    border: 3px solid text_color
+    text-align: center
+    vertical-align: middle
+
+
+/**
+ * background images fill whole screen
+ */
+.deck-container img.bkg
+  float: left
+  height: auto
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  max-width 100%
+.deck-container img.fill
+  float: left
+  height: auto
+  position: absolute
+  top: 0
+  left: 0
+  max-width 100%
+
+
+/**
+ * for title overwrite deck.core.css
+ */
+.csstransforms .deck-container h1,
+.csstransforms .deck-container h2
+  position: relative
+  text-align: left
+  color: text_color
+  font-size: 45pt
+  font-weight: 900
+  top: auto
+  -webkit-transform: none
+  -moz-transform: none
+  -ms-transform: none
+  -o-transform: none
+  transform: none
+  padding: 0
+  default_text_shadow()
+
+.csstransforms .deck-container h2
+  font-size: 30pt
+  font-weight: 300
+  border-bottom: none
+  margin-bottom: 0
+  margin-right: 30pt
+  default_text_shadow()
+
+.deck-container  .title-block
+  background: linear-gradient(left, background_color, transparent)
+  box-shadow: 0px 4px 2px -2px alpha(text_color,0.33), 0px -4px 2px -2px alpha(text_color,0.33)
+
+.deck-container  .title-container
+  padding-left: 2em
+  padding-top: 0.25em
+  padding-bottom: 0.25em
+
+.csstransforms .deck-container .title1
+  default_text_shadow()
+
+.csstransforms .deck-container .title2
+  margin-top: -0.5em
+  default_text_shadow()
+
+.deck-container .email, .deck-container .slide h3
+  margin-top: -0.3em
+  font-size: 30pt
+  font-weight 300
+  default_text_shadow()
+
+/**
+ * big layout
+ */
+.deck-container .container-right
+  padding-left: 30%
+  padding-right: 5%
+
+.deck-container .container-right div
+  text-align: right
+
+
+/**
+ * huge-glow classes
+ */
+make-huge-glow(class-name, size)
+  .deck-container 
+    {class-name}.lato
+      font-family Lato
+    {class-name}
+      font-family: Linux Libertine
+      .lato
+        font-family Lato
+      font-size: size
+      color: background_color
+      text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      -webkit-text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      -moz-text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+
+make-huge-glow('.huge-glow', 90pt)
+make-huge-glow('.huge-glow-40', 40pt)
+make-huge-glow('.huge-glow-50', 50pt)
+make-huge-glow('.huge-glow-60', 60pt)
+make-huge-glow('.huge-glow-70', 70pt)
+make-huge-glow('.huge-glow-80', 80pt)
+make-huge-glow('.huge-glow-90', 90pt)
+make-huge-glow('.huge-glow-100', 100pt)
+make-huge-glow('.huge-glow-110', 110pt)
+make-huge-glow('.huge-glow-120', 120pt)
+make-huge-glow('.huge-glow-130', 130pt)
+make-huge-glow('.huge-glow-140', 140pt)
+make-huge-glow('.huge-glow-150', 150pt)
+make-huge-glow('.huge-glow-180', 180pt)
+make-huge-glow('.huge-glow-210', 210pt)
+make-huge-glow('.huge-glow-240', 240pt)
+make-huge-glow('.huge-glow-270', 270pt)
+make-huge-glow('.huge-glow-300', 300pt)
+
+make-huge-glow('.glow', font_size)
+
+
+make-huge-glow-invert(class-name, size)
+  .deck-container 
+    {class-name}.lato
+      font-family Lato
+    {class-name}
+      font-family: Linux Libertine
+      .lato
+        font-family Lato
+      font-size: size
+      color: text_color
+      text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -webkit-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -moz-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+
+make-huge-glow-invert('.huge-glow-invert', 90pt)
+make-huge-glow-invert('.huge-glow-invert-40', 40pt)
+make-huge-glow-invert('.huge-glow-invert-50', 50pt)
+make-huge-glow-invert('.huge-glow-invert-60', 60pt)
+make-huge-glow-invert('.huge-glow-invert-70', 70pt)
+make-huge-glow-invert('.huge-glow-invert-80', 80pt)
+make-huge-glow-invert('.huge-glow-invert-90', 90pt)
+make-huge-glow-invert('.huge-glow-invert-100', 100pt)
+make-huge-glow-invert('.huge-glow-invert-110', 110pt)
+make-huge-glow-invert('.huge-glow-invert-120', 120pt)
+make-huge-glow-invert('.huge-glow-invert-130', 130pt)
+make-huge-glow-invert('.huge-glow-invert-140', 140pt)
+make-huge-glow-invert('.huge-glow-invert-150', 150pt)
+make-huge-glow-invert('.huge-glow-invert-180', 180pt)
+make-huge-glow-invert('.huge-glow-invert-210', 210pt)
+make-huge-glow-invert('.huge-glow-invert-240', 240pt)
+make-huge-glow-invert('.huge-glow-invert-270', 270pt)
+make-huge-glow-invert('.huge-glow-invert-300', 300pt)
+
+make-huge-glow-invert('.glow-invert', font_size)
+
+
+.deck-container .under-huge-glow
+  padding-top: 0
+  margin-top: -1.4em
+
+
+/**
+ * speech bubbles
+ * from http://www.ilikepixels.co.uk/drop/bubbler/
+ */
+p.speech-left, p.speech-right
+  position: relative;
+  width: 200px;
+  height: 120px;
+  padding 5px
+  background: background_color;
+  border-radius: 10px;
+  border-style solid
+  border-width 2px
+  border-color text_color
+
+p.speech-left:before
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 24px 15px 0;
+  border-color: background_color transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -23px;
+  left: 16%;
+
+p.speech-left:after
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 25px 16px 0;
+  border-color: text_color transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -27px;
+  left: 16%;
+
+
+p.speech-right:before
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 24px 15px 0;
+  border-color: background_color transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -23px;
+  left: 84%;
+
+p.speech-right:after
+  content: ''
+  position: absolute
+  border-style: solid
+  border-width: 25px 16px 0
+  border-color: text_color transparent
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -27px;
+  left: 84%;
+
+.rotate-1
+  position fixed
+  transform rotate(1deg)
+.rotate--1
+  position fixed
+  transform rotate(-1deg)
+
+
+/**
+ * from http://css-tricks.com/examples/ShapesOfCSS/
+ */
+.space-invader
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+
+
+
+
+
+/**
+ * flexbox
+ */
+.flex-container, .flex-container-column
+  display flex
+
+.flex-container-column
+  flex-direction column
+
+.flex-end
+  justify-content flex-end
+
+.flex-start
+  justify-content flex-start
+
+
+
+
+/**
+ * timer
+ * the function can create timers with different durations and sizes
+ * use like this:
+    .timer-60s.center
+      .mask
+    .timer-60s-block-wrapper
+      .timer-60s-block
+        p.center text to appear on the timer
+ */
+timer-color = text_color
+timer-background-color = background_color
+timer-size = 400px
+timer-duration = 60s 
+
+timer(class-name, timer-color, timer-background-color, timer-size, timer-duration)
+  .deck-container 
+    {class-name}
+      background: linear-gradient(left, timer-color 50%, timer-background-color 50%)
+      border-radius: 100%
+      height: timer-size
+      position: relative
+      width: timer-size
+      box-shadow 0 0 40px text_color, 0 0 20px text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      margin-left auto
+      margin-right auto
+    {class-name}.running
+      animation: time timer-duration steps(60, start) 1 normal forwards
+    {class-name}.running .mask
+      animation: mask timer-duration steps(30, start) 1 normal forwards
+    {class-name}:not(.running) .mask
+      background timer-background-color
+    {class-name} .mask 
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      transform-origin: 100% 50%;
+    {class-name}-block-wrapper
+      {class-name}-block
+        position: absolute
+        left: 0
+        right: 0
+        top: (timer-size / 2)
+        transform translate3d(0, -50%, 0)
+  @keyframes time 
+    100%
+      transform rotate(360deg)
+  @keyframes mask 
+    0%
+      background: timer-background-color
+      transform: rotate(0deg)
+    50% 
+      background: timer-background-color
+      transform: rotate(-180deg)
+    50.01% 
+      background: timer-color
+      transform: rotate(0deg)
+    100% 
+      background: timer-color;
+      transform: rotate(-180deg)
+
+timer(".timer-30s", timer-color, timer-background-color, timer-size, 30s)
+timer(".timer-60s", timer-color, timer-background-color, timer-size, 60s)
+timer(".timer-90s", timer-color, timer-background-color, timer-size, 90s)
+timer(".timer-120s", timer-color, timer-background-color, timer-size, 120s)
+timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
+timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
+timer(".timer-480s", timer-color, timer-background-color, timer-size, 480s)
+timer(".timer-600s", timer-color, timer-background-color, timer-size, 600s)
+
+
+.columns-2
+  -webkit-column-count: 2;
+  -webkit-column-rule: 1px dashed #AAA;
+  -webkit-column-gap: 2.5em;
+
+.dont-break-paragraphs p
+  -webkit-column-break-inside avoid
+
+
+.deck-container .invert-text-grey
+  color background_color()
+  text-shadow: 0 0 2px #949494, 1px 1px 2px #949494, 1px -1px 2px #949494, -1px 1px 2px #949494, -1px -1px 2px #949494, 0 0 5px #949494, 0 0 5px #949494
+
+</style>
+
+<svelte:head>
+	<title>Sapper project template</title>
+</svelte:head>
+
+<template lang="pug">
+	.deck-container
+		h1.background-color Hi from pug
+</template>
+
+<h1>Great success!</h1>
+
+<figure>
+	<img alt='Success Kid' src='successkid.jpg'>
+	<figcaption>Have fun with Sapper!</figcaption>
+</figure>
+
+<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>

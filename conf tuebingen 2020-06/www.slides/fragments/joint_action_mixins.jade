@@ -1,0 +1,523 @@
+
+
+mixin interconnected-quote(p)
+  - p = p || {hide:false, final:false}
+  p
+    span(class="#{p.hide ? 'hide' : ''} #{p.final ? 'blur-text' : ''}") ‘
+    span.shared-intention(class="#{p.final ? 'blur-text' : ''}") shared intention
+    span(class="#{p.hide ? 'hide' : ''} #{p.final ? 'blur-text' : ''}") al agency consists, at bottom, in 
+    span.interconnected-planning(class="#{p.hide ? 'hide' : ''}")
+      span.interconnected(class=" #{p.final ? 'bkg-words-highlight-invert' : ''}", style=" #{p.final ? 'z-index:1' : ''}") interconnected
+      span  planning
+    span(class="#{p.hide ? 'hide' : ''}  #{p.final ? 'blur-text' : ''}")  agency of the participants.’  
+  p.right(class="#{p.hide ? 'hide' : ''}  #{p.final ? 'blur-text' : ''}")
+    span (Bratman 2011, p. 11)
+  block
+
+mixin interconnected-def
+  p(style="margin-left:1em; padding-left:1em; border-left:3px solid white; margin-top:-3em; padding-top:3em;") Facts about your plans feature in my plans & conversely.
+
+mixin shared-intention-conditions
+  p We have a shared intention that we J 
+    span.sufficient-not-necessary if
+  p.hem-above.condition-1 ‘1. (a) I intend that 
+    span.we-J we J
+    span  and (b) you intend that we J
+  p.hem-above.condition-2 ‘2. I intend that we J 
+    span.in-accordance-with-and-because-of in accordance with and because of la, lb,
+    span  and meshing subplans of la and lb; you intend [likewise] …
+  p.hem-above.condition-3 ‘3. 1 and 2 are common knowledge between us’
+  p.hem-above.right (Bratman 1993: View 4)
+
+mixin unshared-intention-conditions
+  p We have an 
+    span.bold.underline un
+    span shared intention that we &lt;J
+    sub 1
+    span , J
+    sub 2
+    span &gt; if
+    span.bold.underline f
+  p.hem-above ‘1. (a) I intend that 
+    span we J
+    sub 1
+    span  and (b) you intend that we J
+    sub 2
+  p.hem-above
+     span ‘2. I intend that we J
+     sub 1
+     span in accordance with and because of la, lb, and meshing subplans of la and lb; you intend [likewise] …
+  p.hem-above ‘3. 1 and 2 are common knowledge between us’
+
+mixin simple_account()
+  p Two or more agents perform an 
+    span.intentional intentional
+    span  joint action 
+    br
+    span.necessary-and-sufficient exactly when
+    span  there is an 
+    span.act-type act-type
+    span , 
+    span.phi φ
+    span , such that 
+    br
+    span each agent intends that 
+    br
+    span.indent they, these agents, 
+    span.phi φ
+    span   
+    span.together together
+    br
+    span  and their intentions are  
+    span.appropriately-related appropriately related 
+    span  to their actions.
+
+mixin slide_interconnected_parallel(p)
+  section.slide
+    if p && p.bkg
+      img.bkg(src='/img/#{p.bkg}', class='p.hide-bkg ? "hide" : ""')
+    .words: .container_12
+      div(style="margin-top:200px;")
+        .grid_6
+          .interconnected-quote
+            +interconnected-quote({final:true})
+            +interconnected-def
+        .grid_6.step2
+          p(style="margin-top:2.5em;")
+            span.parallel.bkg-words-highlight-invert parallel
+            span  planning
+          div(style="margin-top:3em")
+            p(style="margin-left:1em; padding-left:1em; border-left:3px solid white; margin-top:-3em; padding-top:3em;") You plan my actions as well as yours, and I do likewise.
+    block
+
+
+
+
+mixin diagram_action_goal(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') drop
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') throw
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') discard
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') amuse
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') block
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | shared intention
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or i.a.s.m.r.
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') represents
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+
+
+//- To do: nearly duplicates diagram_action_goal!
+
+mixin diagram_action_goal_individual(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') open
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') pour
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') tilt
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') soak
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') fill
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | intention
+                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') specifies
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+  
+mixin four_questions_table()
+  table.data
+    thead
+      tr
+        td
+        td.bratman Bratman
+        td.svr Simple View Revised
+    tbody
+      tr
+        td Is coercion compatible with joint action?
+        td.center.bratman yes
+        td.center.svr yes
+      tr
+        td Does participating in joint action entail being aware that you are doing so?
+        td.center.bratman yes
+        td.center.svr [ish]
+      tr
+        td: p.cooperation Are all joint actions cooperative actions?
+        td.center.bratman no
+        td.center.svr yes
+      tr
+        td Are contralateral commitments necessary for joint action?
+        td.center.bratman no
+        td.center.svr no
+  block
+
+mixin cooperation-df()
+  span: :t
+    Purposive actions are cooperative to the extent that, for each agent, her 
+    performing these actions rather than any other actions depends in part on how good
+    an overall pattern of trade-offs between demandingness and well-suitedness can be achieved
+    for all of the actions.
+
+
+mixin my-approach-to-joint-action()
+  .my-plan
+    p How to ground a theory of joint action?
+    p.em-above Step 1: identify features ...
+    p.indent.cg.collective-goals - collective goals
+    p.indent - coordination
+    p.indent.cooperation - cooperation
+    p.indent - contralateral commitments
+    p.indent - experience
+    p.em-above Step 2: ... which generate 
+      span(style="font-style:italic;") how 
+      span questions.
+
+
+mixin conjecture-iasmr()
+  ol
+    li Each represents a single outcome motorically
+      span.step-next , and 
+    li.em-above in each agent this representation triggers planning-like processes
+    li.em-above concerning all the agents’ actions
+      span.step-next , with the result that
+    li.em-above
+      span.coordination coordination of their actions is facilitated.
+
+mixin cooperation-df()
+  span: :t
+    Purposive actions are cooperative to the extent that, for each agent, her 
+    performing these actions rather than any other actions depends in part on how good
+    an overall pattern of trade-offs between demandingness and well-suitedness can be achieved
+    for all of the actions.
+
+
+mixin question-requirement-aim()
+  .question
+    p.huge-glow Question
+    p.under-huge-glow(style='margin-top:-3em;'): :t
+      What distinguishes genuine joint actions from parallel but merely individual actions?
+
+  .requirement
+    p.huge-glow Requirement
+    p.under-huge-glow(style='margin-top:-3em;'): :t
+      Any account of shared agency must draw a line between joint actions and parallel but 
+      merely individual actions.
+  
+  .aim
+    p.huge-glow Aim
+    p.under-huge-glow(style='margin-top:-3em;')
+      span Which forms of 
+      span.shared-agency joint action
+      span  underpin our social nature?

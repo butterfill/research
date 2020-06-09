@@ -1,0 +1,17 @@
+6_FB Power Grip Film F7 Datum
+  - Corrado: he’s looking at the closer ball! 
+  - position of balls is wrong: / but should be \ (so that both are in reach)  
+
+7_FB Power Grip Film F15.wmv
+  - Corrado claims that the larger ball appears to be out of reach (this would predict that gaze goes to the closer one; when the objects are out of reach, gaze would be expected to ignore motor information and go to the nearest one)
+  - Importantly in 6_FB Power Grip Film F7 Datum and 8_FB Power Grip Film F15 Datum you can see subjects looking as if the gaze is unambiguously to the nearer object in the part of the view before Jason takes the telephone call.
+
+Proposal : include trials in which there is a false belief but the grasping action is as if there is a true belief. Prediction: there will be less proactivity (=difference in time of gaze and hand arrival at target) in FB than TB.
+
+
+10_FB Pincer Film F16 Datum
+  - you can see the subject looking at the small Ball while Jason is looking, indicating that the subject takes this to be the target.
+  
+Suggestion: have Jason not look at the targets so closely; either have Jason facing the objects but not in a way that could give the impression that he is looking at one of them or, more radically, only show Jason looking at the objects in the familiarization phase. (Me: The more radical suggestion appears risky. Corrado: whenever you have faces on the screen, it's a nightmare.)
+
+Overall, Corrado thinks people can guess the target during Jason’s looking phase, before the grip information appears, and that this guess informs their subsequent looking behaviour rather than the grip information.

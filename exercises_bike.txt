@@ -1,0 +1,52 @@
+How to measure (and what to try first):
+  1. Get readings from onboard computer (or inputs to it)
+  2. Magnet on pedal plus reed switch on bike (but will it work given that the bike is magentic?)
+  3. IR photodiode (TCRT5000) positioned on floor under pedal, or on bike facing crank.
+  4. ultrasonic sensor (HC-SR04) positioned on floor under pedal.
+  5. gyroscope (MPU-6050) on crank, plus bluetooth and batteries (?)
+  
+Max cadence : 120 rpm. So 30 seconds per rev. So if measure every 100ms, will get >= one measure per 1.2 degrees (1.2=360/300).
+
+Algorithm: Assume can measure every 20ms. Compute running average of last 5 measurements. If this indicates crank/pedal is close, +1 rotation. Do not record another rotation until crank/pedal has been far for at least 20 seconds. When a rotation is recorded, send time since last rotation and rotation number (so receiver can check haven’t missed any).
+
+
+Issues 
+ - any safety regulations?
+ - how will we position laptop/keyboard & screen for them to do the tasks? (Independent stand or attach to bike?)
+ - can it be adjusted for all participants’ heights and weights?
+ - can the effort required be adjusted to make it suitable for all participants?
+ - how can we stream a sequence of revolution times to a computer?
+ - is it robust enough to last?
+ - is it too noisy?
+ - will we be able to buy exactly the same model?
+ - will it be really hard to assemble?
+ - how much storage space does it require?
+ 
+We’ll need a non-slip mat to put it on.
+ 
+This is the one I think we should probably get. Quite, relatively compact. Max weight 100kg (can get a model that goes to 130kg). Not sure it will go low enough for short participants (‘I am 5.5" and i'd say you couldn't be much smaller than that to use it comfortably’; others say it’s fine for 10yr old), but should go high enough. It’s been on amazon since at least 2015. There’s some sign that it uses 3.5 headphone plugs for the computer, so might be easily hackable. No external wheel so we would have to measure something on the pedals if we can’t get the signal from the bike computer inputs.
+ 
+https://www.amazon.co.uk/Ultrasport-F-bike-Trainer/dp/B00FZM5WEM/ref=pd_vtph_200_bs_tr_t_1?_encoding=UTF8&refRID=ZHQCCH7Y7EXZZ5YRV0ZZ&th=1
+
+Same thing but without backrest:
+
+https://www.amazon.co.uk/Ultrasport-Foldable-Exercise-Pulse-Sensor/dp/B003FSTA0U/ref=cm_cr_arp_d_product_top?ie=UTF8
+
+Minimalist approach. I’m not sure how durable this would be. No guarantee that we could hack into the computer so getting speed readings might be tricky. Might not work under a desk (too high), so positioning computer could be an issue.
+
+https://www.decathlon.co.uk/mini-bike-ofitness-id_8342713.html
+
+Looks promising. Some reviews say it’s noisy. This is the type that has a wheel. Currently £99 on ebay (same shop):
+
+https://wersports.com/cardio-equipment-accessories/exercise-bikes/revxtreme-oldskool-indoor-cycle.html
+
+
+PS: 
+
+Depending on how it goes, we might end up needing some Neodymium Disc Magnets and reed switches:
+
+https://www.amazon.co.uk/Cylewet-Normally-Magnetic-Induction-Electromagnetic/dp/B06XFKD4WH/ref=sr_1_2?ie=UTF8&qid=1509363482&sr=8-2&keywords=reed+switch
+
+If you had unlimited equipment budget, we don’t really need and it would be an extravagance but might save us time figuring out how to measure things:
+
+https://www.rigol-uk.co.uk/Rigol-DS1054Z-Digital-Oscilloscope-p/ds1054z.htm

@@ -1,0 +1,30 @@
+idea for 5 minutes on my research
+
+My starting point is a crude but quite standard picture of the human mind. 
+On this Standard Picture, the mind comprises three kinds of states and processes:
+
+1. doxastic/epistemic and conative, 
+
+2. motoric, and
+
+3. perceptual.
+
+I have Two Questions about this picture.
+
+The First Question concerns inferential integration.
+The three kinds of state are not inferentially integrated.
+There is no process of inference which combines beliefs and perceptual representations, say; nor intentions and motor representations.
+Yet sometimes two or more of these kinds of state exist in a kind of harmony, and this is no accident.
+How bits of your brain represent the world perceptually is not entirely unrelated to how you believe the world to be.
+And sometimes the fact that you are intending to, say, turn the light on is nonaccidentally related to the actions represented motorically in you.
+So here's my first question:
+Given the three kinds of state---dosastic, motoric and perceptual---are not inferentially integrated, how is this nonaccidental harmony ever possible?
+
+A second question arises from discoveries which appear to require the Standard Picture to be revised or extended.
+Such discoveries can be found in almost any area of cognitive science.
+For example, research in animal learning theory indicates that within some mamals there are multiple, independent kinds of motivational state which operate largely independently of each other.
+This suggests that the conative may not be a unified category: there may not be a single, integrated system of conative states.
+
+Or, to take another example, research in developmental psychology indicates that infants in the first year of life show many symptoms of knowing things about minds and physical objects and yet the hypothesis that they actually know those things generates systematically incorrect predictions.
+
+These and a range of other findings suggest that the Standard Picture of the human mind needs extending or revising. What is still unclear is how we should revise or extend the Standard Picture. There have been many proposals, but few appear able to explain problems arising from the discoveries that motivate extending it; and none appear to generate novel predictions. So I think there’s an interesting problem for philosophers here. Which discoveries genuinely require that we extend or revise the Standard Picture of the human mind, and how should we do revise or extend it?

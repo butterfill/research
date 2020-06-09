@@ -1,0 +1,172 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 01}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+\input{$HOME/latex_imports/preamble_steve_paper5}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+% \setcounter{secnumdepth}{-1} 
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings 
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa} 
+\bibliographystyle{apalike} 
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+FP Notes
+
+\section{Notes on Bart}
+‘My initial impression is that the following isms are the most useful: dispositionalism, functionalism, materialism.’ (p.~1)
+
+--- But we could also consider the commitment-based approach you develop (atelic commitment to oneself)?
+
+‘Normativity.’ (p.~1)
+
+--- Here we need to distinguish two points.
+
+--- (a) Dennett’s idea that people believe what they are supposed to believe (‘you figure out what beliefs that agent ought to have, given its place in the world and its purpose’)
+
+--- (b) sometimes part of what we are doing, in attributing beliefs, is holding ourselves and others to standards: it’s aspirational
+
+‘The beliefs of the belief attributor’ (p.~2)
+
+--- We should be careful. The FP states are not necessarily actual states. Or, rather, the model(s) underpinning FP are not necessarily particularly accurate.
+
+‘whether, according to FP, creatures without language can have beliefs.’ (p.~2)
+
+--- can attribute beliefs?
+
+‘Common ground’ (p.~2)
+
+‘Establishing common ground (“grounding”) is closely related to the attribution of beliefs’ (p.~2)
+
+--- Davidson: belief attribution is important essentially as a means for keeping track of cases where our beliefs differ
+
+‘Belief compartmentalisation is an important ingredient in Stalnaker’s account of deductive reasoning.’ (p.~3)
+
+--- There’s an OUP collection on the Fragmented Mind in progress. Seems like it will be quite a key issue.
+
+--- Must distinguish: (a) actual mind; (b) FP model of the mind.
+
+
+\section{Marr’s Levels}
+
+What is the aim of a theory of FP?
+\citet[p.~22ff]{Marr:1982kx} distinguishes:
+
+\begin{itemize}
+
+\item computational description---What is the thing for and how does it achieve this?
+
+\item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+
+\item hardware implementation---How are the representations and algorithms physically realised?
+
+\end{itemize}
+%
+% This distinction comes in twice over.
+In giving a theory about FP, we might be aiming to characterise one or another level.
+% Second, in theorising about FP, we might take a view on which level FP is supposed to operate at. (As you write, it seems plausible that FP is not concerned with hardware implementation.)
+
+
+
+\section{Dennett’s Intentional Stance}
+Dennett’s intentional stance has two components: an algorithm for belief (and mental state) ascription, and a metaphysical claim about the nature of beliefs (‘What it is to be a true believer is to be [...] a system whose behavior is reliably and voluminously predictable via the intentional strategy’ (Dennett, 1987 p. 15)).
+Dennett’s construction says nothing explicit about computational description. 
+However, we could (mis?)interpret the algorithm as answering the question, How in principle could someone infer facts about actions and mental states from non-mental evidence?  If we do this, the Intentional Stance looks like an attempt to provide a computational description of FP.
+
+
+
+\section{Two Approaches: Tracking vs Modelling}
+
+First approach: We start with the One True Theory (of beliefs and actions, or of physical objects and their interactions, or ...).  The One True Theory makes certain judgments and behaviours normatively correct (e.g. anticipating that Maxi will go to the blue cupboard; standing in a certain place to catch a ball).  We observe to what extent individuals do make these normatively correct judgments and behaviours.
+
+On the first approach, it is natural to think in terms of tracking.  Observations may support the view that, within limits, there are processes in the individual which \emph{track} beliefs/objects/... in this sense: within limits, how the process unfolds nonaccidentally depends on the facts about beliefs/objects/...  
+
+On the first approach, no assumptions about what the representations and processes underpinning FP are needed. There is just tracking.
+
+If there room for pluralism about FP on the first approach, it just amounts to this: different individuals (or systems) approximate the One True Theory to different extents.
+
+Second approach (depends on the first): We start one or more models (of beliefs and actions, or of physical objects and their interactions, or ...).  A model is just a way the world could be. 
+The point of constructing a model is to understand the mind from the point of view of the individual using FP.
+The questions for a theory that attempts to provide a computational description of FP are: 
+\begin{enumerate}
+\item What models of minds and actions underpin mental state tracking?; and 
+\item How in principle could someone infer facts about actions and mental states from non-mental evidence?
+\end{enumerate}
+Answering these questions provides a computational description of FP (in Marr’s sense).
+
+
+
+\section{Commitments of FP}
+I think some philosophers hold that adult human FP involves implicit commitment to claims about the nature of mind.
+(Perhaps some arguments for dispositionalist accounts of the metaphysical nature of belief depend on ideas about what FP is?)
+
+By contrast, \citet[p.~10]{godfrey-smith:2005_folk} opposes this: ‘The folk-psychological model does not dictate its own construal. If we ask "What is folk psychology itself committed to?", the answer is "Nothing."’ (Interesting connection: the above approach suggests we as theorists need models in order to capture the mental from the point of view of the FP-user. Godfrey-Smith suggests that FP is a process of constructing and using models.)
+
+
+\section{Pluralism about X?}
+If pluralism about FP is a true thesis, do similar arguments support pluralism about Folk Physics?
+
+\section{Two Claims}
+(a) FP involves a pluarlity of processes and models (contra eg Dennett’s one big interconnected thing tacit assumption). E.g. a goal-tracking process is somewhat distinct from belief-tracking.
+(b) FP involves a plurality of processes and models which overlap in the sense that they serve broadly the same purpose (e.g. two models which both enable belief-tracking).
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}
+

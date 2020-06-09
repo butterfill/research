@@ -1,0 +1,107 @@
+---cson
+layout: 'deck_unit'
+title: "Models vs Construals"
+tags: []
+description: """
+  Models can be construed in several different ways.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  p.center.huge-glow(style='line-height:.5em') objection 2 : model vs construal
+  .notes Source: Godfrey-Smith
+  .slide
+    p.em-above.center e.g. model of a house
+    .notes: :t
+      Model of a house.
+      Initially it’s aspirational [construal 1]. 
+      They you win the lottery.
+      Same model can be construed as a plan [construal 2].
+      Later, when the house is built, you use it as a map of the house [construal 3].
+      Then you realise that people are quite similar
+      and that what you thought was a unique design is something
+      that lots of other people would also want,
+      so you use the model to predict what others will want [construal 4].
+
+
++slide_middle
+  p.notes.handout.show: :t
+    Models, in my sense, do not themselves say anything about the
+    world. 
+  .slide
+    p.notes.handout.show: :t
+      Models are structures that can be used by scientists to say various
+      different things about the world, 
+  .slide
+    p.notes.handout.show: :t
+      by means of commentaries that accompany
+      models but are distinct from them’
+  .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}.
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 4
+
++slide_middle
+  p.one.notes.handout.show
+    span ‘Two scientists can use the same model to help with the same target system while 
+    span having quite different views of how the model might be representing the target 
+    span system. I will describe this situation by saying that the two scientists have 
+    span different 
+    span.construals construals
+    span  of the model’ 
+  .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+  .slide
+    +blur('.one span:not(.construals)')
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘one scientist might [construe] some model simply as an input-output device, as a
+      predictive tool. 
+    p.em-above.notes.handout.show: :t
+      Another might [construe] the same model as a faithful map of the
+      inner workings of the target system’
+    .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 4
+
+
++slide_middle
+  p.notes.handout.show
+    span ‘Basic facility with 
+    span.the the folk-psychological model
+    span  does not require using a particular construal of it.  
+  .slide
+    +highlight('.the', 'red')
+    .notes: :t
+      In other work, I have argued that there are multiple processes involving multiple models,
+      both in the case of capacities to track mental states and in the case of capacities 
+      to track agents and their actions.
+  .slide
+    +unhighlight('.the', 'red')
+  .slide
+    p.notes.handout.show
+      span ‘it is [...] 
+      span possible to have facility with the model, and have a sense of which target 
+      span systems are appropriate for it, 
+      span.key while not having much of a construal at all
+      span ’ 
+  .notes.handout.ctd \citep[p.~5]{godfrey-smith:2005_folk}.
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 5
+  .slide
+    +invert('.key')
+    .notes: :t
+      This is your position!
+
+
++slide({bkg:'steward_figure.jpg'})
+
++slide_rh_white({fg:'steward_figure.jpg', fgOpacity:1})
+  +left_half
+    p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
+    p.right.grey-text Steward, 2009 p. 229
+  +right_half
+    p(style='margin-top:150px') The psychological capacities involve models but not construals.
+    p Everyday thinking might be a useful source of models, but it would be bold to rely on its construals.
+    p (Things may be different if we consider ethical abilities.)

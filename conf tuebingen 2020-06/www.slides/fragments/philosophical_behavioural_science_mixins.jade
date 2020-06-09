@@ -1,0 +1,613 @@
+mixin nash-equilibrium()
+  span A nash equilibrium for a game
+    br
+    span is a 
+    span.profile profile of 
+      span.action action
+      span s
+    br
+    span from which no agent can 
+      span.unilaterally unilaterally
+      span  
+      span.profitably profitably
+      span  deviate
+
+
+mixin game0()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer me
+      tr
+        td
+        td
+        td.action.xplayer put £10 
+          br
+          span in box A
+        td.action.xplayer put £10 
+          br
+          span in box B
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer you
+        td.action.yplayer open box A
+        td.outcome
+          span.yplayer £10
+          br
+          span.xplayer £0
+        td.outcome
+          span.yplayer £0
+          br
+          span.xplayer £0
+      tr
+        td
+        td.yplayer.action open box B
+        td.outcome 
+          span.yplayer £0 
+          br
+          span.xplayer £0
+        td.outcome 
+          span.yplayer £10
+          br
+          span.xplayer £0
+
+          
+mixin game2()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer me
+      tr
+        td
+        td
+        td.action.xplayer put £10 
+          br
+          span in box A
+        td.action.xplayer put £10 
+          br
+          span in box B
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer you
+        td.action.yplayer open box A
+        td.outcome
+          span.yplayer £8
+          br
+          span.xplayer £2
+        td.outcome
+          span.yplayer £0
+          br
+          span.xplayer £0
+      tr
+        td
+        td.yplayer.action open box B
+        td.outcome 
+          span.yplayer -£2 
+          br
+          span.xplayer £2
+        td.outcome 
+          span.yplayer £10
+          br
+          span.xplayer £0
+
+
+mixin game_pd()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Prisoner X
+      tr
+        td
+        td
+        td.action.xplayer resist
+        td.action.xplayer confess
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Prisoner Y
+        td.action.yplayer resist
+        td.outcome
+          span.yplayer 3
+          br
+          span.xplayer 3
+        td.outcome
+          span.yplayer 0
+          br
+          span.xplayer 4
+      tr
+        td
+        td.yplayer.action confess
+        td.outcome 
+          span.yplayer 4
+          br
+          span.xplayer 0
+        td.outcome 
+          span.yplayer 1
+          br
+          span.xplayer 1
+
+
+mixin game_hawk_dove()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Gangster X
+      tr
+        td
+        td
+        td.action.xplayer back 
+          br
+          span off
+        td.action.xplayer fight
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Gangster Y
+        td.action.yplayer back 
+          br
+          span off
+        td.outcome
+          span.yplayer 3
+          br
+          span.xplayer 3
+        td.outcome
+          span.yplayer 1
+          br
+          span.xplayer 4
+      tr
+        td
+        td.yplayer.action fight
+        td.outcome 
+          span.yplayer 4
+          br
+          span.xplayer 1
+        td.outcome 
+          span.yplayer 0
+          br
+          span.xplayer 0
+
+
+mixin game_hi_low()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Player X
+      tr
+        td
+        td
+        td.action.xplayer high 
+        td.action.xplayer low
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Player Y
+        td.action.yplayer high
+        td.outcome
+          span.yplayer 2
+          br
+          span.xplayer 2
+        td.outcome
+          span.yplayer 0
+          br
+          span.xplayer 0
+      tr
+        td
+        td.yplayer.action low
+        td.outcome 
+          span.yplayer 0
+          br
+          span.xplayer 0
+        td.outcome 
+          span.yplayer 1
+          br
+          span.xplayer 1
+
+mixin game_matching()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Player X
+      tr
+        td
+        td
+        td.action.xplayer high 
+        td.action.xplayer low
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Player Y
+        td.action.yplayer high
+        td.outcome
+          span.yplayer 1
+          br
+          span.xplayer -1
+        td.outcome
+          span.yplayer -1
+          br
+          span.xplayer 1
+      tr
+        td
+        td.yplayer.action low
+        td.outcome 
+          span.yplayer -1
+          br
+          span.xplayer 1
+        td.outcome 
+          span.yplayer 1
+          br
+          span.xplayer -1
+
+mixin game_rock_paper_scissors()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="3").label.xplayer Player X
+      tr
+        td
+        td
+        td.action.xplayer rock 
+        td.action.xplayer paper
+        td.action.xplayer scissors
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Player Y
+        td.action.yplayer rock
+        td.outcome
+          span.yplayer 0
+          br
+          span.xplayer 0
+        td.outcome
+          span.yplayer -1
+          br
+          span.xplayer 1
+        td.outcome
+          span.yplayer 1
+          br
+          span.xplayer -1
+      tr
+        td
+        td.yplayer.action paper
+        td.outcome 
+          span.yplayer 1
+          br
+          span.xplayer -1
+        td.outcome 
+          span.yplayer 0
+          br
+          span.xplayer 0
+        td.outcome
+          span.yplayer -1
+          br
+          span.xplayer 1
+      tr
+        td
+        td.yplayer.action scissors
+        td.outcome 
+          span.yplayer -1
+          br
+          span.xplayer 1
+        td.outcome 
+          span.yplayer 1
+          br
+          span.xplayer -1
+        td.outcome
+          span.yplayer 0
+          br
+          span.xplayer 0
+
+
+mixin game_far_near()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Player X
+      tr
+        td
+        td
+        td.action.xplayer far 
+        td.action.xplayer near
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Player Y
+        td.action.yplayer far
+        td.outcome
+          span.yplayer 2
+          br
+          span.xplayer 2
+        td.outcome
+          span.yplayer 0
+          br
+          span.xplayer 2
+      tr
+        td
+        td.yplayer.action near
+        td.outcome 
+          span.yplayer 2
+          br
+          span.xplayer 0
+        td.outcome 
+          span.yplayer 0
+          br
+          span.xplayer 0
+
+
+
+mixin game_battle_sexes_variant()
+  table.data
+    thead
+      tr
+        td
+        td
+        td(colspan="2").label.xplayer Player X
+      tr
+        td
+        td
+        td.action.xplayer rock 
+        td.action.xplayer classical
+    tbody
+      tr
+        td(style="transform: rotate(270deg) translateX(-1em)").label.yplayer Player Y
+        td.action.yplayer rock
+        td.outcome
+          span.yplayer 1
+          br
+          span.xplayer 3
+        td.outcome
+          span.yplayer 2
+          br
+          span.xplayer 2
+      tr
+        td
+        td.yplayer.action classical
+        td.outcome 
+          span.yplayer 2
+          br
+          span.xplayer 2
+        td.outcome 
+          span.yplayer 3
+          br
+          span.xplayer 1
+
+
+
+
+mixin habitualInstrumental(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - theCls = ''
+  if p.step
+    - theCls = 'slide'
+  +slide_rh_white({step:p.step})
+    +left_half
+      p.center: span habitual
+      .hem-around-children
+        p(class=theCls)
+          span.action Action
+          span  occurs in the presence of 
+          span.stimulus Stimulus
+          span .
+        p(class=theCls)
+          span.agent Agent
+          span  is 
+          span.rewarded rewarded
+          span  [/punished]
+        p(class=theCls)
+          span.stimulus-action-link Stimulus-Action Link 
+          span is strengthened [/weakened] due to reward [/punishment]
+        p(class=theCls, style='position:inherit').expln
+          span Given 
+          span.stimulus Stimulus
+          span , will 
+          span.action Action
+          span  occur? It depends on the strength of the 
+          span.stimulus-action-links Stimulus-Action Link
+          span .
+    if p.step
+      .slide
+        +blur('.left-half span:not(.stimulus)')
+        .notes Let’s check we all understand the key terms here.
+      .slide
+        +blur('.left-half span.stimulus')
+        +unblur('.left-half span.action')
+        .notes Action may be a complex, coordinated goal-directed action, such as pressing a lever.
+      .slide
+        +blur('.left-half span.action')
+        +unblur('.left-half span.stimulus-action-link')
+      .slide
+        +unblur('.left-half span')
+    +right_half(p)
+      if p.step
+        +blur('.left-half')
+      p.center instrumental
+      .hem-around-children
+        p(class=theCls) Action leads to Outcome.
+          br
+          span &nbsp;
+        p(class=theCls) Action-Outcome Link is strengthened.
+        p(class=theCls) Agent has strong [/weak] positive [/negative] 
+          span.preference Preference
+          span  for 
+          span.outcome Outcome
+        p(class=theCls).last Will Action occur? It depends on the strength of 
+          span.a-o Action-Outcome Link
+          span  and  Agent’s 
+          span.preference Preference
+          span .
+    if p.step
+      .slide
+        +unblur('.left-half')
+        +highlight-row('.expln')
+    block
+
+mixin habitualInstrumental2(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - theCls = ''
+  if p.step
+    - theCls = 'slide'
+  +slide_rh_white({step:p.step})
+    +left_half
+      p.center habitual
+      .hem-around-children
+        p(class=theCls) Stimulus is the layout of this room. 
+        p(class=theCls) Rat (=Agent) is rewarded with food
+        p(class=theCls).stimulus-action-step Room-LeverPress (=Stimulus-Action) Link is strengthened due to reward
+        p(class=theCls) Thf LeverPress (=Action) will occur in this room (=Stimulus).
+    +right_half(p)
+      if p.step
+        +blur('.left-half')
+      p.center instrumental
+      .hem-around-children
+        p(class=theCls) Lever pressing (=Action) leads to food (=Outcome).
+        p(class=theCls) Thf LeverPress-Food (=Action-Outcome) Link is strong.
+        p(class=theCls).preference-step Rat (=Agent) has strong positive Preference for food.
+        p(class=theCls) Thf LeverPress (=Action) will occur.
+    block
+
+
+
+mixin dualProcessTheoryOfAction
+  p Dual-Process Theory of Action
+  p.em-above.notes.handout.show
+    span some actions are ‘controlled by two 
+      span.dissociable dissociable
+      span.process  process
+      span es: a 
+      span.goal-directed goal-directed
+      span  [
+      span.instrumental instrumental
+      span ]
+      span  and an 
+      span.habitual habitual
+      span  process’
+  .notes.handout.ctd: :t
+    \citep{Dickinson:1985qp,dickinson:2016_instrumental}
+  p.right.grey-text Dickinson, 2016 p. 179
+
+
+mixin motivationalStates()
+  +slide_rh_white
+    +run_across
+      p.center motivational states
+    +left_half
+      p.center primary motivational states
+      p.hem-around.step2 unchanging, not modifiable by learning
+      ul.hem-around-children.step3
+        li hunger
+        li thirst
+        li satiety
+        li disgust
+        li ...
+    +right_half
+      p.center preferences
+      p.hem-around changing, influenced by learning (and fashion, ...)
+      ul.hem-around-children
+        li chocolate over rhubarb
+        li lime over lemon
+        li red over blue
+        li ...
+    block
+
+mixin pavlovianVsOperant(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - theCls = ''
+  if p.step
+    - theCls = 'slide'
+  +slide_rh_white
+    +run_across
+      p.center conditioning
+    +left_half
+      p.center Pavlovian (classical)
+      .pav.hide
+        .hem-around-children
+          p Results in stimulus-stimulus links (e.g. bell-food)
+          p The animal responds to the first stimulus as if the second were present
+          p Acquired through exposure to contingencies
+          p Subject to overshadowing and blocking (u.a.)
+          .notes: :t
+            Overshadowing occurs when more than one stimulus is associated with an event: e.g. a light and a tone. The salience of the tone affects how much the animal learns about the correlation between light and event: a salient tone reduces the amount of learning. (31- 32)
+          .notes: :t
+            Blocking : if an animal has previously learnt about a correlation B -> E2, it is much less likely to learn about a correlation A -> E2 when presented with a situation in which E2 is preceded by A and B. (48)
+    +right_half
+      p.center Operant
+      .hem-around-children
+        p(class=theCls) Results in stimulus-action links
+        p(class=theCls) The animal responds to the stimulus by performing the action
+        p(class=theCls) Acquired through being rewarded when acting in the presence of the stimulus 
+        p(class=theCls) Involved habitual processes
+    if p.step
+      .slide
+        +blur('.right-half')
+      .slide
+        +show('.pav')
+    else
+      +show('.pav', 0)
+    block
+
+mixin slide_tensions(p)
+  +slide_rh_white
+    +left_half  
+      p Assumption of Common Knowledge of Rationality is threatened by the Dual Process Theory.
+    +right_half
+      p Application of Game Theory to explaining lizard morphology indicates Assumption of Common Knowledge of Rationality is not required.
+    .clear
+    +left_half  
+      p The range of applications of Game Theory shows it is agnostic about processes.
+    +right_half
+      p Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
+    +left_half  
+      p The range of applications of Game Theory shows it is agnostic about processes [again].
+    +right_half
+      p Dickinson’s instrumental process is characterised by appeal to 
+        span.dt Decision Theory.
+    block
+
+mixin actionThreeQ()
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-3em;') Donald Davidson asks, ‘What is the mark that distinguishes ... actions?’ Are scientific discoveries relevant to answering this question?
+  .q2
+    p.huge-glow Q2
+    p(style='margin-top:-3em;') What is the mark that distinguishes actions?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-3em;') How are non-accidental matches between intentions and motor representations possible?
+
+
+
+  
+mixin conjecture-iasmr()
+  ol
+    li There is one outcome which each agent represents motorically
+      span.step-next , and 
+    li.em-above in each agent this representation triggers planning-like processes
+    li.em-above concerning all the agents’ actions
+      span.step-next , with the result that
+    li.em-above
+      span.coordination coordination of their actions is facilitated.
+
+mixin cooperation-df()
+  span: :t
+    Purposive actions are cooperative to the extent that, for each agent, her 
+    performing these actions rather than any other actions depends in part on how good
+    an overall pattern of trade-offs between demandingness and well-suitedness can be achieved
+    for all of the actions.

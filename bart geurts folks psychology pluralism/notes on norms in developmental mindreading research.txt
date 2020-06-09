@@ -1,0 +1,209 @@
+This is a review. It discusses how whether an action is intentional infleunces children’s moral evaulations. 
+
+> ‘We argue that children’s reasoning about and evaluation of moral agents, like epistemic agents, is aimed at analyzing the situations under which moral actions occur to distinguish intentional from unintentional behaviors’ (p. 348).
+
+Evidence for this is tricky. Some of the most convincing comes from older children:
+
+> ‘in one study, 3-year-olds were equally likely to help an accidentally harmful adult (who accidentally tore someone’s artwork and so caused a negative outcome) and a neutral adult (who did not harm anything). In contrast, 3-year-olds in the same study were less likely to help someone who intended to harm but failed (the art would not tear) than they were to help the neutral individual, despite no harmful outcomes occurring in either case (Vaish, Carpenter, & Tomasello, 2010). In a related study, 3- and 4-year-olds sought to rectify punishments given to accidental transgressors, but not to intentional transgressors, by spontaneously sharing their own rewards (Chernyak & Sobel, 2016).’
+
+Vaish et al, 2010: ‘In Study 2 (N = 36), 3‐year‐olds helped an actor who intended but failed to harm another adult less often than a neutral adult, but helped an accidentally harmful and a neutral adult equally often.’
+
+Chernyak & Sobel, 2016 : puppet knocks over a tower; adult reduces puppet’s reward; child but not adult has information about whether puppet’s action was intentional; child more likely to give to puppet when the knocking over was accidental.
+
+Koenig et al 2019 also mention some work with infants in the first year, these sources are included below. 
+
+@article{koenig:2019_children,
+  title = {Children's {{Judgments}} of {{Epistemic}} and {{Moral Agents}}: {{From Situations}} to {{Intentions}}:},
+  shorttitle = {Children's {{Judgments}} of {{Epistemic}} and {{Moral Agents}}},
+  author = {Koenig, Melissa A. and Tiberius, Valerie and Hamlin, J. Kiley},
+  year = {2019},
+  month = jan,
+  publisher = {{SAGE PublicationsSage CA: Los Angeles, CA}},
+  doi = {10.1177/1745691618805452},
+  journal = {Perspectives on Psychological Science},
+  language = {en}
+}
+
+----
+
+Extends Hamlin, 2013 to negligent (vs accidental vs intentional) actions.
+
+@article{woo:2017_social,
+  title = {Social Evaluation of Intentional, Truly Accidental, and Negligently Accidental Helpers and Harmers by 10-Month-Old Infants},
+  author = {Woo, Brandon M. and Steckler, Conor M. and Le, Doan T. and Hamlin, J. Kiley},
+  year = {2017},
+  month = nov,
+  volume = {168},
+  pages = {154--163},
+  issn = {0010-0277},
+  doi = {10.1016/j.cognition.2017.06.029},
+  journal = {Cognition},
+  keywords = {Infant development,Intention,Negligence,Social cognition},
+  language = {en}
+}
+
+----
+
+See figure 1 for the setup. Participants responded by choosing one of two puppets. (The following items use much the same puppet-choice paradigm.)
+
+> ‘8-month-olds preferred a puppet who tried to help a third party in its goal (and either succeeded or failed to help) over a puppet who tried to prevent the third party from achieving its goal (and either succeeded or failed to hinder), but did not distinguish puppets who had the same intentions to help or hinder but were associated with distinct outcomes for the recipient of helping and hindering. Five-month-olds, in contrast, did not consistently prefer any puppets’
+
+
+@article{hamlin:2013_failed,
+  title = {Failed Attempts to Help and Harm: {{Intention}} versus Outcome in Preverbal Infants' Social Evaluations},
+  shorttitle = {Failed Attempts to Help and Harm},
+  author = {Hamlin, J. Kiley},
+  year = {2013},
+  month = sep,
+  volume = {128},
+  pages = {451--474},
+  issn = {0010-0277},
+  doi = {10.1016/j.cognition.2013.04.004},
+  journal = {Cognition},
+  keywords = {Infancy,Intentionality,Moral cognition},
+  language = {en},
+  number = {3}
+}
+
+----
+
+Experiment 6 is an attempt to contrast intentional vs accidental case where one character comes to the defence of an injured party by coming between the injured party and an agressor.  Response: puppet choice.
+
+> ‘10-month-olds robustly chose the active interventional rather than the non-active-interventional agent’
+
+
+@article{kanakogi:2017_preverbal,
+  title = {Preverbal Infants Affirm Third-Party Interventions That Protect Victims from Aggressors},
+  author = {Kanakogi, Yasuhiro and Inoue, Yasuyuki and Matsuda, Goh and Butler, David and Hiraki, Kazuo and {Myowa-Yamakoshi}, Masako},
+  year = {2017},
+  month = jan,
+  volume = {1},
+  pages = {1--7},
+  publisher = {{Nature Publishing Group}},
+  issn = {2397-3374},
+  doi = {10.1038/s41562-016-0037},
+  abstract = {Over six experiments, Kanakogi et al. show that infants as young as 6\,months support third-party interventions that protect victims from aggressors. This suggests that human emphasis upon such acts is rooted within the preverbal infant's mind.},
+  copyright = {2017 Macmillan Publishers Limited, part of Springer Nature.},
+  file = {/Users/brittle/syncthing/papers/Kanakogi et al 2017 - Preverbal infants affirm third-party interventions that protect victims from.pdf},
+  journal = {Nature Human Behaviour},
+  language = {en},
+  number = {2}
+}
+
+----
+
+A reply to a BBS article which provides a concise overview (pp. 32--3 of the pdf Tomasello 2020); their key idea is that ‘children may evaluate moral and epistemic commitments differently’
+
+@article{li:2020_sense,
+  title = {The Sense of Obligation in Children's Testimonial Learning},
+  author = {Li, Pearl Han and Pesch, Annelise and Koenig, Melissa A.},
+  year = {2020/ed},
+  volume = {43},
+  publisher = {{Cambridge University Press}},
+  issn = {0140-525X, 1469-1825},
+  doi = {10.1017/S0140525X19002486},
+  journal = {Behavioral and Brain Sciences},
+  language = {en}
+}
+
+This is a commentary on:
+
+@article{tomasello:2020_moral,
+  title = {The Moral Psychology of Obligation},
+  author = {Tomasello, Michael},
+  year = {2020/ed},
+  volume = {43},
+  publisher = {{Cambridge University Press}},
+  issn = {0140-525X, 1469-1825},
+  doi = {10.1017/S0140525X19001742},
+  journal = {Behavioral and Brain Sciences},
+  keywords = {cooperation,fairness,morality,motivation,normativity,obligation,shared intentionality},
+  language = {en}
+}
+
+----
+
+This one is at most weakly connected to norms, but it’s a nice study ...
+
+> ‘children attribute knowledge to (Experiment 1) and endorse new claims made by speakers (Experiment 2) who previously professed ignorance about familiar object labels, but not to speakers whose labels were previously inaccurate’
+
+@article{kushnir:2017_what,
+  title = {What {{I Don}}'t {{Know Won}}'t {{Hurt You}}: {{The Relation Between Professed Ignorance}} and {{Later Knowledge Claims}}},
+  shorttitle = {What {{I Don}}'t {{Know Won}}'t {{Hurt You}}},
+  author = {Kushnir, Tamar and Koenig, Melissa},
+  year = {2017},
+  month = may,
+  volume = {53},
+  pages = {826--835},
+  issn = {0012-1649},
+  doi = {10.1037/dev0000294},
+  journal = {Developmental Psychology},
+  language = {ENGLISH},
+  number = {5},
+  pmid = {28358533}
+}
+
+----
+
+This one is at most weakly connected to folk psychology, but it’s as close as I could find ...
+
+> ‘We found that 3- and 4-year- olds’ (N = 75) practical decisions to wait and to share were moved as a function of a person’s commitment-keeping ability, but epistemic decisions to learn were not.’ 
+
+@article{pesch:2018_varieties,
+  title = {Varieties of Trust in Preschoolers' Learning and Practical Decisions},
+  author = {Pesch, Annelise and Koenig, Melissa A.},
+  year = {2018},
+  month = aug,
+  volume = {13},
+  pages = {e0202506},
+  publisher = {{Public Library of Science}},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0202506},
+  journal = {PLOS ONE},
+  keywords = {Analysis of variance,Attitudes (psychology),Behavior,Children,Emotions,Human learning,Information retrieval,Learning},
+  language = {en},
+  number = {8}
+}
+
+----
+
+4-8 year olds who encounter informants who knowinglyly misinform them (a) attribute less positive intentions to them (‘Children were asked whether they thought the informant was trying to help them [...] or not trying to help them’), and (b) reward them less.  No developmental change observed.
+
+@article{ronfard:2019_how,
+  title = {How Children Use Accuracy Information to Infer Informant Intentions and to Make Reward Decisions},
+  author = {Ronfard, Samuel and Nelson, Laura and Dunham, Yarrow and Blake, Peter R.},
+  year = {2019},
+  month = jan,
+  volume = {177},
+  pages = {100--118},
+  issn = {0022-0965},
+  doi = {10.1016/j.jecp.2018.07.017},
+  journal = {Journal of Experimental Child Psychology},
+  keywords = {Accuracy,Children,Cooperation,Information value,Reciprocity,Testimony},
+  language = {en}
+}
+
+----
+
+‘I simply ask how, exactly, the moral stance relates to the intentional stance’
+(in a reply to a BBS article, pp. 38--9 of the pdf Tomasello 2020).  Rakoczy suggests that \citet{tomasello:2020_moral} appears to see these as parts of one thing. 
+
+Rakoczy’s comment that ‘It will be crucial for future research to better understand how, exactly, group stances, the intentional stance, shared intentionality and the moral stance, relate to each other developmentally’ makes me think that there isn’t much research on this yet.  (Tomasello’s reply likewise: ‘Rakoczy notes a number of ways in which my account conflates – or at least fails to keep separate – children’s sense of an intentional stance, a group stance, a moral stance, and shared intentionality. He very articulately illustrates how even a single interaction may instantiate these different stances and capacities such that, over developmental time, they become more distinct aspects of human social psychological functioning.’ p. 49)
+
+
+@article{rakoczy:2020_how,
+  title = {How Is the Moral Stance Related to the Intentional Stance and Group Thinking?},
+  author = {Rakoczy, Hannes},
+  year = {2020/ed},
+  volume = {43},
+  publisher = {{Cambridge University Press}},
+  issn = {0140-525X, 1469-1825},
+  doi = {10.1017/S0140525X19002413},
+  journal = {Behavioral and Brain Sciences},
+  language = {en}
+}
+
+
+
+
+

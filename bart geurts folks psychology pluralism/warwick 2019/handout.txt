@@ -1,0 +1,35 @@
+Information Bodies
+
+    Social-Professional-P1: 
+    Fred is Betty’s co-worker. When with Betty’s friends he commends her 
+    competence. When with Betty’s bosses he disparages her competence.
+
+    Professional-Social-P1:
+    Fred is Betty’s co-worker. When with Betty’s bosses he commends her
+    competence. When with Betty’s friends he disparages her competence.
+
+
+Scenarios
+
+    Social-P1: 
+    Betty is inviting some friends to a dinner party. She is considering
+    whether to include Fred. Betty wonders whether Fred thinks she is
+    competent. Does he? [yes/no] 
+    [How confident are you in your answer? 1-10; 
+      1 – Not at all confident to 10 – Completely confident]
+    [desire] Betty wonders whether Fred wants her to remain on his team. 
+    Does he?
+    [intention] Betty wonders whether Fred intends that she remain on his team.     Does he?
+
+    Professional-P1:
+    Betty receives an email informing her that applications for promotion are
+    due next week. She is considering whether to apply. Betty wonders whether
+    Fred thinks she is competent. Does he? 
+
+
+Predicted answers (simplified); each cell represents one condition.
+
+    Information Body    Social-Professional-P1    Professional-Social-P1
+    Scenario          
+      Social-P1          yes                       no
+      Professional-P1    no                        yes

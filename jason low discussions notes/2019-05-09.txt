@@ -1,0 +1,110 @@
+---
+title: "Discussion with Jason 2019-05-09"
+bibliography: /Users/stephenbutterfill/endnote/phd_biblio.bib
+mainfont: Linux Libertine O
+papersize: "a4"
+header-includes:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{libertine}
+fontsize: 12pt
+---
+
+
+# 1. Gio
+
+We rated explanations according to whether they mention mental states, then attempted to classify the explanations according to whether participants were in tb or fb condition.
+
+Do the explanations provide evidence of excuses? No: so no sense that one helping response is normatively correct. (Or if anything, sense thta you ought to help with the proximal goal.)
+
+Do the explanations enable us to distinguish conditions? Not reliably (although some give away that its FB; note that not all of these justify by appeal to FB)
+
+Do the explanations support Jason's Kaisers hypothesis (people know about the FB but do not take it into account)? Insofar as they do not indicate any systematic consideration of FB, they are consistent with it.
+
+Can our motor theory explain helping actions? No because the goals represented motorically are the goals of opening the empty box.
+
+
+
+# 2. Brass false belief
+
+Could we adapt the Brass paradigm to make it a false belief study?
+
+Cylinder and cube are moving around as in van der Wel et al (except that protagonist has different perspective, of course). 
+
+Considered two options:
+
+## Option 1
+
+There is no false belief induction (so no prior expectation that a FB response will occur). Rather, the protagonist’s finger actions indicate what she believes. (She makes mistakes without there being any obvious reason for her to do so.)
+
+Protagonist’s task is to raise index or middle finger depending on where the [cylinder/cube] is.
+
+Subject’s task is to raise index or middle finger depending on where the [cylinder/cube] is.
+
+As in Brass, the protagonist's finger always goes up right after the go signal (so there should be no chance of reacting before seeing it)
+
+----------------
+CORRECTNESS
+-----       ------------------------------------------------------------------------------------------
+  C         protagonist acts correctly (has a true belief)
+         
+  NC        protagonist acts incorrectly (made an error, perhaps because has a false belief)
+----------------
+
+----------------
+TASK
+-----       ------------------------------------------------------------------------------------------
+  Same       protagonist and subject respond to the same object (e.g. to the cylinder)
+  
+  Different  protagonist and subject respond to different objects
+----------------
+
+*Promxially Congruent*: protagonist and subject raise the same finger
+
+*Promxially Incongruent*: protagonist and subject raise different fingers
+
+Are responses proximally congruent?
+
+------------------------------
+       Same   Different
+       Task   Task
+------ ------ ----------
+  C      y      n
+  
+  NC     n      y
+---------------------------
+
+Table: Are responses proximally congruent?
+
+Guesses about observed RTs (in order of decreasing confidence): 
+  
+  0. In Same Task conditions, C will be faster than NC
+  
+  1. RTs will be slower overall in NC than C (so protagonist’s correctness is tracked)
+  
+  2. Considering C conditions only, RTs will be shorter when proximally congruent that proximally incongruent (similar to the classic Brass effect);
+  
+  3. In Different Task conditions, NC will be slower than C even though NC-Different-Task is proximally congruent whereas C-Different-Task is proximally incongruent. Significance: subjects track the relation between correctness, not just proximal congruence
+  
+  4. There will be an interaction between CORRECTNESS and TASK . Could this be a hint that tracking the correctness of anothers’ response is bound up with whatever underpins the automatic imitation effect?
+
+
+## Option 2
+
+There is a belief induction phase, so that Subject expects protagonist to act Correctly or Incorrectly. Importantly, the subject must not be able to anticipate the Protagonist's action before observing it. To achieve this, we would have to reveal the TASK (Same/Different) only at the time of the go signal:
+
+----------------
+BELIEF
+-----      ------------------------------------------------------------------------------------------
+  TB        belief induction implies protagonist should have a true belief about the objects’ locations
+
+  FB        belief induction implies protagonist should have a false belief about the objects’ locations
+----------------
+
+
+TASK [as in option 1]
+  
+Simplifying Assumption: rather than introducing CORRECTNESS a third factor, we fix that in TB conditions, Protagonists’ response is Correct and in FB conditions, Protagonists’ response is incorrect. (More ambitous version: BELIEF x CORRECTNESS x TASK )
+
+Given the Simplifying Assumption, Option 2 is just like Option 1: BELIEF is CORRECTNESS plus a story about why correctness is as it is and with the additional constraint that TASK cannot be revealed before the go signal (so we cannot do whole blocks with TASK fixed).
+
+

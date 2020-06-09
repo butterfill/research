@@ -1,0 +1,81 @@
+# idea 1 : Subjectivity
+
+[Against this idea: the answer is not very deep; limited knowledge of PGS and multi-modal integration &c.]
+
+PGS : ‘But once animals start to accommodate and utilize reafference, the character of sensing changes. The animal is now not only open to the world, but open to the world as the world, as distinct from self’ \citep[pp.~12-13]{godfrey-smith:2019_evolving}.
+
+Raises the possibility of multiple world-self distinction. Multiple subjects, and multiple experiences.
+Missing any sense of unity.
+
+Q1. Further question (which I think is left open): What gives rise to the (illusion) of a single subject of experience?
+
+You might say it’s the perceptual bias and the literal notion of a point of view. But this is compatible with there being lots of unrelated aspects of experience (efferent copies &c)
+
+Q1.b But how can we characterise unity in a way that isn’t controversial?
+
+Altered Carbon (show clip): shows that some people (fans) can make sense of the idea of a transferrable set of experiences and memories which they treat as a locus of value.
+
+PGS contrasts nonfeeling and feeling pain:
+
+‘The function of felt pain, in us and other animals, may be largely to act as part of a means for rewiring behavior; its point is not merely to change behavior in a momentary way, but to bring the distinction between welcome and unwelcome events to bear on the guidance of future actions’
+\citep[p.~13]{godfrey-smith:2019_evolving}.
+
+Q: why should felt pain only have this function?
+
+Then : bochum interface problem talk on Dickinson only (not the motor part).
+
+
+
+# idea 2 : seeing red
+
+(maybe some developmental stuff as well?)
+
+
+# idea 3 : burge_2018 commentary (limited interest)?
+
+
+# idea 4 : mechanistically neutral &c (action -> joint action)
+
+
+*****
+
+Is there a fundamental question of action theory?
+
+Steward on ‘the primitive and unreflective categorisation of animals as agents’
+
+Some Problems in Philosophical Action Theory
+
+‘The fundamental question of action theory is what makes a piece of behavior qualify as an action.’ \citep[p.~361]{bach:1978_representational}
+
+‘Not only do we lack at present sufficient means for adequately characterizing executive representations, especially effective representations, we are in need of a pattern of psychological explanation that can treat representations as causes and effects,’ \citep[p.~377]{bach:1978_representational} : Bach’s aims are quite different from Steward’s!
+
+‘I take it that a fundamental problem---possibly, the fundamental problem---in philosophical action theory is to adequately specify the nature of the proximate cause of action’ \citep[p.~32]{brand:1984_intending}
+--- I want to argue that this is wrong.
+
+‘Our analysis agrees, finally, with an assumption of commonsense psychology that the common notion of intentional action is irreducibly psychological. It rests on psychological notions of plan, intention, evidence, and skill’ \citep[p.~65]{mele:1994_intentional}.
+--- Want to suggest a picture on which there are two points of disagreement: (a) no single common notion of intentional action; (b) agnostic about psychological mechanisms
+
+Mele vs Burge/Steward: ‘Remove the intentional altogether from intentional action, and you have mere behavior: brute bodily motion not unlike the movement of wind-swept sand on the shores of Lake Michigan.’ \citep[p.~39]{mele:1994_intentional}
+
+‘At the core of the standard conception are the following two claims. First, the notion of intentional action is more fundamental than the notion of action. In particular, action is to be explained in terms of the intentionality of intentional action. Second, there is a close connection between intentional action and acting for a reason’ \citep{schlosser:2019_agency}
+
+‘In the local market, we find: red, brown, white, and russet potatoes; red and green cabbages; red,
+yellow, and green bell peppers; red, yellow, and white onions; red and white grapes; white and pink
+grapefruit; red, white, black, green, and yellow beans; and, of course, red, white, rose, and green
+wine (green as in green Hungarian). Among hair colors, we find black, brown, red, blond (in­ stead of
+yellow), gray, and white. None of these nomenclatures makes sense if we go strictly by the standard
+Munsell color chips. The reds in red hair, red potatoes, red cabbage, red bell peppers, red onions,
+red grapes, red beans, red wine, and red skin are very different from the blood red of the focal red
+Munsell chip. They are also very different from each other. They only make sense with the similarity,
+preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the
+principle of possibilities’ \citep[p.~372]{clark:1992_arenas}.
+
+--- So the idea is that once you have words, you can use them to draw an indefinite variety of contrasts. New contexts can invite you to draw new contrasts, which may be only very distantly related to earlier contrasts. But there is no saying that one contrast is the One True Contrast.
+
+--- nb: need to mention the similarity, preference, and exhaustiveness constraints and the principle of possibilities
+	On the principle of possibilities (badyly named?) ‘We can never make sense of an entity-a word, object, process, state, event-on its own. Whatever meaning it has for us, whatever structure we see in it, comes from our under­ standing of the system it belongs to. If we "see a single stimulus as structured,'' Garner argued, it is only because we "generate an implied set of stimuli against which the particular stimulus can be contrasted, or within which the particular stimulus can be subsumed." Let me call this the principle of possibilities: We understand what an entity is with reference to what it could have been-the set of possibilities we infer it came from.’ \citep[p.~367]{clark:1992_arenas}
+
+
+On the independence of (a) and (c): \citep[p.~120]{hommel:2017_consciousness}: ‘the contribution of consciousness to action control does not seem to be well captured by the folk‐psychological idea that we perceive, think, and then act. [...] Having conscious insight into aspects of action control allows us to verbalise what we are doing, how we are doing, and why we are doing it, which provides the opportunity to share tasks and strategies how to implement and control a task with others, and to use this information for self‐control. Hence, although conscious experience does not seem to play a role in ongoing action control, it is likely to provide the basis for interpersonal learning and cultural transmission (Hommel, 2013; Masicampo & Baumeister, 2013).’
+
+	Btw, there’s a nice contrast between Hommel (et al) & Schlosser (which might be drawn as a parallel to the Steward-Burge contrast?): ‘intentional action depends on consciousness. Consciousness, that is, must play a role at some point, either in the initiation and guidance of the action or during the formation or endorsement of the relevant habit.’ \citep[pp.~53--4]{schlosser:2019_dualsystem}

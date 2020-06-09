@@ -1,0 +1,82 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Joint Action: Talk Notes}
+\def \isubtitle {Lecture 01}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+\input{$HOME/Documents/submissions/preamble_steve_lecture_notes}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1}
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std}
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa}
+\bibliographystyle{apalike}
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+%---------------
+%--- start paste
+
+
+
+
+
+
+%--- end paste
+%---------------
+
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

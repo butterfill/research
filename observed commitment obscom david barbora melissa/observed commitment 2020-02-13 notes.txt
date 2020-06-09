@@ -1,0 +1,34 @@
+decision 4
+----------
+
+In Part II (David’s), participants will score each video in turn, on a continuous scale with three labels (none or almost none, about half, all or almost all).  It may be that, as they score a video, the scale is marked with a number to indicate how they scored that video (enabling them to compare their previous answers with their current answer).
+
+
+decision 5a
+----------
+
+In Part II, we will include children who completed 0 and who completed 9 rounds without excluding anyone. (This gives Pp the max chance of discriminating children’s commitment.)
+
+undecision 5b
+-------------
+
+We will see how many 0 and 9 children get selected as the video performers in Part II; if it looks like this could throw them off, we will consider using 5 videos instead of 4.
+
+
+decision 6
+-------------
+
+In the Part I (Melissa’s) we will use the same scale for Participants to score as in Part II. (Which is also the same scale used in John’s earlier study if we use the continuous slider scale.)
+
+
+decision 7
+-------------
+We will attempt to find a standard questionnaire to measure participants’ experience with children (falling back to getting them to report experience on a slingle scale if necessary).
+
+
+
+
+Next milestone
+--------------
+
+David produces descripton and instructions for participants.

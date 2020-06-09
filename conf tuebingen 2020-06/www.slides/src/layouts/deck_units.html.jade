@@ -1,0 +1,156 @@
+//-
+//- (c) Stephen A. Butterfill 2014-7
+//-
+
+
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+- scripts.add(["/vendor/for.slides.all.min.js"])
+
+- styles.add(["/vendor/for.slides.all.css"])
+
+- styles.add(["/styles/steve_deck_style.css"])
+
+
+html
+  head
+    // (c) copyright 2013 Stephen A. Butterfill
+    //- Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+
+    //- fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
+    //- link(href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door',rel='stylesheet',type='text/css')
+
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- Styles
+    != styles.toHTML()
+    
+
+  body
+    //- Scripts
+    != scripts.toHTML()
+
+
+    //- keyboard shortcuts modal
+    #helpUnderlay.help-underlay
+      #helpModal.help-modal
+        h1
+          | Keyboard Shortcuts
+          kbd.help-key
+            span ?
+        #helpClose.help-close ×
+        // .help-close
+        #helpModalContent.help-modal-content
+          #helpListWrap.help-list-wrap
+            //-
+               Each <ul> below creates a column, as long as each has a class of
+               "help-list". Each <li> is a single key/definition pair.
+               The extra nested <span> is to help keep the definitions lined up
+               vertically, for aesthetic reasons.
+               If you hate the extra <span>, just remove it from each key/def pair.
+                  
+            ul.help-list
+              li.help-key-unit
+                kbd.help-key
+                  span →
+                span.help-key-def Next step
+              li.help-key-unit
+                kbd.help-key
+                  span ←
+                span.help-key-def Previous step
+              li.help-key-unit
+                kbd.help-key
+                  span ↓
+                span.help-key-def Skip this slide
+              li.help-key-unit
+                kbd.help-key
+                  span ↑
+                span.help-key-def Previous slide
+                
+              li.help-key-unit
+                kbd.help-key
+                  span m
+                span.help-key-def Show slide thumbnails
+              li.help-key-unit
+                kbd.help-key
+                  span n
+                span.help-key-def Show notes
+              li.help-key-unit
+                kbd.help-key
+                  span h
+                span.help-key-def Show handout latex source
+              li.help-key-unit
+                kbd.help-key
+                  span N
+                span.help-key-def Show talk notes latex source
+
+    .deck-notes
+      .deck-notes-container
+    
+    .deck-handout
+      .deck-handout-container
+
+    .deck-container
+
+      section.slide#instructions
+        .words: .container_12: .grid_12
+          .middle
+            p.center Click here and press the right key for the next slide (or swipe left)
+      section.slide
+        .words: .container_12: .grid_12
+          p also ...
+          p Press the left key to go backwards (or swipe right)
+          p Press n to toggle whether notes are shown (or add '?notes' to the url before the #)
+          p Press m or double tap to slide thumbnails (menu)
+          p Press ? at any time to show the keyboard shortcuts
+  
+      //- title slide
+      section(id="#{document.basename}").slide
+          - var low = false
+          if document.title_image
+              img.bkg(src='document.title_image')
+              if document.title_image.indexOf('.low.') != -1
+                  - low = true
+          .spacer &nbsp;
+          .title-block(style="#{low ? 'position:relative; top:425px' : ''}"): .title-container
+              h2.title1 #{document.title}
+
+      //- the slides
+      != content
+    
+
+
+
+  

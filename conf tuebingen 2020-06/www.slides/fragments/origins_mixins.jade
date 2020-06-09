@@ -1,0 +1,1291 @@
+mixin davidson_inbetween(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+
+  .photobox-bottom-right
+    img.photo-right(src='/img/davidson.gif')
+  .words: .container_12: .grid_12
+    p.first-part
+      span ‘if you want to describe what is going on in the head of the child when it has a few words which it utters in appropriate situations,  
+      span.you-will-fail you will fail
+      span.step2(class="#{p.step ? 'hide' : ''}")   for lack of the right sort of words of your own.
+    p.step3(class="#{p.step ? 'hide' : ''}")
+      span ‘We have many vocabularies for describing nature when we regard it as 
+      span.highlight1.mindless mindless
+      span , and we have a mentalistic vocabulary for describing 
+      span.highlight1.thought thought and intentional action
+      span ; what we lack is a way of describing 
+      span.highlight1.between what is in between
+      span ’
+    p.right
+      span (Davidson 1999, p. 11)
+    if p.step
+      .slide
+        +highlight('.you-will-fail','red')
+        .notes: :t
+          I love this: Davidson says we will fail.  So encouraging.
+          But why will we fail?
+      .slide
+        +show('.step2')
+        .notes: :t
+          Is he suggesting the issue is merely terminological?  Not quite ...
+      .slide
+        +show('.step3')
+      .slide
+        +invert('.highlight1')
+    block
+
+
+
+mixin UncomplicatedAccountOfMindsAndActions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
+  p Uncomplicated Account of Minds and Actions 
+  .generalise.hide
+    p.hem-around For any given proposition [There’s a  
+      span.spider spider
+      span   behind the book] and any given human [Wy] ...
+  .theAccount.hide
+    p.hem-around.indent.claim1 1. Either Wy   
+      span.believes believes
+      span   that there’s a spider behind the book, or she does not.
+    p.hem-around.indent.claim2 2. Either Wy can act for the reason that there is, or seems to be, a spider behind the book (where this is her reason for acting), or else she cannot.
+    p.hem-around.indent.claim3 3. The first alternatives of (1) and (2) are either both true or both false.
+  .hide(class="#{(p.handout ? 'handout' : '')} #{(p.notes ? 'notes' : '')}"): :t
+    \subsection{Uncomplicated Account of Minds and Actions}
+    For any given proposition [There’s a spider behind the book] and any given human [Wy]
+    ...
+    \begin{enumerate}
+    \item Either Wy believes that there’s a spider behind the book, or she does not.
+    \item Either Wy can act for the reason that there is, or seems to be, a spider behind the book, or else she cannot.
+    \item The first alternatives of (1) and (2) are either both true or both false.
+    \end{enumerate}
+  if p.final
+    +show('.generalise, .theAccount', 0)
+    
+    
+
+mixin discrepantFindingsAboutKnowledgeOfObjects(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
+  p(class="#{p.notes ? 'notes' : ''}").show: :t
+    When do humans first come to know facts about the locations of objects they are not perceiving?
+  p.em-above.indent 
+    span.look look
+    span : by 4 months of age or earlier 
+    span.grey-text (Baillargeon 1987).
+  p.indent 
+    span.look look
+    span : by around 2.5 months of age or earlier
+    span.grey-text (Aguiar & Baillargeon 1999)
+  p.em-above.indent 
+    span.search search
+    span : not until after 7 months of age 
+    span.grey-text (Shinskey & Munakata 2001)
+  if p.final
+    +highlight('.look','yellow', 0)
+    +highlight('.search','blue', 0)
+  .shinskey(class="#{p.final ? '' : 'hide'}")
+    p.em-above ‘action demands are not the only cause of failures on occlusion tasks’
+    p.right.grey-text Shinskey (2012, p. 291)
+  if p.final
+    +blur('.shinskey','2px',0)
+  .tipOfIceberg(class="#{p.final ? '' : 'hide'}")
+    p.em-above ‘the tip of an iceberg’ 
+      span.grey-text Charles & Rivera (2009, p. 994)
+    
+
+
+mixin segmentPersistInteract(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  if !('handout' in p)
+    - p.handout = false
+  if !('notes' in p)
+    - p.notes = false
+  p Three requirements
+  .theRequirements(class="#{p.final ? '' : 'hide'}")
+    ul
+      li.segment segment objects
+      li.persist represent objects as persisting (‘permanence’)
+      li.track track objects’ interactions
+
+mixin threeQuestionsAboutModels(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  p.three-q.em-around.hide Three Questions
+  p.em-around.q1
+    span.hide 1. How do four-month-old infants  
+    span.model model 
+    span.hide physical objects? 
+  p.em-around.q2
+    span.hide 2. What is the relation between the model and the infants?  
+  p.em-around.q3
+    span.hide 3. What is the relation between the model and the things modelled (physical objects)?
+  if p.final
+    +show('.hide',0)
+
+mixin simpleViewGeneratesIncorrectPredictions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  +slide_middle({style:"background-color:red"})
+    p.indent 
+      span The 
+      span.simple-view Simple View
+      br
+      span  generates 
+      br
+      span multiple 
+      br
+      span incorrect predictions.
+    if p.final
+      +fade('span:not(.simple-view)', 0)
+      +line-through('.simple-view')
+    block
+
+mixin slide_coreKnowledgeViewGeneratesNoPredictions(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  +slide_middle({style:"background-color:red"})
+    p.indent 
+      span The 
+      span.ck-view Core Knowledge View
+      br
+      span  generates 
+      br
+      span no 
+      br
+      span  relevant predictions.
+    if p.final
+      +fade('span:not(.simple-view)', 0)
+      +line-through('.simple-view')
+    block
+
+
+mixin charlesRiveraOcclusionEndarkeningTable(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('highlight' in p)
+    - p.highlight = false
+  table.data.charles-rivera 
+    thead
+      tr
+        td 
+        td.center: span.occlusion occlusion
+        td.center: span.endarkening endarkening
+    tbody
+      tr.violation-of-expectations.v-of-e
+        td.center: span violation-of-expectations
+        td.center: span.occlusion ✔
+        td.center: span.endarkening ✘
+      tr.manual-search.search
+        td.center: span manual search
+        td.center: span.occlusion ✘
+        td.center: span.endarkening ✔
+  p.source(style='margin-top:-300px;') Charles & Rivera (2009)
+  if p.highlight
+    +highlight('.manual-search .occlusion', 'red')
+    +highlight('.violation-of-expectations .endarkening', 'red')
+    
+
+
+
+
+
+
+
+mixin discrepancyTable(p)
+  if !p
+    - p = {step:true}
+  table.data
+    thead
+      tr
+        td domain
+        td evidence for knowledge in infancy
+        td evidence against knowledge
+    tbody
+      tr.odd.case-colour(class="#{p.step ? 'slide' : ''}")
+        td colour
+        td categories used in learning labels & functions
+        td failure to use colour as a dimension in ‘same as’ judgements
+      tr.even.case-objects(class="#{p.step ? 'slide' : ''}")
+        td physical objects
+        td patterns of dishabituation and anticipatory looking
+        td unreflected in planned action (may influence online control)
+      tr.odd.case-number(class="#{p.step ? 'slide' : ''}")
+        td number
+        td.center --""--
+        td.center --""--
+      tr.even.case-syntax(class="#{p.step ? 'slide' : ''}")
+        td syntax
+        td anticipatory looking
+        td [as adults]
+      tr.odd.case-minds(class="#{p.step ? 'slide' : ''}")
+        td minds
+        td reflected in anticipatory looking, communication, &c
+        td not reflected in judgements about action, desire, ...
+
+
+//- ------
+//- modularity / core knowledge
+
+  
+mixin coreKnowledgeDefined(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  .step1
+    p
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span: :t
+        , so we are endowed with multiple systems for representing and
+        reasoning about entities of different kinds.’
+    p.right.grey-text Carey and Spelke, 1996 p. 517
+  img.bkg(src='/img/edge_detection.jpg')
+  if p.final
+    +fade('img.bkg', 0)
+    +blur('.step1', '2px', 0)
+  else
+    +hide('img.bkg',0)
+  .step2
+    p
+      //- ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are 
+      ol.listOfFeatures
+        li largely innate 
+        li encapsulated 
+        li unchanging 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers’ 
+    p.right.grey-text (Carey and Spelke 1996: 520)
+  .step3
+    p.em-above
+      span.format-iconic representational format: iconic (Carey 2009)
+  unless p.final
+    +hide('.step2, .step3', 0)
+  block  
+
+mixin coreKnowledgeDefined_stepThroughFeatures
+  block
+  +attr('.listOfFeatures li, .format-iconic','style','z-index:1')
+  .slide
+    +highlight-row('.listOfFeatures li:eq(0)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(0)')
+    +highlight-row('.listOfFeatures li:eq(1)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(1)')
+    +highlight-row('.listOfFeatures li:eq(2)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(2)')
+    +highlight-row('.listOfFeatures li:eq(3)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(3)')
+    +highlight-row('.listOfFeatures li:eq(4)')
+  .slide
+    +unhighlight-row('.listOfFeatures li:eq(4)')
+    +highlight-row('.format-iconic')
+
+mixin propertiesOfModules(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  if p.handout
+    .handout.notes Properties of modules: 
+    .handout.notes \begin{itemize}
+    .handout.notes \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+    .handout.notes \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+    .handout.notes \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+    .handout.notes \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+    .handout.notes \end{itemize}
+    
+  ul.no-bullet
+    li.domain-specificity
+      strong domain specificity
+      p modules deal with ‘eccentric’ bodies of knowledge
+    li.limited-accessibility(class="p.step ? 'blur-text' : ''")
+      strong(style='z-index:3') limited accessibility
+      p(style='z-index:3')  representations in modules are not usually inferentially integrated with knowledge
+    li.information-encapsulation(class="p.step ? 'blur-text' : ''")
+      strong information encapsulation
+      p modules are unaffected by general knowledge or representations in other modules
+      .notes For something to be informationally encapsulated is for its operation to be unaffected by the mere existence of general knowledge or representations stored in other modules (Fodor 1998b: 127)
+    li.innateness(class="p.step ? 'blur-text' : ''")
+      strong innateness 
+      p roughly, the information and operations of a module not straightforwardly consequences of learning
+    if p.step
+      +blur('li','2px',0)
+      +unblur('li:eq(0)','2px',0)
+      .slide
+        +blur('li:eq(0)')
+        +unblur('li:eq(1)')
+      .slide
+        +blur('li:eq(1)')
+        +unblur('li:eq(2)')
+      .slide
+        +blur('li:eq(2)')
+        +unblur('li:eq(3)')
+      .slide
+        +unblur('li')
+  block
+
+
+mixin fodorOnModules(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('final' in p)
+    -p.final = false
+  - var bkg = 'modularity_photo_seq/Slide1.jpg'
+  if p.final
+    -  bkg = 'modularity_photo_seq/Slide5.jpg'
+  if !('handout' in p)
+    - p.handout = false
+    
+  if p.handout
+    .handout \subsection{Modularity}
+    .handout.notes Fodor’s three claims about modules:
+    .handout.notes \begin{enumerate}
+    .handout.notes \item they are ‘the psychological systems whose operations present the world to thought’;
+    .handout.notes \item they ‘constitute a natural kind’; and
+    .handout.notes \item there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+    .handout.notes \end{enumerate}
+  
+  img.bkg(src='/img/#{bkg}')
+  +_slide_inner
+    p Modules
+    ol
+      li they are ‘the psychological systems whose operations present the world to thought’;
+      li they ‘constitute a natural kind’; and
+      li there is ‘a cluster of properties that they have in common … [they are] domain-specific computational systems characterized by informational encapsulation, high-speed, restricted access, neural specificity, and the rest’ (Fodor 1983: 101)
+    if p.step
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide2.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide3.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide4.jpg')
+      .slide
+        +attr('img.bkg','src','/img/modularity_photo_seq/Slide5.jpg')
+    block
+
+
+mixin objectionsToCoreKnowledgeView
+  ul.objections
+    li.multiple-definitions multiple definitions
+    li.list-unjustified justification for definition by list-of-features
+    li.list-unexplanatory definition by list-of-features rules out explanation
+    li.mismatch mismatch of definition to application 
+
+
+
+//- ------
+//- object indexes
+
+mixin CLSTXconjecture(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('handout' in p)
+    - p.handout = false
+  .notes.ctd(class="#{p.handout ? 'handout' : ''}"): :t
+    \emph{The CLSTX conjecture} 
+    Infants’ abilities concerning physical objects are
+    characterised by the Principles of Object Perception because infants’ abilities 
+    are a consequence of the operations of a system of object indexes
+    \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
+  p The CLSTX conjecture:
+  p.em-above The principles of object perception
+  p are not things believed or known:
+  p instead 
+  p they characterise the operation of 
+  p object indexes.
+  p.em-above.small-text.right Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)
+  .notes (‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})
+
+
+
+
+mixin objectIndexVsMotorRepresentationTable
+  .notes: :t
+    Object indexes survive occlusion but not endarkening;
+    motor representations survive endarkening but not occlusion.
+  table.data
+    thead
+      tr
+        td 
+        td.center: span.occlusion survive occlusion
+        td.center: span.endarkening survive endarkening
+    tbody
+      tr
+        td.center: span object index
+        td.center: span.occlusion ✔
+        td.center: span.endarkening ✘
+      tr
+        td.center(style="vertical-align:middle;"): span motor representation
+        td.center(style="vertical-align:middle;"): span.occlusion ✘
+        td.center(style="vertical-align:middle;"): span.endarkening ✔
+
+
+mixin relationOfInfantToAdultCognitionDots(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  
+  .notes: :t
+    What is the relation between infants' competencies with objects and adults'?
+    Is it that infants' competencies grow into more sophisticated adult competencies?
+    Or is it that they remain constant throught development, and are supplemented by quite 
+    separate abilities?
+  p.em-above &nbsp;
+  .container_12
+    .grid_3
+      p.center infant
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center adult
+  .clear
+  p &nbsp;
+  .container_12
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '50')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '75')
+    .grid_3(class="#{slideCls}")
+      +colour-ball('yellow', '100')
+  .clear
+  .container_12
+    .grid_3
+      p &nbsp;
+    .grid_3
+      p.center social interaction
+    .grid_3
+      p.center language
+    .grid_3
+      p &nbsp;
+  .clear
+  p &nbsp;
+  .container_12(class="#{slideCls}")
+    .grid_3
+      +colour-ball('yellow', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '25')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '50')
+    .grid_3
+      +colour-ball('yellow', '25')
+      +colour-ball('cyan', '100')
+  .words: .container_12: .grid_12
+    p(style='margin-top:-50px;') time --->    
+
+
+
+//- -------------
+//- communication with words
+
+
+mixin slide_AcquireWordsTrainingBut(p)
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('final' in p)
+    - p.final = false
+  section.slide
+    .words: .container_12
+      .grid_6
+        p Assumption:
+        p.assumption If someone can think, she can communicate with words.
+        div(class="#{p.final ? '' : 'slide'}")
+          p.em-above Consequence:
+          p Acquiring words cannot involve thinking at the outset.
+        div(class="#{p.final ? '' : 'slide'}")
+          p.em-above Question:
+          p.how-could How 
+            span.could could
+            span  someone begin to 
+            span.acquire acquire
+            span   
+            span.create.remove-me create
+            span  words without being able to think?
+      .grid_6(style='border-left: 1px dashed white; margin-left:-1px')
+        div(style='padding-left:15px;')
+          div(class="#{p.final ? '' : 'slide'}")
+            p Answer:
+            p: span.answer By being trained to utter a particular word in response to certain simulations!
+          div(class="#{p.final ? '' : 'slide'}")
+            p.em-above But:
+            p How 
+              span.do do
+              span  children actually acquire their first words?
+          block
+
+
+
+//- -------------
+//- communication, non-linguistic
+
+
+//- pointing
+mixin to_comprehend()
+  p To comprehend:
+  ol
+    li
+      span know that this person is pointing to object X;
+    li
+      span.know.blur-except know
+      span  that by so pointing she is attempting to 
+      span.communicate.blur-except communicate
+      span ; and 
+    li
+      span know that what she is attempting to communicate is that object X is there.
+  block
+  
+mixin to_produce()
+  p To produce:
+  ol
+    li
+      span know how to point to object X;
+    li
+      span.know.blur-except know
+      span  that by pointing to object X you can 
+      span.communicate.blur-except communicate
+      span  with this audience;
+    li
+      span know that what you can communicate is that object X is there.
+  block
+
+- origins = {}
+- origins.simple_view = "the principles of object perception are things that we know or believe, and we generate expectations from these principles by a process of inference."
+
+
+- qq = {}
+- qq.q1 = 'How do humans come to meet the three requirements on knowledge of objects?'
+- qq.q2 = 'What is the relation between the principles of object perception and infants’ looking behaviours?'
+- qq.q2a = 'Given that the simple view is wrong, what is the relation between the principles of object perception and infants’ competence in segmenting objects, object permanence and tracking causal interactions?'
+- qq.q2b = 'The principles of object perception result in ‘expectations’ in infants.  What is the nature of these expectations?'
+- qq.q3 = 'What is the relation between adults’ and infants’ abilities concerning physical objects and their causal interactions?'
+
+
+
+
+
+
+
+mixin crossingTheGapSlide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  if !('handout' in p)
+    - p.handout = false
+
+  if p.handout
+    .handout: :t
+      Core knowledge exists.
+    .handout: :t
+      There is a gap between core knowledge and knowledge knowledge.
+    .handout: :t
+      Crossing the gap involves social interactions, perhaps involving words.
+  +slide_middle
+    ol.hem-around-children
+      li.ck-is-real Core knowledge exists.
+      .notes: :t
+        Core knowledge is real. Infants’ have unexpectedly sophisticated abilities concerning physical objects
+        and categorical colour properties (and much more) even from the first year of life.
+      li.gap(class="#{slideCls}") There is a gap between core knowledge and knowledge knowledge.
+      .notes: :t
+        There is a gap between core knowledge and knowledge knowledge.  It takes months 
+        if not years between clear manifestations of core knowledge and knowledge knowledge.
+        Importantly,
+      li.crossing(class="#{slideCls}") Crossing the gap involves social interactions, perhaps involving words.
+      .notes: :t
+        Crossing the gap involves social interactions, perhaps involving words.
+      block
+
+
+mixin teleologicalStanceSlide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - slideCls = p.step ? 'slide' : ''
+  if !('handout' in p)
+    - p.handout = false
+
+  section.slide
+    .words: .container_12
+      .grid_3
+        .notes(class="#{(p.handout ? 'handout' : '')}") The Teleological Stance:
+        p.quote.notes.ctd.show(class="#{(p.handout ? 'handout' : '')}", style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+          span ‘an action can be explained by a goal state if, and only if, it is 
+          span.seen-as seen as 
+          span  the 
+          span.most-justifiable 
+            span.most most
+            span  justifiable action 
+          span towards that 
+          span goal state that is available within the constraints of reality’
+        .notes.ctd(class="#{(p.handout ? 'handout' : '')}") \citep[p.~255]{Csibra:1998cx}
+        p.quote.right.grey-text Csibra & Gergely, 1998 p. 255
+      div(class="#{slideCls}")
+        .grid_9
+          p 1. Consider goals to which the action might be directed.
+          p.em-above 2. For each goal, determine 
+            span.most-justifiable how justifiable
+            span  the observed actions are as a means to achieving that goal.
+          p.em-above 3. Ascribe the goal with the highest rationality score.
+      if p.step
+        .slide
+          +highlight('.most-justifiable', 'red')
+      block
+      
+
+
+
+
+//- @depends unit_mixins
+mixin slide_diagram_core_knowledge_to_concept
+  +slide
+    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='480px', height='403px', version='1.1', style='background-color: rgb(0, 0, 0);')
+      g(transform='translate(0.5,0.5)')
+        g.big-arrow.hide
+          path(d='M 98 194 L 337 194 L 337 171 L 378 201 L 337 231 L 337 208 L 98 208 Z', fill='none', stroke='#ffffff', stroke-miterlimit='10', transform='rotate(90,238,201)', pointer-events='none')
+        g.core-knowledge
+          rect(x='143', y='1', width='190', height='70', rx='11', ry='11', fill='#000000', stroke='#ffffff', pointer-events='none')
+          g(transform='translate(149,21)')
+            switch
+              foreignobject(pointer-events='all', width='178', height='32', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 178px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff', style='font-size: 24px;') core knowledge
+              text(x='89', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Lato') [Not supported by viewer]
+        g.discriminate.hide
+          rect(x='143', y='111', width='190', height='70', rx='11', ry='11', fill-opacity='0.8', fill='#000000', stroke='#ffffff', stroke-opacity='0.8', pointer-events='none')
+          g(transform='translate(152,116)')
+            switch
+              foreignobject(pointer-events='all', width='172', height='62', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 172px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff', style='font-size: 24px;')
+                      | discriminate
+                      br
+                      | Xs from non-Xs
+              text(x='86', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Lato') [Not supported by viewer]
+        g.use-word.hide
+          rect(x='143', y='221', width='190', height='70', rx='11', ry='11', fill-opacity='0.8', fill='#000000', stroke='#ffffff', stroke-opacity='0.8', pointer-events='none')
+          g(transform='translate(151,226)')
+            switch
+              foreignobject(pointer-events='all', width='174', height='62', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 174px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff')
+                      span(style='font-size: 24px; line-height: 30.2399997711182px;')
+                        | correctly
+                        br
+                        | use word for Xs
+              text(x='87', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Lato') [Not supported by viewer]
+        g.acquire-concept.hide
+          rect(x='143', y='331', width='190', height='70', rx='11', ry='11', fill-opacity='0.8', fill='#000000', stroke='#ffffff', stroke-opacity='0.8', pointer-events='none')
+          g(transform='translate(162,336)')
+            switch
+              foreignobject(pointer-events='all', width='152', height='62', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 152px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff')
+                      span(style='font-size: 24px; line-height: 30.2399997711182px;')
+                        | know facts
+                        br
+                        | about Xs
+              text(x='76', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Lato') [Not supported by viewer]
+        g.because-experience.hide
+          rect(x='356', y='149', width='140', height='105', fill='none', stroke='none', transform='rotate(-90,426,202)', pointer-events='none')
+          g(transform='translate(358,172)rotate(-90,68,30)')
+            switch
+              foreignobject(pointer-events='all', width='136', height='62', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 101px; max-width: 136px; width: 136px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff', face='Lato', style='font-size: 24px;') because experiecne
+              text(x='68', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+          path(d='M 335 201 L 435 201', fill='none', stroke='#ffffff', stroke-width='4', stroke-miterlimit='10', transform='rotate(90,385,201)', pointer-events='none')
+        g.because-reflection.hide
+          rect(x='-16', y='261', width='140', height='105', fill='none', stroke='none', transform='rotate(90,54,314)', pointer-events='none')
+          g(transform='translate(-14,284)rotate(90,68,30)')
+            switch
+              foreignobject(pointer-events='all', width='136', height='62', requiredfeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 101px; max-width: 136px; width: 136px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; text-align: inherit; text-decoration: inherit;')
+                    font(color='#ffffff', face='Lato', style='font-size: 24px;') because reflection
+              text(x='68', y='37', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+          path(d='M 43 311 L 143 311', fill='none', stroke='#ffffff', stroke-width='4', stroke-miterlimit='10', transform='rotate(90,93,311)', pointer-events='none')
+    
+    .slide
+      +show('.big-arrow')
+      +show('.acquire-concept')
+      .notes: :t
+        Having core knowledge of something does not involve having any knowledge knowledge at all.
+        Here I'm going to use the term ‘concept of X’ for that which enables one to have knowledge 
+        of Xs.
+        How do we get from core knowledge to concepts?
+    .slide
+      +show('.discriminate')
+      .notes: :t
+        Core knowledge enables one to distinguish things. For example it enables on to distinguish
+        those things which are blue from those which are not;
+        it enables one to distinguish those events which are causal interactions from those 
+        which are not;
+        it enables one to distinguish those sets which have two members from others;
+        and it enables one to distinguish different beliefs about the location of an object (say).
+      .notes: :t
+        (Here I'm using core knowledge in the broad, schematic sense to refer to representations
+        which are knowledge-like but not knowledge.)
+    .slide
+      +show('.use-word')
+      .notes: :t
+        I conjecture that core knowledge faciliates acquisition of the correct use of a word,
+        perhaps very slowly.  The idea is that being able to discriminate things allows one to 
+        apply a label to them.
+      .notes: :t
+        Importantly we can discriminate without having concepts.
+        If one thought that all discrimination involved concepts, this picture would become circular.
+    .slide
+      +show('.because-experience')
+      .notes: :t
+        How does core knowledge enable one to correctly use words?
+        I think it modifies the overall phenomenal character of your experience,
+        typically by generating phenomenal expectations (which I called them perceptual expectations 
+        earlier in this version of the course).
+        Tuning in to the perceptual expectations can take a long time, which is why there may be 
+        a long interval between observing core knowledge and observing the correct use of words.
+    .slide
+      +show('.because-reflection')
+      .notes: :t
+        I also conjecture that using the word facilitates concept acquisition.
+        Many people would probably agree.
+        But how does it do this?
+      .notes: :t
+        My schematic suggestion is that using the word draws attention to all the things which are Xs.
+        The concept is acquired when you are struck by the question,
+        What do all these have in common?
+      .notes: :t
+        (Clearly this is not an account of how thinking gets started at all; the appeal
+        to reflection should make this obvious.)
+      .notes: :t
+        We have quite good evidence for this picture in the cases of colour and number,
+        and there is relevant evidence in the case of mindreading too.  (Also speech:
+        phonological awareness is linked to literacy and the particulars of the written
+        language learnt, so that alphabetic languages give a different profile --- alphabet is
+        roughly labelling phonemes.)
+      .notes: :t
+        The question we've been looking at last week is how children come to correctly
+        use words.
+    block
+
+
+mixin triangulationColourSlide()
+  +slide
+    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='527px', height='524px', version='1.1', style='background-color: rgb(0, 0, 0);')
+      defs
+        linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_up
+          stop(offset='0', stop-color='black', stop-opacity='1')
+          stop(offset='0.75', stop-color='black', stop-opacity='.75')
+          stop(offset='1', stop-color='black', stop-opacity='0')
+        linearGradient(x1="0",x2="0",y1="0",y2="1")#fade_down
+          stop(offset='0', stop-color='black', stop-opacity='0')
+          stop(offset='0.25', stop-color='black', stop-opacity='.75')
+          stop(offset='1', stop-color='black', stop-opacity='1')
+      g(transform='translate(0.5,0.5)')
+        g(transform='translate(5,17)')
+          switch
+            foreignobject(pointer-events='all', width='132', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 132px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff', face='Lato', style='font-size: 24px') discriminate
+            text(x='66', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        g.person-labelling.hide
+          ellipse(cx='408', cy='107', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+          path(d='M 408 122 L 408 172 M 408 132 L 378 132 M 408 132 L 438 132 M 408 172 L 378 212 M 408 172 L 438 212', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        g.label-label.hide
+          g(transform='translate(382,27)')
+            switch
+              foreignobject(pointer-events='all', width='52', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 52px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff', face='Lato', style='font-size: 24px') label
+              text(x='26', y='22', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        g.speech-bubble.hide
+          path(d='M 442.76 85.85 C 425.67 77.27 424 63.14 438.95 53.5 C 453.89 43.86 480.36 42 499.52 49.25 C 518.68 56.49 524 70.37 511.7 81.01 C 499.4 91.65 473.67 95.42 452.81 89.65 C 448.12 96.8 440.55 101.34 432.25 102 C 437.47 98.07 441.19 92.35 442.76 85.85 Z', fill='none', stroke='#ffffff', stroke-width='2', stroke-miterlimit='15', pointer-events='none')
+          g(transform='translate(445,57)')
+            switch
+              foreignobject(pointer-events='all', width='58', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 58px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') blue
+              text(x='29', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        ellipse(cx='71', cy='127', rx='15', ry='15', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        path(d='M 71 142 L 71 192 M 71 152 L 41 152 M 71 152 L 101 152 M 71 192 L 41 232 M 71 192 L 101 232', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        //- the star (target object)
+        path(d='M 215.17 261.17 L 215.17 232 L 236 252.83 L 256.83 232 L 256.83 261.17 L 286 261.17 L 265.17 282 L 286 302.83 L 256.83 302.83 L 256.83 332 L 236 311.17 L 215.17 332 L 215.17 302.83 L 186 302.83 L 206.83 282 L 186 261.17 Z', fill='#3399ff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        rect(x='166', y='462', width='140', height='60', fill='none', stroke='none', pointer-events='none')
+        g(transform='translate(168,465)')
+          switch
+            foreignobject(pointer-events='all', width='136', height='56', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 56px; max-width: 136px; width: 136px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff', face='Lato', style='font-size: 24px') stimulus sequence
+            text(x='68', y='34', fill='#000000', text-anchor='middle', font-size='12px', font-family='Helvetica') [Not supported by viewer]
+        //- the circle
+        ellipse(cx='236', cy='162', rx='40', ry='40', fill='#9933ff', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        path(d='M 206 352 L 266 392 L 206 432 Z', fill='#ff3333', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', transform='rotate(-30,236,392)', pointer-events='none')
+        path(d='M 236 22 L 276 62 L 236 102 L 196 62 Z', fill='#0066cc', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+        rect(x='176', y='2', width='120', height='220', stroke='none', pointer-events='none', fill='url(#fade_up)')
+        rect(x='176', y='342', width='120', height='110', stroke='none', pointer-events='none', fill='url(#fade_down)')
+
+        g(transform="translate(-40,0)")
+          g.stimulus-to-discriminate
+            path(d='M 218 288 L 168.72 216.33', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 164.9 210.76 L 173.71 215.63 L 168.72 216.33 L 166.29 220.73 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g.stimulus-to-label.hide
+            path(d='M 353 288 L 397.64 216.57', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 401.22 210.84 L 400.27 220.86 L 397.64 216.57 L 392.64 216.09 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g.discriminate-to-label.hide
+            path(d='M 178 165 L 402.9 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 409.65 165 L 400.65 169.5 L 402.9 165 L 400.65 160.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 188 165 L 168.1 165', fill='none', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+            path(d='M 161.35 165 L 170.35 160.5 L 168.1 165 L 170.35 169.5 Z', fill='#cccccc', stroke='#cccccc', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+
+    .notes: :t()
+      This is about the step from discrimination to learning the correct use of a verbal label.
+    .notes: :t()
+      So there's you and you're observing sequence of stimuli and thanks to core knowledge
+      you're able to discriminate them.
+    .slide
+      +show('.person-labelling')
+      .notes: :t()
+        And now along comes another person.  What are they doing?  Nothing yet.  But ...
+    .slide
+      +show('.label-label, .speech-bubble, .stimulus-to-label')
+      .notes: :t()
+        Oh look they're labelling stimuli.
+        So now the blue ones (say) are special.  You respond to them in one way and the 
+        other responds to them in her way, which is by labelling.
+    .slide
+      +show('.discriminate-to-label')
+      .notes: :t()
+        Now you can observe that your responses are correlated with her responses.
+        So when you discriminate in a certain way, she applies the label.
+        Observing this correspondence enables you to learn the label (say).
+        This is triangulation roughly as Davidson describes it.
+      .notes: :t()
+        And having got this far you can ask yourself what all the things labelled 
+        have in common.
+
+
+
+mixin fromActionToWordsFigure()
+  svg(width='580', height='400', xmlns='http://www.w3.org/2000/svg')
+    // Created with Method Draw - http://github.com/duopixel/Method-Draw/
+    g
+      title background
+      rect#canvas_background(fill='#000000', height='402', width='582', y='-1', x='-1')
+    g
+      title Layer 1
+      g.action
+        rect#svg_1(transform='rotate(1 103.99999237060923,327.00000000000006) ', stroke='#fff', height='73.999997', width='170.999991', y='290.000003', x='18.5', stroke-width='1.5', fill='none')
+        text#svg_2(transform='rotate(1 107.28124999999767,312.0000000000003) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='321', x='27.5', stroke-width='0', fill='#ffffff') understanding
+        text#svg_4(transform='rotate(1 60.92187499999651,334.9999999999998) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='344', x='27.5', stroke-width='0', fill='#ffffff') action
+      g.minds
+        rect#svg_5(transform='rotate(-3 287.9999999999974,327.99999999999983) ', stroke='#fff', height='73.999997', width='170.999991', y='291.000003', x='202.5', stroke-width='1.5', fill='none')
+        text#svg_6(stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='322', x='211.5', stroke-width='0', fill='#ffffff') understanding
+        text#svg_7(stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='345', x='214.5', stroke-width='0', fill='#ffffff') minds
+      g.joint-action
+        rect#svg_8(transform='rotate(1 234.99999999999855,254.99999999999946) ', stroke='#fff', height='73.999997', width='170.999991', y='218.000003', x='149.5', stroke-width='1.5', fill='none')
+        text#svg_9(transform='rotate(1 209.6874999999948,247.00000000000102) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='256', x='180.5', stroke-width='0', fill='#ffffff') joint
+        text#svg_10(transform='rotate(1 269.92187499999795,250.99999999999912) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='260', x='236.5', stroke-width='0', fill='#ffffff') action
+      g.referential
+        rect#svg_18(transform='rotate(-17 289.9999999999999,170.00000000000014) ', stroke='#fff', height='73.999997', width='170.999991', y='133.000003', x='204.5', stroke-width='1.5', fill='none')
+        text#svg_19(transform='rotate(-17 271.47656250000017,155) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='164', x='213.5', stroke-width='0', fill='#ffffff') referential
+        text#svg_20(transform='rotate(-6 294.75781250000017,177.99999999999972) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='187', x='212.5', stroke-width='0', fill='#ffffff') communication
+      g.communication-words
+        rect#svg_21(transform='rotate(1 378,83.99999999999892) ', stroke='#fff', height='73.999997', width='170.999991', y='47.000003', x='292.5', stroke-width='1.5', fill='none')
+        text#svg_22(transform='rotate(1 379.757812499999,68.99999999999928) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='78', x='297.5', stroke-width='0', fill='#ffffff') communication
+        text#svg_23(transform='rotate(1 367.3515624999989,92.00000000000138) ', stroke='#000000', xml:space='preserve', text-anchor='start',  font-size='24', y='101', x='308.5', stroke-width='0', fill='#ffffff') with words
+  block 
+
+
+
+
+mixin diagramActionGoalIndividual(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') open
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') pour
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') tilt
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') soak
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') fill
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | intention
+                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') specifies
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+  
+mixin pointingOutline()
+  p From around 11 or 12 months of age, humans spontaneously use pointing to ...
+    ul
+      li request
+      li inform
+      li initiate joint engagement (‘Wow! That!’)
+  
+
+// *todo* duplicated!
+mixin slide_theChallenge()
+  +slide({bkg:'bkg_twins.jpg'})
+    div(style='margin-left:200px;')
+      .vspace-em
+      .vspace-em
+      .huge-glow.right challenge
+      .under-huge-glow.right Explain the emergence in development 
+        br
+        span of 
+        span.highlight1 mindreading.
+      block
+
+
+mixin maxiStory(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  .notes: :t
+    How can we test whether someone is able to ascribe beliefs to others? 
+    Here is one quite famous way to test this, perhaps some of you are even aware of it
+    already.
+    Let's suppose I am the experimenter and you are the subjects.
+    First I tell you a story ...
+  p ‘Maxi puts his chocolate in the BLUE box and leaves the room to play.  
+    span.step2.hide While he is away (and cannot see), his mother moves the chocolate from the BLUE box to the GREEN box.  
+    span.step3.hide Later Maxi returns.  He wants his chocolate.’
+  .notes(class="#{p.handout ? 'handout' : ''}"): :t
+    In a standard \textit{false belief task}, `[t]he subject is aware that he/she and
+    another person [Maxi] witness a certain state of affairs x. Then, in the absence of
+    the other person the subject witnesses an unexpected change in the state of affairs
+    from x to y' \citep[p.\ 106]{Wimmer:1983dz}. The task is designed to measure the
+    subject's sensitivity to the probability that Maxi will falsely believe x to obtain.
+  .vspace-em
+  .container_12
+    .grid_6
+      +colour-box('blue', '100')
+        p.center blue
+          br 
+          | box
+    .grid_6.step2.hide 
+      +colour-box('green', '100')
+        p.center green box
+  p &nbsp;
+  // this bit gets shown only later
+  p.em-above
+    span.hide.anticipationPrompt I wonder where Maxi will look for his chocolate
+  p.em-above.step4.testQuestion.hide ‘Where will Maxi look for his chocolate?’
+  p.source Wimmer & Perner 1983
+  if p.step
+    .slide
+      +show('.step2')
+    .slide
+      +show('.step3')
+    .slide
+      +show('.step4')
+  else
+    +show('.step2, .step3, .step4', 0)
+
+
+
+mixin marrDistinction(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+
+    if p.handout
+    .handout: :t
+      \citet[p.~22ff]{Marr:1982kx} distinguishes:
+    .handout: :t
+      \begin{itemize}
+    .handout: :t
+      \item computational description---What is the thing for and how does it achieve this?
+    .handout: :t
+      \item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+    .handout: :t
+      \item hardware implementation---How are the representations and algorithms physically realised?
+    .handout: :t
+      \end{itemize}
+    
+  .notes: :t
+    Recall David Marr’s famous three-fold distinction
+    between levels of description of a system: the computational theory, the 
+    representations and algorithm, and the hardware implementation.  
+  .computational.hem-around
+    p 1. computational description
+    p.indent(class="#{p.step ? 'slide' : ''}") -- What is the thing for and how does it achieve this?
+  .rep-and-alg.hem-around(class="#{p.step ? 'slide' : ''}")
+    p 2. representations and algorithms
+    p.notes.show.indent(class="#{p.step ? 'slide' : ''}") -- How are the inputs and outputs represented, and how is the transformation accomplished?
+  .hardware.hem-around(class="#{p.step ? 'slide' : ''}")
+    p 3. hardware implementation
+    p.indent(class="#{p.step ? 'slide' : ''}") -- How are the  representations and algorithms physically realised?
+  p.right.grey-text Marr (1992, 22ff)
+  
+  
+
+
+mixin slide_falseBeliefDevelopmentalPuzzle(p)
+  +slide_middle
+    .one
+      p.center.huge-glow A-tasks
+      p(style='margin-top:-7em;margin-left:4em;') Children fail
+      p(style='margin-top:3em;margin-left:10em;') because they rely on a model of minds and actions that does not incorporate beliefs
+      .notes: :t
+        Children fail A-tasks 
+        because they rely on a model of minds and actions that does not incorporate beliefs.
+    .two
+      .bkg-white-row
+        p.center.huge-glow-invert non-A-tasks
+        p.invert(style='margin-top:-7em;margin-left:4em;') Children pass
+        p.invert(style='margin-top:3em;margin-left:10em;') by relying on a model of minds and actions that does incorporate beliefs
+      .notes: :t
+        Children pass non-A-tasks 
+        by relying on a model of minds and actions that does incorporate beliefs. 
+    .dogma-of-mindreading 
+      p.center.huge-glow.dogma dogma
+      p(style="margin-top:-6em;padding-left:180px") the
+      p(style="margin-top:2em;padding-left:400px") of mindreading
+      .notes: :t
+        The dogma of mindreading: any individual has at most one model of minds and actions
+        at any one point in time.
+    block
+
+mixin slide_signatureLimitsGeneratePredictions(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+    
+  +slide_rh_white({step:p.step})
+    +run_across
+      p.center signature limits generate predictions
+    +left_half
+      p Hypothesis:
+      p Some automatic belief-tracking systems rely on minimal models of the mental.
+    +right_half
+      p Hypothesis:
+      p Infants’ belief-tracking abilities rely on minimal models of the mental.
+    .clear
+    +left_half
+      p.em-above Prediction:
+      p Automatic belief-tracking is subject to the signature limits of minimal models.
+    +right_half
+      p.em-above Prediction:
+      p Infants’ belief-tracking is subject to the signature limits of minimal models.
+    if p.step
+      +hide('.right-half', 0)
+      .slide
+        +show('.right-half-white, .right-half')

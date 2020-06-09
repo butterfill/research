@@ -1,0 +1,251 @@
+body {
+  font-family: Lato, sans-serif;
+font-size
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-family: Lato, sans-serif;
+}
+h1 {
+  text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.hero-unit {
+  background-color: #000;
+  padding-left: 40em;
+  margin-left: -40em;
+  padding-right: 40em;
+  margin-right: -40em;
+}
+.hero-unit h1,
+.hero-unit h2,
+.hero-unit p {
+  color: #fff;
+}
+.hero-unit a {
+  color: #9fcde7;
+}
+.fade-in h1 {
+  -webkit-animation: FadeIn2 20s;
+  -moz-animation: FadeIn2 20s;
+  -o-animation: FadeIn2 20s;
+  -ms-animation: FadeIn2 20s;
+  animation: FadeIn2 20s;
+}
+/**
+  h1
+    .l1
+      blur(2)
+      
+    .l2
+      blur(1)
+    
+    .l3
+      blur(0.5)
+    
+    .l4
+      blur(0.25)
+    
+    .l5
+      blur(0.125)
+    
+    .l6
+      blur(0.075)
+    
+    .l7
+      blur(0.03)
+*/
+@-moz-keyframes FadeIn1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes FadeIn1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes FadeIn1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes FadeIn1 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-moz-keyframes FadeIn2 {
+  0% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    text-shadow: 0 0 350px #000, 0 0 150px #000, 0 0 50px #000, 0 0 5px #000;
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    text-shadow: 0 0 150px #000, 0 0 50px #000, 0 0 5px #000, 0 0 2px #fff;
+  }
+  80% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 350px #fff, 0 0 150px #fff, 0 0 50px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  100% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  }
+}
+@-webkit-keyframes FadeIn2 {
+  0% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    text-shadow: 0 0 350px #000, 0 0 150px #000, 0 0 50px #000, 0 0 5px #000;
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    text-shadow: 0 0 150px #000, 0 0 50px #000, 0 0 5px #000, 0 0 2px #fff;
+  }
+  80% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 350px #fff, 0 0 150px #fff, 0 0 50px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  100% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  }
+}
+@-o-keyframes FadeIn2 {
+  0% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    text-shadow: 0 0 350px #000, 0 0 150px #000, 0 0 50px #000, 0 0 5px #000;
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    text-shadow: 0 0 150px #000, 0 0 50px #000, 0 0 5px #000, 0 0 2px #fff;
+  }
+  80% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 350px #fff, 0 0 150px #fff, 0 0 50px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  100% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  }
+}
+@keyframes FadeIn2 {
+  0% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    text-shadow: 0 0 350px #000, 0 0 150px #000, 0 0 50px #000, 0 0 5px #000;
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    text-shadow: 0 0 150px #000, 0 0 50px #000, 0 0 5px #000, 0 0 2px #fff;
+  }
+  80% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 350px #fff, 0 0 150px #fff, 0 0 50px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  100% {
+    color: #000;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    text-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  }
+}

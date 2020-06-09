@@ -1,0 +1,24 @@
+{
+    "name": "docpad-plugin-absolutepath",
+    "version": "2.0.0",
+    "description": "DocPad plugin to fix urls when you are deplying to http://site.com/sub/whatever/",
+    "homepage": "https://github.com/butterfill/docpad-plugin-absolutepath",
+    "keywords": [
+        "docpad",
+        "docpad-plugin"
+    ],
+    "author": "Dharma on stackexchange",
+    "maintainers": [
+        "None"
+    ],
+    "contributors": [
+        "None"
+    ],
+    "engines" : {
+        "node": ">=0.8"
+    },
+    "peerDependencies": {
+        "docpad": "6"
+    },
+    "main": "./src/absolutepath.plugin.js"
+}

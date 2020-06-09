@@ -1,0 +1,176 @@
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+//- depends on unit_mixins (for +show, +add-class etc)
+//- 
+//- update if moving from slide_mixins.jade
+//-   rename:
+//-     highlight-row to highlight-proof-row_
+//-     unhighlight-row to unhighlight-proof-row_
+
+//- -------------
+//- logically valid df
+//- -------------
+mixin df_valid(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  div.white-box(style="width:230px;position:absolute;top:20px;left:500px;")
+    p(style="padding: 0 0.3em;") An argument is 
+      strong logically valid 
+      | just if 
+      span.the_df(style="#{p.reveal ? 'opacity: 0' : ''}") there’s 
+        span.no-possible-situation no possible situation 
+        span in which 
+        span.premises-true the premises are true 
+        span and 
+        span.conclusion-false the conclusion false.
+  if p.reveal
+    .slide
+      +show(".the_df")
+
+//- sound df
+mixin df_sound_argument(p)
+  if !p
+    - p = {}
+  div.white-box(style="width:230px;position:absolute;top:350px;left:500px;")
+    p(style="padding: 0 0.3em;") An argument is 
+      strong sound  
+      | just if it is logically valid and all its premises are true.
+
+
+
+//- -------------
+//- truth tables
+//- -------------
+//- param sentences is an array of sentences
+//- param values is an array of arrays of values, one per sentence
+//- e.g. mixin truth-table(['A ∨ B','¬A'],[['T','T','T','F'],['F','F','T','T']])
+mixin truth-table(sentences, values)
+  - var len = values[0].length
+  - var cols = ['A']
+  if values[0].length > 2
+      - cols.push('B')
+  if values[0].length > 4
+    - cols.push('C')
+  if values[0].length > 8
+    - cols.push('D')
+  table.truth-table
+    //- header row
+    tr
+      each letter, i in cols
+        td
+          span(class='col-#{i+1}') #{letter}
+      each sentence,i4 in sentences 
+        td.result-col
+          span(class='result-col-#{i4+1}') #{sentence}
+    each val, i in values[0]
+      tr(class="row-#{i+1}")
+        - var structure = i.toString(2)
+        //- pad
+        - while( structure.length < cols.length)  structure = "0" + structure
+        each letter, i2 in cols
+          td
+            if i2 == 0
+              span.highlight-hook &#8203;
+            span #{(structure[i2] === "0" ? "T" : "F")}
+        each value_set, i3 in values
+          td.result-col
+            span(class='result-col-#{i3+1}') #{value_set[i]}
+
+mixin tt-highlight-cols(cols, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
+  each col in cols
+    +add-class("table.truth-table tr td:nth-child(#{col})", "bkg-"+color)
+
+mixin tt-highlight-rows(rows)
+  each row in rows
+    +add-class(".truth-table .row-#{row} .highlight-hook", "bkg-grey-row")
+
+
+
+//- -------------
+//- proofs
+//- -------------
+
+//- create a proof.  The proof may include subproofs
+//- e.g.:
+//-  - var prf = {premises:['P ∧ Q', 'Q ∧ R'], lines:[['P','∧Elim', [1]],['R', '∧Elim',[2]]]}
+//-  mixin fitch_proof(prf)
+mixin fitch_proof(prf,start_line)
+  if !start_line
+    - start_line = 1
+  table.fitch-proof
+    - var premises = prf['premises']
+    - var line_no = start_line 
+    each premise in premises
+      tr(class="premise row-#{line_no}")
+        td(class="#{(line_no-(start_line-1)) == premises.length ? 'last-premise' : ''}")
+            span.highlight-hook &#8203;
+        td #{prf.no_line_numbers ? '' : line_no+'.'}
+        td
+          p.sentence #{premise}
+        td
+        - line_no += 1
+    - var lines = prf['lines']
+    each line in lines
+      if line.__proto__ == Object().__proto__
+        //- subproof
+        - var subproof = line
+        //- *todo: won't work for deeper nested subproofs
+        - var subproof_length = subproof.lines.length + 1 
+        if subproof.mylength
+          subproof_length = subproof.mylength
+        - var subproof_start_line_no = line_no
+        - line_no += (subproof_length)
+        tr
+          td 
+          td(colspan="3")
+            mixin fitch_proof(subproof, subproof_start_line_no)
+            
+      if line.__proto__ == [].__proto__
+        //- ordinary line
+        tr(class="line row-#{line_no}")
+          td(class="#{line_no == premises.length ? 'last-premise premise' : 'premise'}")
+              span.highlight-hook &#8203;
+          td #{prf.no_line_numbers ? '' : line_no+'.'}
+          td
+            span.sentence #{line[0]}
+          td #{line[1]}
+            if line[2]
+              | : 
+              - var ctr = 1
+              span.citations
+                each cited_line in line[2]
+                  span(class="citation-#{ctr}") #{cited_line}
+                    if line[2].length !== ctr
+                      | ,
+                  - ctr += 1
+        - line_no += 1
+
+
+
+//- animations to highlight rows / sentences / reference numbers in proofs
+//- nb: these use anim-continue so you can do several highlights in one slide
+//- nb: after calling one or more of these highlights, use mixin anim_end
+
+
+
+//- highlight a row of a proof
+mixin highlight-proof-row(row_num)
+  +add-class(".fitch-proof .row-"+row_num+" .highlight-hook", "bkg-grey-row")
+mixin unhighlight-proof-row(row_num)
+  +remove-class(".fitch-proof .row-"+row_num+" .highlight-hook", "bkg-grey-row")
+
+//- highlights just one of the numbers in a rule of proof
+mixin highlight_citation(row_num, citation_num)
+  +add-class(".fitch-proof .row-"+row_num+" .citation-"+citation_num, "bkg-red")
+mixin unhighlight_citation(row_num, citation_num)
+  +remove-class(".fitch-proof .row-"+row_num+" .citation-"+citation_num, "bkg-red")
+
+//- highlights the specified line as a line highlighted
+mixin highlight_cited_sentence(row_num)
+  +add-class(".fitch-proof .row-"+row_num+" .sentence", "bkg-red")
+mixin unhighlight_cited_sentence(row_num)
+  +remove-class(".fitch-proof .row-"+row_num+" .sentence", "bkg-red")
+
