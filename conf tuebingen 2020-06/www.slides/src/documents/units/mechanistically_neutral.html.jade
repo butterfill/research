@@ -13,23 +13,163 @@ exercises_fast: []
 
 include ../../../fragments/unit_mixins
 
++slide_middle
+  p.hem-around.q1 1. Which things are actions (as opposed to mere happenings)?
+  p.hem-around.q2 2. Which states or processes enable agents to act?
+  .notes: :t
+    Typical to answer first question by answering second quesiton. 
+    We saw an example of this already ...
 
-+slide_rh_white
++slide
+  .img1
+    +img_clip('brand_1984.jpg')
+  +blur('.img1', '3px', 0)
+  +reset
+    div(style='mix-blend-mode:multiply;')
+      +img_clip('brand_1984_highlights2.png')
+  p.source Brand, 1984
+
+
++slide_middle
+  p.hem-around.q1 1. Which things are actions (as opposed to mere happenings)?
+  p.hem-around.q2 2. Which states or processes enable agents to act?
+  .notes: :t
+    Let me illustrate in a very simple minded way ...
+
+
+
++slide_rh_white({step:true})
   +run_across
     p.center Which things are actions?
   +left_half
-    p.center mechanistically committed
+    p.center.mc.hide mechanistically committed
     p.em-above: :t
-      Those things which are appropriately related to an intention, or to a belief-desire pair, 
-      or to some other state of an agent, 
-      are actions.
-    p ...
-  +right_half
+      Those things caused by intentions are intentional actions.
+    .slide
+      p.more-complex.em-above: :t
+        Those things which are appropriately related to an intention, or to a belief-desire pair, 
+        or to some other state of an agent, 
+        are intentional actions.
+      p ...
+    .slide
+      +blur('.more-complex')
+    .slide
+      +show('.mc')
+  +right_half({step:true})
     p.center mechanistically neutral
     p.em-above Those things directed to an outcome are purposive actions.
-    p Those purposive actions which happen because of a reason favouring the outcome’s occurrence are intentional actions.
+    p.em-above Those purposive actions which happen because of a reason favouring the outcome’s occurrence are intentional actions.
     p ...
 
 +slide_middle
-  p.hem-around 1. Which things are actions?
-  p.hem-around 2. Which states or processes enable agents to act?
+  p.hem-around.q1 1. Which things are actions (as opposed to mere happenings)?
+  p.hem-around.q2 2. Which states or processes enable agents to act?
+  .slide
+    +blur('.o2')
+    +highlight-row('.q1')
+    .notes: :t
+      How can we develop mechanistically neutral characterisations of actions?
+      Consider the problems ...
+
+//- +slide_middle
+//-   p A 
+//-     span.goal goal
+//-     span  is an 
+//-     span.outcome outcome
+//-     span  to which an action is 
+//-     span.directed directed
+//-     span .
+//-   .slide
+//-     +highlight('.directed', 'yellow')
+//-     .notes: :t
+//-       How should we understand directedness?
+//-       In terms of the problems solving which 
+//-   .slide
+//-     .hem-around-children.indent
+//-       p Of the outcomes which might occur, which are achievable?
+//-       p For each outcome, which means of achieving it are available?
+//-       p Of the various means of achieving a given outcome, which best balance cost against well-suitedness?
+//-       p Of the achievable outcomes, which best balance cost against expected benefit?
+//-       p Having settled on an outcome and means, when should these be maintained?
+
+
++slide_rh_white
+  +hide('.right-half-white', 0)
+  +remove-class('.right-half', 'invert')
+  +run_across
+    p.center A 
+      span.goal goal
+      span  is an 
+      span.outcome outcome
+      span  to which an action is 
+      span.directed directed
+      span .
+    .slide
+      +highlight('.directed', 'blue')
+      .notes: :t
+        How should we understand directedness?
+        In terms of the problems solving which 
+  .slide
+    +left_half
+      p Which outcomes are achievable?
+      p For each outcome, which means of achieving it are available?
+      p Of the various means of achieving a given outcome, which best balance cost against well-suitedness?
+      p Of the achievable outcomes, which best balance cost against expected benefit?
+    +right_half
+      p Having settled on an outcome and means, when should these be maintained?
+      .slide
+        p.hem-around.centerm ---
+        p.hem-around
+          span For an action to be 
+          span.directed directed
+          span  to an outcome is for it to occur because 
+          span there is one or more outcome in relation to which problems such as these  
+          span have been, or appear to have been, solved. 
+
++slide_middle
+  p.hem-around.q1 1. Which things are actions (as opposed to mere happenings)?
+  p.hem-around.q2 2. Which states or processes enable agents to act?
+  +highlight-row('.q1')
+  .slide
+    +unhighlight-row('.q1')
+    +highlight-row('.q2')
+    .notes: :t
+      Personally, I would tell a story about motor representation here.
+      Discoveries about the human motor system show, exactly, that is built
+      to solve these problems.
+  .slide
+    +unhighlight-row('.q2')
+
+
+//- +slide_middle
+//-   p.center motor representation
+
++slide({bkg:'steward_figure/slide05.jpg'})
++slide({bkg:'steward_figure/slide06.jpg'})
++slide({bkg:'steward_figure/slide07.jpg'})
++slide({bkg:'steward_figure/slide08.jpg'})
++slide({bkg:'steward_figure/slide09.jpg'})
+
+
++slide_middle
+  p: :t
+    Claim: The problems used to characterise goal-directedness 
+    yield one theoretically valuable notion of action.
+  p: :t
+    Jusification: This mechanistically neutral characterisation
+    fits with discoveries about motor proceses.
+  .notes: :t
+    Do you face the same line of objections to your proposal.
+  .slide
+    .o1
+      p.em-above Objection 1: model vs construal
+      p.indent: :t
+        Response: seek mechanistically neutral characterisations;
+        rely on science for construals.
+  .slide
+    +blur('.o1')
+    .o2
+      p.em-above Objection 2: red
+      p.indent: :t
+        Response: permit multiple answers; do not treat 
+        everyday thinking as evidence.

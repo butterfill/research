@@ -15,6 +15,9 @@
 .text-color {
   color: #fff;
 }
+html {
+  overflow: hidden;
+}
 html body {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
@@ -286,6 +289,10 @@ html body {
   width: 350px;
 }
 .deck-container .above,
+.deck-container .hem-above-children > * {
+  padding-top: 0.5em;
+}
+.deck-container .hem-above,
 .deck-container .hem-above-children > * {
   padding-top: 0.5em;
 }

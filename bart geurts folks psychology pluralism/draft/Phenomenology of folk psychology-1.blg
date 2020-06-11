@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Phenomenology of folk psychology-1.aux
+The style file: ./mynewapa.bst
+Database file #1: ./folk.bib
+Warning--I didn't find a database entry for "Wimmer:1983dz"
+Warning--I didn't find a database entry for "premack_does_1978"
+You've used 2 entries,
+            2708 wiz_defined-function locations,
+            609 strings with 4900 characters,
+and the built_in function-call counts, 869 in all, are:
+= -- 80
+> -- 27
+< -- 2
++ -- 9
+- -- 9
+* -- 85
+:= -- 163
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 15
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 63
+format.name$ -- 13
+if$ -- 158
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 8
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 23
+stack$ -- 0
+substring$ -- 72
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 28
+(There were 2 warnings)

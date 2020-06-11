@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: two systems cloning information encapsulation for jason low.aux
+The style file: newapa.bst
+Database file #1: $HOME/endnote/phd_biblio.bib
+You can't pop an empty literal stack for entry wang:2015_limits
+while executing---line 1459 of file newapa.bst
+You've used 8 entries,
+            2708 wiz_defined-function locations,
+            647 strings with 6076 characters,
+and the built_in function-call counts, 3403 in all, are:
+= -- 304
+> -- 151
+< -- 5
++ -- 55
+- -- 53
+* -- 325
+:= -- 668
+add.period$ -- 26
+call.type$ -- 8
+change.case$ -- 64
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 127
+empty$ -- 223
+format.name$ -- 65
+if$ -- 612
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 43
+num.names$ -- 34
+pop$ -- 41
+preamble$ -- 1
+purify$ -- 73
+quote$ -- 0
+skip$ -- 90
+stack$ -- 0
+substring$ -- 195
+swap$ -- 28
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 46
+warning$ -- 0
+while$ -- 32
+width$ -- 0
+write$ -- 108
+(There was 1 error message)

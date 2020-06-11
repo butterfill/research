@@ -11,9 +11,11 @@ include ../../../fragments/unit_mixins
 
 
 +slide_middle
-  p.center.huge-glow(style='line-height:.5em') objection 2 : model vs construal
+  .heading
+    p.center.huge-glow(style='line-height:.5em') objection 1 : model vs construal
   .notes Source: Godfrey-Smith
   .slide
+    +blur('.heading')
     p.em-above.center e.g. model of a house
     .notes: :t
       Model of a house.
@@ -29,17 +31,22 @@ include ../../../fragments/unit_mixins
 
 +slide_middle
   p.notes.handout.show: :t
-    Models, in my sense, do not themselves say anything about the
+    ‘Models, in my sense, do not themselves say anything about the
     world. 
   .slide
     p.notes.handout.show: :t
       Models are structures that can be used by scientists to say various
       different things about the world, 
   .slide
-    p.notes.handout.show: :t
-      by means of commentaries that accompany
-      models but are distinct from them’
+    p.notes.handout.show
+      span by means of commentaries 
+      span.construals.hide [i.e. construals]
+      span  that accompany 
+      span models but are distinct from them’ 
   .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}.
+  .slide
+    +show('.construals')
+    +flash('.construals')
   p.right.grey-text: :t
     Godfrey-Smith, 2005 p. 4
 
@@ -69,7 +76,8 @@ include ../../../fragments/unit_mixins
 +slide_middle
   p.notes.handout.show
     span ‘Basic facility with 
-    span.the the folk-psychological model
+    span.the the
+    span  folk-psychological model
     span  does not require using a particular construal of it.  
   .slide
     +highlight('.the', 'red')
@@ -95,13 +103,63 @@ include ../../../fragments/unit_mixins
       This is your position!
 
 
-+slide({bkg:'steward_figure.jpg'})
++slide({bkg:'steward_figure/slide01.jpg'})
 
-+slide_rh_white({fg:'steward_figure.jpg', fgOpacity:1})
++slide_rh_white({fg:'steward_figure/slide01.jpg', fgOpacity:1})
+  .another-image
+    .layer1.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide03.jpg')
+    .layer2.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide02.jpg')
   +left_half
     p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
     p.right.grey-text Steward, 2009 p. 229
   +right_half
-    p(style='margin-top:150px') The psychological capacities involve models but not construals.
-    p Everyday thinking might be a useful source of models, but it would be bold to rely on its construals.
-    p (Things may be different if we consider ethical abilities.)
+    .psychological-capacities.hide
+      p(style='margin-top:150px') The psychological capacities involve models but not construals.
+    .psychological-capacities2.hide
+      p Also they are many, not one.
+    .everyday-thinking
+      p Everyday thinking might be a useful source of models, but it would be bold to rely on its construals (if any).
+      p (Things may be different if we consider ethical abilities.)
+  .slide
+    +blur('img.bkg', '2px')
+    +show('.another-image .layer1', 0)
+  .slide
+    +hide('.another-image .layer1', 0)
+    +show('.another-image .layer2', 0)
+    +blur('.everyday-thinking')
+  .slide
+    +show('.psychological-capacities')
+  .slide
+    +show('.psychological-capacities2')
+
++slide({bkg:'gergely_1995_fig1.png'})
+  p.source Gergely et al, 1995 figure 1
+  .notes: :t
+    Aside: the things that psychological capacities treat as agents are not
+    the things which Steward wants to treat as agents.
+
++slide_rh_white({fg:'steward_figure/slide01.jpg', fgOpacity:1})
+  .another-image
+    .layer1.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide03.jpg')
+    .layer2
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide02.jpg')
+  +left_half
+    p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
+    p.right.grey-text Steward, 2009 p. 229
+  +right_half
+    .psychological-capacities
+      p(style='margin-top:150px') The psychological capacities involve models but not construals.
+    .psychological-capacities2
+      p Also they are many, not one.
+    .everyday-thinking
+      p Everyday thinking might be a useful source of models, but it would be bold to rely on its construals (if any).
+      p (Things may be different if we consider ethical abilities.)
+  +blur('img.bkg', '2px', 0)
+  +blur('.everyday-thinking', '2px', 0)

@@ -15,7 +15,149 @@ include ../../../fragments/unit_mixins
 
 
 +slide_middle
-  p.center.huge-glow objection 1 : red
+  p.center.huge-glow objection 2 : red
+
++slide
+  .layers
+    +reset-escape-inner
+      div(style='mix-blend-mode:screen')
+        img.layer0.fill(src='/img/steward_figure/slide01.jpg')
+    +reset-escape-inner
+      .layer1.hide
+        div(style='mix-blend-mode:screen')
+          img.img2.fill(src='/img/steward_figure/slide03.jpg')
+    +reset-escape-inner
+      .layer2.hide
+        div(style='mix-blend-mode:screen')
+          img.img2.fill(src='/img/steward_figure/slide02.jpg')
+      .notes: :t
+        Plan is to run through the model for the case of red
+  .concept(style='margin:275px 380px 0px 0px')
+    p: :t
+      We can ‘ask the normative question whether the concept truly applies to creatures of a given sort. 
+      The concept, once formed, has its own integrity’
+    p.right.grey-text Steward, 2009 p. 227
+  +reset
+    .slide
+      .x(style='margin: 150px 0px 0px 380px')
+        .psychological-capacities
+          p Early-developing (or innate) psychological capacities enable us to track 
+            span.line-through agents
+            span  red things.
+        .everyday-thinking
+          p.hem-above There is ‘everyday thinking’ about red things.
+        .both
+          p.hem-above But neither straightforwardly supports conclusions about which things are red.
+  .slide
+    +blur('.layer0', '2px')
+    +show('.layer1', 0)
+    +blur('.psychological-capacities, .both, .concept')
+
+
+
+
++slide
+  .notes.handout: :t
+    ‘In the local market, we find: red, brown, white, and russet potatoes; red and green cabbages; red,
+    yellow, and green bell peppers; red, yellow, and white onions; red and white grapes; white and pink
+    grapefruit; red, white, black, green, and yellow beans; and, of course, red, white, rose, and green
+    wine (green as in green Hungarian). Among hair colors, we find black, brown, red, blond (in­ stead of
+    yellow), gray, and white. None of these nomenclatures makes sense if we go strictly by the standard
+    Munsell color chips. The reds in red hair, red potatoes, red cabbage, red bell peppers, red onions,
+    red grapes, red beans, red wine, and red skin are very different from the blood red of the focal red
+    Munsell chip. They are also very different from each other. They only make sense with the similarity,
+    preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the
+    principle of possibilities’ 
+    \citep[p.~372]{clark:1992_arenas}.
+  .colour
+    .quote1
+      p.step2.hide: :t
+        ‘The reds in 
+      p: :t
+        red hair, red potatoes, red cabbage, red bell peppers, red onions,
+        red grapes, red beans, red wine, and red skin 
+      p.step2.hide
+        span [...] only make sense with the similarity, 
+        span preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the 
+        span.pop principle of possibilities
+        span ’  
+      p.right.grey-text Clark, 1992 p. 372
+    .slide
+      +show('.step2')
+    .slide
+      +highlight('.pop')
+      p: :t
+        ‘the principle of possibilities: We understand what an entity is with reference to 
+        [...] the set of possibilities we infer it came from’
+  .slide
+    +unhighlight('.pop')
+    +blur('.colour')
+    p.em-above As with colour, psychological terms like ‘acts’ and ‘thinks’ can be used to make many different contrasts ...
+  .slide
+    +collapse('.quote1')
+    p.indent.hem-above ‘I know that my orchids are trying to stave off the cold so they can get growing again’
+    p.indent.hem-above ‘This dormancy happens because the grass is trying to preserve itself with limited resources’
+    p.indent.hem-above ‘spotify is trying to play’
+    p.indent.hem-above ‘as the flight controller fights to hold the craft in what it thinks is the correct attitude’
+
+//- +slide
+//-   .layers
+//-     +reset-escape-inner
+//-       div(style='mix-blend-mode:screen')
+//-         img.layer0.fill(src='/img/steward_figure/slide01.jpg')
+//-     +reset-escape-inner
+//-       .layer1.hide
+//-         div(style='mix-blend-mode:screen')
+//-           img.img2.fill(src='/img/steward_figure/slide03.jpg')
+//-     +reset-escape-inner
+//-       .layer2.hide
+//-         div(style='mix-blend-mode:screen')
+//-           img.img2.fill(src='/img/steward_figure/slide02.jpg')
+//-       .notes: :t
+//-         Plan is to run through the model for the case of red
+//-   +blur('.layer0', '2px', 0)
+//-   +show('.layer1', 0)
+//-   .slide
+//-     +hide('.layer1', 0)
+//-     +show('.layer2', 0)
+
+
+
++slide_rh_white({fg:'steward_figure/slide01.jpg', fgOpacity:1, step:true})
+  .another-image
+    .layer1.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide03.jpg')
+    .layer2.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide02.jpg')
+  +left_half
+    //- p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
+    //- p.right.grey-text Steward, 2009 p. 229
+    p(style='margin-top:275px'): :t
+      We can ‘ask the normative question whether the concept truly applies to creatures of a given sort. 
+      The concept, once formed, has its own integrity’
+    p.right.grey-text Steward, 2009 p. 227
+ 
+  +right_half({step:true})
+    .everyday-thinking
+      p(style='margin-top:150px') (my|your|his|her|their) phone
+      p.indent is trying to (excluding ‘kill me’) [283,000]
+      .notes: :t
+        eg ‘my phone is trying to navigate me to Alex even though he has been deleted’
+      p.indent wants to [278,000]
+      p.indent hates [147,000]
+      p.indent likes [86,800]
+      p.indent thinks (e.g. ‘My phone thinks I’m in another city’) [53,400]
+      p.indent is pretending [16,000]
+  +blur('img.bkg', '2px', 0)
+  +show('.another-image .layer1', 0)
+  .slide
+    +hide('.another-image .layer1', 0)
+    +show('.another-image .layer2', 0)
+    +blur('.everyday-thinking')
+
+
 
 section.slide
   .notes: :t
@@ -112,61 +254,182 @@ section.slide
 
 +slide({bkg:'slide_cp_40.jpg'})
 
+//- cultural variation
 +slide
+  .notes: :t
+    Indeed, the extensions of colour terms vary quite radically between languages.
+    Ongoing research concerns whether there is any kind of universal prinicple behind the pattern.
+  p.center English
+  +img_clip('colour_terms_english.png')
+  p.source  Roberson & Hanley 2010, Figure 1c
+
++slide
+  p.center Berinmo
+  +img_clip('colour_terms_berinmo.png')
+  p.source  Roberson & Hanley 2010, Figure 1b
+  
+
+
+//- LVF vs RVF
++slide_middle
+  p ... disputed evidence for multiple categorical colour systems in adult humans?
+  p.right.grey-text (Drivonikou et al. 2007; Gilbert et al 2006; Gilbert et al 2008; Zhou et al, 2010) 
   .notes.handout: :t
-    ‘In the local market, we find: red, brown, white, and russet potatoes; red and green cabbages; red,
-    yellow, and green bell peppers; red, yellow, and white onions; red and white grapes; white and pink
-    grapefruit; red, white, black, green, and yellow beans; and, of course, red, white, rose, and green
-    wine (green as in green Hungarian). Among hair colors, we find black, brown, red, blond (in­ stead of
-    yellow), gray, and white. None of these nomenclatures makes sense if we go strictly by the standard
-    Munsell color chips. The reds in red hair, red potatoes, red cabbage, red bell peppers, red onions,
-    red grapes, red beans, red wine, and red skin are very different from the blood red of the focal red
-    Munsell chip. They are also very different from each other. They only make sense with the similarity,
-    preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the
-    principle of possibilities’ 
-    \citep[p.~372]{clark:1992_arenas}.
-  .colour
-    p.step2.hide: :t
-      ‘The reds in 
-    p: :t
-      red hair, red potatoes, red cabbage, red bell peppers, red onions,
-      red grapes, red beans, red wine, and red skin 
-    p.step2.hide
-      span [...] only make sense with the similarity, 
-      span preference, and exhaustiveness constraints. And these constraints couldn't work if it weren't for the 
-      span.pop principle of possibilities
-      span ’  
-    p.right.grey-text Clark, 1992 p. 372
-    .slide
-      +show('.step2')
-    .slide
-      +highlight('.pop')
-      p: :t
-        ‘the principle of possibilities: We understand what an entity is with reference to 
-        [... the set of possibilities we infer it came from’
-  .slide
-    +unhighlight('.pop')
-    +blur('.colour')
-    p.em-above As with colour, psychological terms like ‘acts’ and ‘thinks’ can be used to make many different contrasts ...
-  .slide
-    p.indent.hem-above ‘I know that my orchids are trying to stave off the cold so they can get growing again’
-    p.indent.hem-above ‘This dormancy happens because the grass is trying to preserve itself with limited resources’
-    p.indent.hem-above ‘spotify is trying to play’
+    There is evidence that the infant mode of categorical perception of colour continues to operate in adults, although it is often inhibited or overshadowed
+    by the adult mode \citep{Gilbert:2006yb}.
+  .notes.handout: :t
+    ‘Several studies found that category effects occur only or more strongly in the right visual
+    field but not at all or less strongly in the left visual field (Drivonikou et al. 2007,
+    Gilbert et al. 2006, Roberson et al. 2008, Zhou et al. 2010). Visual information from the
+    right visual field is processed in the left hemisphere and language is also processed in the
+    left hemisphere for almost all people who are right-handed (for a review, see Ocklenburg et
+    al. 2014). The observation that the category effect is lateralized to the left hemisphere
+    suggested that language processing is involved in those category effects. Although several
+    studies found evidence in support of the lateralized category effect, many other studies
+    could not reproduce the effect, even in extensive series of experiments and with carefully
+    calibrated color stimuli (Brown et al. 2011; Suegami et al. 2014; Webster & Kay 2012; Witzel
+    & Gegenfurtner 2011, 2015, 2016). It has been suggested that the lateralization of the
+    category effect occurs only at early stages and disappears at later stages of visual
+    processing, possibly due to transfer through the corpus callosum (Roberson et al. 2008,
+    Constable & Becker 2017)’
+    \citep[pp.~487--8]{witzel:2018_colora}.
 
-+slide({bkg:'steward_figure.jpg'})
 
-+slide_rh_white({fg:'steward_figure.jpg', fgOpacity:1})
+
+
+
++slide_middle
+  p: :t
+    Steve, if you are trying to draw a parallel between agenthood and redness,
+    don’t you need some developmental evidence?
+
+
+//- +slide({bkg:'slide_cp_63.jpg'})
+//-   .handout: :t
+//-     Categorical perception of colour emerges early in infancy. This has been demonstrated with four-month-olds using habituation \citep{Bornstein:1976of} and
+//-     visual search \citep{Franklin:2005xk}.
+//-   .handout: :t
+//-     Slightly older infants can make use of colour properties such as red and green to recognise objects.  
+//-     For instance, nine-months-olds can determine whether an object they saw earlier is the same as a subsequently presented object on the basis of its colour
+//-     \citep{Wilcox:2008jk}.
+//-   .handout: :t
+//-     By the time they are two years old, toddlers who do not comprehend any colour words can use colour categories implicitly in learning and using proper names;
+//-     for instance, they are able to learn and use proper names for toy dinosaurs that differ only in colour \citep[][Experiment 3]{Soja:1994np}.
+//-   .handout: :t
+//-     So infants and toddlers enjoy categorical perception of colour and may benefit from it in recognising and learning about objects.  
+//-   .handout: :t
+//-     However children only acquire concepts of, and words for, colours some time later; and colour concepts, like colour words, are acquired gradually
+//-     \citep{Pitchford:2005hm,Kowalski:2006hk,Sandhofer:1999if,Sandhofer:2006qo}.
+//-   .notes: :t
+//-     Categorical perception of colour emerges early in infancy, from around four months or earlier, as has been demonstrated using habituation (Bornstein, Kessen
+//-     and Weiskopf 1976).
+
+//- +slide({bkg:'slide_cp_64.jpg'})
+//- +slide({bkg:'slide_cp_65.jpg'})
+//- +slide({bkg:'slide_cp_66.jpg'})
+//- +slide({bkg:'slide_cp_67.jpg'})
+
+//- +slide_middle
+//-   p: :t
+//-     ‘there was a familiarization phase with one hue repeatedly shown, and then a test phase where the familiar hue was paired with a novel hue across four trials. The time spent looking at the novel hue relative to the test hue during the test phase was calculated (novelty preference)’
+//-   p.right.grey-text Skelton et al, 2017 p. 5549
+//-   .notes: :t
+//-     NB: Skelton et al are suggesting that categorical responses by
+//-     infants are related to the cone–opponent second-stage mechanisms
+//-     although they recognise that ‘This of course cannot account for infants’ 
+//-     categorical distinction between red and yellow’
+
+//- +slide
+//-   .notes: :t
+//-     And most recently, using preferences.
+//-     Importantly, this experiment involved considering a wide range of potential colour boundaries.
+//-   .notes: :t
+//-     NB: (1) CIELAB space; (2) ‘Euclidean distances in this space do not predict infants’
+//-     novelty preference.’
+//-   +img_clip('skelton_2017_figS4.png')
+//-   p.source Skelton et al, 2017 figure S4
+//-   .notes: :t
+//-     \citep[Supplementary Material]{skelton:2017_biological} caption:
+//-     ‘Stimuli plotted in CIELAB perceptual color space (a*,b*). Stimulus pairs for which there was no
+//-     novelty preference are indicated with black lines joining the stimuli, and pairs where there was
+//-     a novelty preference are indicated by the absence of these lines. The cross between 7.5R and 5R
+//-     indicates a pair that was not tested. Euclidean distances in this space do not predict infants’
+//-     novelty preference.’
+
+//- +slide({bkg:'slide_cp_57.jpg'})
+//- +slide({bkg:'slide_cp_58.jpg'})
+//- +slide({bkg:'slide_cp_59.jpg'})
+//- +slide({bkg:'slide_cp_60.jpg'})
+//- +slide({bkg:'slide_cp_61.jpg'})
+//-   .notes Categorical perception has also been demonstrated at four months of age using pop-out (Franklin, Pilling and Davies 2005).
+
+//- +slide
+//-   .fig.hide
+//-     +img_clip('witzel_2018_fig5.png', 'rect(0,380px,999px,0)')
+//-   +reset
+//-     p: :t
+//-       ‘The color of the target was green, and this was kept constant across all trials. 
+//-       The background color was either green (from the same color category, i.e., within-category) 
+//-       or blue (from a different color category, i.e., between-category) to the target’
+//-     p.right.grey-text Franklin et al, 2005 p. 234
+//-     .notes: :t
+//-       This is from the adult version (experiment 1), but was the same in the infant version
+//-       (experiment 2)
+//-   .slide
+//-     +show('.fig')
+//-     .notes: :t
+//-       [from caption ] Note that the green-blue boundary is unlike the others in that it coincides with a local minimum of discrimination thresholds.
+
+
++slide_middle
+  p Before children reliably use colour words correctly, categorical perception explains:
+  ul
+    li.em-above habituation effects -- 4 months
+      p.right.grey-text (Bornstein, Kessen and Weiskopf 1976)
+    li novelty preferences for reds vs yellows -- 4-6 months
+      p.right.grey-text (Skelton et al, 2017)
+    li pop out effects [??] -- 4 months
+      p.right.grey-text (Franklin, Pilling and Davies 2005)
+    li re-identifying objects -- 9 months
+      p.right.grey-text (Wilcox, Woods and Chapa 2008)
+      .notes Slightly older infants can also make use of colour properties such as red and green to recognise objects.  For instance, nine-months-olds can determine whether an object they saw earlier is the same as a subsequently presented object on the basis of its colour (Wilcox, Woods and Chapa 2008).
+    li learning proper names -- around 2 years
+      .notes By the time they are two years old, toddlers who do not comprehend any colour terms can use colour categories implicitly in learning and using proper names; for instance, they are able to learn and use proper names for toy dinosaurs that differ only in colour (Soja 1994: Experiment 3).
+      p.right.grey-text (Soja 1994: Experiment 3)
+      .notes So we see categorical perception of colour early in development and it is useful to children.
+
+
+
+
++slide_rh_white({fg:'steward_figure/slide01.jpg', fgOpacity:1})
+  .another-image
+    .layer1.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide03.jpg')
+    .layer2.hide
+      div(style='mix-blend-mode:screen')
+        img.img2.fill(src='/img/steward_figure/slide02.jpg')
   +left_half
-    p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
-    p.right.grey-text Steward, 2009 p. 229
+    //- p(style='margin-top:400px') ‘some part of us finds it almost impossible not to categorise them as’ agents
+    //- p.right.grey-text Steward, 2009 p. 229
+    .quote
+      p(style='margin-top:275px'): :t
+        We can ‘ask the normative question whether the concept truly applies to creatures of a given sort. 
+        The concept, once formed, has its own integrity’
+      p.right.grey-text Steward, 2009 p. 227
+  +blur('img.bkg, .quote', '2px', 0)
+  +show('.another-image .layer2', 0)
   +right_half
-    p(style='margin-top:150px') (my|your|his|her|their) phone
-    p.indent is trying to (excluding ‘kill me’) [283,000]
-    .notes: :t
-      eg ‘my phone is trying to navigate me to Alex even though he has been deleted’
-    p.indent wants to [278,000]
-    p.indent hates [147,000]
-    p.indent likes [86,800]
-    p.indent thinks (e.g. ‘My phone thinks I’m in another city’) [53,400]
-    p.indent is pretending [16,000]
-
+    .psychological-capacities(style='margin-top:100px;')
+      p Early-developing (or innate) psychological capacities enable us to track 
+        span.line-through agents
+        span  red things.
+    .slide
+      +unblur('img.bkg')
+      +hide('.another-image .layer2', 0)
+      .everyday-thinking
+        p.hem-above There is ‘everyday thinking’ about red things.
+      .both
+        p.hem-above But neither straightforwardly supports conclusions about which things are red.
+    .slide
+      +unblur('.quote')

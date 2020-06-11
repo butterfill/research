@@ -41,11 +41,43 @@ section.slide
   +rain({img:'#titleImg'})
 
 +slide({bkg:'partners_in_crime.jpg'})
-
+  .notes: :t
+    I have accomplices.
 
 
 +insert_unit({unit:'intro', title_slide:false, images:images})
 
+
++insert_unit({unit:'models', title_slide:false, images:images})
+
++slide_middle
+  .notes: :t
+    Need to relate this back to the larger question.
+  p.center: :t
+    Is there a fundamental question of action theory?
+  .slide
+    p.em-above: :t
+      Suppose we reject the view that humans’ capacities to track agents and their actions
+      (i) all involve just one model, and (ii) come with construals that are widely-shared among humans.
+    p.em-above: :t
+      Can we still ask the ‘fundamental question’ of action theory?
+    p.em-above: :t
+      If so, what grounds it?
+    .notes: :t
+      My sense is that the action term as used by philosophers to pose a ‘fundamental question’
+      rests on the view that humans have a capacity to track agents and their actions
+      which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
+    .notes: :t
+      If you abandon this view, can you still ask the fundamental questions?
+  .slide
+    .notes: :t
+      I take it that Steward would be unimpressed by the reflections so far,
+      for she would distinguish the capacities and the everyday thinking from
+      the concepts.
+    p.em-above: :t
+      We can ‘ask the normative question whether the concept truly applies to creatures of a given sort. 
+      The concept, once formed, has its own integrity’
+    p.right.grey-text Steward, 2009 p. 227
 
 +insert_unit({unit:'red', title_slide:false, images:images})
 
@@ -71,30 +103,54 @@ section.slide
       because psychological capacities to track agents and their actions are so
       much less well understood.
 
-+insert_unit({unit:'models', title_slide:false, images:images})
++slide_middle({bkg:'shiva.jpg'})
+  p: :t
+    Just objections so far.
+  p: :t
+    Steve, have you nothing positive to contribute?
+
++insert_unit({unit:'mechanistically_neutral', title_slide:false, images:images})
+
+
++slide_rh_white
+  .notes: :t
+    So here’s how I think we can resolve the disagreement very simply.
+    To each philosopher: Have you got a mechanistically neutral characterisation of 
+    agency which is supported by discoveries about mechanisms?
+  +run_across
+    p.center Which things manifest agency?
+  +left_half
+    p: :t
+      ‘The paramecium’s swimming through the beating of its cilia, in a coordinated way, 
+      and perhaps its initial reversal of direction, count as agency.’
+    p.right.grey-text Burge 2009 p. 259
+  +right_half
+    p: :t
+      ‘the paramecium cannot be an agent [...] 
+    p: :t
+      None of its interactions with the environment [...] need involve anything like an act on the part of the
+      paramecium.’
+    p.right.grey-text Steward 2009 p. 227
+
 
 +slide_middle
   .notes: :t
-    Need to relate this back to the larger question.
-  p.center: :t
-    Is there a fundamental question of action theory?
+    Need to relate this back to the larger question once more.
+  p.can-we.hide Do we need a new 
+  p
+    span.is-there Is there a
+    span  fundamental question of action theory
+    span.q ?
+  p.without.hide without 
+  .notes: :t
+    On the view I’ve been suggesting, the question, 
+    Which things are actions? does make sense relative to one 
+    or another mechanistically neutral characterisation.
+    But it isn’t the goal of the mechanistically neutral characterisation
+    to answer this question, nor does it provide an independent standard against
+    which the mechanistically neutral characterisation can be judged.
   .slide
-    p.em-above: :t
-      Suppose we reject the view that humans have a capacity to track agents and their actions
-      which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
-    p: :t
-      Can we still as the ‘fundamental question’ of action theory?
-    .notes: :t
-      My sense is that the action term as used by philosophers to pose a ‘fundamental question’
-      rests on the view that humans have a capacity to track agents and their actions
-      which (i) involves a single model, and (ii) comes with construals that are widely-shared among humans.
-    .notes: :t
-      If you abandon this view, can you still ask the fundamental questions?
-
-+slide_middle({bkg:'shiva.jpg'})
-  p: :t
-    Justm objections so far.
-  p: :t
-    Nothing positive to contribute?
-
-+insert_unit({unit:'mechanistically_neutral', title_slide:false, images:images})
+    +line-through('.is-there')
+    +show('.can-we')
+  .notes: :t
+    This is a problem for the approach I'm suggesting.

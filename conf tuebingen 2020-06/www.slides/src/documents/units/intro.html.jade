@@ -15,8 +15,43 @@ exercises_fast: []
 
 include ../../../fragments/unit_mixins
 
++slide_middle
+  p Which things are actions 
+  p.indent as opposed to mere happenings?
+  p.em-above (Davidson, Frankfurt, Brand, Bach, ...)
 
-+slide({bkg:'steward_figure.jpg'})
++slide
+  .img1
+    +img_clip('brand_1984.jpg')
+  .slide
+    +blur('.img1', '3px')
+    +reset
+      div(style='mix-blend-mode:multiply;')
+        +img_clip('brand_1984_highlights.png')
+  p.source Brand, 1984
+  .notes: :t
+    Anyway, I want to approach this issue indirectly, by thinking about 
+    Steward and Burge on agency ...
+
+
++slide_rh_white({step:true})
+  +run_across
+    p.center Which things manifest agency?
+  .slide
+    +left_half
+      p: :t
+        ‘The paramecium’s swimming through the beating of its cilia, in a coordinated way, 
+        and perhaps its initial reversal of direction, count as agency.’
+      p.right.grey-text Burge 2009 p. 259
+  +right_half({step:true})
+    p: :t
+      ‘the paramecium cannot be an agent [...] 
+    p: :t
+      None of its interactions with the environment [...] need involve anything like an act on the part of the
+      paramecium.’
+    p.right.grey-text Steward 2009 p. 227
+
++slide({bkg:'steward_figure/slide01.jpg'})
   .notes: :t
     Steward’s model.
     Discoveries about psychological capacities to track agents and their actions 
