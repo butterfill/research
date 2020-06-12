@@ -1,7 +1,0 @@
-npx degit sarioglu/svelte-tailwindcss-template
-
-npm install -D pug
-npm install -D svelte-preprocess
-
-follow instructions FOR SAPPER here https://github.com/sveltejs/svelte-preprocess
-for adding to rollup.config.js

@@ -21,7 +21,7 @@ docpadConfig = {
 
     absolutepath:
       # put the url of the site you are uploading to here, including any subdirectories. 
-      url: "https://www.butterfill.com/talk-slides/mindreading_ww/"
+      url: "https://www.butterfill.com/talk-slides/tuebingen_2020_action_problem/"
     cleanurls:
       getRedirectTemplate: (document) ->
         absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 

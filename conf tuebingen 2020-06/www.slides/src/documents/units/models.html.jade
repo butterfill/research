@@ -50,27 +50,27 @@ include ../../../fragments/unit_mixins
   p.right.grey-text: :t
     Godfrey-Smith, 2005 p. 4
 
-+slide_middle
-  p.one.notes.handout.show
-    span ‘Two scientists can use the same model to help with the same target system while 
-    span having quite different views of how the model might be representing the target 
-    span system. I will describe this situation by saying that the two scientists have 
-    span different 
-    span.construals construals
-    span  of the model’ 
-  .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
-  .slide
-    +blur('.one span:not(.construals)')
-  .slide
-    p.em-above.notes.handout.show: :t
-      ‘one scientist might [construe] some model simply as an input-output device, as a
-      predictive tool. 
-    p.em-above.notes.handout.show: :t
-      Another might [construe] the same model as a faithful map of the
-      inner workings of the target system’
-    .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
-  p.right.grey-text: :t
-    Godfrey-Smith, 2005 p. 4
+//- +slide_middle
+//-   p.one.notes.handout.show
+//-     span ‘Two scientists can use the same model to help with the same target system while 
+//-     span having quite different views of how the model might be representing the target 
+//-     span system. I will describe this situation by saying that the two scientists have 
+//-     span different 
+//-     span.construals construals
+//-     span  of the model’ 
+//-   .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+//-   .slide
+//-     +blur('.one span:not(.construals)')
+//-   .slide
+//-     p.em-above.notes.handout.show: :t
+//-       ‘one scientist might [construe] some model simply as an input-output device, as a
+//-       predictive tool. 
+//-     p.em-above.notes.handout.show: :t
+//-       Another might [construe] the same model as a faithful map of the
+//-       inner workings of the target system’
+//-     .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+//-   p.right.grey-text: :t
+//-     Godfrey-Smith, 2005 p. 4
 
 
 +slide_middle
@@ -136,6 +136,20 @@ include ../../../fragments/unit_mixins
   .slide
     +show('.psychological-capacities2')
 
+
+
++slide
+  +img_clip('kanakogi_2011_fig1Cii.png')
+  +style('img',{filter:'contrast(1.2) brightness(1.5)'})
+  p.source Kanakogi and Itakura, 2011 figure 1C (part)
+  .notes: :t
+    Further, changing from a bodily action to the operation of a mechanical claw
+    (say) undermines the goal tracking effect.
+  .notes: :t
+    So  Kanakogi & Itakuar, 2011 make two points:
+    (i) goal-tracking depends on action capabilities; and 
+    (ii) only works for events involving biomechanically similar affectors
+  
 +slide({bkg:'gergely_1995_fig1.png'})
   p.source Gergely et al, 1995 figure 1
   .notes: :t
@@ -163,3 +177,7 @@ include ../../../fragments/unit_mixins
       p (Things may be different if we consider ethical abilities.)
   +blur('img.bkg', '2px', 0)
   +blur('.everyday-thinking', '2px', 0)
+  .slide
+    +unblur('img.bkg, .everyday-thinking')
+    +hide('.layer2', 0)
+
