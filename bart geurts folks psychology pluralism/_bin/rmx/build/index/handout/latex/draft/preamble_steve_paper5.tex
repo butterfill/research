@@ -1,0 +1,160 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\title{\ititle\\\isubtitle}
+\author{\iauthor\\<{\iemail}>}
+
+\usepackage[\papersize]{geometry} % see geometry.pdf
+\geometry{twoside=false}
+\geometry{headsep=2em} %keep running header away from text
+\geometry{footskip=1cm} %keep page numbers away from text
+\geometry{top=3cm} %increase to 3.5 if use header
+\geometry{left=4cm} %increase to 3.5 if use header
+\geometry{right=4cm} %increase to 3.5 if use header
+\geometry{textheight=22cm}
+
+%non-xelatex
+%\usepackage[T1]{fontenc}
+%\usepackage{tgpagella}
+
+\usepackage{microtype}
+
+%for underline
+\usepackage[normalem]{ulem}
+
+%get the font here:
+% http://scripts.sil.org/CharisSILfont
+
+\usepackage{fontspec,xunicode}
+%nb do not explicitly use package xltxtra because this introduces bugs with footnote superscripting  -- perhaps because fontspec is supposed to include it anyway.
+%UPDATE:  "You need to use the no-sscript option in xltxtra: \usepackage[no-sscript]{xltxtra}, this is explained in the documentation of xltxtra.  The issue is that Sabon does not contain true superscript glyphs for every character and the no-sscript option will instead use scaled regular glyphs, which is typographically inferior, but there is no other option available when using Sabon." --- http://groups.google.com/group/comp.text.tex/browse_thread/thread/19de95be2daacade
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Charis SIL} %i.e. palatino
+%\setromanfont[Mapping=tex-text]{Sabon LT Std} 
+%\setromanfont[Mapping=tex-text]{Dante MT Std} 
+%\setromanfont[Mapping=tex-text,Ligatures={Common}]{Hoefler Text} %comes with osx
+\setromanfont[Mapping=tex-text]{Linux Libertine O}  %OTF version is Linux Libertine O but this stopped working on my machine!
+\setsansfont[Mapping=tex-text]{Linux Biolinum O} 
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+
+
+
+%handles references to labels (e.g. sections) nicely
+\usepackage{varioref}
+
+%hyperlinks and pdf metadata
+%TODO avoid duplication of title & author
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0}}
+\hypersetup{pdfauthor={\iauthor}}
+\hypersetup{pdftitle={\ititle\isubtitle}}
+
+%handles references to labels (e.g. sections) nicely
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{chapter}{Chapter}{Chapters}
+
+%line spacing
+\usepackage{setspace}
+%\onehalfspacing
+%\doublespacing
+\singlespacing
+
+
+\usepackage{natbib}
+%\usepackage[longnamesfirst]{natbib}
+\setcitestyle{aysep={}}  %philosophy style: no comma between author & year
+
+%% for urls in bibliography
+%% http://www.kronto.org/thesis/tips/url-formatting.html
+\usepackage{url}
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+%enable notes in right margin, defaults to ugly orange boxes TODO fix
+%\usepackage[textwidth=5cm]{todonotes}
+
+%for comments
+\usepackage{verbatim}
+
+%footnotes
+\usepackage[hang,bottom,stable]{footmisc}
+% no space between multiple paragraphs  in footnote
+\renewcommand{\hangfootparskip}{0em}
+% multiple paragraphs  in footnote are indented by 1em
+\renewcommand{\hangfootparindent}{1em}
+\setlength{\footnotemargin}{1em}
+\setlength{\footnotesep}{1em}
+\footnotesep 2em
+
+%tables
+\usepackage{booktabs}
+\usepackage{ctable}
+\usepackage{array} %allows m columns in tables (paragraph, vertically centered)
+\usepackage{tabu}
+
+%section headings
+\usepackage[rm]{titlesec} %sf for sans, rm for roman
+%\titlespacing*{\section}{0pt}{*3}{*0.5} %reduce vertical space after header
+%large headings:
+%\titleformat{\section}{\LARGE\sffamily}{\thesection.}{1em}{} 
+\titlelabel{\thetitle.\quad} %make dot after section number
+
+%captions
+\usepackage[font={small,rm}, margin=0.75cm]{caption}
+
+%lists
+\usepackage{enumitem}
+\newenvironment{idescription}
+{ 	
+	% begin code
+	\begin{description}[
+		labelindent=1.5\parindent,
+		leftmargin=2.5\parindent
+	]
+}
+{ 
+	%end code
+	\end{description}
+}
+
+
+%title
+\usepackage{titling}
+\pretitle{
+	\begin{center}
+	%\sffamily %for sans title
+	\LARGE % \Huge
+} 
+\posttitle{
+	\par
+	\end{center}
+	\vskip 0.5em
+} 
+\preauthor{
+	\begin{center}
+	\normalsize
+	\lineskip 0.5em
+	\begin{tabular}[t]{c}
+} 
+\postauthor{
+	\end{tabular}
+	\par
+	\end{center}
+}
+\predate{
+	\begin{center}
+	\normalsize
+} 
+\postdate{
+	\par
+	\end{center}
+}
+

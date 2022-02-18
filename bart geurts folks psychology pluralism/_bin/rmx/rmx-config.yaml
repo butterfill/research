@@ -1,0 +1,8 @@
+pugdeck-slides-folder: philosophical-behavioural-science
+metadata:
+  rawSlidesRoot: https://philosophical-behavioural-science-slides.butterfill.com/philosophical-behavioural-science/units/
+  iauthor: "Stephen A.\\ Butterfill"
+  iemail: "s.butterfill@warwick.ac.uk"
+buildSettings:
+  fragments: /Users/brittle/Documents/programming/git/pug-deck-fragments
+  imageFolder: '~/syncthing/img-for-slides'

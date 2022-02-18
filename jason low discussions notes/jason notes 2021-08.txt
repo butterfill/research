@@ -1,0 +1,108 @@
+
+# agent specific
+
+Jason believes its A
+Steve believes its B
+
+PREDICT : Jason will lift finger A
+PREDICT : Steve will lift finger B
+
+
+
+# agent neutral
+
+its A [stronger??]
+its B
+
+PREDICT : equal between finger A & finger B
+
+or : Prediction is influenced by which representation is stronger (e.g. seen myself vs observed Jason see)
+
+Should not have different predictions for different agents
+
+
+# self-blind (but not other-blind)
+
+Jason believes its A
+It’s B
+
+1. If the efficient system is blind to the self [but not blind to the other], then I would copy you even if you have a false belief. [Steve doubtful]
+
+1’. If the efficient system is blind to the self AND to reality [but not blind to the other], then I would copy you even if you have a false belief. [Steve doubtful]
+
+
+# BRASS TASK
+
+FACT: Jason has TB / Jason has FB
+
+Instructions require lifting finger A but Jason lifts finger B (correctly in FB, incorrectly in TB)
+
+Prediction: autotmatic interference effect stronger when Jason has FB than when Jason has TB
+
+Hypothesis 1 : Neither self nor other specified in automatic mindreading (all representations are subject-neutral)
+
+Prediction : when Jason does not act, P-A+ is faster than P-A- 
+
+When Jason acts, because I don’t have a subject-specific representation I cannot make a prediction for his action based on his false belief. (I make the same predictions about everyone. No action incongruence expected.)  I will never anticipate that we will perform different (or incongruent) actions.
+
+Prediction: ???
+
+Hypothesis 2: Either self or other (or both) specified in automatic mindreading (not all representations are subject-neutral)
+
+When Jason has a FB and Jason acts, I may predict that he will perform one action (incorrect action) whereas I would prepare and perform a different action myself. It’s possible that I anticipate that we perform different (and even incongruent) actions.
+
+Prediction: When observing incongruent action (Condition 1), the Brass-effect is smaller in FB than TB. Why? Because the incongruent action in FB can be anticipated, but cannot be anticipated in TB.
+
+We cannot generate this prediction from Hypothesis 1.
+
+
+
+Condition 1: Jason performs an incorrect action.
+
+Condition 2: Jason performs no action.
+
+Condition 3: Jason performs a correct action.
+
+Hyp 2: In Condition 3, if Jason has TB his action is expected. But if Jason has FB, his action is unexpected: this means I was expecting incongruent actions but I got congruent actions.
+
+Prediction: if hyp 2, in condition 3 FB it may be that we get a reversed Brass effect.
+
+
+
+
+
+Further Idea: Suppose we had a manipulation which we thought could increase the probability of subject-specific representations ocurring. Such a manipulation should reduce the Kovacs P-A+<P-A- effect. Why? Because more subject-specific should mean less interference.
+
+
+---
+
+
+Hypothesis : self specified in automatic mindreading
+Prediction: 
+
+Hypothesis : self not specified in automatic mindreading
+Prediction:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

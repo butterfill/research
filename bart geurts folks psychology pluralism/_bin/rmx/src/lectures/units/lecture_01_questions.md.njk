@@ -1,0 +1,37 @@
+---
+title : 'Question Session 01'
+slides:
+  mixins:
+    - unit_mixins
+    - moral_psychology_mixins
+    - philosophical_behavioural_science_mixins
+description: |
+  These are the recordings of the live online whole-class question session.
+  They are usually available on the day after the session. (You may need to 
+  refresh this page to make them appear.)
+streamId: ''
+youtubeId: ''
+---
+
+<handout>
+
+</handout>
+
+<slides>
+#title-slide.slide
+  img.bkg(src='/img/bkg/sunclouds/01.jpg')
+  .spacer &nbsp;
+  - var low = false
+    if img && img.filename.indexOf('.low.') != -1
+      - low = true
+  .nofade-in
+    .title-block(style=`${low ? 'position:relative; top:325px' : ''}`): .title-container
+      h1.title1.nofade-in Week 01 Questions:
+      h1.title2.nofade-in Philosophical Issues in Behavioural Science
+      h3.email.nofade-in s.butterfill@warwick.ac.uk
+
+
++slide_middle
+  p.center more questions?
+
+</slides>

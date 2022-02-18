@@ -1,0 +1,19 @@
+{
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "Pug",
+    "jade",
+    "Nunjucks",
+    "latex",
+    "plaintext",
+    "nunjucks"
+  ],
+  "spellright.parserByClass": {
+    "nunjucks": {
+      "parser": "markdown"
+    }
+  }
+}

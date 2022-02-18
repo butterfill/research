@@ -1,0 +1,246 @@
+mixin show_week(week)
+
+  if week.specialTasks
+    each st in week.specialTasks
+      h3 #{st.sectionHeading}
+      p !{st.preInstructions}
+      ul.ticks
+        for t in st.tasks
+          li !{t}
+      p !{st.postInstructions}
+
+  h3#seminar-tasks Seminar Task on yyrama
+  if week.seminar && week.seminar.length > 0
+    ul.ticks
+      each task in week.seminar
+        li: a(href=`${task.url}` target="_blank") Complete and submit your #{task.type} at least 24 hours before your seminar in #{week.title}. 
+      li Check your work for any feedback immediately before the seminar. 
+      li Re-read your work before the seminar (so you can answer questions about it).
+      li Ensure you can refer back to what you submitted during the seminar. 
+    p Note that the seminar tasks are typically on topics from previous weeks.
+    p Not sure what to do? Check this 
+      a(href='/lecture_01_stream.html#yyrama' target='_blank') guide to the seminar tasks (this is the same each week)
+      span .
+  else
+    p There is no seminar in #{week.title}. 
+    p
+      | You may want to start the seminar task for the following week,
+      | which will be due at least 24 hours before your seminar. 
+      span  (
+      a(href='https://yyrama.butterfill.com/course/view/MindAndReality_2020' target='_blank') You can review the list of seminar tasks here
+      span .)
+
+
+
+  h3#live-meeting Live Online Whole-Class Meeting
+  if week.liveMeeting
+    ul.ticks
+      li Add messages with your questions before the meeting in the 
+        a(href="https://teams.microsoft.com/l/channel/19%3a57791d74f59442efb07b0a18b88aeeab%40thread.tacv2/Live%2520Whole-Class%2520Meetings%252C%2520Thursdays%252012-12.30?groupId=344ce8cf-ca96-4f3d-93c0-4d8d48997b8d&tenantId=09bacfbd-47ef-4465-9265-3546f2eaf6bc" target="_blank") teams channel for the lectures
+        span . 
+      if week.liveMeetingJoinLink
+        li Attend the 
+          a(href=`${week.liveMeetingJoinLink}` target="_blank") 
+            | meeting on Thursday at 12 (link to join)
+          span . 
+      else
+        li Attend the meeting on Thursday at 12 (join link to follow)
+          span . 
+
+      
+  else
+    p There is no live online whole-class meeting this week.
+
+  h3#recorded-lectures Recorded Lectures
+  if !(week.lectures && week.lectures.length > 0)
+    p [This week’s lectures are not yet available.]
+  else
+    ul.ticks
+      each lectureBasename in week.lectures
+        - lecture = get_lecture(lectureBasename)
+        li Make use of the #{lecture.title} 
+          a(target="_blank", href=`/${lectureBasename}_stream.html`) recordings
+          span  (or 
+          a(target="_blank", href=`/${lectureBasename}_tube.html`) the backup recordings
+          span  if the main recordings do not work for you)
+          span ; or, if you prefer, 
+          a(target="_blank", href=`/${lectureBasename}.html`) just the slide text
+          span .
+        li Review your notes from #{lecture.title}.
+
+    p Not sure what to do with the lectures? Check this 
+      a(href='/lecture_01_stream.html#how_to_lectures' target='_blank') guide to using lectures (this is the same each week)
+      span .
+
+  h3#zoxiy-tasks In-Lecture Micro Tasks on Zoxiy
+  if !(week.lectures && week.lectures.length > 0)
+    p [Micro tasks from this week’s lectures are not yet available.]
+  else
+    p Complete these while studying the recorded lectures, ideally with a partner.
+      | Once you have followed the lectures, you will already have done these.
+    ul.ticks
+      each lectureBasename in week.lectures
+        if !(lectureBasename.match(/^lecture_questions_/))
+          - lecture = get_lecture(lectureBasename)
+          li
+            a(target="_blank", href=`https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21/lecture/${lecture.title}`) #{lecture.title} micro tasks
+        
+    p Not sure how to complete the in-lecture micro tasks? Check this 
+      a(href='/lecture_01_stream.html#zoxiy' target='_blank') guide to the micro tasks (this is the same each week)
+      span .
+
+
+  if week.assessedWork
+    div(style='transform:rotate(-1deg);background-color:#f103e905;margin:-15px -1000px -15px -1000px; padding:15px 1000px 15px 1000px')
+      h3#assessed-work Assessed work to submit
+      ul.ticks
+        li #{week.assessedWork}
+        li Check the deadline 
+          a(href="https://tabula.warwick.ac.uk/" target="_blank") on tabula
+          span .  (Tabula is the only authoritative source for deadlines.)
+        li Submit your work 
+          a(href="https://tabula.warwick.ac.uk/" target="_blank") using tabula
+          span .
+      p Please remember that all assessed work will only be marked if you submit it 
+        a(href="https://tabula.warwick.ac.uk/" target="_blank") using tabula
+        span .
+  else
+    h3#assessed-work Assessed work to submit
+    p There is no assessed work due this week. (But to be sure, please check 
+      a(href="https://tabula.warwick.ac.uk/" target="_blank") on tabula
+      span  as this is the only authoritative source for deadlines.)
+
+
+  h3#lecture-reading Optional reading from the lectures
+  if !(week.lectures && week.lectures.length > 0)
+    p [Reading from this week’s lectures is not yet available.]
+  else
+    p These are the readings from this week’s lectures.
+      | These are the same as the readings listed in the lecture outlines. 
+      | You are not required to do any of this reading. 
+      | You may want to do attempt some of this reading in advance, or you might read it as part of your revision. 
+      | The only required reading is that associated with the seminar tasks. 
+
+  - allReading = new Set()
+  each lectureBasename in week.lectures
+    - lecture = get_lecture(lectureBasename)
+      if lecture.units
+        - each unit_num in lecture.units
+          - unit = get_unit(unit_num)
+          if unit.book && unit.book.length > 0 
+            for r in unit.book
+              - allReading.add(r)
+  ul
+    each reading in Array.from(allReading)
+      li #{reading}
+
+
+  h3#lecture-outline What the Lectures Cover in #{week.title}
+  if !(week.lectures && week.lectures.length > 0)
+    p [Outlines of this week’s lectures are not yet available.]
+  else
+    each lectureBasename in week.lectures
+      - lecture = get_lecture(lectureBasename)
+      +show_lecture(lecture, {compact:true})
+
+
+
+mixin show_lecture(lecture, p)
+  div(id=`${lecture.basename}`)
+    - p = p || {compact:false}
+    if p.compact
+      h4: a(href=`${lecture.basename}_stream.html`,target='_blank') #{lecture.title}
+        if lecture.hidden
+          span  [hidden]
+    else
+      h2: a(href=`${lecture.basename}_stream.html`,target='_blank') #{lecture.title}
+        if lecture.hidden
+          span  [hidden]
+      if lecture.lecture_date
+        p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+      //- p 
+      //-   a(href=`${lecture.url}`,target='_blank') slides
+      //-   |  , 
+      //-   a(href=`/handouts/${lecture.basename}.handout.pdf`,target='_blank') handout [pdf]
+      ul
+        li
+          a(href=`${lecture.basename}_stream.html`,target='_blank')
+            span #{lecture.title} recordings
+          span  | 
+          a(href=`${lecture.url}`,target='_blank') 
+            span Just the slides for #{lecture.title} (no audio or video)
+          span  | 
+          a(href=`${lecture.basename}_tube.html`,target='_blank') 
+            span Backup recordings for #{lecture.title}
+
+        li: a(target="_blank", href=`https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21/lecture/${lecture.title}`) 
+            span Exercises for this lecture
+  
+    .units(style='border-left: 1px dotted grey;margin-left: -1px;')
+      div(style="padding-left:2em;")
+        if lecture.units
+          - each unit_num in lecture.units
+            - unit = get_unit(unit_num)
+            if p.compact
+              h5: a(href=`${lecture.basename}_stream.html#${unit_num}`) #{unit.title}
+            else
+              h3: a(href=`${lecture.basename}_stream.html#${unit_num}`) #{unit.title}
+                //- span(style="font-size:50%;color:grey;")  (#{unit_num})
+            if unit.tags && unit.tags.length && unit.tags.length > 0
+              p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
+                each t in unit.tags
+                  span.label.label-info #{t}
+                  | 
+            p #{unit.description}
+            +book_and_exercises(lecture, unit)
+
+mixin book_and_exercises(lecture, unit)
+  if unit.book && unit.book.length > 0 
+    if unit.book.length == 1
+      p Reading (optional):  #{unit.book[0]}
+    else
+      p Reading (optional):
+        ul
+          each r in unit.book
+            li #{r}
+  if unit.exercises && unit.exercises.length > 0 
+    p --- 
+      a(target="_blank", href=`https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21/lecture/${lecture.title}/unit/${unit.title}`) 
+        if unit.exercises.length > 1
+          span do #{unit.exercises.length} micro tasks for this unit
+        else
+          span do one micro task for this unit
+
+mixin thanks(lecture, unit)
+  if unit.thanks && unit.thanks.length > 0
+    p Thanks to #{unit.thanks.join('; ')}.
+
+mixin list_weeks()
+  ul
+    each week in getCollection("weeks").toJSON()
+      if week.hidden && getEnvironment() === 'static'
+        //- pass
+      else
+        li: a(href=`/${week.basename}.html`) #{week.title}
+          if week.theme
+            span : #{week.theme}
+          if week.hidden
+            span  [hidden]
+          if week.start_date
+            p (#{moment(week.start_date).format('Do MMM')})
+
+
+
+mixin list_lectures(p)
+  - p = p || {}
+  - p.linkTo = p.linkTo || '_stream'
+  - thisLectureBaseName = document.basename.replace(/_stream_backup$/,'').replace(/_stream$/,'').replace(/_tube$/,'')
+  ul
+    each lecture in getCollection("lectures").toJSON()
+      if lecture.hidden && getEnvironment() === 'static'
+        //- pass
+      else
+        if thisLectureBaseName == lecture.basename
+          //- pass
+        else
+          li: a(href=`/${lecture.basename}${p.linkTo}.html`) #{lecture.title}

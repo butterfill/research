@@ -1,0 +1,132 @@
+
+
+mixin moral_psychology_df
+  | Moral psychology is the study of psychological aspects of ethical abilities.
+
+mixin dualProcessTheory(p)
+  - p = p || {title:true}
+  if p.title
+    p.center.notes.show.title Dual Process Theory of Ethical Abilities (core part)
+  p.notes.show.theory
+    span Two (or more) ethical processes are distinct: 
+    br
+    span the conditions which influence whether they occur, 
+    br
+    span and which outputs they generate, 
+    br
+    span do not completely overlap.
+
+mixin sinnott_inutitions_summary
+  p *TODO* finish!
+  p.question Q: What do adult humans compute that enables their moral intuitions to track moral attributes (such as wrongness)?
+  .argument.hem-around-children
+    p.em-above 1. Moral attributes are inaccessible.
+    p 2. Moral intuitions cannot be based on inaccessible attributes.
+    .notes: :t
+      ‘Inaccessibility creates the need for a heuristic attribute.’ (p. 257)
+    p 3. Attributes associated with the ways thinking about acts makes you feel are accessible.
+    p 4. ‘if thinking about an act [...] makes you feel bad [...], then judge that it is morally wrong’ is a heuristic.
+    p 5. 
+
+
+
+mixin sciToEthicsSummary()
+  .claim.one
+    p 1. There is a puzzle about apparently inconsistent patterns in judgement (switch-drop).
+  .claim.two
+    p 2. We can solve the puzzle by invoking a dual-process theory ...
+    .claim.two-a
+      p.indent 2.a ... where one process is faster; and
+    .claim.two-b
+      p.indent 2.b the faster process is affective and 
+    .claim.two-c
+      p.indent 2.c less consequentialist.
+  .claim.three
+    p 3. The faster process is unlikely to be reliable in unfamiliar* situations.
+  .claim.four
+    p 4. Therefore, we should rely less on the faster (and less consequentialist) process in unfamiliar* situations.
+
+mixin sciToEthicsSummaryV2()
+  .claim.two
+    p 1. Ethical judgements are explained by a dual-process theory ...
+    .claim.two-a
+      p.indent 1.a ... where a faster process is affective, and 
+    .claim.two-b
+      p.indent 1.b less consequentialist than a slower process.
+  .claim.three
+    p 2. The fast process is unlikely to be reliable in unfamiliar* situations.
+  .claim.four
+    p 3. Therefore, we should rely less on the faster (and less consequentlist) process in unfamiliar* situations.
+
+
+mixin greeneReconstruction(p)
+  - p = p || {step:false}
+  .greene-reconstruction
+    p.title.hem-around Greene (my reconstruction)
+    p.one.hem-around
+      span Drop is an unfamiliar
+      span.star *
+      span  situation.
+    if p.step
+      .slide
+        +invert('.greene-reconstruction .star')
+      .slide
+        +uninvert('.greene-reconstruction .star')
+    div(class=`${ p.step ? 'slide' : '' }`)
+      p.two.hem-around
+        span Spontaneous judgements are dominated by fast processes.
+    div(class=`${ p.step ? 'slide' : '' }`)
+      p.three.hem-around
+        span Fast processes are not reliable in unfamiliar* situations.
+    div(class=`${ p.step ? 'slide' : '' }`)
+      p.therefore Therefore:
+      p.four.hem-around
+        span Spontaneous judgements concerning Drop are unreliable.
+
+
+mixin intuitionAgainstConsequentialism()
+  p.hem-around.one 
+    span Many spontaneously judge that we should 
+    span.invert not 
+    span.drop Drop
+    span .
+  p.hem-around.two 
+    span Consequentialism
+    span.star *
+    span   implies we should 
+    span.drop Drop
+    span .
+  p
+    span.therefore Therefore:
+  p.hem-around.three
+    span Consequentialism* is wrong.
+
+
+
+mixin greene-reconstruction()
+  .reconstruction
+    p.hem-around.
+      1. Ethical judgements are explained by a dual-process theory, which
+      distinguishes faster from slower processes.
+    //- .claim.two-a
+    //-   p.indent 1.a ... where a faster process is affective, and 
+    //- .claim.two-b
+    //-   p.indent 1.b less consequentialist than a slower process.
+    p.hem-around.
+      2. Faster processes are unreliable in unfamiliar* situations.
+    p.hem-around.
+      3. Therefore, we should not rely on faster process in unfamiliar* situations.
+    p.hem-around.
+      4. When philosophers rely on 
+      not-justified-inferentially premises,
+      they are relying on faster processes.
+    p.hem-around
+      span 5. We have reason to suspect that the moral scenarios 
+      span.and.remove-me  and principles 
+      span philosophers consider involve unfamiliar situations. 
+    p.hem-around
+      span 6. Therefore, 
+      span not-justified-inferentially premises about 
+      span.particular particular moral scenarios
+        span.and.remove-me , and debatable principles, 
+      span  cannot be used in ethical arguments where the aim is knowledge.

@@ -1,0 +1,233 @@
+
+
+mixin slide_putnamDeweyPeirceQuotes(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('handout' in p)
+    - p.handout = false
+  if (p.handout)
+    - theStyle = 'handout'
+  else
+    - theStyle = ''
+  +slide_middle
+    .notes: :t
+      Our question is one that famous philosophers have been asking for a while ...
+      I want to start by asking you to read these quotes (see handout) and think about them.
+      OBJECTIVE 1 : let’s try to understand them
+    div(style=theStyle).notes \section{The Question’s History}
+    .putnam
+      p(style=theStyle).notes.show
+        span ‘there are these objects out there.  Here is the mind/brain, carrying on its thinking/computing. 
+        span How do 
+        span.symbols the thinker’s symbols
+        span   ... get into a unique correspondence with objects and sets out there?’ 
+      p(style=theStyle).notes.ctd \citep[p.~51]{Putnam:1981sw}
+      p.right.grey-text Putnam, 1981 p. 51
+    .dewey
+      p(style=theStyle).notes.show: :t
+        ‘the implication of the thinking situation is of some ‘correspondence’ ... the problem of its nature and valid determination remains the central question of any theory of thinking’ 
+      p(style=theStyle).notes.ctd \citep[p.~200]{Dewey:1907ka}
+      p.right.grey-text Dewey, 1907 p. 200
+    .peirce
+      p(style=theStyle).notes.show: :t
+        ‘That truth is the correspondence of a representation with its object is, as Kant says, merely the nominal definition of it. ...  But what does this correspondence or reference of the sign, to its object, consist in?’ 
+      p(style=theStyle).notes.ctd \citep[p.~390/5.553]{Peirce:1906gu}
+      p.right.grey-text Peirce, 1906 p. 390/5.553
+    block
+
+
+
+
+mixin warmingSentences()
+  p.earth
+    span.utterance Steve’s Oct 4th, 2018 1.11pm utterance
+    br
+    span.quotes ‘
+    span.earth Earth
+    span  is being warmed by human activity.
+    span.quotes ’
+    br
+    span.because is true because 
+      span.earth-planet Earth
+      span  is being warmed by human activity.
+  p.mars.em-above
+    span.utterance Steve’s Oct 4th, 2018 1.11pm utterance
+    br
+    span.quotes ‘
+    span.mars Mars
+    span  is being warmed by human activity.
+    span.quotes ’
+    br
+    span.because is false because 
+      span.mars-planet Mars
+      span  is not being warmed by human activity.
+
+
+mixin slideReferenceToBeExplained()
+  +slide_rh_white
+    +left_half
+      p.center fact in need of explanation:
+      p.em-above Those utterances differ in that one is made true by how things are with Earth whereas the other is made true by how things are with Mars.
+    +right_half
+      p.center attempted explanation
+      p.em-above 
+        span.word ‘Earth’
+        span  refers to Earth whereas ‘Mars’ refers to Mars.
+    .step2
+      .clear
+      +run_across
+        p.center But what 
+          span.if-anything (if anything)
+          span  is reference?
+        block
+
+mixin questionAboutReference()
+  p: :t
+    Why do those utterances differ in that one is made true by how things are with Earth 
+    whereas the other by how things are with Mars?
+  p.em-above: :t
+    Guess: There is some relation between the utterance of ‘Earth’ [the word] and Earth [the thing]
+    in virtue of which Steve’s utterance of the sentence is about Earth rather than Mars.
+  p.em-above Terminology: call it ‘reference’
+  p.em-above Q: What is this relation?
+
+
+mixin pragmatistTheoryReference
+  span For an utterance of ‘Earth’ to refer to Earth is for this utterance to sieze the ‘interpreter’s eyes and forcibly turn them upon’ Earth.
+
+
+mixin kripkeTheoryReference
+  span For an utterance of ‘Earth’ to refer to Earth is for 
+  span (a) Earth to have been baptised ‘Earth’ 
+  span and 
+  span (b) this utterance to be causally related 
+  span.appropriate-way in the appropriate way
+  span  to that 
+  span baptism event.
+
+mixin descriptionTheoryReference
+  span For an utterance of ‘Earth’ to refer to Earth is for 
+  span (a) the speaker to have associated this utterance of ‘Earth’ with a descripton, 
+  span and (b) Earth to be the thing which, uniquely, this description is true of.
+
+
+
+mixin questionAboutKnowledgeOfReference()
+  p When the utterance of a word refers to a thing, 
+    br
+    span must the utterer have 
+    span.k-of-r knowledge of reference
+    span ?
+    
+
+mixin sensesAreDescriptions()
+  section.slide
+    block
+    +_slide_middle_inner
+      p.center.huge-glow-270.q.hide(style='margin-top:75px') ?
+    +reset
+      +_slide_middle_inner
+        p.charly The sense of my utterance of ‘Charly Baltimore’ is this description: 
+          br
+          span.italic the highly trained secret agent suffering from amnesia in New England
+          span .
+        p.samantha.em-above The sense of my utterance of ‘Samantha Caine’ is this description:
+          br
+          span.italic the New England teacher with an 8 year old daughter who makes the best Rice Krispie treats in town
+          span .
+
+mixin senseIsKnowledgeOfReference()
+  p.claim
+    span The 
+    span.sense.invert sense
+    span  of an utterance of a word (or phrase)
+    br
+    span is what you know when you 
+    br
+    span have 
+    span.k-of-r.invert knowledge of reference
+    span .
+
+
+
+mixin slideSensesAreWaysOfBeingAcquainted()
+  section.slide
+    block
+    +_slide_middle_inner
+      p.center.huge-glow-270.q.hide(style='margin-top:75px') ?
+    +reset
+      +_slide_middle_inner
+        p.center same act of attention -> same sense
+        p.gloss.hem-above: :t
+          When two utterances of a word (or phrase) are controlled by a single 
+          act of attention, they have the same sense.
+
+
+mixin slide_factsToBeExplained(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  if !('handout' in p)
+    - p.handout = false
+  if (p.handout)
+    - theCls = 'handout'
+  +slide_rh_white
+    +run_across
+      p.center(style='margin-bottom:-1em;') What are the facts in need of explanation?
+      .notes In order of appearance ...
+    +left_half
+      .hem-around-children
+        p.fact 1. This utterance of ‘Ayesha smells’ depends for its truth on how Ayesha is, unlike that utterance of ‘Beatrice smells’. Why?
+        p.fact.sense 2. This utterance of ‘Charly is Charly’ was less revelatory than that utterance of ‘Charly is Samantha’. Why?
+        p.fact 3. Humans successfully achieve ends by uttering words. How?
+    +right_half
+      .hem-around-children
+        p.fact 4. Communicators can know, sometimes, whether they are understanding. How?
+        p.fact 5. Utterers make rational, voluntary use of some regularites while merely conforming to others. How is this possible?
+    
+    .notes(class=theCls): :t
+      Facts in need of explanation (in order of appearance):
+      \begin{enumerate}
+        \item This utterance of ‘Ayesha smells’ depends for its truth on how Ayesha is, unlike that utterance of ‘Beatrice smells’. Why?
+        \item This utterance of ‘Charly is Charly’ was less revelatory than that utterance of ‘Charly is Samantha’. Why?
+        \item Humans successfully achieve ends by uttering words. How?
+        \item Communicators can know, sometimes, whether they are understanding. How?
+        \item Utterers make rational, voluntary use of some regularites while merely conforming to others. How is this possible?
+      \end{enumerate}
+
+    if (p.step)
+      +hide('.fact:gt(0)', 0)
+      .slide
+        +show('.fact:eq(1)')
+      .slide
+        +show('.fact:eq(2)')
+      .slide
+        +show('.fact:eq(3)')
+      .slide
+        +show('.fact:eq(4)')
+    block
+
+
+mixin slide_donnellanVsRussell()
+  +slide_rh_white
+    +run_across
+      .notes: :t
+        The question Russell’s theory was supposed to answer was,
+      p.notes.ctd.show.center Which words (and phrases) refer?
+    .russell: +left_half
+      p Russell: Utterances of phrases of the form ‘the man drinking Martini’ are always quantificational.
+    .donnellan: +right_half
+      p Donnellan: Utterances of phrases of the form ‘the man drinking Martini’ are 
+        span.sometimes sometimes
+        span  referential.
+    block
+
+mixin MS-PE-PM()
+  .hem-around-children
+    p.ms MS, the meaning of the sentence; 
+    p.pe PE, the proposition expressed; and
+    p.pm PM, 
+      span.the the
+      span  proposition meant. 
+  p.right.grey-text Neale, 1990 p. 75

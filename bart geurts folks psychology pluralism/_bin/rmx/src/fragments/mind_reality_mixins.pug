@@ -1,0 +1,62 @@
+
+mixin topicTable()
+  table.data
+    thead
+      tr
+        td.topic topic
+        td.q question
+    tbody
+      tr.odd
+        td.topic Acquaintance
+        td.q How do your thoughts connect to the things about which you think?
+      tr.even
+        td.topic Cognitive Penetration
+        td.q How, if at all, do your thoughts influence your perceptions?
+      tr.odd
+        td.topic Awareness
+        td.q What good is your perceptual awareness of the objects around you?
+      tr.even
+        td.topic Sense & Reference
+        td.q Why are some numerical identities informative?
+      tr.odd
+        td.topic Metaphysics
+        td.q What is necessary for your personal survival?
+      tr.even
+        td.topic Action
+        td.q Of the events involving you, what determines which are your actions?
+      tr.odd
+        td.topic Induction
+        td.q What is it for an observation to provide evidence for a scientific theory?
+
+
+mixin slideTopicTable(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  +slide_middle
+    +topicTable
+    +hide('.q:gt('+(p.step-1)+')', 0)
+    +blur('tbody tr:not(:eq('+(p.step-2)+'))', '2px', 0)
+    .slide
+      +blur('tr:eq('+(p.step-1)+')')
+      +unblur('tr:eq('+p.step+')')
+      +show('.q:eq('+p.step+')')
+      block
+
+
+mixin awarenessQ()
+  p 
+    span What are the 
+    span.functions functions
+    span  of 
+    span.perceptual-awareness perceptual awareness
+    span ?
+
+
+mixin awarenessQ2()
+  p Can you 
+    span.perceive perceive
+    span   something without being perceptually aware of it?
+
+mixin awarenessAns1()
+  p Simplest Idea:
+  p.indent Perceptual awareness enables control of action.

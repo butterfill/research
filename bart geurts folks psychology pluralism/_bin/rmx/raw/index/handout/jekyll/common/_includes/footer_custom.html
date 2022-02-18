@@ -1,0 +1,11 @@
+<script>
+	var tabs = new Tabby('[data-tabs]');
+</script>
+<script>
+	tippy('.gls', {
+		allowHTML : true,
+		content: function(reference) {
+			return reference.dataset.glossary
+		}
+	})
+</script>

@@ -1,0 +1,40 @@
+Dear Malte,
+
+Many thanks for this question!  It’s especially welcome because I’m wondering about roughly this myself (although not in as clear a way as you put it). Thank you!
+
+On 1: yes, I think the points of criticism apply to as much to claims about what is good as to claims about actions and agents. In particular, I think it provides grounds not to accept Rawls’ reflective equilibrium idea:
+
+	‘one may think of moral theory at first [...] 
+    as the attempt to describe our moral capacity
+    [...] 
+    what is required is a formulation of a set of principles which, when
+    conjoined to our beliefs and knowledge of the circumstances, would lead us
+    to make these judgments with their supporting reasons were we to apply
+    these principles conscientiously and intelligently’ (1999 p. 41)
+	
+So I suppose I’m aiming for a view which is like Singer’s [^1], except that (i) it takes the need to research everyday thinking more seriously (so it’s focussed just on scientific discoveries about psychological capacities) and (2) it doesn’t carry commitment to his idea that we can find a ‘rational basis’ (his term) for accepting principles.
+
+But, on your question 2, I do hope there’s a way out; if there wasn’t, I’d be inclined to take that as a reductio of my attempts at argument.
+
+My starting point is that ethical abilities and ethical thinking have proven valuable for a long time and continue to be indispensable for survival. They enable animals with limited knowledge and coginitive powers to mitigate dangers like pathogens, and they enable aggressive and competitve animals to cooperate to some degree. But ethical abilities and thinking have also enabled plenty of bad things to happen too. Since ethical thinking is to some degree a consequence of cultural forces, I suppose there can be value in attepming to influence the cultural forces. As I see things as an inexpert outsider, I guess this is what the really famous philosophers have been doing. There’s also probably value in working out which alternatives are coherent, as I suppose philosophers like Singer and Pogge are doing.
+
+Practically speaking, it doesn’t seem to be necessary (and perhaps not even desirable) for individuals or groups to settle on a single, consistent model. We discover what works and what doesn’t not by testing predictions against repeatable observations but by living it out.
+
+I think this is roughly also how some philosophers approach action and agency. Maria Alvarez once came close to saying this to me in conversation, for example. I wonder whether some of the disagreements we face (for example, when people insist that something just isn’t action because there’s no role for subjectivity or intention or whatever) aren’t due to some of us pursuing projects that are essentially attempts to characterise and influence cultural forces, whereas others are focussed on understanding how animals influence their environments.
+
+Incidentally, there are some interesting reasons to be cautiously sceptical about Greene-style dual system proposals[^2], as well as some questions on the evidence for Haidt-Style Moral Foundations[^3].  I’m biased towards both, but I don’t think the evidence for either is commensurate with the influence they seem to be having.
+
+
+[^1]: Singer, Peter. ‘Ethics and Intuitions’. The Journal of Ethics 9, no. 3 (1 October 2005): 331–52. https://doi.org/10.1007/s10892-005-3508-y.
+———. ‘Sidgwick and Reflective Equilibrium’. The Monist 58, no. 3 (1974): 490–517. https://doi.org/10.5840/monist197458330.
+
+[^2]:Gawronski, B., J. Armstrong, P. Conway, R. Friesdorf, and M. Hütter. ‘Consequences, Norms, and Generalized Inaction in Moral Dilemmas: The CNI Model of Moral Decision-Making.’ Journal of Personality and Social Psychology 113, no. 3 (2017): 343–76. https://doi.org/10.1037/pspa0000086.
+
+Gawronski, Bertram, Paul Conway, Joel Armstrong, Rebecca Friesdorf, and Mandy Hütter. ‘Effects of Incidental Emotions on Moral Dilemma Judgments: An Analysis Using the CNI Model’. Emotion 18, no. 7 (2018): 989–1008. https://doi.org/10.1037/emo0000399.
+
+Bago, Bence, and Wim De Neys. ‘The Intuitive Greater Good: Testing the Corrective Dual Process Model of Moral Cognition’. Journal of Experimental Psychology: General 148, no. 10 (2019): 1782–1801. https://doi.org/10.1037/xge0000533.
+
+
+[^3]: One of several papers making the point that the moral foundations questionnare does not seem to exhibit scalar invariance (a point which, as far as I know, Haidt, Graham & al have yet to discuss):
+
+Davis, Don, Kenneth Rice, Daryl Van Tongeren, Joshua Hook, Cirleen DeBlaere, Everett Worthington, and Elise Choe. ‘The Moral Foundations Hypothesis Does Not Replicate Well in Black Samples’. Journal of Personality and Social Psychology 110, no. 4 (April 2016). https://doi.org/10.1037/pspp0000056.

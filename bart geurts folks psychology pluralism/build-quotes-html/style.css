@@ -1,0 +1,10 @@
+a.cite:link { 
+  text-decoration: none; 
+}
+.tufte-underline a.cite { 
+  text-decoration: none;
+  background: unset
+}
+/* h1 {
+  color:blue
+} */

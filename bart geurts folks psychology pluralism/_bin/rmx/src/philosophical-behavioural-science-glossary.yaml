@@ -1,0 +1,6 @@
+# only include entries here that override the main glossary for this specific course
+# (e.g. because they include a reference to a unit in this course)
+
+dummy-entry: | 
+  Apparently this cannot be empty.
+

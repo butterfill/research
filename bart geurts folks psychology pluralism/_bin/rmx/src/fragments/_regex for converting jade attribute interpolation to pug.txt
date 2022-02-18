@@ -1,0 +1,17 @@
+see the section on `attribute interpolation` here: https://pugjs.org/language/attributes.html
+
+LIMITS:
+
+- These patterns will find, but not correctly replace, cases where two attriubtes are interpollated in a single string
+- check for this after by searching 
+	`[^`]*?#[^`]*?`
+
+double quote version
+	"([^"]*?)#\{([\s\S]+?)\}([\s\S]*?)"
+
+single quote version
+	'([^']*?)#\{([\s\S]+?)\}([\s\S]*?)'
+
+replace with:
+	`$1${$2}$3`
+	
