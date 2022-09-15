@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: RztVCmSQfu_UYblpQeUNG
+title: "Observed Commitment [Obscom] - ‘Observers use coordination as a cue to children's commitment in joint action’"
+url:
+  - 
+git-remote:
+  - git@github.com:butterfill/research.git
+type: research
+location: 
+authors: 
+  - Melissa Perring
+  - David Dvorkin
+  - Barbora Siposova
+  - Stephen A. Butterfill
+  - Klaus Kessler
+  - John Michael
+status: submitted
+
+events:
+  - 
+    what: 'submit'
+    when: 2021-04-20
+    where: Journal of Nonverbal Behavior
+  - 
+    what: 'reject'
+    when: 2021-04-28
+    where: Journal of Nonverbal Behavior
+  - 
+    what: 'submit'
+    when: 2021-06-05
+    where: British Journal of Developmental Psychology
+  - 
+    what: 'reject'
+    when: 2021-08-04
+    where: British Journal of Developmental Psychology
+  - 
+    what: 'submit'
+    when: 2021-10-08
+    where: British Journal of Psychology
+  - 
+    what: 'reject'
+    when: 2021-11-26
+    where: British Journal of Psychology
+  

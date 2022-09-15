@@ -1,10 +1,13 @@
 ---
-title: Notes on Folk Pscyhology
+title: Heider on Commonsense or Folk Pscyhology
 subtitle: It Began with Heider
 iauthor: Bart Geurts and Steve Butterfill
 iauthorshort: Geurts \& Butterfill
-date: 2022-11-14
+created: 2021-11-16
+projects:
+  - 9e6fa5e3-10e6-4846-a79a-988799ffb92e
 ---
+
 
 In 1958 Heider published a book on what he called ‘naive psychology’ and, interchangeably, ‘commonsense psychology’; now more commonly referred to as folk psychology. 
 Although widely ignored,[^unknown] 

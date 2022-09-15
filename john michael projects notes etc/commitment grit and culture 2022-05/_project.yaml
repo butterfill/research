@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+
+id: 396867cd-adde-4d50-8065-3505498304ec
+title: "Committment, grit and culture (John Michael)"
+type: research
+start-date: 2022-05-13
+authors: 
+  - John Michael
+  - Stephen A. Butterfill
+status: in progress
+parents:
+  - aa46e359-c841-4c2e-bedb-47c14b66ea01
+cloud-resources:
+  - https://docs.google.com/document/d/1lmKZ0c867JRkwNrohDLieBdAVpYzQ5RSrP-AdEAXR5k/edit
+  - https://drive.google.com/drive/u/0/folders/1cOvHb3zd09v3Or3_ApilZkbZI8TYzPKa

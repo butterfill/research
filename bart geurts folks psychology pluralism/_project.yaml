@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+
+id: 9e6fa5e3-10e6-4846-a79a-988799ffb92e
+title: "Folk Psychological Pluralism"
+type: writing
+authors: 
+  - Bart Gheurts
+  - Stephen A. Butterfill
+status: paused
+cloud-resources:
+  - https://www.dropbox.com/home/Phenomenology%20of%20folk%20psychology
+subprojects:
+  - 5d01e788-34df-42d4-b116-37da0980cd7c

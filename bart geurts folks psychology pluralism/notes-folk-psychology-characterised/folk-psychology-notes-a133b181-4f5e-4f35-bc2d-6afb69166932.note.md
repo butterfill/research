@@ -1,16 +1,21 @@
 ---
-title: Notes on How Folk Psychology
+title: Notes on How Folk Psychology is Characterised
 subtitle: "How It’s Characterised"
 iauthor: Bart Geurts and Steve Butterfill
 iauthorshort: Geurts \& Butterfill
-date: 2022-11-14
+created: 2021-12-14
+projects:
+  - 9e6fa5e3-10e6-4846-a79a-988799ffb92e
 ---
 
 Here we are just interested in how researchers characterise folk psychology.
 
 (TODO: move the sections on Bermudez & Gallese)
 
-## updates 2012-12-10
+> ‘Agents see the world from their own subjective perspective and they rationally plan, form intentions and act accordingly. This way of seeing others as rational subjects with individual perspectives on the world is termed theory of mind (ToM).’
+> \citep{rakoczy:2022_foundations}
+
+## updates 2021-12-10
 
 
 > ‘Until recently, social psychology had not embraced this view that human social cognition is best described in terms of its fundamental conceptual assumptions, as a folk theory of intentional agency and other minds. More commonly, social cognition has been characterized as a packet of information processing systems, schemas, and heuristics (Fiske & Taylor, 1991; Kunda, 1999).’ \citep[p.~164]{malle:2008_fritz}

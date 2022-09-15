@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+
+id: 5d01e788-34df-42d4-b116-37da0980cd7c
+title: "Folk Psychologies"
+tags:
+  - folk psychology
+  - intuition
+type: talk
+year: 2021-22
+authors: 
+  - Bart Geurts
+  - Stephen A. Butterfill
+status: complete
