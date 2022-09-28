@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: uLFjRMc74FkJB3jOxiQVS
+title: Next Book Descartes Was Not a Sceptic, Naive Physics and Moral Psychology
+url:
+  - 
+git-remote:
+  - git@github.com:butterfill/research.git
+type: research
+location: 
+authors: 
+  - Stephen A. Butterfill
+status: prospective
+

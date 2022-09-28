@@ -1,6 +1,19 @@
-Nisbett and Wilson 1977 - Telling more than we can know
+---
+title: Descartes Mechanistically Neutral Sketch
+created: 2021-10-15
+tags:
+  -
+projects:
+  - uLFjRMc74FkJB3jOxiQVS
+numbering: true
+---
 
-0. Descartes’ target
+*I found these notes about a year after I wrote them. Not sure exactly what they were supposed to be about.*
+
+
+Nisbett and Wilson 1977 - Telling more than we can know \citep{nisbett:1977_telling}
+
+## 0. Descartes’ target
 
 Not scepticism (trivially solved) but rather to introduce a different approach.
 
@@ -13,14 +26,14 @@ Descartes: appearances can be explained as arising from physical structures; mat
 
 
 
-1. Mechanistically Neutral vs Mechanistically Committed
+## 1. Mechanistically Neutral vs Mechanistically Committed
 
 btw, it should be understood as a matter of degree (because reasons are causes, there is *some* commitment about which states cause intentional actions in saying that intentional actions are actions that happen because the agent has certain reasons for bringing an outcome about)
 
 Denis and Wayne 
 
 
-2. Sources for Philosophical Psychology’s mechanistic commitments
+## 2. Sources for Philosophical Psychology’s mechanistic commitments
 
 (pre-)scientific theory construction [e.g. Bach 1978 on effective representations; Jeannerod on motor representation]
 
@@ -35,4 +48,4 @@ social cognition -> scientific discoveries ->
 social cognition -> awareness of exercising social cognition ->
 
 
-3. 
+## 3. 

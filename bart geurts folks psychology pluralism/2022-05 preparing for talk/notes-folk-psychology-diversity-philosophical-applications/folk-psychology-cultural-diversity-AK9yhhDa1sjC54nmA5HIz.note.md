@@ -99,13 +99,13 @@ Others offer an anchor in talk about knowledge:
 From this, \citet{phillips:2020_knowledge} derive four features that they call ‘signatures’ of knowledge.
 
 There is also
-\citet{kitchener:2019_epistemology}’s review of \citet{gerken:2017_folka}; I have only read the review (which put me off the book), but it is striking that Kitchener accuses (perhaps wrongly?) Gerken of failing to distinguish Folk Epistemology as a descriptive project and as a normative project.
+\citet{kitchener:2019_epistemology}’s review of \citet{gerken:2017_folk}; I have only read the review (which put me off the book), but it is striking that Kitchener accuses (perhaps wrongly?) Gerken of failing to distinguish Folk Epistemology as a descriptive project and as a normative project.
 
 
-\citet{gerken:2017_folka} does see things a bit differently from Nagel:
+\citet{gerken:2017_folk} does see things a bit differently from Nagel:
 
 > ‘A central claim of the book is that even deeply ingrained folk epistemological practices sometimes come apart from epistemological principles and norms. Our folk epistemological practices and tacit principles should be taken seriously. But they do not translate into epistemological principles in any straightforward manner. Often our folk epistemology reflects cognitive and communicative heuristics that allow us to go about our everyday epistemological business without having to resort to epistemology.’
-> \citep[p.~292]{gerken:2017_folka}
+> \citep[p.~292]{gerken:2017_folk}
 
 
 ## Agency

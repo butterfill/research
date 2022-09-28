@@ -9,7 +9,21 @@ projects:
 
 \tableofcontents
 
+
 Thinking about a submitting a possible BBS commentary on \citet{deneys:2022_advancing}. Both Jason Low and John Michael suggested this.
+
+
+## 2022-09-22
+
+John suggested two papers, \citet{travers:2016_time} and \citet{mata:2017_seeing}.
+
+\citet{travers:2016_time}: mouse tracking study of tasks like the bat-and-ball, where mouse positions measured over ~60 seconds and analysed like eye movements. Findings are in line with default interventionist and against a parallel processing view. Relates to De Neys’ earlier work:
+
+> ‘De Neys (2012, 2014) has proposed an intuitive logic model. This modifies the traditional default-interventionist model to account for many findings which indicate that when participants provide biased, heuristic responses, they are often implicitly aware of some conflict between their responses and the normative standard.’
+> \citep[p.~110]{travers:2016_time}
+
+\citet{mata:2017_seeing} might be useful for arguing that all of the explicit choices are system 2 responses, even where they involve applying heuristics. (Use of heuristics is a System 2 process, even if the input to the heuristic is a phenomenal consequence of a System 1 process.)
+
 
 ## Instructions
 
@@ -31,14 +45,19 @@ every proposer states their position in the field and lists between 2-10 relevan
 
 ### 3. What aspect of the target article or book you would anticipate commenting on. 
 
+Title: ‘A View from Mindreading’
 
-Our commentary concerns the evidential basis for De Neys’ proposed model.  Whereas the paper primarily draws on evidence concerning reasoning and moral psychology, other domains including mindreading are mentioned only in passing. Will a closer look at research on mindreading challenge the conclusions? 
 
-\citet[p.~11]{deneys:2022_advancing} writes, ‘The fundamental problem I will raise is [...] there is no solid empirical ground for the exclusivity assumption.’ But a closer look at the domain of mindreading reveals abundant evidence. We will outline this evidence. We also highlight methodological and theoretical consequences of including more research on mindreading.
+Our commentary concerns the evidential basis for De Neys’ proposed model. \citet[p.~11]{deneys:2022_advancing} writes, ‘The fundamental problem I will raise is [...] there is no solid empirical ground for the exclusivity assumption.’ But in considering evidence, the domain of mindreading is mentioned only in passing. We will argue that a closer look at the domain of mindreading reveals abundant evidence. We also highlight methodological and theoretical consequences of including more research on mindreading.
 
-Methodologically, the evidence De Neys’ relies on nearly all arises from observing a single, direct, verbal response. In mindreading, by contrast, the norm is to compare multiple, indirect and nonverbal responses. These include anticipatory looking and verbal responses \citep{low:2014_quack}, response times and choices \citep{edwards:2017_reaction}, or postural sway and purposive action \citep{zani:_mindreading}. The lack of solid ground De Neys rightly identifies in the domain of reasoning may be due in part to the predominance of less sensitive measures.
+Methodologically, the studies De Neys’ relies on mostly involve observing a single, direct, explicit choice response. In mindreading, by contrast, the norm is to observe multiple responses including indirect and implicit responses. These include anticipatory looking and verbal responses \citep{low:2014_quack}, response times and choices \citep{edwards:2017_reaction}, or postural sway and purposive action \citep{zani:_mindreading}. The lack of solid ground De Neys rightly identifies in the domain of reasoning may be due in part to the predominance of less sensitive measures than are commonly used in studying mindreading.
 
-One theoretical implication concerns De Neys proposal that uncertainty monitoring controls deliberation (figure 1). Ruffman gambling: distinct responses but not uncertainty revealed in gambling. John’s Muller-Lyer example: felt conflict even after deliberation complete. These examples are unlike ***
+Where does this leave the exclusivity assumption? De Neys is surely right that as automatization is possible, any conclusion arrived at by a slow process could, in principle at least, also be arrived at by a fast process. But it does not follow from this that every fast process can generate any response. And indeed, the above findings from mindreading research raise the possibility that some fast mindreading processes have signature limits that restrict the range of responses they can generate – which provides a key methodology that could perhaps be adopted in reasoning research too.
+
+One theoretical implication of considering mindreading concerns De Neys proposal that uncertainty monitoring determines whether System 2 is activated at all (§3.2 and figure 1). Discoveries about mindreading indicate that this cannot be the whole story. To illustrate, \citet{Ruffman:2001ng} identify a scenario involving false belief where System 1 and 2 processes generate conflicting responses (as indexed by anticipatory looking and explicit choices, which imply incompatible predictions). Despite the conflict, the decisions participants’ made in placing bets (they went all in) reveals they felt no uncertainty. Apparently, then, System 2 can be activated even in the absence of System 1 conflicts and even without uncertainty.
+
+Widening De Neys’ view to consider mindreading not only points to some evidence that is hard to accommodate but also yields a conclusion we think De Neys will welcome: how fast and slow interact is a truly deep problem.
+
 
 
 

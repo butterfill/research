@@ -1,3 +1,13 @@
+---
+title: How to Two Systems paper idea
+created: 2021-02-26
+tags:
+  - paper idea
+projects:
+---
+
+
+
 How to Two Systems
 
 target: Philosophical Psychology
