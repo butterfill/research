@@ -17,7 +17,7 @@
     "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-raw": "~2.4.1",
     "docpad-plugin-sass": "~2.7.4",
-    "docpad-plugin-stylus": "~2.11.0",
+    "docpad-plugin-stylus": "~2.18.0",
     "docpad-plugin-text": "~2.3.3",
     "docpad-plugin-uglify": "~2.4.0",
     "eventemitter3": "^1.1.1",
