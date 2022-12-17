@@ -15,6 +15,14 @@ Here we are just interested in how researchers characterise folk psychology.
 > ‘Agents see the world from their own subjective perspective and they rationally plan, form intentions and act accordingly. This way of seeing others as rational subjects with individual perspectives on the world is termed theory of mind (ToM).’
 > \citep{rakoczy:2022_foundations}
 
+## update 2022-10-23
+
+\citet{dewhurst:2022_normative} on decision theory and folk psychology looks good. See skim notes on this.
+
+> ‘Lewis famously characterised decision theory as a “systematic exposition of the consequences of certain well-chosen platitudes about belief, desire, preference and choice”, and the “very core of our common-sense theory of persons, dissected out and elegantly systematised” (1983, p. 114).’
+> \citep[p.~525]{dewhurst:2022_normative}
+
+
 ## updates 2021-12-10
 
 

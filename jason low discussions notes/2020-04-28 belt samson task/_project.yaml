@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: GBsgZZtGqOuenC0-I6dm9
+title: Samson BELT Task (Visual Perspective Taking)
+url:
+  - 
+git-remote:
+type: research
+location: 
+authors: 
+  - Stephen A. Butterfill
+  - Jason Low
+status: abandoned
+subprojects:
+  - 188afc6c-b059-47a8-8858-b8ee59acbe22
+about:
+  This was a project to look at the effect of visibly constraining avatars
+  in the Samson dot visual perspective taking task. Would the visible constraints
+  (originally a belt, later boxing gloves) eliminate the altercentric interference
+  effects?
+
+  It accidentally turned into a different project about breaking the fourth wall.

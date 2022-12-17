@@ -22,6 +22,11 @@ The overall idea was that if dual-process theories are correct, our ways of unde
 
 I have a paper note (`grant Descartes naive physics 2022_09_28 22_19 Office Lens.pdf`) that seemed more revealing that it really is.
 
+
+## Book contracts
+
+... signed before April 2024 probably not subject to open access requirements.
+
 ## Motivation
 
 This is maybe a way of connecting everything I’ve been doing:
@@ -31,4 +36,5 @@ This is maybe a way of connecting everything I’ve been doing:
   * folk psychology (\ref{project:9e6fa5e3-10e6-4846-a79a-988799ffb92e})
   * object cognition, especially the problem about fast and slow interfacing via metacognitive feelings (\ref{project:4cb66656-f62f-49fa-af74-5a9f37e3599c})
   * Descartes (\ref{project:yBJbvChdH4Dw3KBT3MQHp})
+  * \ref{project:6e889dca-9c49-46dc-8b64-84de3bafefc7}
   * am I missing anything?

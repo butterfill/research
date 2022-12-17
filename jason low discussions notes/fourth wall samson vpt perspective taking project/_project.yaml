@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: T3mwColiBNGfLTtNDKuPm
+title: Fourth Wall Samson VPT Visual Perspective Taking Project
+url:
+  - 
+git-remote:
+type: research
+location: 
+authors: 
+  - Stephen A. Butterfill
+  - Jason Low
+status: in progress
+parents:
+  - GBsgZZtGqOuenC0-I6dm9
+cloud-resources:
+  - https://drive.google.com/drive/folders/1FDsB8MHKDMPVZJGRreFZwwVxRZR_msfU
+
